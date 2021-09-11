@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+@media only screen and (min-width : 320px){
+.image img{
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     width: 90vw;
+ }
+ 
+ .container {
+     margin: 0 auto;
+     width: 100vw;
+     background-color:#F6F6F6;
+ }
+
+ .location{
+     background-color: rgb(202, 196, 196); 
+     background-color: #EAEAEA;
+     width: 100%;
+     padding: 2% 0%;
+    }
+
+ .btn {
+     background-color: #D36BDA;
+     color: white;
+     padding: 1%;
+     border-radius: 20%;
+ }
+
+ .num {
+     border-radius: 50%;
+     text-align: center;
+     width: 20px;
+     height: 20px;
+     padding: 5px;
+     margin: 5%;
+     border: 1px solid #000;
+     background-color: purple;
+     color: white;
+ }
+ .num1 {
+  position: relative;
+  left: -55px;
+ }
+ .num2 {
+  position: relative;
+  left: -60px;
+ }
+ .num3 {
+  position: relative;
+  left: -30px;
+ }
+ .fa-mobile-alt {
+  position: relative;
+  left: -58px;
+ }
+ .fa-list-ul { 
+  position: relative;
+  left: -65px;
+}
+ .fa-store {
+  position: relative;
+  left: -40px;
+  color: #9356DC;
+ }
+
+ .text1 {
+  position: relative;
+  left: -50px;
+ }
+ .text2 { 
+  position: relative;
+  left: -58px;
+}
+ .text3 {
+  position: relative;
+  left: -35px;
+ }
+ 
+ .working {
+   position: relative;
+   left: 20px;
+ }
+
+ .btns {
+     display: inline;
+ }
+
+ .restaurant {
+   border: 1px solid black;
+   padding: 3px;
+   border-radius: 25px;
+   display: inline;
+   width: 85%;
+   height: 70px;
+   background-color: #F6F6F6;
+   position:relative;
+   left: 10px;
+ }
+ .menu {
+    border: 1px solid black;
+    padding: 3px;
+    border-radius: 25px;
+    display: inline;
+    width: 85%;
+    height: 70px;
+    background-color: #F6F6F6;
+    position:relative;
+    left: 10px;
+  }
+  .enjoy {
+    border: 1px solid black;
+    padding: 3px;
+    border-radius: 25px;
+    display: inline;
+    width: 85%;
+    height: 70px;
+    background-color: #F6F6F6;
+    position:relative;
+    left: 10px;
+  }
+  .fa-store {
+      color: purple;
+  }
+
+  .res-list {
+    background-color: #F6F6F6;
+    position: relative;
+    left: 5px;
+    padding: 5%;
+    width:90vw;
+  }
+  .cards {
+    padding: 3%;
+  }
+
+  .card {
+    background-color: white;
+    width: 270px;
+    height: 210px;
+    border-radius: 5%;
+    padding: 0%;
+  }
+  a {
+    color: black;
+    text-decoration: none;
+  }
+
+  .h1 .fa-heart {
+    position: relative;
+    left: 107px;
+  }
+  .h2 .fa-heart {
+    position: relative;
+    left: 80px;
+  }
+  .h3 .fa-heart {
+    position: relative;
+    left: 175px;
+  }
+  .h4 .fa-heart {
+    position: relative;
+    left: 130px;
+  }
+   .fa-heart:hover {
+    background-color: #9356DC;
+}
+
+  .banner {
+    border: 1px solid black;
+    background-color: #99E2D0;
+    color: black;
+    position: relative;
+    top: -110px;
+    left: 180px;
+    padding: 5px 20px;
+  }
+
+  .footer {
+   background-color: rgb(77, 77, 77);
+   color: white;
+   width: 100vw;
+   position: relative;
+   left: 0px;
+   padding: 15%;
+  }
+
+  .footer .image img{
+      width: 30vw;
+      height: 35px;
+      -webkit-filter: invert(100%);
+      filter: invert(100%);
+     /* -ms-transform: scale(0.5,0.5); 
+-webkit-transform: scale(0.5,0.5); 
+transform: scale(0.5,0.5);*/
+  }
+  .container2 {
+    border: 2px solid black;
+    border-radius: 40px 40px 10px 10px;
+    background-color:#F6F6F6;
+     position: relative;
+     top: 90px;
+     z-index:2;
+     height: 1100px;
+     width: 100vw;
+     margin: 0 auto;
+  }
+  .image2 {
+    position: absolute;
+    top: 70px;
+    z-index: 1;
+  }
+
+  pre {
+    font-family: 'Roboto', sans-serif;
+  }
+  .footer2 {
+    position: relative;
+    top: 90px;
+  }
+  .entry {
+  border-bottom: 3px solid #B0E7D9;
+  width: 45px;
+  position: relative;
+  left: 20px;
+  }
+  .cards2 {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    
+  }
+  .card2 {
+  border: 1px solid black;
+   padding: 3px;
+   border-radius: 25px;
+   display: inline;
+   width: 95%;
+   height: 70px;
+   background-color: white;
+   position:relative;
+   left: 0px; 
+   margin: 3%;
+   padding: 5%;
+   z-index: 1;
+}
+
+.btn-container {
+  display: flex;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+}
+ .btn2 {
+   width: 40%;
+   height: 40px;
+   border-radius: 25px;
+   margin: 0 auto;
+   background-color: #C867DB;
+   color: white;
+   }
+   .add{
+     font-size: .80em ;
+   }
+   .icon {
+     float: right;
+   }
+   .encha {
+     position: relative;
+     left: 20px;
+     top: 10px;
+     padding-bottom: 0px;
+   }
+   .encha .fa-heart {
+    position: relative;
+    left: 90px;
+  }
+   .container3 {
+    border: 2px solid black;
+    border-radius: 40px 40px 10px 10px;
+    background-color:#F6F6F6;
+     position: relative;
+     top: 90px;
+     z-index:2;
+     height: 1200px;
+     width: 100vw;
+     margin: 0 auto;
+  }
+  .container4 {
+    border: 2px solid black;
+    border-radius: 40px 40px 10px 10px;
+    background-color:#F6F6F6;
+     position: relative;
+     top: 90px;
+     z-index:2;
+     height: 1120px;
+     width: 100vw;
+     margin: 0 auto;
+  }
+  .goum {
+    position: relative;
+    top: 30px;
+    left: 20px;
+    padding-bottom: 20px;
+  }
+  .goum .fa-heart {
+    position: relative;
+    left: 150px;
+  }
+  .footer3 {
+    position: relative;
+    top: 90px;
+  }
+  .full {
+    position: relative;
+    left: 20px;
+    top: 30px;
+    padding-bottom: 20px;
+  }
+  .full .fa-heart {
+   position: relative;
+   left: 130px;
+ }
+ .resize {
+   width: 50px;
+   height: 70px;
+   position: relative;
+   top: 10px;
+ }
+ .fa-arrow-left{
+   position: relative;
+   top: 20px;
+   left: 10px;
+ }
+ .title {
+  font-family: 'Shrikhand', cursive;
+ }
+ 
+    .check-container {
+   width: 0px;
+   height: 0px;
+   background-color: #99E2D0;
+   position: relative;
+   left: 0px;
+   top: -70px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   display: none;
+   z-index: 2;
+ }
+
+.card2:hover  .check-container{
+  width:30vw;
+   height: 70px;
+  z-index: 2;
+  cursor: pointer;
+  animation-name: slide;
+  animation-timing-function: ease-in-out;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-direction:normal;
+  transform-origin: center;
+  background-color: #99E2D0;
+  display: inline-block;
+  text-align: center;
+  
+}
+.card2:hover  .fa-check-circle{
+  display: inline;
+  cursor : pointer;
+  animation-name: rotate;
+  animation-timing-function: ease-in-out;
+  animation-duration: 3s;
+  animation-direction: reverse;
+  transform-origin:center;
+  transition: all 2s ease-in-out;
+  background-color: #99E2D0;
+  color: white;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  left: 0px;
+  top: 0px;
+}
+ @keyframes slide {
+   0% {
+      left: 0px;
+      opacity: 0;
+      }
+      50% {
+        left: -50px;
+        opacity: 0.5;
+        }
+   100% {
+    background-color: #99E2D0;
+    left: -100px;
+  
+    opacity: 1;
+  }
+ }
+ @keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+    margin-left: 0%;
+  }
+  50% {
+    transform: rotate(180deg);
+    margin-left: 20%;
+ }
+  100% {
+   transform: rotate(360deg);
+   margin-left: 40%;
+ }
+}
+.cards2 .card2:hover  .fa-spin {
+  -webkit-animation: fa-spin 2s linear;
+  animation: fa-spin 2s  linear;
+  display: inline-block;
+}
+@-webkit-keyframes rotate {
+ 0% {
+   -webkit-transform: rotate(0deg);
+   transform: rotate(0deg);
+ }
+ 100% {
+   -webkit-transform: rotate(360deg);
+   transform: rotate(360deg);
+}
+}
+@keyframes fa-spin {
+ 0% {
+   -webkit-transform: rotate(0deg);
+   transform: rotate(0deg);
+ }
+ 100% {
+   -webkit-transform: rotate(360deg);
+   transform: rotate(360deg);
+}
+}
+}
