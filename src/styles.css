@@ -208,7 +208,6 @@ transform: scale(0.5,0.5);*/
     background-color:#F6F6F6;
      position: relative;
      top: 90px;
-     z-index:2;
      height: 1100px;
      width: 100vw;
      margin: 0 auto;
@@ -226,6 +225,12 @@ transform: scale(0.5,0.5);*/
     position: relative;
     top: 90px;
   }
+
+  .title1 {
+    position: relative;
+    top: 10px;
+    left: 15px;
+  }
   .entry {
   border-bottom: 3px solid #B0E7D9;
   width: 45px;
@@ -233,24 +238,21 @@ transform: scale(0.5,0.5);*/
   left: 20px;
   }
   .cards2 {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
+    display: grid;
+    grid-template-rows: repeat(3, 70px);
+    grid-gap: 30px;
     
   }
   .card2 {
   border: 1px solid black;
-   padding: 3px;
    border-radius: 25px;
    display: inline;
    width: 95%;
    height: 70px;
    background-color: white;
-   position:relative;
-   left: 0px; 
-   margin: 3%;
-   padding: 5%;
-   z-index: 1;
+   position: relative;
+   margin: 0 auto;
+   
 }
 
 .btn-container {
@@ -269,10 +271,64 @@ transform: scale(0.5,0.5);*/
    }
    .add{
      font-size: .80em ;
+     position: relative;
+     left: 15px;
+     top: 13px;
+     overflow: hidden;
    }
    .icon {
-     float: right;
+     width: 30px;
+     height: 30px;
+    float: right;
+    position: relative;
+    left: -30px;
+    top: 10px;
+    display: inline;
+    overflow: hidden;
    }
+   .card2:hover  .icon{
+    float: right;
+    position: relative;
+    animation-name: slide2;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-direction:normal;
+    transform-origin: center;
+    display: inline;
+    text-align: center;
+  }
+
+  .card2:hover .icon::before{
+    content: "...";
+  }
+
+  .container .full .cards2 .card2 .add .change{ 
+   display: inline;
+   width: 10px;
+   height: 10px;
+  }
+  card2:hover  .container .full .cards2 .card2 .add .change{
+    display: none;
+  }
+  @keyframes change {
+    0% {
+       opacity: 1;  
+       }
+       33% {
+         opacity: 0;
+         }
+       83.3% {
+        content: "...";
+        left: -60px;
+        opacity: 0;
+         }
+    100% {
+      content: "veg...";
+      left: -30px;
+      opacity: 1;
+   }
+  }
    .encha {
      position: relative;
      left: 20px;
@@ -283,13 +339,33 @@ transform: scale(0.5,0.5);*/
     position: relative;
     left: 90px;
   }
+  
+  
+  @keyframes slide2 {
+    0% {
+       left: -30px;
+       opacity: 1;
+       }
+       33% {
+         left: -60px;
+         opacity: 1;
+         }
+       83.3% {
+         left: -60px;
+         opacity: 1;
+         }
+    100% {
+     left: -30px;
+     opacity: 1;
+   }
+  }
+
    .container3 {
     border: 2px solid black;
     border-radius: 40px 40px 10px 10px;
     background-color:#F6F6F6;
      position: relative;
      top: 90px;
-     z-index:2;
      height: 1200px;
      width: 100vw;
      margin: 0 auto;
@@ -300,8 +376,7 @@ transform: scale(0.5,0.5);*/
     background-color:#F6F6F6;
      position: relative;
      top: 90px;
-     z-index:2;
-     height: 1120px;
+     height: 1160px;
      width: 100vw;
      margin: 0 auto;
   }
@@ -344,106 +419,116 @@ transform: scale(0.5,0.5);*/
   font-family: 'Shrikhand', cursive;
  }
  
-    .check-container {
+   .cards2 .card2 .check-container {
    width: 0px;
    height: 0px;
    background-color: #99E2D0;
    position: relative;
-   left: 0px;
-   top: -70px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+   top: 100px;
+   right: 200px;
    display: none;
-   z-index: 2;
+   float: right;
+   box-sizing: border-box;
+   border-radius: 0 25px 25px 0;
  }
 
 .card2:hover  .check-container{
+  float: right;
+  position: relative;
+  top: -22px;
+  left: -50px;
   width:30vw;
    height: 70px;
-  z-index: 2;
   cursor: pointer;
   animation-name: slide;
   animation-timing-function: ease-in-out;
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-fill-mode: forwards;
   animation-direction:normal;
   transform-origin: center;
   background-color: #99E2D0;
-  display: inline-block;
+  display: inline;
   text-align: center;
-  
 }
+
+.cards2 .card2  .fa-check-circle{
+  width: 0px;
+  height: 0px;
+  vertical-align: center;
+  position: relative;
+  left: 0px;
+  top: -50px;
+}
+
 .card2:hover  .fa-check-circle{
   display: inline;
   cursor : pointer;
   animation-name: rotate;
   animation-timing-function: ease-in-out;
   animation-duration: 3s;
-  animation-direction: reverse;
+  animation-direction: forwards;
   transform-origin:center;
-  transition: all 2s ease-in-out;
   background-color: #99E2D0;
   color: white;
-  width: 20px;
-  height: 20px;
+  
   position: relative;
   left: 0px;
-  top: 0px;
+  top: 25px;
 }
  @keyframes slide {
    0% {
-      left: 0px;
-      opacity: 0;
+      left: 29px;
+      opacity: 1;
+      width: 0px;
       }
-      50% {
-        left: -50px;
-        opacity: 0.5;
+      33% {
+        left: 29px;
+        opacity: 1;
+        width: 60px;
+        }
+      83.3% {
+        left: 29px;
+        opacity: 1;
+        width: 60px;
         }
    100% {
-    background-color: #99E2D0;
-    left: -100px;
-  
+    left: 29px;
+    width: 0px;
     opacity: 1;
   }
  }
+ 
  @keyframes rotate {
   0% {
     transform: rotate(0deg);
-    margin-left: 0%;
+    opacity: 0;
   }
+  1% {
+    opacity: 1;
+ }
   50% {
     transform: rotate(180deg);
-    margin-left: 20%;
+    opacity: 1;
  }
+ 99% {
+  opacity: 1;
+}
   100% {
    transform: rotate(360deg);
-   margin-left: 40%;
+   opacity: 0;
  }
 }
-.cards2 .card2:hover  .fa-spin {
-  -webkit-animation: fa-spin 2s linear;
-  animation: fa-spin 2s  linear;
-  display: inline-block;
-}
+
 @-webkit-keyframes rotate {
  0% {
    -webkit-transform: rotate(0deg);
    transform: rotate(0deg);
+   opacity: 1;
  }
  100% {
    -webkit-transform: rotate(360deg);
    transform: rotate(360deg);
-}
-}
-@keyframes fa-spin {
- 0% {
-   -webkit-transform: rotate(0deg);
-   transform: rotate(0deg);
- }
- 100% {
-   -webkit-transform: rotate(360deg);
-   transform: rotate(360deg);
+   opacity: 0;
 }
 }
 }
