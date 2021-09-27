@@ -285,6 +285,8 @@ transform: scale(0.5,0.5);*/
     top: 10px;
     display: inline;
     overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
    }
    .card2:hover  .icon{
     float: right;
@@ -298,36 +300,79 @@ transform: scale(0.5,0.5);*/
     display: inline;
     text-align: center;
   }
-
+/*
   .card2:hover .icon::before{
     content: "...";
   }
-
+*/
   .container .full .cards2 .card2 .add .change{ 
    display: inline;
    width: 10px;
    height: 10px;
   }
-  card2:hover  .container .full .cards2 .card2 .add .change{
-    display: none;
+  /*
+  card2:hover  .container .full .cards2 .card2 .change::after{
+    animation-name: change;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-direction:normal;
+    transform-origin: center;
+    visibility: hidden;
+    display: inline;
   }
-  @keyframes change {
-    0% {
-       opacity: 1;  
-       }
-       33% {
-         opacity: 0;
-         }
-       83.3% {
-        content: "...";
-        left: -60px;
-        opacity: 0;
-         }
-    100% {
-      content: "veg...";
-      left: -30px;
-      opacity: 1;
-   }
+  */
+ .card2:hover   .veg {
+    color: transparent;
+    font-size: 0px;
+    position: relative;
+  }
+ .card2:hover   .veg:after{
+    content: "...";
+    color: initial;
+    position: absolute;
+    top: -14px;
+    left: 0;
+    visibility: visible;
+    display: inline;
+    font-size: 15px;
+  }
+       
+  .card2:hover   .arti {
+    color: transparent;
+    font-size: 0px;
+    position: relative;
+  }
+ .card2:hover   .arti:after{
+    content: "Jerusalem ...";
+    color: initial;
+    position: absolute;
+    top: -12px;
+    left: 0;
+    visibility: visible;
+    display: inline;
+    font-size: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .card2:hover   .pure {
+    color: transparent;
+    font-size: 0px;
+    position: relative;
+  }
+ .card2:hover   .pure:after{
+    content: "pured ...";
+    color: initial;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    visibility: visible;
+    display: inline;
+    font-size: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
    .encha {
      position: relative;
@@ -475,6 +520,32 @@ transform: scale(0.5,0.5);*/
   left: 0px;
   top: 25px;
 }
+.card2 {
+  display: inline;
+  cursor : pointer;
+  animation-name: fadein;
+  animation-timing-function: ease-in-out;
+  animation-duration: 3s;
+  animation-direction: forwards;
+}
+@keyframes fadein {
+  0% {
+     opacity: 1;
+     }
+     33% {
+       opacity: 0;
+       }
+     66% {
+       transform: translateY(10px);
+       opacity: 0;
+  
+       }
+  100% {
+   transform: translateY(0);
+   opacity: 1;
+ }
+}
+
  @keyframes slide {
    0% {
       left: 29px;
@@ -528,7 +599,7 @@ transform: scale(0.5,0.5);*/
  100% {
    -webkit-transform: rotate(360deg);
    transform: rotate(360deg);
-   opacity: 0;
+   visibility: hidden;
 }
 }
 }
