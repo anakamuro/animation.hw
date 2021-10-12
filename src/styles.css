@@ -584,7 +584,7 @@
   */
   .container4 .full2 .cards2 .card2 .veg {
     position: relative;
-    left: 15px;
+    left: 0px;
   }
   .container4 .full2 .cards2 .card2:hover   .veg {
     color: transparent;
@@ -826,7 +826,7 @@
   box-shadow: 0 0 0 #000;
   float: right;
   position: relative;
-  top: -10px;
+  top: -30px;
   left: -50px;
   width:30vw;
    height: 74px;
@@ -845,8 +845,8 @@
   display: inline-block;
   position: absolute;
   color: white;
-  left: 80px;
-  top: 80px;
+  left: 120px;
+  top: 120px;
   z-index: 2;
 }
 .card2:hover .fa-spin {
@@ -866,7 +866,7 @@
   animation-fill-mode: forwards;
   transform-origin: center center;
   position: relative;
-  top:10px;
+  top:30px;
   left: 10px;
   color: white;
   z-index: 2;
@@ -1496,46 +1496,7 @@
     position: relative;
     top: -30px;
   }
-  @keyframes slide2 {
-    0% {
-       transform: translateX(0%);
-       opacity: 1;
-       }
-       33% {
-        transform: translateX(-100%);
-         opacity: 1;
-         }
-       83.3% {
-        transform: translateX(-100%);
-         opacity: 1;
-         }
-    100% {
-      transform: translateX(0%);
-     opacity: 1;
-   }
-  }
-  
-  @keyframes rotate {
-    0% {
-      transform: rotate(0deg);
-      opacity: 0;
-    }
-    1% {
-      opacity: 1;
-   }
-    50% {
-      transform: rotate(180deg);
-      opacity: 1;
-   }
-   99% {
-    opacity: 1;
-  }
-    100% {
-     transform: rotate(360deg);
-     visibility: hidden;
-   }
-  }
-  .add {
+.add {
     font-size: 18px;
     position: relative;
     left: 15px;
@@ -1810,21 +1771,7 @@
    .footer-f{
      height: 350px;
    }
-    .card2 .check-container {
-   width: 0px;
-   height: 0px;
-   background-color: #99E2D0;
-   position: relative;
-   top: 0px;
-   left: 100px;
-   display: none;
-   box-sizing: border-box;
-   border-radius: 0 25px 25px 0;
-   z-index: 2;
-   transform: translateY(0);
-   box-shadow: 0 0 0 #000;
-   transform: translate3d(0, 0, 0);
- }
+   
 
 .card2:hover  .check-container{ 
   will-change: transform;
@@ -2377,4 +2324,42 @@ container3 .encha {
   .footer-f{
     position: relative;
   }
+  .card2:hover   .fa-check-circle{
+    display: inline-block;
+}
+.cards2 .card2 .check-container {
+  width: 0px;
+  height: 0px;
+  background-color: #99E2D0;
+  position: relative;
+  top: 0px;
+  right: 300px;
+  float: right;
+  box-sizing: border-box;
+  border-radius: 0 25px 25px 0;
+  z-index: 2;
+  transform: translateY(0);
+  box-shadow: 0 0 0 #000;
+}
+.card2:hover  .check-container{ 
+  will-change: transform;
+  backface-visibility: hidden;
+  outline: none;
+  box-shadow: 0 0 0 #000;
+  float: right;
+  position: relative;
+  top: -30px;
+  left: 100px;
+  width:30vw;
+   height: 100px;
+  cursor: pointer;
+  animation-name: slide;
+  animation-timing-function: ease-in-out;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-direction:normal;
+  transform-origin: center center;
+  background-color: #99E2D0;
+  z-index: 2;
+}
 }
