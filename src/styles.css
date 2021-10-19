@@ -4,17 +4,51 @@
 * {
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
-  font-size: 11px;
 }
 
 @media only screen and (min-width : 320px){
+  * {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+  }
   html {
     scroll-behavior: smooth;
     overflow-x: hidden !important;
   }
-  .image img {
-    width:"30px";
-    height:"30vh";
+  .fa-arrow-left {
+    font-size: 1.5rem;
+    position: relative;
+    top: 30px;
+    left: 20px;
+  }
+  .image  {
+    font-family: "Shrikhand";
+    font-size: 1.5rem;
+  }
+  .image4{
+    font-size: 2rem;
+    text-align: center;
+  }
+  .image9 {
+    text-align: center;
+    font-size: 1.7rem;
+  }
+  .suggest {
+    position: relative;
+    left: 10px;
+  }
+  .become {
+    position: relative;
+    left: 6px;
+  }
+  .title5 {
+    font-size: 1.7rem;
+  }
+  .box {
+    background-color: #F6F6F6;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
   }
    body {
       font-family: 'Raleway', sans-serif;
@@ -31,12 +65,11 @@
  ::-webkit-scrollbar:horizontal{
    display: none;
  }
-.heading {
-  text-align: center;
-}
+
 .work {
   position:relative;
-  left: 10px;
+  left: -80px;
+  font-size: 1.7rem;
 }
 .image img{
      align-items: center;
@@ -49,33 +82,41 @@
   background-image: url('../src/img/dish1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  height: 130px;
-  width: 270px;;
+  background-position: center bottom;
+  height: 140px;
+  width: 270px;
+  border-top-left-radius: 10px;
+  border-top-right-radius:  10px;
  }
  .cards .card .image3-2{
   background-image: url('../src/img/dish3.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  height: 130px;
-  width: 270px;;
+  background-position: 50% 60%;
+  height: 140px;
+  width: 270px;
+  border-top-left-radius: 10px;
+  border-top-right-radius:  10px;
  }
  .cards .card .image3-3{
   background-image: url('../src/img/dish4.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  height: 130px;
-  width: 270px;;
+  background-position: center bottom;
+  height: 140px;
+  width: 270px;
+  border-top-left-radius: 10px;
+  border-top-right-radius:  10px;
  }
  .cards .card .image3-4{
   background-image: url('../src/img/dish2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  height: 130px;
+  background-position: center bottom;
+  height: 140px;
   width: 270px;
+  border-top-left-radius: 10px;
+  border-top-right-radius:  10px;
  }
  .container4 .image2-0{
   background-image: url('../src/img/dish1.jpg');
@@ -142,163 +183,216 @@
      text-shadow: 0.1em 0.1em #333;
  }
 
- .num {
+  .num {
      border-radius: 50%;
      text-align: center;
-     width: 20px;
-     height: 20px;
-     padding: 5px;
-     margin: 5%;
-     border: 1px solid #000;
-     background-color: purple;
+     width: 15px;
+     height: 15px;
+     padding: 1%;
+     margin-right: 5%;
+     background-color: #9356DC;
      color: white;
+     position: relative;
+     left: -65px;
  }
  .num1 {
   position: relative;
-  left: -55px;
+  left: -65px;
+  top: 15px;
  }
+
  .num2 {
   position: relative;
-  left: -60px;
+  left: -70px;  
+  top: 20px;
  }
  .num3 {
   position: relative;
-  left: -30px;
+  left: -45px;
+  top: 20px;
  }
- .fa-mobile-alt {
+ .btns .restaurant  .fa-mobile-alt {
   position: relative;
-  left: -58px;
- }
- .fa-list-ul { 
-  position: relative;
+  top: 15px;
   left: -65px;
+  font-size: 1.5rem;
+ }
+   .fa-list-ul { 
+  position: relative;
+  left: -70px;
+  top: 20px;
 }
  .fa-store {
   position: relative;
-  left: -40px;
+  left: -45px;
+  top: 20px;
   color: #9356DC;
  }
 
  .text1 {
   position: relative;
   left: -50px;
+  top: 15px;
  }
  .text2 { 
   position: relative;
   left: -58px;
+  top: 20px;
 }
  .text3 {
   position: relative;
   left: -35px;
+  top: 20px;
  }
  
  .working {
    position: relative;
-   left: 20px;
+   left:0px;
  }
 
  .btns {
      display: inline;
  }
+ .title3 {
+   position: relative;
+   top: -15px;
+   left: -65px;
+   font-size: 4.2vw;
+ }
+ .title3-1 {
+   position: relative;
+   left: -95px;
+   top: -15px;
+   font-size: 4.2vw;
+ }
+ .title3-2 {
+  position: relative;
+  left: -55px;
+}
+.title3-3 {
+  position: relative;
+  left: -92px;
+}
+.title3-4 {
+  position: relative;
+  left: -74px;
+}
 
  .restaurant {
-   border: 1px solid black;
    padding: 3px;
-   border-radius: 25px;
-   display: inline;
-   width: 85%;
-   height: 70px;
+   border-radius: 15px;
+   display: inline-block;
+   width: 80vw;
+   height: 60px;
    background-color: #F6F6F6;
    position:relative;
-   left: 10px;
+   left: 0px;
+   box-shadow: 2px 2px 5px #E7E7E7;
  }
  .menu {
-    border: 1px solid black;
     padding: 3px;
-    border-radius: 25px;
-    display: inline;
+    border-radius: 15px;
+    display: inline-block;
     width: 85%;
-    height: 70px;
+    height: 60px;
     background-color: #F6F6F6;
     position:relative;
-    left: 10px;
+    left: 0px;
+    box-shadow: 2px 2px 5px #E7E7E7;
   }
   .enjoy {
-    border: 1px solid black;
     padding: 3px;
-    border-radius: 25px;
-    display: inline;
+    border-radius: 15px;
+    display: inline-block;
     width: 85%;
-    height: 70px;
+    height: 60px;
     background-color: #F6F6F6;
     position:relative;
-    left: 10px;
+    left: 0px;
+    box-shadow: 2px 2px 5px #E7E7E7;
   }
-  .fa-store {
-      color: purple;
-  }
-
   .res-list {
     background-color: #F6F6F6;
     position: relative;
-    left: 5px;
+    left: 0px;
+    top: 40px;
     padding: 5%;
-    width:90vw;
+    width:100vw;
   }
   .cards {
     padding: 3%;
     position: relative;
-    left: -13px;
-    height: 900px;
+    left: -5px;
+    top: 40px;
+    height: 1020px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.7rem;
+    width: 320px;
   }
 
   .card {
     background-color: white;
     width: 270px;
-    height: 210px;
-    border-radius: 5%;
+    height: 200px;
     padding: 0%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 2px 2px 5px #E7E7E7;
   }
   a {
     color: black;
     text-decoration: none;
   }
-
+  .title4{
+    font-size: 1.7rem;
+    position: relative;
+    top: 30px;
+    left: -90px;
+  }
   .cards .card .h1 .fa-heart {
     position: relative;
-    left: 150px;
+    left: 60px;
+    top: -10px;
     background-color: white;
     color: white;
     display: inline-block;
     z-index:1;
     text-shadow: 0 0 2px #000;
+    font-size: 1.6rem;
   }
   .cards .card .h2 .fa-heart {
     position: relative;
-    left: 130px;
+    left: 48px;
+    top: -5px;
     background-color: white;
     color: white;
     display: inline-block;
     z-index:1;
     text-shadow: 0 0 2px #000;
+    font-size: 1.6rem;
   }
   .cards .card .h3 .fa-heart {
     position: relative;
-    left: 192px;
+    left: 88px;
+    top: -5px;
     background-color: white;
     color: white;
     display: inline-block;
     z-index:1;
     text-shadow: 0 0 2px #000;
+    font-size: 1.6rem;
   }
   .cards .card .h4 .fa-heart {
     position: relative;
-    left: 160px;
+    left: 67px;
+    top: -5px;
     background-color: white;
     color: white;
     display: inline-block;
     z-index:1;
     text-shadow: 0 0 2px #000;
+    font-size: 1.6rem;
   }
   .container3 .encha .fa-heart {
     background-color: white;
@@ -307,18 +401,20 @@
     z-index:1;
     text-shadow: 0 0 2px #000;
     position: relative;
-    left: 130px;
+    left: 10px;
     top: 20px;
-   }
+    font-size: 1.6rem;
+}
    .container4 .full .fa-heart {
     background-color: white;
     color: white;
     display: inline-block;
     z-index:1;
-    text-shadow: 0 0 2px #000;
+    text-shadow: 0 0 2px #707070;
     position: relative;
-    left: 160px;
+    left: 70px;
     top: 20px;
+    font-size: 1.6rem;
    }
    .container2 .basti .fa-heart {
     background-color: white;
@@ -327,8 +423,9 @@
     z-index:1;
     text-shadow: 0 0 2px #000;
     position: relative;
-    left: 210px;
+    left: 150px;;
     top: 20px;
+    font-size: 1.6rem;
    }
 
    .container4 .goum .fa-heart {
@@ -338,8 +435,9 @@
     z-index:1;
     text-shadow: 0 0 2px #000;
     position: relative;
-    left: 180px;
+    left: 80px;
     top: 20px;
+    font-size: 1.6rem;
    }
     .fa-heart:hover {
     color: #9356DC !important;
@@ -351,43 +449,31 @@
    }
 
   .banner {
-    border: 1px solid black;
     background-color: #99E2D0;
-    color: black;
+    color: #30A387;
     position: relative;
-    top: -110px;
-    left: 180px;
+    top: -130px;
+    left: 90px;
     padding: 5px 20px;
+    border-radius: 5%;
   }
 
   .footer {
    background-color: rgb(77, 77, 77);
    color: white;
-   width: 100vw;
-   height: 300px;
+   width: 500px;
+   height: 500px;
+   text-align: left;
    position: relative;
-   left: 0px;
+   left: -20px;
    top: -35px;
    padding: 15%;
   }
-
-  .footer .image img{
-      width: 30vw;
-      height: 35px;
-      -webkit-filter: invert(100%);
-      filter: invert(100%);
- }
- .footer2 .image img{
-  width: 30vw;
-  height: 35px;
-  -webkit-filter: invert(100%);
-  filter: invert(100%);
-}
   .container2 {
     background-color:#F6F6F6;
      position: relative;
      top: 0px;
-     height: 1580px;
+     height: 1630px;
      width: 100vw;
      z-index: 2;
      max-width: 100%;
@@ -401,18 +487,26 @@
      overflow: scroll;
      scroll-behavior: smooth;
   }
+  .footer-container {
+    width: 100%;
+    position: relative;
+    top: 0px;
+  }
+  .footer-container2 {
+    width: 100%;
+    position: relative;
+    top: 50px;
+  }
   .container2 .basti {
-    border: 2px solid black;
-    border-radius: 40px 40px 10px 10px;
     position: relative;
     top: -25px;
     left: 0px;
-    border-radius: 20px 20px 10px 10px;
-    border: 2px solid black;
-    height: 1130px;
+    border-top-left-radius: 20px 20px;
+    border-top-right-radius: 20px 20px;
+    height: 1170px;
     z-index: 2;
     overflow: hidden;
-    background-color: white;
+    background-color: #F6F6F6;
   }
 
   pre {
@@ -420,24 +514,26 @@
   }
   .footer2 {
     position: relative;
-    top: -50px;
-    height: 280px;
+    top: -80px;
+    height: 500px;
   }
   .title {
     position: relative;
     top: 20px;
     left: 15px;
     font-family: 'Shrikhand', cursive;
+    font-size: 1.8rem;
   }
   .title1 {
     position: relative;
     top: 10px;
     left: 15px;
+    font-size: 1.3rem;
   }
   .title2 {
     position: relative;
     top: 20px;
-    left: 25px;
+    left: 20px;
   }
   .entry {
   border-bottom: 3px solid #B0E7D9;
@@ -445,6 +541,7 @@
   position: relative;
   left: 15px;
   top: 20px;
+  font-size: 1.3rem;
   }
   .entry2 {
     border-bottom: 3px solid #B0E7D9;
@@ -452,6 +549,7 @@
     position: relative;
     left: 20px;
     top: 20px;
+    font-size: 1.3rem;
   }
   .entry3 {
     border-bottom: 3px solid #B0E7D9;
@@ -460,6 +558,7 @@
     left: 20px;
     top: -10px;
     padding-top: 20px;
+    font-size: 1.3rem;
   }
   .entry4 {
     border-bottom: 3px solid #B0E7D9;
@@ -468,6 +567,7 @@
     left: 20px;
     top: -10px;
     padding-top: 20px;
+    font-size: 1.3rem;
   }
   .entry2-2 {
     padding-top: 10px;
@@ -530,7 +630,7 @@
    color: white;
    }
    .add{
-     font-size: 11px ;
+     font-size: 1rem;
      position: relative;
      left: 15px;
      top: 13px;
@@ -698,7 +798,7 @@
     background-color:#F6F6F6;
      position: relative;
      top: 0px;
-     height: 1680px;
+     height: 1730px;
      width: 100vw;
      z-index: 2;
      max-width: 100%;
@@ -711,22 +811,23 @@
      -ms-overflow-style: none;
      overflow: scroll;
      scroll-behavior: smooth;
+     background-color: white;
   }
   .container3 .encha {
     position: relative;
     top: -65px;
     left: 0px;
-    border-radius: 20px 20px 10px 10px;
-    border: 2px solid black;
-    height: 1200px;
+    border-top-left-radius: 20px 20px;
+    border-top-right-radius: 20px 20px;
+    height: 1250px;
     z-index: 2;
     overflow: hidden;
-    background-color: white;
+    background-color: #F6F6F6;
   }
   .container4 {
      position: relative;
      top: 0px;
-     height: 1600px;
+     height: 1630px;
      width: 100vw;
      z-index: 2;
      max-width: 100%;
@@ -750,23 +851,25 @@
     top: -35px;
     left: 0px;
     border-radius: 20px 20px 10px 10px;
-    border: 2px solid black;
-    height: 1150px;
+    height: 1175px;
     z-index: 2;
     overflow: hidden;
-    background-color: white;
+    background-color: #F6F6F6;
   }
   .container4 .goum {
-    border: 2px solid black;
-    border-radius: 20px 20px 10px 10px;
+    border-top-left-radius: 20px 20px;
+    border-top-right-radius: 20px 20px;
     position: relative;
     top: -10px;
     left: 0px;
-    border: 2px solid black;
-    height: 1130px;
+    height: 1170px;
     z-index: 2;
     overflow: hidden;
-    background-color: white;
+    background-color: #F6F6F6;
+  }
+  .footer-container3 {
+    position: relative;
+    top: 30px;
   }
   .goum {
     position: relative;
@@ -798,11 +901,6 @@
    position: relative;
    top: 10px;
  }
- .fa-arrow-left{
-   position: relative;
-   top: 20px;
-   left: 10px;
- }
  
   .cards2 .card2 .check-container {
    width: 0px;
@@ -826,10 +924,10 @@
   box-shadow: 0 0 0 #000;
   float: right;
   position: relative;
-  top: -30px;
+  top: -50px;
   left: -50px;
   width:30vw;
-   height: 74px;
+   height: 70px;
   cursor: pointer;
   animation-name: slide;
   animation-timing-function: ease-in-out;
@@ -848,6 +946,7 @@
   left: 120px;
   top: 120px;
   z-index: 2;
+  display: none;
 }
 .card2:hover .fa-spin {
   -webkit-animation: spin 3s infinite linear;
@@ -871,8 +970,6 @@
   color: white;
   z-index: 2;
 }
-
- 
 .card2 {
   display: inline-block;
   cursor : pointer;
@@ -902,31 +999,31 @@
  @keyframes slide {
    0% {
       left: 29px;
-      top: -17px;
+      top: -20px;
       opacity: 1;
       width: 0px;
       }
       33% {
         left: 29px;
-        top: -17px;
+        top: -20px;
         opacity: 1;
         width: 60px;
         }
         50% {
           left: 29px;
-          top: -17px;
+          top: -20px;
           opacity: 1;
           width: 60px;
           }
       83.3% {
         left: 29px;
-        top: -17px;
+        top: -20px;
         opacity: 1;
         width: 60px;
         }
    100% {
     left: 29px;
-    top: -17px;
+    top: -20px;
     width: 0px;
     opacity: 0;
   }
@@ -973,18 +1070,98 @@
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
   }
+  .title4 {
+    font-size: 1.7rem;
+    position: relative;
+    top: 30px;
+    left: -105px;
+}
+.num1 {
+  position: relative;
+  left: -70px;
+  top: 15px;
+ }
+
+ .num2 {
+  position: relative;
+  left: -77px;  
+  top: 20px;
+ }
+ .num3 {
+  position: relative;
+  left: -48px;
+  top: 20px;
+ }
+ .btns .restaurant  .fa-mobile-alt {
+  position: relative;
+  top: 16px;
+  left: -72px;
+  font-size: 1.5rem;
+ }
+   .fa-list-ul { 
+  position: relative;
+  left: -78px;
+  top: 20px;
+}
+ .fa-store {
+  position: relative;
+  left: -50px;
+  top: 20px;
+  color: #9356DC;
+ }
+
+ .text1 {
+  position: relative;
+  left: -55px;
+  top: 15px;
+  font-size: 1.1rem;
+ }
+ .text2 { 
+  position: relative;
+  left: -63px;
+  top: 20px;
+  font-size: 1.1rem;
+}
+ .text3 {
+  position: relative;
+  left: -34px;
+  top: 20px;
+  font-size: 1.1rem;
+ }
+ .suggest {
+   position: relative;
+   left: 10px;
+ }
+ .become {
+   position: relative;
+   left: 6px;
+ }
   .banner {
     border: 1px solid black;
     background-color: #99E2D0;
     color: black;
     position: relative;
-    top: -110px;
-    left: 200px;
+    top: -130px;
+    left: 95px;
     padding: 5px 20px;
   }
   .container2{
     height: 1800px;
   }
+  .cards {
+    padding: 3%;
+    position: relative;
+    left: -5px;
+    top: 40px;
+    height: 1070px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.7rem;
+    width: 100%;
+}
+.footer {
+  height: 220px;
+}
   .container4 .full .fa-heart {
     background-color: white;
     color: white;
@@ -1025,6 +1202,7 @@
     left: 240px;
     top: 20px;
    }
+   
   .cards .card {
     background-color: white;
     width: 300px;
@@ -1032,37 +1210,70 @@
     border-radius: 5%;
     padding: 0%;
   }
+  .title3 {
+    position: relative;
+    top: -15px;
+    left: -75px;
+    font-size: 4.2vw;
+  }
+  .title3-1 {
+    position: relative;
+    left: -108px;
+    top: -15px;
+    font-size: 4.2vw;
+  }
+  .title3-2 {
+   position: relative;
+   left: -62px;
+ }
+ .title3-3 {
+   position: relative;
+   left: -105px;
+ }
+ .title3-4 {
+   position: relative;
+   left: -85px;
+ }
+ 
   .cards .card .image3-1{
     background-image: url('../src/img/dish1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    height: 130px;
-    width: 300px;;
+    background-position: center bottom;
+    height: 140px;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius:  10px;
    }
    .cards .card .image3-2{
     background-image: url('../src/img/dish3.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    height: 130px;
-    width: 300px;;
+    background-position: 50% 60%;
+    height: 140px;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius:  10px;
    }
    .cards .card .image3-3{
     background-image: url('../src/img/dish4.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    height: 130px;
-    width: 300px;;
+    background-position: center bottom;
+    height: 140px;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius:  10px;
    }
    .cards .card .image3-4{
     background-image: url('../src/img/dish2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    height: 130px;
-    width: 300px;;
+    background-position: center bottom;
+    height: 140px;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius:  10px;
    }
 
   .container4 .image2-0{
@@ -1106,19 +1317,19 @@
  }
  .cards .card .h1 .fa-heart{
    position: relative;
-   left: 160px;
+   left: 60px;
  }
  .cards .card .h2 .fa-heart{
   position: relative;
-  left: 138px;
+  left: 45px;
 }
 .cards .card .h3 .fa-heart{
   position: relative;
-  left: 206px;
+  left: 88px;
 }
 .cards .card .h4 .fa-heart{
   position: relative;
-  left: 173px;
+  left: 67px;
 }
   .container4 .image2 img {
     width: 350px;
@@ -1143,15 +1354,119 @@
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
   }
+  .btns {
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+    align-items: center;
+  }
+  .work {
+    position: relative;
+    left: -100px;
+    font-size: 1.7rem;
+}
+  .title4 {
+    font-size: 1.7rem;
+    position: relative;
+    top: 30px;
+    left: -120px;
+}
+.title3 {
+  position: relative;
+  top: -10px;
+  left: -80px;
+  font-size: 4.2vw;
+}
+.title3-1 {
+  position: relative;
+  left: -115px;
+  top: -10px;
+  font-size: 4.2vw;
+}
+.title3-2 {
+ position: relative;
+ left: -62px;
+}
+.title3-3 {
+ position: relative;
+ left: -113px;
+}
+.title3-4 {
+ position: relative;
+ left: -90px;
+}
+.num1 {
+  position: relative;
+  left: -83px;
+  top: 15px;
+ }
+
+ .num2 {
+  position: relative;
+  left: -90px;  
+  top: 20px;
+ }
+ .num3 {
+  position: relative;
+  left: -59px;
+  top: 20px;
+ }
+ .btns .restaurant  .fa-mobile-alt {
+  position: relative;
+  top: 18px;
+  left: -87px;
+  font-size: 1.5rem;
+ }
+   .fa-list-ul { 
+  position: relative;
+  left: -93px;
+  top: 20px;
+}
+ .fa-store {
+  position: relative;
+  left: -62px;
+  top: 20px;
+  color: #9356DC;
+ }
+
+ .text1 {
+  position: relative;
+  left: -60px;
+  top: 15px;
+  font-size: 2.0rem;
+ }
+ .text2 { 
+  position: relative;
+  left: -68px;
+  top: 20px;
+  font-size: 1.2rem;
+}
+ .text3 {
+  position: relative;
+  left: -39px;
+  top: 20px;
+  font-size: 1.2rem;
+ }
   .banner {
     border: 1px solid black;
     background-color: #99E2D0;
-    color: black;
+    color: #018767;
     position: relative;
-    top: -110px;
-    left: 240px;
-    padding: 5px 20px;
+    top: -150px;
+    left: 100px;
+    padding: 6px 24px;
   }
+  .cards {
+    padding: 3%;
+    position: relative;
+    left: -5px;
+    top: 40px;
+    height: 1220px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.7rem;
+    width: 100%;
+}
   .container4 .full .fa-heart {
     background-color: white;
     color: white;
@@ -1166,59 +1481,66 @@
   .cards .card {
     background-color: white;
     width: 330px;
-    height: 210px;
+    height: 240px;
     border-radius: 5%;
     padding: 0%;
   }
   .cards .card .h1 .fa-heart{
     position: relative;
-    left: 190px;
+    left: 70px;
   }
   .cards .card .h2 .fa-heart{
    position: relative;
-   left: 168px;
+   left: 53px;
  }
  .cards .card .h3 .fa-heart{
    position: relative;
-   left: 236px;
+   left: 103px;
  }
  .cards .card .h4 .fa-heart{
    position: relative;
-   left: 203px;
+   left: 77px;
  }
-  .cards .card .image3-1{
-    background-image: url('../src/img/dish1.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 130px;
-    width:  330px;
-   }
-   .cards .card .image3-2{
-    background-image: url('../src/img/dish3.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 130px;
-    width: 330px;;
-   }
-   .cards .card .image3-3{
-    background-image: url('../src/img/dish4.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 130px;
-    width: 330px;;
-   }
-   .cards .card .image3-4{
-    background-image: url('../src/img/dish2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 130px;
-    width: 330px;;
-   }
-
+ .cards .card .image3-1{
+  background-image: url('../src/img/dish1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  height: 160px;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius:  10px;
+ }
+ .cards .card .image3-2{
+  background-image: url('../src/img/dish3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 60%;
+  height: 160px;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius:  10px;
+ }
+ .cards .card .image3-3{
+  background-image: url('../src/img/dish4.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  height: 160px;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius:  10px;
+ }
+ .cards .card .image3-4{
+  background-image: url('../src/img/dish2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  height: 160px;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius:  10px;
+ }
   .container4 .image2-0{
     background-image: url('../src/img/dish1.jpg');
     background-repeat: no-repeat;
@@ -1317,15 +1639,154 @@
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
   }
-  
+  .title4 {
+    font-size: 2.2rem;
+    position: relative;
+    top: 30px;
+    left: -164px;
+}
+.restaurant {
+  padding: 3px;
+  border-radius: 15px;
+  display: inline-block;
+  width: 445.39px;
+  height: 80px;
+  background-color: #F6F6F6;
+  position: relative;
+  left: 0px;
+  box-shadow: 2px 2px 5px #e7e7e7;
+}
+.menu {
+  padding: 3px;
+  border-radius: 15px;
+  display: inline-block;
+  width: 85%;
+  height: 80px;
+  background-color: #F6F6F6;
+  position: relative;
+  left: 0px;
+  box-shadow: 2px 2px 5px #e7e7e7;
+}
+.enjoy {
+  padding: 3px;
+  border-radius: 15px;
+  display: inline-block;
+  width: 85%;
+  height: 80px;
+  background-color: #F6F6F6;
+  position: relative;
+  left: 0px;
+  box-shadow: 2px 2px 5px #e7e7e7;
+}
+.btns {
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+  align-items: center;
+}
+.num1 {
+  position: relative;
+  left: -115px;
+  top: 17px;
+ }
+.num2 {
+  position: relative;
+  left: -125px;  
+  top: 20px;
+ }
+ .num3 {
+  position: relative;
+  left: -80px;
+  top: 20px;
+ }
+ .btns .restaurant  .fa-mobile-alt {
+  position: relative;
+  top: 20px;
+  left: -120px;
+  font-size: 1.7rem;
+ }
+   .fa-list-ul { 
+  position: relative;
+  left: -131px;
+  top: 23px;
+  font-size: 1.7rem;
+}
+ .fa-store {
+  position: relative;
+  left: -88px;
+  top: 23px;
+  color: #9356DC;
+  font-size: 1.5rem;
+ }
+
+ .text1 {
+  position: relative;
+  left: -90px;
+  top: 20px;
+  font-size: 1.6rem;
+ }
+ .text2 { 
+  position: relative;
+  left: -103px;
+  top: 23px;
+  font-size: 1.6rem;
+}
+ .text3 {
+  position: relative;
+  left: -60px;
+  top: 20px;
+  font-size: 1.6rem;
+ }
+
+.work {
+  position: relative;
+  left: -160px;
+  font-size: 1.7rem;
+}
+.cards {
+  padding: 3%;
+  position: relative;
+  left: -5px;
+  top: 40px;
+  height: 1550px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+  width: 100%;
+}
   .banner {
     border: 1px solid black;
     background-color: #99E2D0;
-    color: black;
+    color: #018767;
     position: relative;
-    top: -110px;
-    left: 320px;
-    padding: 5px 20px;
+    top: -210px;
+    left: 150px;
+    padding: 10px 40px;
+    font-size: 1.7rem;
+  }
+  .title3 {
+    position: relative;
+    top: -10px;
+    left: -125px;
+    font-size: 4.2vw;
+  }
+  .title3-1 {
+    position: relative;
+    left: -174px;
+    top: -10px;
+    font-size: 4.2vw;
+  }
+  .title3-2 {
+   position: relative;
+   left: -103px;
+  }
+  .title3-3 {
+   position: relative;
+   left: -169px;
+  }
+  .title3-4 {
+   position: relative;
+   left: -138px;
   }
   .container4 .full .fa-heart {
     background-color: white;
@@ -1342,58 +1803,66 @@
    }
   .cards .card {
     background-color: white;
-    width: 430px;
-    height: 210px;
+    width: 470px;
+    height: 325px;
     border-radius: 5%;
     padding: 0%;
   }
   .cards .card .h1 .fa-heart{
     position: relative;
-    left: 280px;
+    left: 100px;
+    top: 1px;
+    font-size: 2.4rem;
   }
   .cards .card .h2 .fa-heart{
    position: relative;
-   left: 258px;
+   left: 83px;
+   top: 1px;
+   font-size: 2.4rem;
  }
  .cards .card .h3 .fa-heart{
    position: relative;
-   left: 326px;
+   left: 150px;
+   top: 1px;
+   font-size: 2.4rem;
  }
  .cards .card .h4 .fa-heart{
    position: relative;
-   left: 293px;
+   left: 119px;
+   top: 1px;
+   font-size: 2.4rem;
  }
   .cards .card .image3-1{
     background-image: url('../src/img/dish1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    height: 130px;
-    width: 430px;;
+    background-position: bottom center;
+    height: 230px;
+    width: 100%;;
    }
    .cards .card .image3-2{
     background-image: url('../src/img/dish3.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 130px;
-    width: 430px;;
+    height: 230px;
+    width: 100%;;
    }
    .cards .card .image3-3{
     background-image: url('../src/img/dish4.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    height: 130px;
-    width: 430px;;
+    background-position: bottom center;
+    height: 230px;
+    width: 100%;
    }
    .cards .card .image3-4{
     background-image: url('../src/img/dish2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    height: 130px;
-    width: 430px;;
+    background-position: bottom center;
+    height: 230px;
+    width: 100%;
    }
   .container4 .image2-0 {
     background-image: url('../src/img/dish1.jpg');
@@ -1477,6 +1946,38 @@
 }
 .footer-container {
   height: 300px;
+  font-size: 2.0rem;
+  line-height: 1;
+}
+.footer {
+  height: 400px;
+  width: 540px;
+}
+.image {
+  font-family: "Shrikhand";
+  font-size: 2.3rem;
+}
+.fa-utensils {
+  font-size: 2.0rem;
+}
+.fa-hands-helping {
+  font-size: 2.0rem;
+}
+.legal {
+  font-size: 2.0rem;
+}
+.contact {
+  font-size: 2.0rem;
+}
+.suggest {
+  font-size: 2.0rem;
+  position: relative;
+  left: 15px;
+}
+.become {
+  position: relative;
+  left: 5px;
+  font-size: 2.0rem;
 }
 }
 
@@ -1492,10 +1993,109 @@
     left: 90px;
     height: 60px;
   }
-  .title3{
+  .btn {
+    background: linear-gradient(to top, #736e7a 0%, #FF79DA 100%);
+    color: white;
+    padding: 1%;
+    border-radius: 70px;
+    width: 50vw;
+    height: 7vh;
+    text-shadow: 0.1em 0.1em #333;
+}
+  .num1 {
     position: relative;
-    top: -30px;
+    left: -140px;
+    top: 30px;
+   }
+  .num2 {
+    position: relative;
+    left: -155px;  
+    top: 30px;
+   }
+   .num3 {
+    position: relative;
+    left: -80px;
+    top: 30px;
+   }
+   .btns .restaurant  .fa-mobile-alt {
+    position: relative;
+    top: 34px;
+    left: -140px;
+    font-size: 1.7rem;
+   }
+     .fa-list-ul { 
+    position: relative;
+    left: -157px;
+    top: 33px;
+    font-size: 1.7rem;
   }
+   .fa-store {
+    position: relative;
+    left: -88px;
+    top: 33px;
+    color: #9356DC;
+    font-size: 1.5rem;
+   }
+  
+   .text1 {
+    position: relative;
+    left: -90px;
+    top: 32px;
+    font-size: 1.6rem;
+   }
+   .text2 { 
+    position: relative;
+    left: -113px;
+    top: 32px;
+    font-size: 1.6rem;
+  }
+   .text3 {
+    position: relative;
+    left: -40px;
+    top: 32px;
+    font-size: 1.6rem;
+   }
+  .title4 {
+    font-size: 2.2rem;
+    position: relative;
+    top: 30px;
+    left: -214px;
+}
+.title3 {
+  position: relative;
+  top: -50px;
+  left: -135px;
+  font-size: 4.2vw;
+}
+.title3-1 {
+  position: relative;
+  left: -209px;
+  top: -50px;
+  font-size: 4.2vw;
+}
+.title3-2 {
+ position: relative;
+ left: -108px;
+}
+.title3-3 {
+ position: relative;
+ left: -199px;
+ top: -35px;
+}
+.title3-4 {
+ position: relative;
+ left: -158px;
+ top: -30px;
+}
+.title3-5 {
+  position: relative;
+  top: -37px;
+}
+.title3-6 {
+  position: relative;
+  top: -37px;
+  left: -213px;
+}
 .add {
     font-size: 18px;
     position: relative;
@@ -1582,7 +2182,11 @@
     padding: 3%;
     position: relative;
     left: -13px;
-    height: 1140px;
+    height: 2080px;
+}
+.footer {
+  height: 510px;
+  width: 768px;
 }
   .container4 .full .fa-heart {
     background-color: white;
@@ -1617,62 +2221,96 @@
   .cards .card {
     background-color: white;
     width: 610px;
-    height: 260px;
+    height: 440px;
     border-radius: 5%;
     padding: 0%;
+    justify-content: center;
   }
   .cards .card .h1 .fa-heart{
     position: relative;
-    left: 370px;
+    left: 100px;
     top: -28px;
   }
   .cards .card .h2 .fa-heart{
    position: relative;
-   left: 340px;
+   left: 80px;
    top: -28px;
  }
  .cards .card .h3 .fa-heart{
    position: relative;
-   left: 450px;
-   top: -28px;
+   left: 180px;
+   top: -10px;
  }
  .cards .card .h4 .fa-heart{
    position: relative;
-   left: 395px;
-   top: -28px;
+   left: 135px;
+   top: -10px;
  }
-  .cards .card .image3-1{
-    background-image: url('../src/img/dish1.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 180px;
-    width: 612px;;
-   }
-   .cards .card .image3-2{
-    background-image: url('../src/img/dish3.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 180px;
-    width: 612px;;
-   }
-   .cards .card .image3-3{
-    background-image: url('../src/img/dish4.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 180px;
-    width: 612px;;
-   }
-   .cards .card .image3-4{
-    background-image: url('../src/img/dish2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 180px;
-    width: 612px;;
-   }
+ .restaurant {
+  padding: 3px;
+  border-radius: 15px;
+  display: inline-block;
+  width: 639.19px;
+  height: 130px;
+  background-color: #F6F6F6;
+  position: relative;
+  left: 0px;
+  box-shadow: 2px 2px 5px #e7e7e7;
+}
+.menu {
+  padding: 3px;
+  border-radius: 15px;
+  display: inline-block;
+  width: 85%;
+  height: 130px;
+  background-color: #F6F6F6;
+  position: relative;
+  left: 0px;
+  box-shadow: 2px 2px 5px #e7e7e7;
+}
+.enjoy {
+  padding: 3px;
+  border-radius: 15px;
+  display: inline-block;
+  width: 85%;
+  height: 130px;
+  background-color: #F6F6F6;
+  position: relative;
+  left: 0px;
+  box-shadow: 2px 2px 5px #e7e7e7;
+}
+ .cards .card .image3-1{
+  background-image: url('../src/img/dish1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  height: 310px;
+  width: 100%;;
+ }
+ .cards .card .image3-2{
+  background-image: url('../src/img/dish3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 310px;
+  width: 100%;;
+ }
+ .cards .card .image3-3{
+  background-image: url('../src/img/dish4.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  height: 310px;
+  width: 100%;
+ }
+ .cards .card .image3-4{
+  background-image: url('../src/img/dish2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  height: 310px;
+  width: 100%;
+ }
   .container4 .image2-0 {
     background-image: url('../src/img/dish1.jpg');
     background-repeat: no-repeat;
@@ -1823,6 +2461,11 @@
    transform: translateY(0px);
  }
 }
+.work {
+  position: relative;
+  left: -220px;
+  font-size: 1.7rem;
+}
 }
 
 @media only screen and (min-width : 1024px){
@@ -1830,6 +2473,11 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
+  }
+  .work {
+    position: relative;
+    left: -310px;
+    font-size: 1.7rem;
   }
   .title {
     font-size: 28px;
@@ -1950,68 +2598,161 @@ container3 .encha {
   .cards .card {
     background-color: white;
     width: 820px;
-    height: 310px;
+    height: 600px;
     border-radius: 5%;
     padding: 0%;
   }
   .cards .card .h1 .fa-heart{
     position: relative;
-    left: 530px;
+    left: 150px;
     top: -30px;
   }
   .cards .card .h2 .fa-heart{
    position: relative;
-   left: 490px;
+   left: 110px;
    top: -30px;
  }
  .cards .card .h3 .fa-heart{
    position: relative;
-   left: 625px;
+   left: 245px;
  }
  .cards .card .h4 .fa-heart{
    position: relative;
-   left: 563px;
+   left: 183px;
  }
-  .cards .card .image3-1{
-    background-image: url('../src/img/dish1.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 200px;
-    width: 820px;;
-   }
-   .cards .card .image3-2{
-    background-image: url('../src/img/dish3.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 200px;
-    width: 820px;;
-   }
-   .cards .card .image3-3{
-    background-image: url('../src/img/dish4.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 200px;
-    width: 820px;
-   }
-   .cards .card .image3-4{
-    background-image: url('../src/img/dish2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 200px;
-    width: 820px;;
-   }
+ .restaurant {
+  padding: 3px;
+  border-radius: 30px;
+  display: inline-block;
+  width: 856.8px;
+  height: 160px;
+  background-color: #F6F6F6;
+  position: relative;
+  left: 0px;
+  box-shadow: 2px 2px 5px #e7e7e7;
+}
+.menu {
+  padding: 3px;
+  border-radius: 30px;
+  display: inline-block;
+  width: 85%;
+  height: 160px;
+  background-color: #F6F6F6;
+  position: relative;
+  left: 0px;
+  box-shadow: 2px 2px 5px #e7e7e7;
+}
+.enjoy {
+  padding: 3px;
+  border-radius: 30px;
+  display: inline-block;
+  width: 85%;
+  height: 160px;
+  background-color: #F6F6F6;
+  position: relative;
+  left: 0px;
+  box-shadow: 2px 2px 5px #e7e7e7;
+}
+.num1 {
+  position: relative;
+  left: -190px;
+  top: 35px;
+ }
+.num2 {
+  position: relative;
+  left: -205px;  
+  top: 35px;
+ }
+ .num3 {
+  position: relative;
+  left: -110px;
+  top: 35px;
+ }
+ .btns .restaurant  .fa-mobile-alt {
+  position: relative;
+  top: 39px;
+  left: -200px;
+  font-size: 1.7rem;
+ }
+   .fa-list-ul { 
+  position: relative;
+  left: -222px;
+  top: 38px;
+  font-size: 1.7rem;
+}
+ .fa-store {
+  position: relative;
+  left: -122px;
+  top: 38px;
+  color: #9356DC;
+  font-size: 1.5rem;
+ }
+
+ .text1 {
+  position: relative;
+  left: -150px;
+  top: 39px;
+  font-size: 1.8rem;
+ }
+ .text2 { 
+  position: relative;
+  left: -183px;
+  top: 39px;
+  font-size: 1.8rem;
+}
+ .text3 {
+  position: relative;
+  left: -87px;
+  top: 39px;
+  font-size: 1.8rem;
+ }
+.title4 {
+  font-size: 2.2rem;
+  position: relative;
+  top: 30px;
+  left: -214px;
+}
+ .cards .card .image3-1{
+  background-image: url('../src/img/dish1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  height: 410px;
+  width: 100%;;
+ }
+ .cards .card .image3-2{
+  background-image: url('../src/img/dish3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 410px;
+  width: 100%;;
+ }
+ .cards .card .image3-3{
+  background-image: url('../src/img/dish4.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  height: 410px;
+  width: 100%;
+ }
+ .cards .card .image3-4{
+  background-image: url('../src/img/dish2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  height: 410px;
+  width: 100%;
+ }
    .cards {
     padding: 3%;
     position: relative;
     left: -13px;
-    height: 1360px;
+    height: 2780px;
 }
 .footer {
-  height: 500px;
+  height: 600px;
+  width: 1024px;
 }
   .container4 .image2-0{
     background-image: url('../src/img/dish1.jpg');
@@ -2045,6 +2786,56 @@ container3 .encha {
     height: 500px;
     width: 1024px;
    }
+   .title4 {
+    font-size: 2.2rem;
+    position: relative;
+    top: 30px;
+    left: -294px;
+}
+.title3 {
+  position: relative;
+  top: -50px;
+  left: -185px;
+  font-size: 4.2vw;
+}
+.title3-1 {
+  position: relative;
+  left: -279px;
+  top: -50px;
+  font-size: 4.2vw;
+}
+.title3-2 {
+ position: relative;
+ left: -148px;
+}
+.title3-3 {
+ position: relative;
+ left: -268px;
+ top: -35px;
+}
+.title3-4 {
+ position: relative;
+ left: -218px;
+ top: -30px;
+}
+.title3-5 {
+  position: relative;
+  top: -37px;
+}
+.title3-6 {
+  position: relative;
+  top: -37px;
+  left: -286px;
+}
+.btn {
+  background: linear-gradient(to top, #736e7a 0%, #FF79DA 100%);
+  color: white;
+  padding: 1%;
+  border-radius: 100px;
+  width: 50vw;
+  height: 15vh;
+  text-shadow: 0.1em 0.1em #333;
+}
 }
 
 @media only screen and (min-width : 1366px){
@@ -2053,6 +2844,47 @@ container3 .encha {
     font-family: 'Roboto', sans-serif;
     font-size: 26px;
   }
+  .title4 {
+    font-size: 2.2rem;
+    position: relative;
+    top: 30px;
+    left: -434px;
+}
+.title3 {
+  position: relative;
+  top: -40px;
+  left: -115px;
+  font-size: 2vw;
+}
+.title3-1 {
+  position: relative;
+  left: -177px;
+  top: -35px;
+  font-size: 2vw;
+}
+.title3-2 {
+ position: relative;
+ left: -92px;
+}
+.title3-3 {
+ position: relative;
+ left: -172px;
+ top: -40px;
+}
+.title3-4 {
+ position: relative;
+ left: -138px;
+ top: -40px;
+}
+.title3-5 {
+  position: relative;
+  top: -37px;
+}
+.title3-6 {
+  position: relative;
+  top: -37px;
+  left: -180px;
+}
   .title {
     font-size: 1.5rem;
     position: relative;
@@ -2174,22 +3006,22 @@ container3 .encha {
     top: 20px;
    }
   .cards .card .banner1 {
-    border: 1px solid black;
     background-color: #99E2D0;
-    color: black;
+    color: #088C6C;
     position: relative;
     top: -253px;
-    left: 393px;
-    padding: 5px 20px;
+    left: 170px;
+    padding: 5px 25px;
+    font-size: 1rem;
   }
   .cards .card .banner2 {
-    border: 1px solid black;
     background-color: #99E2D0;
-    color: black;
+    color: #088C6C;
     position: relative;
     top: -253px;
-    left: 393px;
-    padding: 5px 20px;
+    left: 170px;
+    padding: 5px 25px;
+    font-size: 1rem;
   }
   .cards .card {
     background-color: white;
@@ -2203,7 +3035,7 @@ container3 .encha {
     grid-template-rows: 400px 400px;
     grid-template-columns: 500px 500px;
     gap: 30px 30px;
-    height: 1000px;
+    height: 1050px;
   }
   .cards .card .image3-1{
     background-image: url('../src/img/dish1.jpg');
@@ -2274,12 +3106,14 @@ container3 .encha {
    }
    .cards .card .h1 .fa-heart {
     position: relative;
-    left: 210px;
+    left: 80px;
+    top: -25px;
     background-color: white;
     color: white;
     display: inline-block;
     z-index:1;
     text-shadow: 0 0 2px #000;
+    font-size: 1.3rem;
   }
   .container2 {
     height: 3000px;
@@ -2289,30 +3123,36 @@ container3 .encha {
   }
   .cards .card .h2 .fa-heart {
     position: relative;
-    left: 190px;
+    left: 60px;
+    top: -25px;
     background-color: white;
     color: white;
     display: inline-block;
     z-index:1;
     text-shadow: 0 0 2px #000;
+    font-size: 1.3rem;
   }
   .cards .card .h3 .fa-heart {
     position: relative;
-    left: 312px;
+    left: 140px;
+    top: -25px;
     background-color: white;
     color: white;
     display: inline-block;
     z-index:1;
     text-shadow: 0 0 2px #000;
+    font-size: 1.3rem;
   }
   .cards .card .h4 .fa-heart {
     position: relative;
-    left: 270px;
+    left: 100px;
+    top: -25px;
     background-color: white;
     color: white;
     display: inline-block;
     z-index:1;
     text-shadow: 0 0 2px #000;
+    font-size: 1.3rem;
   }
   .container3 {
     height: 3100px;
@@ -2361,5 +3201,106 @@ container3 .encha {
   transform-origin: center center;
   background-color: #99E2D0;
   z-index: 2;
+}
+.footer{
+  width: 1366px;
+  height: 700px;
+}
+.restaurant {
+  padding: 3px;
+  border-radius: 30px;
+  display: inline-block;
+  width: 1133px;
+  height: 160px;
+  background-color: #F6F6F6;
+  position: relative;
+  left: 0px;
+  box-shadow: 2px 2px 5px #e7e7e7;
+}
+.menu {
+  padding: 3px;
+  border-radius: 30px;
+  display: inline-block;
+  width: 85%;
+  height: 160px;
+  background-color: #F6F6F6;
+  position: relative;
+  left: 0px;
+  box-shadow: 2px 2px 5px #e7e7e7;
+}
+.enjoy {
+  padding: 3px;
+  border-radius: 30px;
+  display: inline-block;
+  width: 85%;
+  height: 160px;
+  background-color: #F6F6F6;
+  position: relative;
+  left: 0px;
+  box-shadow: 2px 2px 5px #e7e7e7;
+}
+.num1 {
+  position: relative;
+  left: -305px;
+  top: 35px;
+ }
+.num2 {
+  position: relative;
+  left: -325px;  
+  top: 35px;
+ }
+ .num3 {
+  position: relative;
+  left: -220px;
+  top: 35px;
+ }
+ .btns .restaurant  .fa-mobile-alt {
+  position: relative;
+  top: 39px;
+  left: -320px;
+  font-size: 1.7rem;
+ }
+   .fa-list-ul { 
+  position: relative;
+  left: -345px;
+  top: 38px;
+  font-size: 1.7rem;
+}
+ .fa-store {
+  position: relative;
+  left: -240px;
+  top: 38px;
+  color: #9356DC;
+  font-size: 1.5rem;
+ }
+
+ .text1 {
+  position: relative;
+  left: -270px;
+  top: 39px;
+  font-size: 1.8rem;
+ }
+ .text2 { 
+  position: relative;
+  left: -305px;
+  top: 39px;
+  font-size: 1.8rem;
+}
+ .text3 {
+  position: relative;
+  left: -20px;
+  top: 39px;
+  font-size: 1.8rem;
+ }
+.title4 {
+  font-size: 2.2rem;
+  position: relative;
+  top: 30px;
+  left: -214px;
+}
+.work {
+  position: relative;
+  left: -440px;
+  font-size: 1.7rem;
 }
 }
