@@ -7,11 +7,6 @@
 }
 
 @media only screen and (min-width : 320px){
-  * {
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    font-size: 13px;
-  }
   html {
     scroll-behavior: smooth;
     overflow-x: hidden !important;
@@ -29,6 +24,7 @@
   .image4{
     font-size: 2rem;
     text-align: center;
+    font-family: "Shrikhand";
   }
   .image9 {
     text-align: center;
@@ -122,11 +118,9 @@
   background-image: url('../src/img/dish1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  object-fit: fill;
+  background-position: center bottom;
   height: 200px;
-  width: 320px;;
-  z-index: 1;
+  width: 320px;
  }
  .container3 .image2-1{
   background-image: url('../src/img/dish3.jpg');
@@ -140,16 +134,16 @@
   background-image: url('../src/img/dish4.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  height: 150px;
+  background-position: center bottom;
+  height: 200px;
   width: 320px;
  }
  .container4 .image2-3{
   background-image: url('../src/img/dish2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  height: 150px;
+  background-position: center bottom;
+  height: 200px;
   width: 320px;
  }
  .container {
@@ -473,7 +467,7 @@
     background-color:#F6F6F6;
      position: relative;
      top: 0px;
-     height: 1630px;
+     height: 1670px;
      width: 100vw;
      z-index: 2;
      max-width: 100%;
@@ -637,12 +631,11 @@
      overflow: hidden;
    }
    .icon {
-     width: 30px;
-     height: 30px;
+     font-size: 1rem;;
     float: right;
     position: relative;
-    left: -10px;
-    top: 10px;
+    left: -20px;
+    top: 13px;
     display: inline;
     overflow: hidden;
     white-space: nowrap;
@@ -925,7 +918,7 @@
   float: right;
   position: relative;
   top: -50px;
-  left: -50px;
+  left: -30px;
   width:30vw;
    height: 70px;
   cursor: pointer;
@@ -956,8 +949,7 @@
  .card2:hover   .fa-check-circle{
   display: inline-block;
   cursor: pointer;
-  width: 30px;
-  height: 30px;
+  font-size: 1rem;
   animation-name: spin;
   animation-timing-function:linear;
   animation-duration: 3s;
@@ -998,31 +990,31 @@
 
  @keyframes slide {
    0% {
-      left: 29px;
+      left: 24px;
       top: -20px;
       opacity: 1;
       width: 0px;
       }
       33% {
-        left: 29px;
+        left: 24px;
         top: -20px;
         opacity: 1;
         width: 60px;
         }
         50% {
-          left: 29px;
+          left: 24px;
           top: -20px;
           opacity: 1;
           width: 60px;
           }
       83.3% {
-        left: 29px;
+        left: 24px;
         top: -20px;
         opacity: 1;
         width: 60px;
         }
    100% {
-    left: 29px;
+    left: 24px;
     top: -20px;
     width: 0px;
     opacity: 0;
@@ -1146,7 +1138,7 @@
     padding: 5px 20px;
   }
   .container2{
-    height: 1800px;
+    height: 1630px;
   }
   .cards {
     padding: 3%;
@@ -1160,7 +1152,16 @@
     width: 100%;
 }
 .footer {
-  height: 220px;
+  height: 280px;
+}
+.footer-container {
+  width: 100%;
+  position: relative;
+  top: -20px;
+}
+.footer-container5 {
+  position: relative;
+  top: 30px;
 }
   .container4 .full .fa-heart {
     background-color: white;
@@ -1169,8 +1170,9 @@
     z-index:1;
     text-shadow: 0 0 2px #000;
     position: relative;
-    left: 195px;
+    left: 115px;
     top: 20px;
+    font-size: 1.6rem;
    }
    .container4 .goum .fa-heart {
     background-color: white;
@@ -1179,8 +1181,9 @@
     z-index:1;
     text-shadow: 0 0 2px #000;
     position: relative;
-    left: 210px;
+    left: 140px;
     top: 20px;
+    font-size: 1.6rem;
    }
    .container3 .encha .fa-heart {
     background-color: white;
@@ -1189,8 +1192,9 @@
     z-index:1;
     text-shadow: 0 0 2px #000;
     position: relative;
-    left: 170px;
+    left: 60px;
     top: 20px;
+    font-size: 1.6rem;
    }
    .container2 .basti .fa-heart {
     background-color: white;
@@ -1199,10 +1203,11 @@
     z-index:1;
     text-shadow: 0 0 2px #000;
     position: relative;
-    left: 240px;
+    left: 200px;
     top: 20px;
+    font-size: 1.6rem;
    }
-   
+  
   .cards .card {
     background-color: white;
     width: 300px;
@@ -1280,8 +1285,8 @@
     background-image: url('../src/img/dish1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    height: 130px;
+    background-position: center bottom;
+    height: 200px;
     width: 360px;;
    }
    .container3 .image2-1{
@@ -1289,7 +1294,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 170px;
+    height: 200px;
     width: 360px;;
    }
    .container2 .image2-2{
@@ -1338,14 +1343,14 @@
    height: 1150px;
 }
 .container4  {
-  height: 1630px;
+  height: 1600px;
 }
 .container3 .encha {
   position: relative;
   top: -30px;
 }
 .container3 {
-  height: 1850px;
+  height: 1750px;
 }
 }
 @media only screen and (min-width : 411px){
@@ -1354,6 +1359,17 @@
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
   }
+  .title {
+    position: relative;
+    top: 20px;
+    left: 15px;
+    font-family: 'Shrikhand', cursive;
+    font-size: 2.4rem;
+}
+.image4 {
+  font-size: 2.4rem;
+  text-align: center;
+}
   .btns {
     display: flex;
     flex-direction: column;
@@ -1474,8 +1490,9 @@
     z-index:1;
     text-shadow: 0 0 2px #000;
     position: relative;
-    left: 250px;
+    left: 100px;
     top: 20px;
+    font-size: 2rem;
    }
    
   .cards .card {
@@ -1596,8 +1613,9 @@
   z-index: 1;
   text-shadow: 0 0 2px #000;
   position: relative;
-  left: 210px;
+  left: 30px;
   top: 20px;
+  font-size: 2rem;
 }
 .container2 .basti .fa-heart {
   background-color: white;
@@ -1606,8 +1624,9 @@
   z-index:1;
   text-shadow: 0 0 2px #000;
   position: relative;
-  left: 280px;
+  left: 215px;
   top: 20px;
+  font-size: 2rem;
  }
  .container4 .goum .fa-heart {
   background-color: white;
@@ -1616,8 +1635,9 @@
   z-index: 1;
   text-shadow: 0 0 2px #000;
   position: relative;
-  left: 260px;
+  left: 130px;
   top: 20px;
+  font-size: 2rem;
 }
 .container3 {
   height: 1730px;
@@ -1626,10 +1646,10 @@
     width: 350px;
   }
   .container4 .full2 {
-   height: 1150px;
+   height: 1170px;
 }
 .container4  {
-  height: 1690px;
+  height: 1670px;
 }
 }
 
@@ -1639,6 +1659,264 @@
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
   }
+  .card2:hover   .fa-check-circle{
+    display: inline-block;
+    cursor: pointer;
+    font-size: 2rem;
+    animation-name: spin;
+    animation-timing-function:linear;
+    animation-duration: 3s;
+    animation-direction:normal;
+    animation-fill-mode: forwards;
+    transform-origin: center center;
+    position: relative;
+    top:30px;
+    left: 40px;
+    color: white;
+    z-index: 2;
+  }
+  .btn-container {
+    display: flex;
+    height: 170px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 30px;
+}
+.btn2 {
+  width: 40%;
+  height: 60px;
+  border-radius: 25px;
+  margin: 0 auto;
+  background-color: #C867DB;
+  color: white;
+  font-size: 1.6rem;
+}
+  .container4 .full2 {
+    height: 1650px;
+}
+  .cards2 .card2 .check-container {
+    width: 0px;
+    height: 0px;
+    background-color: #99E2D0;
+    position: relative;
+    top: 0px;
+    right: 200px;
+    float: right;
+    box-sizing: border-box;
+    border-radius: 0 25px 25px 0;
+    z-index: 2;
+    transform: translateY(0);
+    box-shadow: 0 0 0 #000;
+  }
+  .card2:hover  .check-container{ 
+    will-change: transform;
+    backface-visibility: hidden;
+    outline: none;
+    box-shadow: 0 0 0 #000;
+    float: right;
+    position: relative;
+    top: -40px;
+    left: -30px;
+    width:30vw;
+     height: 100px;
+    cursor: pointer;
+    animation-name: slide;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-direction:normal;
+    transform-origin: center center;
+    background-color: #99E2D0;
+    z-index: 2;
+  }
+  
+  @keyframes slide {
+    0% {
+       left: 38px;
+       top: -30px;
+       opacity: 1;
+       width: 0px;
+       }
+       33% {
+         left: 38px;
+         top: -30px;
+         opacity: 1;
+         width: 100px;
+         }
+         50% {
+           left: 38px;
+           top: -30px;
+           opacity: 1;
+           width: 100px;
+           }
+       83.3% {
+         left: 38px;
+         top: -30px;
+         opacity: 1;
+         width: 100px;
+         }
+    100% {
+     left: 38px;
+     top: -30px;
+     width: 0px;
+     opacity: 0;
+   }
+  }
+  
+  .title1 {
+    position: relative;
+    top: 10px;
+    left: 15px;
+    font-size: 1.9rem;
+}
+.add {
+  font-size: 1.9rem;
+  position: relative;
+  left: 15px;
+  top: 13px;
+  overflow: hidden;
+}
+.icon {
+  font-size: 1.8rem;;
+  float: right;
+  position: relative;
+  left: -30px;
+  top: 15px;
+  display: inline;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.fa-euro-sign {
+  font-size: 1.8rem;
+}
+.container4 .full2 .cards2 .card2 .veg {
+  position: relative;
+  left: 0px;
+  font-size: 1.8rem;
+}
+.container4 .full2 .cards2 .card2:hover   .veg {
+  color: transparent;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  will-change: transform;
+  backface-visibility: hidden;
+  outline: none;
+  display: inline;
+  font-size: 1.8rem;
+}
+.container4 .full2 .cards2 .card2:hover  .add .veg:after{
+  content: "...";
+  color: initial;
+  position: absolute;
+  top: -5px;
+  left: 0px;
+  visibility: visible;
+  display: inline;
+  font-size: 1.8rem;
+}
+.container4 .full2 .cards2 .card2 .pure {
+  font-size: 11px;
+  position: relative;
+  font-size: 1.8rem;
+}
+.card2:hover   .pure {
+  color: transparent;
+  font-size: 1.8rem;
+  position: relative;
+  top: 11px;
+}
+.card2-4 .icon{
+  position: relative;
+}
+
+.card2:hover   .pure:after{
+  content: "pured ...";
+  color: initial;
+  position: absolute;
+  top: -11px;
+  left: 0px;
+  visibility: visible;
+  display: inline;
+  font-size: 1.8rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.cards2 {
+  display: grid;
+  grid-template-rows: repeat(3, 100px);
+  grid-gap: 30px;
+  position: relative;
+  top: 20px;
+}
+.card2 {
+  border: 1px solid black;
+  border-radius: 25px;
+  display: inline;
+  width: 95%;
+  height: 100px;
+  background-color: white;
+  position: relative;
+  margin: 0 auto;
+  z-index: 1;
+}
+  .entry {
+    border-bottom: 3px solid #B0E7D9;
+    width: 45px;
+    position: relative;
+    left: 15px;
+    top: 20px;
+    font-size: 1.9rem;
+    padding-top: 60px;
+    }
+    .entry2 {
+      border-bottom: 3px solid #B0E7D9;
+      width: 45px;
+      position: relative;
+      left: 20px;
+      top: 20px;
+      font-size: 1.9rem;
+      padding-top: 20px;
+    }
+    .entry3 {
+      border-bottom: 3px solid #B0E7D9;
+      width: 45px;
+      position: relative;
+      left: 20px;
+      top: 10px;
+      padding-top: 40px;
+      font-size: 1.9rem;
+    }
+    .entry4 {
+      border-bottom: 3px solid #B0E7D9;
+      width: 45px;
+      position: relative;
+      left: 20px;
+      top: -10px;
+      padding-top: 40px;
+      font-size: 1.9rem;
+    }
+    .entry2-2 {
+      padding-top: 40px;
+    }
+    .entry3-1 {
+      padding-top: 50px;
+    }
+    .entry5 {
+      padding-top: 40px;
+    }
+    .entry6 {
+      position: relative;
+      top: 10px;
+    }
+    .entry1 {
+      padding-top: 30px;
+    }
   .title4 {
     font-size: 2.2rem;
     position: relative;
@@ -1795,8 +2073,9 @@
     z-index:1;
     text-shadow: 0 0 2px #000;
     position: relative;
-    left: 340px;
+    left: 130px;
     top: 20px;
+    font-size: 2.5rem;
    }
    .container4 {
      height: 1780px;
@@ -1897,7 +2176,7 @@
     width: 540px;
    }
    .title{
-     font-size: 16px;
+     font-size: 3.3rem;;
    }
    .container3 .encha .fa-heart {
     background-color: white;
@@ -1906,8 +2185,9 @@
     z-index: 1;
     text-shadow: 0 0 2px #000;
     position: relative;
-    left: 300px;
+    left: 30px;
     top: 20px;
+    font-size: 2.5rem;
 }
 .container2 .basti .fa-heart {
   background-color: white;
@@ -1916,8 +2196,9 @@
   z-index: 1;
   text-shadow: 0 0 2px #000;
   position: relative;
-  left: 390px;
+  left: 290px;
   top: 20px;
+  font-size: 2.5rem;
 }
 .container4 .goum .fa-heart {
   background-color: white;
@@ -1926,23 +2207,70 @@
   z-index: 1;
   text-shadow: 0 0 2px #000;
   position: relative;
-  left: 350px;
+  left: 170px;
   top: 20px;
+  font-size: 2.5rem;
+}
+.container3 .encha {
+  position: relative;
+  top: -65px;
+  left: 0px;
+  border-top-left-radius: 20px 20px;
+  border-top-right-radius: 20px 20px;
+  height: 1715px;
+  z-index: 2;
+  overflow: hidden;
+  background-color: #F6F6F6;
+}
+.container2 .basti {
+  position: relative;
+  top: -25px;
+  left: 0px;
+  border-top-left-radius: 20px 20px;
+  border-top-right-radius: 20px 20px;
+  height: 1615px;
+  z-index: 2;
+  overflow: hidden;
+  background-color: #F6F6F6;
+}
+.container4 .goum {
+  border-top-left-radius: 20px 20px;
+  border-top-right-radius: 20px 20px;
+  position: relative;
+  top: -10px;
+  left: 0px;
+  height: 1620px;
+  z-index: 2;
+  overflow: hidden;
+  background-color: #F6F6F6;
+}
+.image4 {
+  font-size: 3rem;
+  text-align: center;
 }
 .footer3 {
   height: 320px;
 }
+.footer-container5 {
+  position: relative;
+  top: -20px;
+}
+.footer2 {
+  position: relative;
+  top: -80px;
+  height: 500px;
+}
 .container3 {
-  height: 1800px;
+  height: 2370px;
 }
 .container2 {
-  height: 1700px;
+  height: 2300px;
 }
 .container4{
-  height: 1750px;
+  height: 2370px;
 }
 .container5{
-  height: 1730px;
+  height: 2300px;
 }
 .footer-container {
   height: 300px;
@@ -1955,7 +2283,7 @@
 }
 .image {
   font-family: "Shrikhand";
-  font-size: 2.3rem;
+  font-size: 3rem;
 }
 .fa-utensils {
   font-size: 2.0rem;
@@ -1979,6 +2307,28 @@
   left: 5px;
   font-size: 2.0rem;
 }
+ .arti {
+  font-size: 1.8rem;
+}
+.card2:hover   .arti {
+  color: transparent;
+  font-size: 1.8rem;
+  position: relative;
+}
+.card2:hover   .arti:after{
+  content: "Jerusalem ...";
+  color: initial;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  visibility: visible;
+  display: inline;
+  font-size: 11px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 1.8rem;
+}
 }
 
 @media only screen and (min-width : 768px){
@@ -1987,6 +2337,28 @@
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
   }
+  .card2:hover   .fa-check-circle{
+    display: inline-block;
+    cursor: pointer;
+    font-size: 2rem;
+    animation-name: spin;
+    animation-timing-function:linear;
+    animation-duration: 3s;
+    animation-direction:normal;
+    animation-fill-mode: forwards;
+    transform-origin: center center;
+    position: relative;
+    top:45px;
+    left: 55px;
+    color: white;
+    z-index: 2;
+  }
+  .fa-arrow-left {
+    font-size: 1.5rem;
+    position: relative;
+    top: 60px;
+    left: 40px;
+}
   .image img {
     width: 70vw;
     position: relative;
@@ -2097,25 +2469,30 @@
   left: -213px;
 }
 .add {
-    font-size: 18px;
+    font-size: 1.6rem;
     position: relative;
     left: 15px;
-    top: 13px;
+    top: 17px;
     overflow: hidden;
 }
+.title1 {
+  position: relative;
+  top: 16px;
+  left: 15px;
+  font-size: 1.9rem;
+}
 .icon {
-  width: 100px;
-  height: 30px;
+  font-size: 1.6rem;
   float: right;
   position: relative;
-  left: 20px;
-  top: 10px;
+  left: -25px;
+  top: 20px;
   display: inline;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 .container4 .full2 {
-  height: 1820px;
+  height: 2370px;
 }
 .btn-container {
   display: flex;
@@ -2127,19 +2504,19 @@
 }
 .footer2 {
   position: relative;
-  top: -75px;
+  top: -60px;
   height: 440px;
 }
 .btn2 {
   width: 40%;
-  height: 70px;
-  border-radius: 25px;
+  height: 80px;
+  border-radius: 45px;
   margin: 0 auto;
   background-color: #C867DB;
   color: white;
 }
 .container4  {
-  height: 2600px;
+  height: 3420px;
 }
 .container4 .goum .fa-heart {
   background-color: white;
@@ -2148,23 +2525,25 @@
   z-index: 1;
   text-shadow: 0 0 2px #000;
   position: relative;
-  left: 480px;
+  left: 230px;
   top: 20px;
 }
 .container4 .goum {
-  border: 2px solid black;
   border-radius: 20px 20px 10px 10px;
   position: relative;
   top: -30px;
   left: 0px;
-  border: 2px solid black;
-  height: 1800px;
+  height: 2350px;
   z-index: 2;
   overflow: hidden;
-  background-color: white;
+  background-color: #F6F6F6;
 }
 .container5 {
-  height: 2700px;
+  height: 3300px;
+}
+.footer-container3 {
+  position: relative;
+  top: -40px;
 }
 .footer3 {
   height: 480px;
@@ -2195,8 +2574,9 @@
     z-index:1;
     text-shadow: 0 0 2px #000;
     position: relative;
-    left: 460px;
+    left: 180px;
     top: 20px;
+    font-size: 2.2rem;
    }
    .container3 .encha .fa-heart {
     background-color: white;
@@ -2205,8 +2585,9 @@
     z-index: 1;
     text-shadow: 0 0 2px #000;
     position: relative;
-    left: 400px;
+    left: 30px;
     top: 20px;
+    font-size: 2.2rem;
 }
 .container2 .basti .fa-heart {
   background-color: white;
@@ -2215,8 +2596,9 @@
   z-index: 1;
   text-shadow: 0 0 2px #000;
   position: relative;
-  left: 540px;
+  left: 410px;
   top: 20px;
+  font-size: 2.2rem;
 }
   .cards .card {
     background-color: white;
@@ -2344,44 +2726,59 @@
     width: 768px;
    }
    .container2 .basti {
-    border: 2px solid black;
     border-radius: 40px 40px 10px 10px;
     position: relative;
     top: -75px;
     left: 0px;
     border-radius: 20px 20px 10px 10px;
-    border: 2px solid black;
-    height: 1800px;
+    height: 2300px;
     z-index: 2;
     overflow: hidden;
-    background-color: white;
+    background-color: #F6F6F6;;
 }
 .container3 .encha {
   position: relative;
   top: -65px;
   left: 0px;
   border-radius: 20px 20px 10px 10px;
-  border: 2px solid black;
-  height: 1890px;
+  height: 2500px;
   z-index: 2;
   overflow: hidden;
   background-color: white;
+  background-color: #F6F6F6;
+}
+.footer-container2 {
+  position: relative;
+  top: -50px;
+}
+.entry3 {
+  border-bottom: 3px solid #B0E7D9;
+  width: 45px;
+  position: relative;
+  left: 20px;
+  top: 10px;
+  padding-top: 40px;
+  font-size: 1.9rem;
 }
 .container3{
-  height: 2640px;
+  height: 3540px;
+}
+.footer-container5 {
+  position: relative;
+  top: -60px;
 }
 .container2{
-  height: 2640px;
+  height: 3310px;
 }
    .title {
-     font-size: 24px;
+     font-size: 2.8rem;
      position: relative;
      left: 30px;
    }
   
    .cards2 {
     display: grid;
-    grid-template-rows: repeat(3, 100px);
+    grid-template-rows: repeat(3, 140px);
     grid-gap: 50px;
     position: relative;
     top: 20px;
@@ -2391,7 +2788,7 @@
     border-radius: 25px;
     display: inline;
     width: 95%;
-    height: 100px;
+    height: 140px;
     background-color: white;
     position: relative;
     margin: 0 auto;
@@ -2400,67 +2797,83 @@
    .entry {
      position: relative;
      left: 40px;
-     font-size: 22px;
+     font-size: 1.6rem;
    }
-   .footer .footer-container {
+    .footer-container {
      position: relative;
-     top: -80px;
+     top: -20px;
    }
    .footer-f{
-     height: 350px;
+     height: 800px;
    }
-   
-
-.card2:hover  .check-container{ 
-  will-change: transform;
-  backface-visibility: hidden;
-  outline: none;
-  box-shadow: 0 0 0 #000;
-  float: right;
-  position: relative;
-  top: -30px;
-  left: 100px;
-  width:30vw;
-   height: 110px;
-  cursor: pointer;
-  animation-name: slide;
-  animation-timing-function: ease-in-out;
-  animation-duration: 3s;
-  animation-fill-mode: forwards;
-  animation-direction:normal;
-  transform-origin: center;
-  background-color: #99E2D0;
-  display: inline;
-  text-align: center;
-  z-index: 2;
-}
-@keyframes slide {
-  0% {
-     opacity: 1;
-     width: 0px;
-     transform: translateX(0%);
-     }
-     33% {
+   .cards2 .card2 .check-container {
+    width: 0px;
+    height: 0px;
+    background-color: #99E2D0;
+    position: relative;
+    top: 0px;
+    right: 200px;
+    float: right;
+    box-sizing: border-box;
+    border-radius: 0 25px 25px 0;
+    z-index: 2;
+    transform: translateY(0);
+    box-shadow: 0 0 0 #000;
+  }
+  .card2:hover  .check-container{ 
+    will-change: transform;
+    backface-visibility: hidden;
+    outline: none;
+    box-shadow: 0 0 0 #000;
+    float: right;
+    position: relative;
+    top: -40px;
+    left: -30px;
+    width:30vw;
+     height: 142px;
+    cursor: pointer;
+    animation-name: slide;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-direction:normal;
+    transform-origin: center center;
+    background-color: #99E2D0;
+    z-index: 2;
+  }
+  
+  @keyframes slide {
+    0% {
+       left: 58px;
+       top: -50px;
        opacity: 1;
-       width: 100px;
-       transform: translateY(0%);
+       width: 0px;
        }
-       50% {
+       33% {
+         left: 58px;
+         top: -50px;
          opacity: 1;
-         width: 100px;
-         transform: translateY(0%);
+         width: 150px;
          }
-     83.3% {
-       opacity: 1;
-       width: 100px;
-       transform: translateY(0%);
-       }
-  100% {
-   width: 0px;
-   opacity: 0;
-   transform: translateY(0px);
- }
-}
+         50% {
+           left: 58px;
+           top: -50px;
+           opacity: 1;
+           width: 150px;
+           }
+       83.3% {
+         left: 58px;
+         top: -50px;
+         opacity: 1;
+         width: 150px;
+         }
+    100% {
+     left: 58px;
+     top: -50px;
+     width: 0px;
+     opacity: 0;
+   }
+  }
 .work {
   position: relative;
   left: -220px;
@@ -2474,23 +2887,156 @@
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
   }
+  .card2:hover   .fa-check-circle{
+    display: inline-block;
+    cursor: pointer;
+    font-size: 2rem;
+    animation-name: spin;
+    animation-timing-function:linear;
+    animation-duration: 3s;
+    animation-direction:normal;
+    animation-fill-mode: forwards;
+    transform-origin: center center;
+    position: relative;
+    top:55px;
+    left: 65px;
+    color: white;
+    z-index: 2;
+  }
+  .cards2 .card2 .check-container {
+    width: 0px;
+    height: 0px;
+    background-color: #99E2D0;
+    position: relative;
+    top: 0px;
+    right: 200px;
+    float: right;
+    box-sizing: border-box;
+    border-radius: 0 25px 25px 0;
+    z-index: 2;
+    transform: translateY(0);
+    box-shadow: 0 0 0 #000;
+  }
+  .card2:hover  .check-container{ 
+    will-change: transform;
+    backface-visibility: hidden;
+    outline: none;
+    box-shadow: 0 0 0 #000;
+    float: right;
+    position: relative;
+    top: -40px;
+    left: -30px;
+    width:30vw;
+     height: 160px;
+    cursor: pointer;
+    animation-name: slide;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-direction:normal;
+    transform-origin: center center;
+    background-color: #99E2D0;
+    z-index: 2;
+  }
+  
+  @keyframes slide {
+    0% {
+       left: 70px;
+       top: -55px;
+       opacity: 1;
+       width: 0px;
+       }
+       33% {
+         left: 70px;
+         top: -55px;
+         opacity: 1;
+         width: 170px;
+         }
+         50% {
+           left: 70px;
+           top: -55px;
+           opacity: 1;
+           width: 170px;
+           }
+       83.3% {
+         left: 70px;
+         top: -55px;
+         opacity: 1;
+         width: 170px;
+         }
+    100% {
+     left: 70px;
+     top: -55px;
+     width: 0px;
+     opacity: 0;
+   }
+  }
+.work {
+  position: relative;
+  left: -220px;
+  font-size: 1.7rem;
+}
+}
   .work {
     position: relative;
     left: -310px;
     font-size: 1.7rem;
   }
   .title {
-    font-size: 28px;
+    font-size: 3.3rem;
     position: relative;
     left: 30px;
 }
 .entry {
   position: relative;
   left: 40px;
-  font-size: 26px;
+  font-size: 1.8rem;
+  border-bottom-width: 150px;
+  border-bottom: 2px solid #B0E7D9;
 }
 .entry1 {
   padding-top: 30px;
+}
+.title1 {
+  position: relative;
+  top: 16px;
+  left: 15px;
+  font-size: 1.9rem;
+}
+.add {
+  font-size: 1.6rem;
+  position: relative;
+  left: 15px;
+  top: 17px;
+  overflow: hidden;
+}
+.cards2 {
+  display: grid;
+  grid-template-rows: repeat(3, 160px);
+  grid-gap: 50px;
+  position: relative;
+  top: 20px;
+}
+.card2 {
+  border: 1px solid black;
+  border-radius: 25px;
+  display: inline;
+  width: 95%;
+  height: 160px;
+  background-color: white;
+  position: relative;
+  margin: 0 auto;
+  z-index: 1;
+}
+.icon {
+  font-size: 1.6rem;
+  float: right;
+  position: relative;
+  left: -55px;
+  top: 20px;
+  display: inline;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
   .banner {
     border: 1px solid black;
@@ -2508,17 +3054,41 @@
     z-index:1;
     text-shadow: 0 0 2px #000;
     position: relative;
-    left: 670px;
+    left: 210px;
     top: 20px;
+    font-size: 2.6rem;
    }
    .container4 .full2 {
-    height: 1910px;
+    height: 2720px;
 }
 .container4 {
-  height: 2900px;
+  height: 4100px;
+}
+.btn-container {
+  display: flex;
+  height: 400px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 30px;
 }
 .container2{
-  height:2820px;
+  height:3940px;
+}
+.container2 .basti {
+  border-radius: 40px 40px 10px 10px;
+  position: relative;
+  top: -75px;
+  left: 0px;
+  border-radius: 20px 20px 10px 10px;
+  height: 2600px;
+  z-index: 2;
+  overflow: hidden;
+  background-color: #F6F6F6;
+}
+.footer-container2 {
+  position: relative;
+  top: -70px;
 }
 .container2 .basti .fa-heart {
   background-color: white;
@@ -2527,8 +3097,9 @@
   z-index: 1;
   text-shadow: 0 0 2px #000;
   position: relative;
-  left: 780px;
+  left: 550px;
   top: 20px;
+  font-size: 2.6rem;
 }
 .entry3 {
   position: relative;
@@ -2541,10 +3112,14 @@
   top: -50px;
   left: 0px;
   border: 2px solid black;
-  height: 1800px;
+  height: 2640px;
   z-index: 2;
   overflow: hidden;
   background-color: white;
+}
+.footer-container3 {
+  position: relative;
+  top: -80px;
 }
 .container4 .goum .fa-heart {
   background-color: white;
@@ -2553,15 +3128,16 @@
   z-index: 1;
   text-shadow: 0 0 2px #000;
   position: relative;
-  left: 680px;
+  left: 280px;
   top: 20px;
+  font-size: 2.6rem;
 }
 .entry4 {
   position: relative;
   left: 40px;
 }
 .container5{
-  height: 2840px;
+  height: 4000px;
 }
 
  .footer-f {
@@ -2574,8 +3150,9 @@
   z-index: 1;
   text-shadow: 0 0 2px #000;
   position: relative;
-  left: 600px;
+  left: 40px;
   top: 20px;
+  font-size: 2.6rem;
 }
 container3 .encha {
   position: relative;
@@ -2587,13 +3164,31 @@ container3 .encha {
   z-index: 2;
   overflow: hidden;
   background-color: white;
+  font-size: 2.6rem;
+}
+.container3 .encha {
+  position: relative;
+  top: -65px;
+  left: 0px;
+  border-radius: 20px 20px 10px 10px;
+  height: 2800px;
+  z-index: 2;
+  overflow: hidden;
+  background-color: white;
+  background-color: #F6F6F6;
 }
 .btn2 {
   position: relative;
   top: -40px;
+  height: 120px;
+  border-radius: 65px;
+}
+.footer-container5 {
+  position: relative;
+  top: -80px;
 }
 .container3{
-  height: 2900px;
+  height: 4050px;
 }
   .cards .card {
     background-color: white;
@@ -2751,14 +3346,18 @@ container3 .encha {
     height: 2780px;
 }
 .footer {
-  height: 600px;
+  height: 700px;
   width: 1024px;
+}
+.footer-container {
+  position: relative;
+  top: -60px;
 }
   .container4 .image2-0{
     background-image: url('../src/img/dish1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center bottom;
     height: 500px;
     width: 1024px;
    }
@@ -2836,7 +3435,7 @@ container3 .encha {
   height: 15vh;
   text-shadow: 0.1em 0.1em #333;
 }
-}
+
 
 @media only screen and (min-width : 1366px){
   * {
@@ -2885,10 +3484,18 @@ container3 .encha {
   top: -37px;
   left: -180px;
 }
-  .title {
-    font-size: 1.5rem;
+ .title {
+    font-size: 3.8rem;
     position: relative;
-    left: 30px;
+    left: 70px;
+    top: 120px;
+}
+.cards2 {
+  display: grid;
+  grid-template-rows: repeat(3, 160px);
+  grid-gap: 50px;
+  position: relative;
+  top: 190px;
 }
 .btn {
   background: linear-gradient(to top, #9356DC 0%, #FF79DA 100%);
@@ -2919,33 +3526,50 @@ container3 .encha {
     position: relative;
     left: 180px
   }
-  .container4 .full .title {
-    font-size: 20px;
-    position: relative;
-    left: 30px;
-  }
-  .container3 .encha .title {
-    font-size: 20px;
-    position: relative;
-    left: 30px;
-  }
-  .container2 .basti .title {
-    font-size: 20px;
-    position: relative;
-    left: 30px;
-  }
-  .container4 .goum .title {
-    font-size: 20px;
-    position: relative;
-    left: 30px;
-  }
   .entry {
     position: relative;
     left: 40px;
+    top: 150px;
+    font-size: 2.2rem;
   }
+  .title1 {
+    position: relative;
+    top: 16px;
+    left: 15px;
+    font-size: 2.3rem;
+}
+.add {
+  font-size: 2.0rem;
+  position: relative;
+  left: 15px;
+  top: 17px;
+  overflow: hidden;
+}
+.container3 .encha {
+  position: relative;
+  top: -65px;
+  left: 0px;
+  border-top-left-radius:120px;
+  border-top-right-radius:120px;
+  height: 3100px;
+  z-index: 2;
+  overflow: hidden;
+  background-color: white;
+  background-color: #F6F6F6;
+}
+.footer .image {
+  font-family: "Shrikhand";
+  font-size: 3rem;
+  height: 30px;
+  position: relative;
+  left: 0px;
+  top: -50px;
+  font-size: 3rem;
+}
   .entry2 {
     position: relative;
     left: 40px;
+    top: 170px;
   }
   .entry3 {
     position: relative;
@@ -2962,8 +3586,9 @@ container3 .encha {
     z-index:1;
     text-shadow: 0 0 2px #000;
     position: relative;
-    left: 1100px;
-    top: 20px;
+    left: 300px;
+    top: 110px;
+    font-size: 3.6rem;
    }
    .container3 .encha .fa-heart {
     background-color: white;
@@ -2992,8 +3617,9 @@ container3 .encha {
     z-index:1;
     text-shadow: 0 0 2px #000;
     position: relative;
-    left: 1050px;
-    top: 20px;
+    left: 70px;
+    top: 110px;
+    font-size: 3.6rem;
    }
    .container4 .goum .fa-heart {
     background-color: white;
@@ -3074,16 +3700,20 @@ container3 .encha {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 580px;
+    height: 900px;
     width: 1366px;
+    position: relative;
+    top: 0px;
    }
    .container3 .image2-1{
     background-image: url('../src/img/dish3.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 700px;
+    height: 900px;
     width: 1366px;
+    position: relative;
+    top: 100px;
    }
    .container2 .image2-2{
     background-image: url('../src/img/dish4.jpg');
@@ -3101,6 +3731,17 @@ container3 .encha {
     height: 640px;
     width: 100%;
    }
+   
+  
+   .image {
+    font-family: "Shrikhand";
+    font-size: 3rem;
+    height: 30px;
+    position: relative;
+    left: 340px;
+    top: 80px;
+    font-size: 4rem;;
+}
    .footer3{
      height: 540px;
    }
@@ -3155,8 +3796,33 @@ container3 .encha {
     font-size: 1.3rem;
   }
   .container3 {
-    height: 3100px;
+    height: 4850px;
   }
+  .container4 .full2 {
+    height: 2720px;
+    border-top-left-radius: 120px;
+    border-top-right-radius: 120px;
+    position: relative;
+    top: -100px;
+}
+  .image4 {
+    font-size: 4rem;
+    text-align: center;
+    font-family: "Shrikhand";
+}
+  .footer-container5 {
+    position: relative;
+    top: -80px;
+    left: -70px;
+}
+  .btn-container {
+    display: flex;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 230px;
+}
   .footer .footer-container{
     position: relative;
     top: -100px;
