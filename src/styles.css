@@ -5,25 +5,37 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden !important;
+}
+body {
+  font-family: 'Raleway', sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  overflow: scroll;
+  scroll-behavior: smooth;
+}
 
-@media only screen and (min-width : 320px){
-  html {
-    scroll-behavior: smooth;
-    overflow-x: hidden !important;
-  }
+@media screen and (min-width: 320px) {
   .fa-arrow-left {
-    font-size: 1.5rem;
+    font-size: 1rem;
     position: relative;
-    top: 30px;
+    top: -5px;
     left: 20px;
   }
   .image  {
     font-family: "Shrikhand";
     font-size: 1.5rem;
+    text-align: center;
   }
   .image4{
-    font-size: 2rem;
-    text-align: center;
+    font-size: 1.5rem;
+    position: relative;
+    left: 70px;
     font-family: "Shrikhand";
   }
   .image9 {
@@ -39,33 +51,23 @@
     left: 6px;
   }
   .title5 {
-    font-size: 1.7rem;
+    width: 60%;
+    text-align: center;
   }
   .box {
     background-color: #F6F6F6;
     padding-top: 2rem;
     padding-bottom: 3rem;
+    font-size: 1rem;
+    text-align: center;
+    height: 250px;
   }
-   body {
-      font-family: 'Raleway', sans-serif;
-      box-sizing: border-box;
-      height: 100%;
-      overflow-x: hidden !important;
-      overflow-y: hidden !important;
-      max-width: 100% !important;
-      scrollbar-width: none;
-      -ms-overflow-style: none;
-      overflow: scroll;
-      scroll-behavior: smooth;
-    }
- ::-webkit-scrollbar:horizontal{
-   display: none;
- }
+  
 
 .work {
   position:relative;
-  left: -80px;
-  font-size: 1.7rem;
+  left: 10px;
+  font-size: 1rem;
 }
 .image img{
      align-items: center;
@@ -118,9 +120,9 @@
   background-image: url('../src/img/dish1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center bottom;
+  background-position: center;
   height: 200px;
-  width: 320px;
+  width: 100%;
  }
  .container3 .image2-1{
   background-image: url('../src/img/dish3.jpg');
@@ -165,17 +167,24 @@
      background-color: #EAEAEA;
      width: 100%;
      padding: 2% 0%;
+     text-align: center;
     }
 
  .btn {
      background: linear-gradient(to top, #736e7a 0%, #FF79DA 100%);
      color: white;
      padding: 1%;
-     border-radius: 20px;
+     border-radius: 40px;
      width: 50vw;
-     height: 7vh;
+     height: 50px;
      text-shadow: 0.1em 0.1em #333;
- }
+     position: relative;
+     top: -10px;
+     font-size: 0.7rem;
+     }
+  .dis {
+    font-size: 0.8rem;
+  }
 
   .num {
      border-radius: 50%;
@@ -187,61 +196,65 @@
      background-color: #9356DC;
      color: white;
      position: relative;
-     left: -65px;
+     left: 0px;
  }
  .num1 {
   position: relative;
-  left: -65px;
-  top: 15px;
+  left: -51px;
+  top: 12px;
  }
 
  .num2 {
   position: relative;
-  left: -70px;  
+  left: -10px;  
   top: 20px;
  }
  .num3 {
   position: relative;
-  left: -45px;
+  left: -10px;
   top: 20px;
  }
  .btns .restaurant  .fa-mobile-alt {
   position: relative;
   top: 15px;
-  left: -65px;
-  font-size: 1.5rem;
+  left: -40px;
+  font-size: 1.3rem;
  }
    .fa-list-ul { 
   position: relative;
-  left: -70px;
+  left: -3px;
   top: 20px;
 }
  .fa-store {
   position: relative;
-  left: -45px;
+  left: -5px;
   top: 20px;
   color: #9356DC;
  }
 
  .text1 {
   position: relative;
-  left: -50px;
+  left: -20px;
   top: 15px;
+  font-size: 0.9rem;
  }
  .text2 { 
   position: relative;
-  left: -58px;
+  left: 16px;
   top: 20px;
+  font-size: 0.9rem;
 }
  .text3 {
   position: relative;
-  left: -35px;
+  left: 13px;
   top: 20px;
+  font-size: 0.9rem;
  }
  
  .working {
    position: relative;
    left:0px;
+   width: 320px;
  }
 
  .btns {
@@ -249,60 +262,61 @@
  }
  .title3 {
    position: relative;
-   top: -15px;
-   left: -65px;
+   top: -30px;
+   left: 0px;
    font-size: 4.2vw;
  }
  .title3-1 {
    position: relative;
-   left: -95px;
-   top: -15px;
+   left: 0px;
+   top: -35px;
    font-size: 4.2vw;
  }
  .title3-2 {
   position: relative;
-  left: -55px;
+  left: 0px;
 }
 .title3-3 {
   position: relative;
-  left: -92px;
+  left: 0px;
 }
 .title3-4 {
   position: relative;
-  left: -74px;
+  left: 0px;
 }
 
  .restaurant {
    padding: 3px;
    border-radius: 15px;
    display: inline-block;
-   width: 80vw;
+   width: 83vw;
    height: 60px;
    background-color: #F6F6F6;
    position:relative;
-   left: 0px;
+   left: 20px;
    box-shadow: 2px 2px 5px #E7E7E7;
+   text-align: center;
  }
  .menu {
     padding: 3px;
     border-radius: 15px;
     display: inline-block;
-    width: 85%;
+    width: 83vw;
     height: 60px;
     background-color: #F6F6F6;
     position:relative;
-    left: 0px;
+    left: 20px;
     box-shadow: 2px 2px 5px #E7E7E7;
   }
   .enjoy {
     padding: 3px;
     border-radius: 15px;
     display: inline-block;
-    width: 85%;
+    width: 83vw;
     height: 60px;
     background-color: #F6F6F6;
     position:relative;
-    left: 0px;
+    left: 20px;
     box-shadow: 2px 2px 5px #E7E7E7;
   }
   .res-list {
@@ -312,6 +326,7 @@
     top: 40px;
     padding: 5%;
     width:100vw;
+    height: 1100px;
   }
   .cards {
     padding: 3%;
@@ -339,54 +354,54 @@
     text-decoration: none;
   }
   .title4{
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     position: relative;
     top: 30px;
-    left: -90px;
+    left: 5px;
   }
   .cards .card .h1 .fa-heart {
     position: relative;
-    left: 60px;
-    top: -10px;
+    left: 120px;
+    top: -25px;
     background-color: white;
     color: white;
     display: inline-block;
     z-index:1;
     text-shadow: 0 0 2px #000;
-    font-size: 1.6rem;
+    font-size: 1rem;
   }
   .cards .card .h2 .fa-heart {
     position: relative;
-    left: 48px;
-    top: -5px;
+    left: 95px;
+    top: -25px;
     background-color: white;
     color: white;
     display: inline-block;
     z-index:1;
     text-shadow: 0 0 2px #000;
-    font-size: 1.6rem;
+    font-size: 1rem;
   }
   .cards .card .h3 .fa-heart {
     position: relative;
-    left: 88px;
-    top: -5px;
+    left: 175px;
+    top: -25px;
     background-color: white;
     color: white;
     display: inline-block;
     z-index:1;
     text-shadow: 0 0 2px #000;
-    font-size: 1.6rem;
+    font-size: 1rem;
   }
   .cards .card .h4 .fa-heart {
     position: relative;
-    left: 67px;
-    top: -5px;
+    left: 130px;
+    top: -25px;
     background-color: white;
     color: white;
     display: inline-block;
     z-index:1;
     text-shadow: 0 0 2px #000;
-    font-size: 1.6rem;
+    font-size: 1rem;
   }
   .container3 .encha .fa-heart {
     background-color: white;
@@ -395,8 +410,8 @@
     z-index:1;
     text-shadow: 0 0 2px #000;
     position: relative;
-    left: 10px;
-    top: 20px;
+    left: 0px;
+    top: 30px;
     font-size: 1.6rem;
 }
    .container4 .full .fa-heart {
@@ -406,8 +421,8 @@
     z-index:1;
     text-shadow: 0 0 2px #707070;
     position: relative;
-    left: 70px;
-    top: 20px;
+    left: 50px;
+    top: 30px;
     font-size: 1.6rem;
    }
    .container2 .basti .fa-heart {
@@ -447,7 +462,7 @@
     color: #30A387;
     position: relative;
     top: -130px;
-    left: 90px;
+    left: 180px;
     padding: 5px 20px;
     border-radius: 5%;
   }
@@ -456,12 +471,13 @@
    background-color: rgb(77, 77, 77);
    color: white;
    width: 500px;
-   height: 500px;
+   height: 270px;
    text-align: left;
    position: relative;
    left: -20px;
    top: -35px;
    padding: 15%;
+   font-size: 1rem;
   }
   .container2 {
     background-color:#F6F6F6;
@@ -511,18 +527,22 @@
     top: -80px;
     height: 500px;
   }
+  .arrow {
+    position: relative;
+    top: 25px;
+  }
   .title {
     position: relative;
-    top: 20px;
-    left: 15px;
+    top: 30px;
+    left: 23px;
     font-family: 'Shrikhand', cursive;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
   .title1 {
     position: relative;
     top: 10px;
     left: 15px;
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
   .title2 {
     position: relative;
@@ -535,7 +555,8 @@
   position: relative;
   left: 15px;
   top: 20px;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
+  padding-top: 25px;
   }
   .entry2 {
     border-bottom: 3px solid #B0E7D9;
@@ -543,7 +564,8 @@
     position: relative;
     left: 20px;
     top: 20px;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
+    padding-top: 20px;
   }
   .entry3 {
     border-bottom: 3px solid #B0E7D9;
@@ -595,7 +617,7 @@
   border: 1px solid black;
    border-radius: 25px;
    display: inline;
-   width: 95%;
+   width: 93%;
    height: 70px;
    background-color: white;
    position: relative;
@@ -624,7 +646,7 @@
    color: white;
    }
    .add{
-     font-size: 1rem;
+     font-size: 0.8rem;
      position: relative;
      left: 15px;
      top: 13px;
@@ -700,14 +722,14 @@
     left: 0px;
     visibility: visible;
     display: inline;
-    font-size: 11px;
+    font-size: 0.8rem;
   }
   .container4 .basti .cards2 .card2 .cards .arti {
-    font-size: 11px;
+    font-size: 0.8rem;
   }
   .card2:hover   .arti {
     color: transparent;
-    font-size: 11px;
+    font-size: 0.8rem;
     position: relative;
   }
  .card2:hover   .arti:after{
@@ -715,16 +737,16 @@
     color: initial;
     position: absolute;
     top: 0px;
-    left: 0;
+    left: 103px;
     visibility: visible;
     display: inline;
-    font-size: 11px;
+    font-size: 0.8rem;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
   }
   .container4 .full2 .cards2 .card2 .pure {
-    font-size: 11px;
+    font-size: 0.8rem;
     position: relative;
   
   }
@@ -746,7 +768,7 @@
     left: 0px;
     visibility: visible;
     display: inline;
-    font-size: 11px;
+    font-size: 0.8rem;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -791,7 +813,7 @@
     background-color:#F6F6F6;
      position: relative;
      top: 0px;
-     height: 1730px;
+     height: 1800px;
      width: 100vw;
      z-index: 2;
      max-width: 100%;
@@ -812,7 +834,7 @@
     left: 0px;
     border-top-left-radius: 20px 20px;
     border-top-right-radius: 20px 20px;
-    height: 1250px;
+    height: 1320px;
     z-index: 2;
     overflow: hidden;
     background-color: #F6F6F6;
@@ -820,15 +842,14 @@
   .container4 {
      position: relative;
      top: 0px;
-     height: 1630px;
+     left: -6px;
      width: 100vw;
      z-index: 2;
-     max-width: 100%;
+     height: 1670px;
      font-family: 'Raleway', sans-serif;
      box-sizing: border-box;
      overflow-x: hidden !important;
      overflow-y: hidden !important;
-     max-width: 100% !important;
      scrollbar-width: none;
      -ms-overflow-style: none;
      overflow: scroll;
@@ -842,27 +863,29 @@
   .container4 .full2 {
     position: relative;
     top: -35px;
-    left: 0px;
-    border-radius: 20px 20px 10px 10px;
+    left: -5px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
     height: 1175px;
     z-index: 2;
     overflow: hidden;
     background-color: #F6F6F6;
   }
   .container4 .goum {
-    border-top-left-radius: 20px 20px;
-    border-top-right-radius: 20px 20px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
     position: relative;
-    top: -10px;
+    top: -20px;
+    width: 100%;
     left: 0px;
-    height: 1170px;
+    height: 1200px;
     z-index: 2;
     overflow: hidden;
     background-color: #F6F6F6;
   }
   .footer-container3 {
     position: relative;
-    top: 30px;
+    top: 10px;
   }
   .goum {
     position: relative;
@@ -968,7 +991,7 @@
   animation-name: fadein;
   animation-timing-function: ease-in-out;
   animation-duration: 3s;
-  animation-direction: forwards;
+  animation-direction:normal;
 }
 @keyframes fadein {
   0% {
@@ -990,31 +1013,31 @@
 
  @keyframes slide {
    0% {
-      left: 24px;
+      left: 30px;
       top: -20px;
       opacity: 1;
       width: 0px;
       }
       33% {
-        left: 24px;
+        left: 30px;
         top: -20px;
         opacity: 1;
         width: 60px;
         }
         50% {
-          left: 24px;
+          left: 30px;
           top: -20px;
           opacity: 1;
           width: 60px;
           }
       83.3% {
-        left: 24px;
+        left: 30px;
         top: -20px;
         opacity: 1;
         width: 60px;
         }
    100% {
-    left: 24px;
+    left: 30px;
     top: -20px;
     width: 0px;
     opacity: 0;
@@ -1056,17 +1079,185 @@
 }*/
 }
 
-@media only screen and (min-width : 360px){
+@media screen and (min-width: 360px) {
   * {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
   }
+  .container4 .full2 .cards2 .card2 .veg {
+    position: relative;
+    left: 0px;
+    font-size: 1.1rem;
+  }
+  .container4 .full2 .cards2 .card2:hover   .veg {
+    color: transparent;
+    font-size: 1.1rem;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    will-change: transform;
+  backface-visibility: hidden;
+  outline: none;
+  display: inline;
+  }
+ .container4 .full2 .cards2 .card2:hover  .add .veg:after{
+    content: "...";
+    color: initial;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    visibility: visible;
+    display: inline;
+    font-size: 1.1rem;
+  }
+  .container4 .full2 .cards2 .card2 .pure {
+    font-size: 1.1rem;
+    position: relative;
+  
+  }
+  .card2:hover   .pure {
+    color: transparent;
+    font-size: 1.1rem;
+    position: relative;
+    top: 11px;
+  }
+  .card2-4 .icon{
+    position: relative;
+  }
+ 
+ .card2:hover   .pure:after{
+    content: "pured ...";
+    color: initial;
+    position: absolute;
+    top: -11px;
+    left: 0px;
+    visibility: visible;
+    display: inline;
+    font-size: 1.1rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .card2:hover   .arti:after{
+    content: "Jerusalem ...";
+    color: initial;
+    position: absolute;
+    top: -3px;
+    left: 0px;
+    visibility: visible;
+    display: inline;
+    font-size: 1.1rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .card2:hover   .fa-check-circle{
+    display: inline-block;
+    cursor: pointer;
+    font-size: 1rem;
+    animation-name: spin;
+    animation-timing-function:linear;
+    animation-duration: 3s;
+    animation-direction:normal;
+    animation-fill-mode: forwards;
+    transform-origin: center center;
+    position: relative;
+    top:30px;
+    left: 25px;
+    color: white;
+    z-index: 2;
+  }
+  @keyframes slide {
+    0% {
+       left: 20px;
+       top: -20px;
+       opacity: 1;
+       width: 0px;
+       }
+       33% {
+         left: 20px;
+         top: -20px;
+         opacity: 1;
+         width: 60px;
+         }
+         50% {
+           left: 20px;
+           top: -20px;
+           opacity: 1;
+           width: 60px;
+           }
+       83.3% {
+         left: 20px;
+         top: -20px;
+         opacity: 1;
+         width: 60px;
+         }
+    100% {
+     left: 20px;
+     top: -20px;
+     width: 0px;
+     opacity: 0;
+   }
+  }
+  .container4 .full2 {
+    position: relative;
+    top: -35px;
+    left: -5px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    height: 1230px;
+    z-index: 2;
+    overflow: hidden;
+    background-color: #F6F6F6;
+}
+  .title {
+    position: relative;
+    top: 30px;
+    left: 23px;
+    font-family: 'Shrikhand', cursive;
+    font-size: 2.0rem;
+}
+  .title5 {
+    width: 60%;
+    font-size: 1.4rem;
+    text-align: center;
+}
+.dis {
+  font-size: 1rem;
+}
+.location {
+  background-color: rgb(202, 196, 196);
+  background-color: #EAEAEA;
+  width: 100%;
+  padding: 2% 0%;
+  text-align: center;
+  font-size: 1.2rem;
+}
+  .work {
+    position: relative;
+    left: 20px;
+    font-size: 1.3rem;
+}
+  .btn {
+    background: linear-gradient(to top, #736e7a 0%, #FF79DA 100%);
+    color: white;
+    padding: 1%;
+    border-radius: 40px;
+    width: 45vw;
+    height: 50px;
+    text-shadow: 0.1em 0.1em #333;
+    position: relative;
+    top: 15px;
+}
   .title4 {
     font-size: 1.7rem;
     position: relative;
     top: 30px;
-    left: -105px;
+    left: 5px;
 }
 .num1 {
   position: relative;
@@ -1076,12 +1267,12 @@
 
  .num2 {
   position: relative;
-  left: -77px;  
+  left: -7px;  
   top: 20px;
  }
  .num3 {
   position: relative;
-  left: -48px;
+  left: -8px;
   top: 20px;
  }
  .btns .restaurant  .fa-mobile-alt {
@@ -1092,12 +1283,12 @@
  }
    .fa-list-ul { 
   position: relative;
-  left: -78px;
+  left: -8px;
   top: 20px;
 }
  .fa-store {
   position: relative;
-  left: -50px;
+  left: -10px;
   top: 20px;
   color: #9356DC;
  }
@@ -1110,13 +1301,13 @@
  }
  .text2 { 
   position: relative;
-  left: -63px;
+  left: 8px;
   top: 20px;
   font-size: 1.1rem;
 }
  .text3 {
   position: relative;
-  left: -34px;
+  left: 6px;
   top: 20px;
   font-size: 1.1rem;
  }
@@ -1134,11 +1325,11 @@
     color: black;
     position: relative;
     top: -130px;
-    left: 95px;
+    left: 215px;
     padding: 5px 20px;
   }
   .container2{
-    height: 1630px;
+    height: 1600px;
   }
   .cards {
     padding: 3%;
@@ -1151,8 +1342,19 @@
     gap: 1.7rem;
     width: 100%;
 }
+.image {
+  font-family: "Shrikhand";
+  font-size: 2rem;
+  text-align: center;
+}
 .footer {
-  height: 280px;
+  height: 220px;
+}
+.footer2 {
+  height: 320px;
+}
+.footer3 {
+  height: 320px;
 }
 .footer-container {
   width: 100%;
@@ -1163,6 +1365,28 @@
   position: relative;
   top: 30px;
 }
+.entry {
+  border-bottom: 3px solid #B0E7D9;
+  width: 35px;
+  position: relative;
+  left: 20px;
+  top: 20px;
+  font-size: 1.3rem;
+  padding-top: 25px;
+}
+.title1 {
+  position: relative;
+  top: 10px;
+  left: 15px;
+  font-size: 1.3rem;
+}
+.add {
+  font-size: 1.1rem;
+  position: relative;
+  left: 15px;
+  top: 13px;
+  overflow: hidden;
+}
   .container4 .full .fa-heart {
     background-color: white;
     color: white;
@@ -1170,10 +1394,22 @@
     z-index:1;
     text-shadow: 0 0 2px #000;
     position: relative;
-    left: 115px;
-    top: 20px;
+    left: 100px;
+    top: 30px;
     font-size: 1.6rem;
    }
+   .container4 .goum {
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    position: relative;
+    top: -20px;
+    width: 100%;
+    left: 0px;
+    height: 1170px;
+    z-index: 2;
+    overflow: hidden;
+    background-color: #F6F6F6;
+}
    .container4 .goum .fa-heart {
     background-color: white;
     color: white;
@@ -1181,8 +1417,8 @@
     z-index:1;
     text-shadow: 0 0 2px #000;
     position: relative;
-    left: 140px;
-    top: 20px;
+    left: 130px;
+    top: 30px;
     font-size: 1.6rem;
    }
    .container3 .encha .fa-heart {
@@ -1192,8 +1428,8 @@
     z-index:1;
     text-shadow: 0 0 2px #000;
     position: relative;
-    left: 60px;
-    top: 20px;
+    left: 45px;
+    top: 30px;
     font-size: 1.6rem;
    }
    .container2 .basti .fa-heart {
@@ -1203,8 +1439,8 @@
     z-index:1;
     text-shadow: 0 0 2px #000;
     position: relative;
-    left: 200px;
-    top: 20px;
+    left: 190px;
+    top: 30px;
     font-size: 1.6rem;
    }
   
@@ -1218,26 +1454,26 @@
   .title3 {
     position: relative;
     top: -15px;
-    left: -75px;
+    left: 10px;
     font-size: 4.2vw;
   }
   .title3-1 {
     position: relative;
-    left: -108px;
+    left: 10px;
     top: -15px;
     font-size: 4.2vw;
   }
   .title3-2 {
    position: relative;
-   left: -62px;
+   left: 10px;
  }
  .title3-3 {
    position: relative;
-   left: -105px;
+   left: 10px;
  }
  .title3-4 {
    position: relative;
-   left: -85px;
+   left: 10px;
  }
  
   .cards .card .image3-1{
@@ -1322,53 +1558,151 @@
  }
  .cards .card .h1 .fa-heart{
    position: relative;
-   left: 60px;
+   left: 140px;
+   top: -10px;
+   font-size: 1.2rem;
  }
  .cards .card .h2 .fa-heart{
   position: relative;
-  left: 45px;
+  left: 113px;
+  top: -10px;
+  font-size: 1.2rem;
 }
 .cards .card .h3 .fa-heart{
   position: relative;
-  left: 88px;
+  left: 202px;
+  top: -10px;
+  font-size: 1.2rem;
 }
 .cards .card .h4 .fa-heart{
   position: relative;
-  left: 67px;
+  left: 160px;
+  top: -10px;
+  font-size: 1.2rem;
+}
+.res-list {
+  background-color: #F6F6F6;
+  position: relative;
+  left: 0px;
+  top: 40px;
+  padding: 5%;
+  width: 100vw;
+  height: 1130px;
 }
   .container4 .image2 img {
     width: 350px;
   }
-  .container4 .full2 {
-   height: 1150px;
-}
 .container4  {
+  height: 1680px;
+}
+.entry2 {
+  border-bottom: 3px solid #B0E7D9;
+  width: 45px;
+  position: relative;
+  left: 20px;
+  top: 20px;
+  font-size: 1.3rem;
+  padding-top: 20px;
+}
+.container5 {
   height: 1600px;
+}
+.image4 {
+  font-size: 2rem;
+  position: relative;
+  left: 90px;
+  font-family: "Shrikhand";
 }
 .container3 .encha {
   position: relative;
   top: -30px;
+  height: 1300px;
 }
 .container3 {
   height: 1750px;
 }
 }
-@media only screen and (min-width : 411px){
+@media screen and (min-width: 411px) {
   * {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
   }
+  .entry {
+    border-bottom: 3px solid #B0E7D9;
+    width: 50px;
+    position: relative;
+    left: 20px;
+    top: 20px;
+    font-size: 1.6rem;
+    padding-top: 25px;
+}
+.title1 {
+  position: relative;
+  top: 10px;
+  left: 15px;
+  font-size: 1.6rem;
+}
   .title {
     position: relative;
-    top: 20px;
-    left: 15px;
+    top: 30px;
+    left: 25px;
     font-family: 'Shrikhand', cursive;
     font-size: 2.4rem;
 }
 .image4 {
   font-size: 2.4rem;
   text-align: center;
+}
+.add {
+  font-size: 1.3rem;
+  position: relative;
+  left: 15px;
+  top: 13px;
+  overflow: hidden;
+}
+.icon {
+  font-size: 1.3rem;
+  float: right;
+  position: relative;
+  left: -20px;
+  top: 13px;
+  display: inline;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.container4 .full2 .cards2 .card2 .veg {
+  position: relative;
+  left: 0px;
+  font-size: 1.3rem;
+}
+.container4 .full2 .cards2 .card2:hover  .add .veg:after{
+  content: "...";
+  color: initial;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  visibility: visible;
+  display: inline;
+  font-size: 1.3rem;
+}
+.card2:hover   .pure:after{
+  content: "pured ...";
+  color: initial;
+  position: absolute;
+  top: -11px;
+  left: 0px;
+  visibility: visible;
+  display: inline;
+  font-size: 1.3rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.container4 .full2 .cards2 .card2 .pure {
+  font-size: 1.3rem;
+  position: relative;
 }
   .btns {
     display: flex;
@@ -1378,69 +1712,83 @@
   }
   .work {
     position: relative;
-    left: -100px;
+    left: 10px;
     font-size: 1.7rem;
+}
+.working {
+  position: relative;
+  left: 15px;
+  width: 320px;
 }
   .title4 {
     font-size: 1.7rem;
     position: relative;
     top: 30px;
-    left: -120px;
+    left: 5px;
 }
 .title3 {
   position: relative;
   top: -10px;
-  left: -80px;
+  left: 10px;
   font-size: 4.2vw;
 }
 .title3-1 {
   position: relative;
-  left: -115px;
+  left: 10px;
   top: -10px;
   font-size: 4.2vw;
 }
 .title3-2 {
  position: relative;
- left: -62px;
+ left: 10px;
 }
 .title3-3 {
  position: relative;
- left: -113px;
+ left: 10px;
 }
 .title3-4 {
  position: relative;
- left: -90px;
+ left: 10px;
+}
+.res-list {
+  background-color: #F6F6F6;
+  position: relative;
+  left: 0px;
+  top: 40px;
+  padding: 5%;
+  width: 100vw;
+  height: 1270px;
 }
 .num1 {
   position: relative;
-  left: -83px;
+  left: -78px;
   top: 15px;
  }
 
  .num2 {
   position: relative;
-  left: -90px;  
+  left: -10px;  
   top: 20px;
  }
  .num3 {
   position: relative;
-  left: -59px;
+  left: -9px;
   top: 20px;
  }
  .btns .restaurant  .fa-mobile-alt {
   position: relative;
   top: 18px;
-  left: -87px;
+  left: -77px;
   font-size: 1.5rem;
  }
    .fa-list-ul { 
   position: relative;
-  left: -93px;
+  left: -8px;
   top: 20px;
 }
  .fa-store {
   position: relative;
-  left: -62px;
+  left: -8px;
   top: 20px;
   color: #9356DC;
  }
@@ -1448,20 +1796,20 @@
  .text1 {
   position: relative;
   left: -60px;
-  top: 15px;
-  font-size: 2.0rem;
+  top: 20px;
+  font-size: 1.4rem;
  }
  .text2 { 
   position: relative;
-  left: -68px;
+  left: 8px;
   top: 20px;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
  .text3 {
   position: relative;
-  left: -39px;
+  left: 9px;
   top: 20px;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
  }
   .banner {
     border: 1px solid black;
@@ -1469,7 +1817,7 @@
     color: #018767;
     position: relative;
     top: -150px;
-    left: 100px;
+    left: 230px;
     padding: 6px 24px;
   }
   .cards {
@@ -1491,7 +1839,7 @@
     text-shadow: 0 0 2px #000;
     position: relative;
     left: 100px;
-    top: 20px;
+    top: 30px;
     font-size: 2rem;
    }
    
@@ -1504,19 +1852,23 @@
   }
   .cards .card .h1 .fa-heart{
     position: relative;
-    left: 70px;
+    left: 150px;
+    font-size: 1.4rem;
   }
   .cards .card .h2 .fa-heart{
    position: relative;
-   left: 53px;
+   left: 116px;
+   font-size: 1.4rem;
  }
  .cards .card .h3 .fa-heart{
    position: relative;
-   left: 103px;
- }
+   left: 218px;
+   font-size: 1.4rem;
+  }
  .cards .card .h4 .fa-heart{
    position: relative;
-   left: 77px;
+   left: 170px;
+   font-size: 1.4rem;
  }
  .cards .card .image3-1{
   background-image: url('../src/img/dish1.jpg');
@@ -1591,7 +1943,7 @@
     width: 411px;
    }
    .container2{
-     height: 1600px;
+     height: 1660px;
    }
    .container5{
      height: 1800px;
@@ -1614,8 +1966,17 @@
   text-shadow: 0 0 2px #000;
   position: relative;
   left: 30px;
-  top: 20px;
+  top: 30px;
   font-size: 2rem;
+}
+.entry2 {
+  border-bottom: 3px solid #B0E7D9;
+  width: 45px;
+  position: relative;
+  left: 20px;
+  top: 20px;
+  font-size: 1.6rem;
+  padding-top: 20px;
 }
 .container2 .basti .fa-heart {
   background-color: white;
@@ -1625,9 +1986,32 @@
   text-shadow: 0 0 2px #000;
   position: relative;
   left: 215px;
-  top: 20px;
+  top: 30px;
   font-size: 2rem;
  }
+ .entry3 {
+  border-bottom: 3px solid #B0E7D9;
+  width: 45px;
+  position: relative;
+  left: 20px;
+  top: -10px;
+  font-size: 1.6rem;
+  padding-top: 30px;
+}
+.entry3-1 {
+  padding-top: 70px;
+}
+.container2 .basti {
+  position: relative;
+  top: -25px;
+  left: 0px;
+  border-top-left-radius: 20px 20px;
+  border-top-right-radius: 20px 20px;
+  height: 1230px;
+  z-index: 2;
+  overflow: hidden;
+  background-color: #F6F6F6;
+}
  .container4 .goum .fa-heart {
   background-color: white;
   color: white;
@@ -1636,29 +2020,106 @@
   text-shadow: 0 0 2px #000;
   position: relative;
   left: 130px;
-  top: 20px;
+  top: 30px;
   font-size: 2rem;
 }
+.entry4 {
+  border-bottom: 3px solid #B0E7D9;
+  width: 45px;
+  position: relative;
+  left: 20px;
+  top: 10px;
+  padding-top: 30px;
+  font-size: 1.6rem;
+}
+.container4 .goum {
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  position: relative;
+  top: -20px;
+  width: 100%;
+  left: 0px;
+  height: 1220px;
+  z-index: 2;
+  overflow: hidden;
+  background-color: #F6F6F6;
+}
 .container3 {
-  height: 1730px;
+  height: 1780px;
 }
   .container4 .image2 img {
     width: 350px;
   }
   .container4 .full2 {
-   height: 1170px;
+   height: 1240px;
 }
 .container4  {
-  height: 1670px;
+  height: 1720px;
 }
+@keyframes slide {
+  0% {
+     left: 25px;
+     top: -22px;
+     opacity: 1;
+     width: 0px;
+     }
+     33% {
+       left: 25px;
+       top: -22px;
+       opacity: 1;
+       width: 60px;
+       }
+       50% {
+         left: 25px;
+         top: -22px;
+         opacity: 1;
+         width: 60px;
+         }
+     83.3% {
+       left: 25px;
+       top: -22px;
+       opacity: 1;
+       width: 60px;
+       }
+  100% {
+   left: 25px;
+   top: -22px;
+   width: 0px;
+   opacity: 0;
+ }
+}
+.arti {
+  font-size: 1.3rem;
+}
+.card2:hover   .arti:after{
+  content: "Jerusalem ...";
+  color: initial;
+  position: absolute;
+  top: -5px;
+  left: 0;
+  visibility: visible;
+  display: inline;
+  font-size: 1.3rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
-@media only screen and (min-width : 540px){
+}
+
+@media screen and (min-width : 540px){
   * {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
   }
+  .paris {
+    font-size: 1.4rem;
+  }
+  .fa-map-marker-alt{
+    font-size: 1.4rem;
+  }
+
   .card2:hover   .fa-check-circle{
     display: inline-block;
     cursor: pointer;
@@ -1921,7 +2382,7 @@
     font-size: 2.2rem;
     position: relative;
     top: 30px;
-    left: -164px;
+    left: 0px;
 }
 .restaurant {
   padding: 3px;
@@ -1938,7 +2399,7 @@
   padding: 3px;
   border-radius: 15px;
   display: inline-block;
-  width: 85%;
+  width: 445.39px;
   height: 80px;
   background-color: #F6F6F6;
   position: relative;
@@ -1949,12 +2410,17 @@
   padding: 3px;
   border-radius: 15px;
   display: inline-block;
-  width: 85%;
+  width: 445.39px;
   height: 80px;
   background-color: #F6F6F6;
   position: relative;
   left: 0px;
   box-shadow: 2px 2px 5px #e7e7e7;
+}
+.working {
+  position: relative;
+  left: 95px;
+  width: 320px;
 }
 .btns {
   display: flex;
@@ -1969,12 +2435,12 @@
  }
 .num2 {
   position: relative;
-  left: -125px;  
+  left: -10px;  
   top: 20px;
  }
  .num3 {
   position: relative;
-  left: -80px;
+  left: -10px;
   top: 20px;
  }
  .btns .restaurant  .fa-mobile-alt {
@@ -1985,13 +2451,13 @@
  }
    .fa-list-ul { 
   position: relative;
-  left: -131px;
+  left: -18px;
   top: 23px;
   font-size: 1.7rem;
 }
  .fa-store {
   position: relative;
-  left: -88px;
+  left: -18px;
   top: 23px;
   color: #9356DC;
   font-size: 1.5rem;
@@ -2005,26 +2471,26 @@
  }
  .text2 { 
   position: relative;
-  left: -103px;
+  left: 5px;
   top: 23px;
   font-size: 1.6rem;
 }
  .text3 {
   position: relative;
-  left: -60px;
+  left: 5px;
   top: 20px;
   font-size: 1.6rem;
  }
 
 .work {
   position: relative;
-  left: -160px;
+  left: -70px;
   font-size: 1.7rem;
 }
 .cards {
   padding: 3%;
   position: relative;
-  left: -5px;
+  left: -15px;
   top: 40px;
   height: 1550px;
   display: flex;
@@ -2038,34 +2504,43 @@
     color: #018767;
     position: relative;
     top: -210px;
-    left: 150px;
+    left: 320px;
     padding: 10px 40px;
     font-size: 1.7rem;
   }
   .title3 {
     position: relative;
-    top: -10px;
-    left: -125px;
+    top: -15px;
+    left: 20px;
     font-size: 4.2vw;
   }
   .title3-1 {
     position: relative;
-    left: -174px;
+    left: 20px;
     top: -10px;
     font-size: 4.2vw;
   }
   .title3-2 {
    position: relative;
-   left: -103px;
+   left: 20px;
   }
   .title3-3 {
    position: relative;
-   left: -169px;
+   left: 19px;
   }
   .title3-4 {
    position: relative;
-   left: -138px;
+   left: 19px;
   }
+  .res-list {
+    background-color: #F6F6F6;
+    position: relative;
+    left: 0px;
+    top: 40px;
+    padding: 5%;
+    width: 100vw;
+    height: 1650px;
+}
   .container4 .full .fa-heart {
     background-color: white;
     color: white;
@@ -2074,8 +2549,17 @@
     text-shadow: 0 0 2px #000;
     position: relative;
     left: 130px;
-    top: 20px;
+    top: 30px;
     font-size: 2.5rem;
+   }
+   .arrow {
+     font-size: 1.3rem;
+     position: relative;
+     top: 30px;
+   }
+   .image3 {
+   position: relative;
+   left: 150px;
    }
    .container4 {
      height: 1780px;
@@ -2089,28 +2573,56 @@
   }
   .cards .card .h1 .fa-heart{
     position: relative;
-    left: 100px;
+    left: 220px;
     top: 1px;
     font-size: 2.4rem;
   }
   .cards .card .h2 .fa-heart{
    position: relative;
-   left: 83px;
+   left: 176px;
    top: 1px;
    font-size: 2.4rem;
  }
  .cards .card .h3 .fa-heart{
    position: relative;
-   left: 150px;
+   left: 308px;
    top: 1px;
    font-size: 2.4rem;
  }
  .cards .card .h4 .fa-heart{
    position: relative;
-   left: 119px;
+   left: 249px;
    top: 1px;
    font-size: 2.4rem;
  }
+ .dis {
+  font-size: 1.6rem;
+}
+.btn {
+  background: linear-gradient(to top, #736e7a 0%, #FF79DA 100%);
+  color: white;
+  padding: 1%;
+  border-radius: 40px;
+  width: 50vw;
+  height: 50px;
+  text-shadow: 0.1em 0.1em #333;
+  position: relative;
+  top: 15px;
+  font-size: 1.3rem;
+}
+.title5 {
+  width: 60%;
+  font-size: 2.1rem;
+  text-align: center;
+}
+.location {
+  background-color: rgb(202, 196, 196);
+  background-color: #EAEAEA;
+  width: 100%;
+  padding: 2% 0%;
+  text-align: center;
+  font-size: 1.6rem;
+}
   .cards .card .image3-1{
     background-image: url('../src/img/dish1.jpg');
     background-repeat: no-repeat;
@@ -2197,7 +2709,7 @@
   text-shadow: 0 0 2px #000;
   position: relative;
   left: 290px;
-  top: 20px;
+  top: 30px;
   font-size: 2.5rem;
 }
 .container4 .goum .fa-heart {
@@ -2208,9 +2720,12 @@
   text-shadow: 0 0 2px #000;
   position: relative;
   left: 170px;
-  top: 20px;
+  top: 30px;
   font-size: 2.5rem;
 }
+ .fa-arrow-left{
+   font-size: 1.3rem;
+ }
 .container3 .encha {
   position: relative;
   top: -65px;
@@ -2331,11 +2846,31 @@
 }
 }
 
-@media only screen and (min-width : 768px){
+@media screen and (min-width : 768px) {
   * {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
+  }
+  .box {
+    background-color: #F6F6F6;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    font-size: 1rem;
+    text-align: center;
+    height: 450px;
+}
+  .paris {
+    font-size: 1.6rem;
+  }
+  .fa-map-marker-alt{
+    font-size: 1.6rem;
+  }
+
+  .working {
+    position: relative;
+    left: 210px;
+    width: 320px;
   }
   .card2:hover   .fa-check-circle{
     display: inline-block;
@@ -2381,12 +2916,12 @@
    }
   .num2 {
     position: relative;
-    left: -155px;  
+    left: -13px;  
     top: 30px;
    }
    .num3 {
     position: relative;
-    left: -80px;
+    left: -10px;
     top: 30px;
    }
    .btns .restaurant  .fa-mobile-alt {
@@ -2397,13 +2932,13 @@
    }
      .fa-list-ul { 
     position: relative;
-    left: -157px;
+    left: -20px;
     top: 33px;
     font-size: 1.7rem;
   }
    .fa-store {
     position: relative;
-    left: -88px;
+    left: -15px;
     top: 33px;
     color: #9356DC;
     font-size: 1.5rem;
@@ -2417,13 +2952,13 @@
    }
    .text2 { 
     position: relative;
-    left: -113px;
+    left: 26px;
     top: 32px;
     font-size: 1.6rem;
   }
    .text3 {
     position: relative;
-    left: -40px;
+    left: 26px;
     top: 32px;
     font-size: 1.6rem;
    }
@@ -2431,32 +2966,32 @@
     font-size: 2.2rem;
     position: relative;
     top: 30px;
-    left: -214px;
+    left: 0px;
 }
 .title3 {
   position: relative;
   top: -50px;
-  left: -135px;
+  left: 20px;
   font-size: 4.2vw;
 }
 .title3-1 {
   position: relative;
-  left: -209px;
+  left: 20px;
   top: -50px;
   font-size: 4.2vw;
 }
 .title3-2 {
  position: relative;
- left: -108px;
+ left: 20px;
 }
 .title3-3 {
  position: relative;
- left: -199px;
+ left: 20px;
  top: -35px;
 }
 .title3-4 {
  position: relative;
- left: -158px;
+ left: 20px;
  top: -30px;
 }
 .title3-5 {
@@ -2467,6 +3002,15 @@
   position: relative;
   top: -37px;
   left: -213px;
+}
+.res-list {
+  background-color: #F6F6F6;
+  position: relative;
+  left: 0px;
+  top: 40px;
+  padding: 5%;
+  width: 100vw;
+  height: 2220px;
 }
 .add {
     font-size: 1.6rem;
@@ -2526,20 +3070,36 @@
   text-shadow: 0 0 2px #000;
   position: relative;
   left: 230px;
-  top: 20px;
+  top: 60px;
+}
+.image7{
+  position: relative;
+  left: 180px;
+}
+.entry4 {
+  border-bottom: 3px solid #B0E7D9;
+  width: 90px;
+  position: relative;
+  left: 20px;
+  top: 0px;
+  padding-top: 70px;
+  font-size: 1.9rem;
+}
+.entry6-1 {
+  padding-top: 80px;
 }
 .container4 .goum {
   border-radius: 20px 20px 10px 10px;
   position: relative;
   top: -30px;
   left: 0px;
-  height: 2350px;
+  height: 2430px;
   z-index: 2;
   overflow: hidden;
   background-color: #F6F6F6;
 }
 .container5 {
-  height: 3300px;
+  height: 3340px;
 }
 .footer-container3 {
   position: relative;
@@ -2549,13 +3109,12 @@
   height: 480px;
 }
   .banner {
-    border: 1px solid black;
     background-color: #99E2D0;
     color: black;
     position: relative;
-    top: -170px;
-    left: 500px;
-    padding: 5px 20px;
+    top: -290px;
+    left: 420px;
+    padding: 5px 40px;
   }
   .cards {
     padding: 3%;
@@ -2564,7 +3123,7 @@
     height: 2080px;
 }
 .footer {
-  height: 510px;
+  height: 530px;
   width: 768px;
 }
   .container4 .full .fa-heart {
@@ -2575,9 +3134,16 @@
     text-shadow: 0 0 2px #000;
     position: relative;
     left: 180px;
-    top: 20px;
+    top: 53px;
     font-size: 2.2rem;
    }
+   .entry1 {
+    padding-top: 70px;
+}
+.image4{
+  position: relative;
+  left: 70px;
+}
    .container3 .encha .fa-heart {
     background-color: white;
     color: white;
@@ -2586,7 +3152,7 @@
     text-shadow: 0 0 2px #000;
     position: relative;
     left: 30px;
-    top: 20px;
+    top: 60px;
     font-size: 2.2rem;
 }
 .container2 .basti .fa-heart {
@@ -2597,7 +3163,7 @@
   text-shadow: 0 0 2px #000;
   position: relative;
   left: 410px;
-  top: 20px;
+  top: 60px;
   font-size: 2.2rem;
 }
   .cards .card {
@@ -2610,23 +3176,27 @@
   }
   .cards .card .h1 .fa-heart{
     position: relative;
-    left: 100px;
-    top: -28px;
+    left: 270px;
+    top: -35px;
+    font-size: 2.0rem;
   }
   .cards .card .h2 .fa-heart{
    position: relative;
-   left: 80px;
-   top: -28px;
+   left: 210px;
+   top: -35px;
+   font-size: 2.0rem;
  }
  .cards .card .h3 .fa-heart{
    position: relative;
-   left: 180px;
-   top: -10px;
+   left: 400px;
+   top: -17px;
+   font-size: 2.0rem;
  }
  .cards .card .h4 .fa-heart{
    position: relative;
-   left: 135px;
-   top: -10px;
+   left: 310px;
+   top: -17px;
+   font-size: 2.0rem;
  }
  .restaurant {
   padding: 3px;
@@ -2643,7 +3213,7 @@
   padding: 3px;
   border-radius: 15px;
   display: inline-block;
-  width: 85%;
+  width: 639.19px;
   height: 130px;
   background-color: #F6F6F6;
   position: relative;
@@ -2654,7 +3224,7 @@
   padding: 3px;
   border-radius: 15px;
   display: inline-block;
-  width: 85%;
+  width: 639.19px;
   height: 130px;
   background-color: #F6F6F6;
   position: relative;
@@ -2731,7 +3301,7 @@
     top: -75px;
     left: 0px;
     border-radius: 20px 20px 10px 10px;
-    height: 2300px;
+    height: 2340px;
     z-index: 2;
     overflow: hidden;
     background-color: #F6F6F6;;
@@ -2741,11 +3311,15 @@
   top: -65px;
   left: 0px;
   border-radius: 20px 20px 10px 10px;
-  height: 2500px;
+  height: 2570px;
   z-index: 2;
   overflow: hidden;
   background-color: white;
   background-color: #F6F6F6;
+}
+.image6{
+  position: relative;
+  left: 170px;
 }
 .footer-container2 {
   position: relative;
@@ -2753,12 +3327,16 @@
 }
 .entry3 {
   border-bottom: 3px solid #B0E7D9;
-  width: 45px;
+  width: 85px;
   position: relative;
   left: 20px;
   top: 10px;
   padding-top: 40px;
   font-size: 1.9rem;
+}
+.entry3-1 {
+  position: relative;
+  padding-top: 90px;
 }
 .container3{
   height: 3540px;
@@ -2774,8 +3352,21 @@
      font-size: 2.8rem;
      position: relative;
      left: 30px;
+     top: 60px;
    }
-  
+   .image3 {
+    position: relative;
+    left: -20px;
+  }
+  .image5 {
+    position: relative;
+    left: 160px;
+  }
+  .arrow2{
+    position: relative;
+    top: -10px;
+
+  }
    .cards2 {
     display: grid;
     grid-template-rows: repeat(3, 140px);
@@ -2798,7 +3389,20 @@
      position: relative;
      left: 40px;
      font-size: 1.6rem;
+     width: 80px;
    }
+   .entry2 {
+    border-bottom: 3px solid #B0E7D9;
+    width: 85px;
+    position: relative;
+    left: 20px;
+    top: 20px;
+    font-size: 1.9rem;
+    padding-top: 40px;
+}
+.entry2-1 {
+  padding-top: 65px;
+}
     .footer-container {
      position: relative;
      top: -20px;
@@ -2876,17 +3480,19 @@
   }
 .work {
   position: relative;
-  left: -220px;
+  left: -170px;
   font-size: 1.7rem;
 }
 }
 
-@media only screen and (min-width : 1024px){
-  * {
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    font-size: 24px;
+@media screen and (min-width: 1024px) {
+  .paris {
+    font-size: 1.8rem;
   }
+  .fa-map-marker-alt{
+    font-size: 1.8rem;
+  }
+
   .card2:hover   .fa-check-circle{
     display: inline-block;
     cursor: pointer;
@@ -2941,31 +3547,31 @@
   
   @keyframes slide {
     0% {
-       left: 70px;
+       left: 60px;
        top: -55px;
        opacity: 1;
        width: 0px;
        }
        33% {
-         left: 70px;
+         left: 60px;
          top: -55px;
          opacity: 1;
          width: 170px;
          }
          50% {
-           left: 70px;
+           left: 60px;
            top: -55px;
            opacity: 1;
            width: 170px;
            }
        83.3% {
-         left: 70px;
+         left: 60px;
          top: -55px;
          opacity: 1;
          width: 170px;
          }
     100% {
-     left: 70px;
+     left: 60px;
      top: -55px;
      width: 0px;
      opacity: 0;
@@ -2976,10 +3582,10 @@
   left: -220px;
   font-size: 1.7rem;
 }
-}
+
   .work {
     position: relative;
-    left: -310px;
+    left: -270px;
     font-size: 1.7rem;
   }
   .title {
@@ -2995,20 +3601,25 @@
   border-bottom: 2px solid #B0E7D9;
 }
 .entry1 {
-  padding-top: 30px;
+  padding-top: 70px;
 }
 .title1 {
   position: relative;
   top: 16px;
   left: 15px;
-  font-size: 1.9rem;
+  font-size: 2.1rem;
 }
 .add {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   position: relative;
   left: 15px;
   top: 17px;
   overflow: hidden;
+}
+.image3 {
+  position: relative;
+  left: -20px;
+  font-size: 3.5rem;
 }
 .cards2 {
   display: grid;
@@ -3039,13 +3650,12 @@
   text-overflow: ellipsis;
 }
   .banner {
-    border: 1px solid black;
     background-color: #99E2D0;
-    color: black;
+    color: #018767;
     position: relative;
-    top: -180px;
-    left: 700px;
-    padding: 5px 20px;
+    top: -380px;
+    left: 580px;
+    padding: 8px 60px;
   }
   .container4 .full .fa-heart {
     background-color: white;
@@ -3054,12 +3664,12 @@
     z-index:1;
     text-shadow: 0 0 2px #000;
     position: relative;
-    left: 210px;
-    top: 20px;
+    left: 310px;
+    top: 60px;
     font-size: 2.6rem;
    }
    .container4 .full2 {
-    height: 2720px;
+    height: 2680px;
 }
 .container4 {
   height: 4100px;
@@ -3089,6 +3699,12 @@
 .footer-container2 {
   position: relative;
   top: -70px;
+  left: -40px;
+}
+.image7 {
+  position: relative;
+  left: 290px;
+  font-size: 3.5rem;
 }
 .container2 .basti .fa-heart {
   background-color: white;
@@ -3097,17 +3713,22 @@
   z-index: 1;
   text-shadow: 0 0 2px #000;
   position: relative;
-  left: 550px;
-  top: 20px;
+  left: 600px;
+  top: 60px;
   font-size: 2.6rem;
 }
 .entry3 {
   position: relative;
   left: 50px;
 }
+.entry3-1 {
+  position: relative;
+  padding-top: 110px;
+}
 .container4 .goum {
   border: 2px solid black;
-  border-radius: 20px 20px 10px 10px;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
   position: relative;
   top: -50px;
   left: 0px;
@@ -3120,6 +3741,7 @@
 .footer-container3 {
   position: relative;
   top: -80px;
+  left: -30px;
 }
 .container4 .goum .fa-heart {
   background-color: white;
@@ -3128,8 +3750,8 @@
   z-index: 1;
   text-shadow: 0 0 2px #000;
   position: relative;
-  left: 280px;
-  top: 20px;
+  left: 380px;
+  top: 60px;
   font-size: 2.6rem;
 }
 .entry4 {
@@ -3137,7 +3759,7 @@
   left: 40px;
 }
 .container5{
-  height: 4000px;
+  height: 3800px;
 }
 
  .footer-f {
@@ -3150,8 +3772,8 @@
   z-index: 1;
   text-shadow: 0 0 2px #000;
   position: relative;
-  left: 40px;
-  top: 20px;
+  left: 140px;
+  top: 60px;
   font-size: 2.6rem;
 }
 container3 .encha {
@@ -3188,7 +3810,12 @@ container3 .encha {
   top: -80px;
 }
 .container3{
-  height: 4050px;
+  height: 4000px;
+}
+.image6 {
+  position: relative;
+  left: 290px;
+  font-size: 3.5rem;
 }
   .cards .card {
     background-color: white;
@@ -3199,21 +3826,27 @@ container3 .encha {
   }
   .cards .card .h1 .fa-heart{
     position: relative;
-    left: 150px;
-    top: -30px;
+    left: 370px;
+    top: -15px;
+    font-size: 2.4rem;
   }
   .cards .card .h2 .fa-heart{
    position: relative;
-   left: 110px;
-   top: -30px;
+   left: 290px;
+   top: -15px;
+   font-size: 2.4rem;
  }
  .cards .card .h3 .fa-heart{
    position: relative;
-   left: 245px;
+   left: 543px;
+   top: 15px;
+   font-size: 2.4rem;
  }
  .cards .card .h4 .fa-heart{
    position: relative;
-   left: 183px;
+   left: 420px;
+   top: 15px;
+   font-size: 2.4rem;
  }
  .restaurant {
   padding: 3px;
@@ -3230,7 +3863,7 @@ container3 .encha {
   padding: 3px;
   border-radius: 30px;
   display: inline-block;
-  width: 85%;
+  width: 856.8px;
   height: 160px;
   background-color: #F6F6F6;
   position: relative;
@@ -3241,43 +3874,48 @@ container3 .encha {
   padding: 3px;
   border-radius: 30px;
   display: inline-block;
-  width: 85%;
+  width: 856.8px;
   height: 160px;
   background-color: #F6F6F6;
   position: relative;
   left: 0px;
   box-shadow: 2px 2px 5px #e7e7e7;
 }
+.working {
+  position: relative;
+  left: 340px;
+  width: 320px;
+}
 .num1 {
   position: relative;
-  left: -190px;
+  left: -225px;
   top: 35px;
  }
 .num2 {
   position: relative;
-  left: -205px;  
+  left: -15px;  
   top: 35px;
  }
  .num3 {
   position: relative;
-  left: -110px;
+  left: -15px;
   top: 35px;
  }
  .btns .restaurant  .fa-mobile-alt {
   position: relative;
   top: 39px;
-  left: -200px;
+  left: -230px;
   font-size: 1.7rem;
  }
    .fa-list-ul { 
   position: relative;
-  left: -222px;
+  left: -23px;
   top: 38px;
   font-size: 1.7rem;
 }
  .fa-store {
   position: relative;
-  left: -122px;
+  left: -21px;
   top: 38px;
   color: #9356DC;
   font-size: 1.5rem;
@@ -3285,19 +3923,19 @@ container3 .encha {
 
  .text1 {
   position: relative;
-  left: -150px;
+  left: -180px;
   top: 39px;
   font-size: 1.8rem;
  }
  .text2 { 
   position: relative;
-  left: -183px;
+  left: 21px;
   top: 39px;
   font-size: 1.8rem;
 }
  .text3 {
   position: relative;
-  left: -87px;
+  left: 20px;
   top: 39px;
   font-size: 1.8rem;
  }
@@ -3342,7 +3980,7 @@ container3 .encha {
    .cards {
     padding: 3%;
     position: relative;
-    left: -13px;
+    left: 13px;
     height: 2780px;
 }
 .footer {
@@ -3352,6 +3990,12 @@ container3 .encha {
 .footer-container {
   position: relative;
   top: -60px;
+  left: -30px;
+}
+.image5 {
+  position: relative;
+  left: 290px;
+  font-size: 3.5rem;
 }
   .container4 .image2-0{
     background-image: url('../src/img/dish1.jpg');
@@ -3393,56 +4037,160 @@ container3 .encha {
 }
 .title3 {
   position: relative;
-  top: -50px;
-  left: -185px;
+  top: -30px;
+  left: 30px;
   font-size: 4.2vw;
 }
 .title3-1 {
   position: relative;
-  left: -279px;
-  top: -50px;
+  left: 30px;
+  top: -30px;
   font-size: 4.2vw;
 }
 .title3-2 {
  position: relative;
- left: -148px;
+ left: 30px;
 }
 .title3-3 {
  position: relative;
- left: -268px;
- top: -35px;
+ left: 30px;
+ top:  0px;
 }
 .title3-4 {
  position: relative;
- left: -218px;
- top: -30px;
+ left: 30px;
+ top: 0px;
 }
 .title3-5 {
   position: relative;
-  top: -37px;
+  top: 0px;
 }
 .title3-6 {
   position: relative;
-  top: -37px;
-  left: -286px;
+  top: 0px;
+  left: 30px;
+}
+.res-list {
+  background-color: #F6F6F6;
+  position: relative;
+  left: 0px;
+  top: 40px;
+  padding: 5%;
+  width: 100vw;
+  height: 2960px;
 }
 .btn {
   background: linear-gradient(to top, #736e7a 0%, #FF79DA 100%);
   color: white;
   padding: 1%;
   border-radius: 100px;
-  width: 50vw;
-  height: 15vh;
+  width: 40vw;
+  height: 100px;
   text-shadow: 0.1em 0.1em #333;
+  font-size: 1.5rem;
+}
 }
 
-
-@media only screen and (min-width : 1366px){
-  * {
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    font-size: 26px;
-  }
+@media screen and (min-width : 1366px){
+  .container2 .basti {
+    border-top-left-radius: 120px;
+    border-top-right-radius: 120px;
+    position: relative;
+    top: -75px;
+    left: 0px;
+    height: 2900px;
+    z-index: 2;
+    overflow: hidden;
+    background-color: #F6F6F6;
+}
+.card2:hover  .check-container{ 
+  will-change: transform;
+  backface-visibility: hidden;
+  outline: none;
+  box-shadow: 0 0 0 #000;
+  float: right;
+  position: relative;
+  top: -60px;
+  left: 60px;
+  width:30vw;
+   height: 160px;
+  cursor: pointer;
+  animation-name: slide;
+  animation-timing-function: ease-in-out;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-direction:normal;
+  transform-origin: center center;
+  background-color: #99E2D0;
+  z-index: 2;
+}
+@keyframes slide {
+  0% {
+     left: 60px;
+     top: -60px;
+     opacity: 1;
+     width: 0px;
+     }
+     33% {
+       left: 60px;
+       top: -60px;
+       opacity: 1;
+       width: 200px;
+       }
+       50% {
+         left: 60px;
+         top: -60px;
+         opacity: 1;
+         width: 200px;
+         }
+     83.3% {
+       left: 60px;
+       top: -60px;
+       opacity: 1;
+       width: 200px;
+       }
+  100% {
+   left: 60px;
+   top: -60px;
+   width: 0px;
+   opacity: 0;
+ }
+}
+.card2:hover   .fa-check-circle{
+  display: inline-block;
+  cursor: pointer;
+  font-size: 2rem;
+  animation-name: spin;
+  animation-timing-function:linear;
+  animation-duration: 3s;
+  animation-direction:normal;
+  animation-fill-mode: forwards;
+  transform-origin: center center;
+  position: relative;
+  top:60px;
+  left: 80px;
+  color: white;
+  z-index: 2;
+}
+.container2 {
+  height: 4500px;
+}
+.footer-container2 {
+  position: relative;
+  top: -70px;
+  left: -100px;
+}
+.container4 .goum {
+  border-top-left-radius: 120px;
+  border-top-right-radius: 120px;
+  position: relative;
+  top: -50px;
+  left: 0px;
+  height: 2950px;
+  z-index: 2;
+  overflow: hidden;
+  background-color: #F6F6F6;
+}
   .title4 {
     font-size: 2.2rem;
     position: relative;
@@ -3451,38 +4199,38 @@ container3 .encha {
 }
 .title3 {
   position: relative;
-  top: -40px;
-  left: -115px;
+  top: -20px;
+  left: 15px;
   font-size: 2vw;
 }
 .title3-1 {
   position: relative;
-  left: -177px;
-  top: -35px;
+  left: 16px;
+  top:  -15px;
   font-size: 2vw;
 }
 .title3-2 {
  position: relative;
- left: -92px;
+ left: 16px;
 }
 .title3-3 {
  position: relative;
- left: -172px;
- top: -40px;
+ left: 16px;
+ top: -15px;
 }
 .title3-4 {
  position: relative;
- left: -138px;
- top: -40px;
+ left: 16px;
+ top: -15px;
 }
 .title3-5 {
   position: relative;
-  top: -37px;
+  top: -15px;
 }
 .title3-6 {
   position: relative;
-  top: -37px;
-  left: -180px;
+  top: -15px;
+  left: 16px;
 }
  .title {
     font-size: 3.8rem;
@@ -3497,17 +4245,26 @@ container3 .encha {
   position: relative;
   top: 190px;
 }
+.entry1 {
+  padding-top: 0px;
+}
+.entry3-2{
+  padding-top: 100px;
+}
 .btn {
   background: linear-gradient(to top, #9356DC 0%, #FF79DA 100%);
   color: white;
   padding: 1%;
-  border-radius: 20px;
-  width: 50vw;
+  border-radius: 80px;
+  width: 40vw;
   height: 100px;
   text-shadow: 0.1em 0.1em #333;
 }
-.container4 {
-  height: 3060px;
+.fa-map-marker-alt{
+  font-size: 2rem;
+}
+.paris {
+  font-size: 2rem;
 }
 .footer-f {
   height: 500px;
@@ -3529,9 +4286,24 @@ container3 .encha {
   .entry {
     position: relative;
     left: 40px;
-    top: 150px;
+    top: 180px;
+    width:110px;
     font-size: 2.2rem;
   }
+  .image3 {
+    position: relative;
+    left: -20px;
+    top: 100px;
+    font-size: 4.0rem;
+}
+.box {
+  background-color: #F6F6F6;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  font-size: 1rem;
+  text-align: center;
+  height: 600px;
+}
   .title1 {
     position: relative;
     top: 16px;
@@ -3563,7 +4335,7 @@ container3 .encha {
   height: 30px;
   position: relative;
   left: 0px;
-  top: -50px;
+  top: 0px;
   font-size: 3rem;
 }
   .entry2 {
@@ -3574,10 +4346,12 @@ container3 .encha {
   .entry3 {
     position: relative;
     left: 40px;
+    top: 170px;
   }
   .entry4 {
     position: relative;
     left: 40px;
+    top: 170px;
   }
   .container4 .full .fa-heart {
     background-color: white;
@@ -3586,7 +4360,7 @@ container3 .encha {
     z-index:1;
     text-shadow: 0 0 2px #000;
     position: relative;
-    left: 300px;
+    left: 510px;
     top: 110px;
     font-size: 3.6rem;
    }
@@ -3607,8 +4381,9 @@ container3 .encha {
     z-index:1;
     text-shadow: 0 0 2px #000;
     position: relative;
-    left: 1180px;
-    top: 20px;
+    left: 820px;
+    top: 100px;
+    font-size: 3.6rem;
    }
    .container3 .encha .fa-heart {
     background-color: white;
@@ -3617,7 +4392,7 @@ container3 .encha {
     z-index:1;
     text-shadow: 0 0 2px #000;
     position: relative;
-    left: 70px;
+    left: 300px;
     top: 110px;
     font-size: 3.6rem;
    }
@@ -3628,16 +4403,17 @@ container3 .encha {
     z-index:1;
     text-shadow: 0 0 2px #000;
     position: relative;
-    left: 1100px;
-    top: 20px;
+    left: 600px;
+    top: 110px;
+    font-size: 3.6rem;
    }
   .cards .card .banner1 {
     background-color: #99E2D0;
     color: #088C6C;
     position: relative;
     top: -253px;
-    left: 170px;
-    padding: 5px 25px;
+    left: 340px;
+    padding: 8px 45px;
     font-size: 1rem;
   }
   .cards .card .banner2 {
@@ -3645,8 +4421,8 @@ container3 .encha {
     color: #088C6C;
     position: relative;
     top: -253px;
-    left: 170px;
-    padding: 5px 25px;
+    left: 340px;
+    padding: 8px 45px;
     font-size: 1rem;
   }
   .cards .card {
@@ -3703,7 +4479,7 @@ container3 .encha {
     height: 900px;
     width: 1366px;
     position: relative;
-    top: 0px;
+    top: 100px;
    }
    .container3 .image2-1{
     background-image: url('../src/img/dish3.jpg');
@@ -3720,35 +4496,71 @@ container3 .encha {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 600px;
+    height: 900px;
     width: 100%;
+    position: relative;
+    top: 100px;
    }
    .container4 .image2-3{
     background-image: url('../src/img/dish2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 640px;
+    height: 900px;
     width: 100%;
+    position: relative;
+    top: 100px;
    }
-   
-  
    .image {
     font-family: "Shrikhand";
     font-size: 3rem;
     height: 30px;
     position: relative;
-    left: 340px;
-    top: 80px;
-    font-size: 4rem;;
+    left: 0px;
+    top:  30px;
+    font-size: 4rem;
+    padding-bottom: 80px;;
+}
+.image9{
+  position: relative;
+  top: 0px;
+}
+.image5 {
+  position: relative;
+  left: 440px;
+  top: 80px;
+  font-size: 4rem;
+}
+.entry2-1 {
+  padding-top: 0px;
+}
+.arrow {
+  font-size: 4rem;
+  top: 70px;
+}
+.title5 {
+  width: 60%;
+  font-size: 3.3rem;
+  text-align: center;
+  padding-bottom: 350px;
+}
+.dis {
+  font-size: 3rem;
+  padding-top: 350px;
+}
+.fa-arrow-left {
+  font-size: 1.5rem;
+  position: relative;
+  top: 70px;
+  left: 40px;
 }
    .footer3{
      height: 540px;
    }
    .cards .card .h1 .fa-heart {
     position: relative;
-    left: 80px;
-    top: -25px;
+    left: 220px;
+    top: -5px;
     background-color: white;
     color: white;
     display: inline-block;
@@ -3756,16 +4568,15 @@ container3 .encha {
     text-shadow: 0 0 2px #000;
     font-size: 1.3rem;
   }
-  .container2 {
-    height: 3000px;
-  }
   .footer2 {
-    height: 500px;
+    height: 700px;
+    position: relative;
+    top: -100px;
   }
   .cards .card .h2 .fa-heart {
     position: relative;
-    left: 60px;
-    top: -25px;
+    left: 160px;
+    top: -10px;
     background-color: white;
     color: white;
     display: inline-block;
@@ -3775,8 +4586,8 @@ container3 .encha {
   }
   .cards .card .h3 .fa-heart {
     position: relative;
-    left: 140px;
-    top: -25px;
+    left: 330px;
+    top: -5px;
     background-color: white;
     color: white;
     display: inline-block;
@@ -3786,8 +4597,8 @@ container3 .encha {
   }
   .cards .card .h4 .fa-heart {
     position: relative;
-    left: 100px;
-    top: -25px;
+    left: 240px;
+    top: -5px;
     background-color: white;
     color: white;
     display: inline-block;
@@ -3795,25 +4606,57 @@ container3 .encha {
     text-shadow: 0 0 2px #000;
     font-size: 1.3rem;
   }
+  .res-list {
+    background-color: #F6F6F6;
+    position: relative;
+    left: 0px;
+    top: 40px;
+    padding: 5%;
+    width: 100vw;
+    height: 1260px;
+}
   .container3 {
-    height: 4850px;
+    height: 4690px;
   }
+  .image6 {
+    position: relative;
+    left: 420px;
+    top: 80px;
+    font-size: 4rem;
+}
+.entry3-1 {
+  position: relative;
+  padding-top: 20px;
+}
+.image7 {
+  position: relative;
+  left: 420px;
+  top: 80px;
+  font-size: 4rem;
+}
+.entry6-1 {
+  padding-top: 20px;
+}
   .container4 .full2 {
-    height: 2720px;
+    height: 2990px;
     border-top-left-radius: 120px;
     border-top-right-radius: 120px;
     position: relative;
     top: -100px;
 }
+.container4 {
+  height: 4630px;
+}
   .image4 {
     font-size: 4rem;
-    text-align: center;
+    position: relative;
+    top: 80px;
     font-family: "Shrikhand";
 }
   .footer-container5 {
     position: relative;
     top: -80px;
-    left: -70px;
+    left: -90px;
 }
   .btn-container {
     display: flex;
@@ -3823,51 +4666,19 @@ container3 .encha {
     position: relative;
     top: 230px;
 }
-  .footer .footer-container{
+ .footer-container{
     position: relative;
     top: -100px;
+    left: -100px;
   }
   .footer-f{
     position: relative;
+    top: -100px;
   }
   .card2:hover   .fa-check-circle{
     display: inline-block;
-}
-.cards2 .card2 .check-container {
-  width: 0px;
-  height: 0px;
-  background-color: #99E2D0;
-  position: relative;
-  top: 0px;
-  right: 300px;
-  float: right;
-  box-sizing: border-box;
-  border-radius: 0 25px 25px 0;
-  z-index: 2;
-  transform: translateY(0);
-  box-shadow: 0 0 0 #000;
-}
-.card2:hover  .check-container{ 
-  will-change: transform;
-  backface-visibility: hidden;
-  outline: none;
-  box-shadow: 0 0 0 #000;
-  float: right;
-  position: relative;
-  top: -30px;
-  left: 100px;
-  width:30vw;
-   height: 100px;
-  cursor: pointer;
-  animation-name: slide;
-  animation-timing-function: ease-in-out;
-  animation-duration: 3s;
-  animation-fill-mode: forwards;
-  animation-direction:normal;
-  transform-origin: center center;
-  background-color: #99E2D0;
-  z-index: 2;
-}
+  }
+
 .footer{
   width: 1366px;
   height: 700px;
@@ -3887,7 +4698,7 @@ container3 .encha {
   padding: 3px;
   border-radius: 30px;
   display: inline-block;
-  width: 85%;
+  width: 1133px;
   height: 160px;
   background-color: #F6F6F6;
   position: relative;
@@ -3898,43 +4709,48 @@ container3 .encha {
   padding: 3px;
   border-radius: 30px;
   display: inline-block;
-  width: 85%;
+  width: 1133px;
   height: 160px;
   background-color: #F6F6F6;
   position: relative;
   left: 0px;
   box-shadow: 2px 2px 5px #e7e7e7;
 }
+.working {
+  position: relative;
+  left: 500px;
+  width: 320px;
+}
 .num1 {
   position: relative;
-  left: -305px;
+  left: -355px;
   top: 35px;
  }
 .num2 {
   position: relative;
-  left: -325px;  
+  left: -20px;  
   top: 35px;
  }
  .num3 {
   position: relative;
-  left: -220px;
+  left: -10px;
   top: 35px;
  }
  .btns .restaurant  .fa-mobile-alt {
   position: relative;
   top: 39px;
-  left: -320px;
+  left: -380px;
   font-size: 1.7rem;
  }
    .fa-list-ul { 
   position: relative;
-  left: -345px;
+  left: -45px;
   top: 38px;
   font-size: 1.7rem;
 }
  .fa-store {
   position: relative;
-  left: -240px;
+  left: -40px;
   top: 38px;
   color: #9356DC;
   font-size: 1.5rem;
@@ -3942,19 +4758,19 @@ container3 .encha {
 
  .text1 {
   position: relative;
-  left: -270px;
+  left: -340px;
   top: 39px;
   font-size: 1.8rem;
  }
  .text2 { 
   position: relative;
-  left: -305px;
+  left: -15px;
   top: 39px;
   font-size: 1.8rem;
 }
  .text3 {
   position: relative;
-  left: -20px;
+  left: -10px;
   top: 39px;
   font-size: 1.8rem;
  }
@@ -3962,11 +4778,29 @@ container3 .encha {
   font-size: 2.2rem;
   position: relative;
   top: 30px;
-  left: -214px;
+  left: 50px;
 }
 .work {
   position: relative;
-  left: -440px;
-  font-size: 1.7rem;
+  left: -400px;
+  font-size: 2.5rem;
+}
+@keyframes slide2 {
+  0% {
+     transform: translateX(0%);
+     opacity: 1;
+     }
+     33% {
+      transform: translateX(-300%);
+       opacity: 1;
+       }
+     83.3% {
+      transform: translateX(-300%);
+       opacity: 1;
+       }
+  100% {
+    transform: translateX(0%);
+   opacity: 1;
+ }
 }
 }
