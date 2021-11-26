@@ -27,10 +27,27 @@ body {
     top: -5px;
     left: 20px;
   }
+  .heading {
+    display: flex;
+    flex-direction: column;
+  }
   .image  {
     font-family: "Shrikhand";
     font-size: 1.5rem;
     text-align: center;
+  }
+  .card-text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-left: 3%;
+  }
+  .card-text-section {
+    width: 100%;
+    height: 3.5rem;
+    display: flex;
+    background-color: white;
+    position: relative;
   }
   .image4{
     font-size: 1.5rem;
@@ -52,7 +69,12 @@ body {
   }
   .title5 {
     width: 60%;
-    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 2%;
+    font-weight: 900;
+    font-size: 1.3rem;
+    position: relative;
+    right: 5%;
   }
   .box {
     background-color: #F6F6F6;
@@ -60,10 +82,7 @@ body {
     padding-bottom: 3rem;
     font-size: 1rem;
     text-align: center;
-    height: 250px;
   }
-  
-
 .work {
   position:relative;
   left: 10px;
@@ -81,18 +100,19 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
-  height: 140px;
-  width: 270px;
+  height: 8.75rem;
+  width: 100%;;
   border-top-left-radius: 10px;
   border-top-right-radius:  10px;
+  z-index: 1;
  }
  .cards .card .image3-2{
   background-image: url('../src/img/dish3.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 60%;
-  height: 140px;
-  width: 270px;
+  height: 8.75rem;
+  width: 100%;
   border-top-left-radius: 10px;
   border-top-right-radius:  10px;
  }
@@ -101,8 +121,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
-  height: 140px;
-  width: 270px;
+  height: 8.75rem;
+  width: 100%;
   border-top-left-radius: 10px;
   border-top-right-radius:  10px;
  }
@@ -111,8 +131,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
-  height: 140px;
-  width: 270px;
+  height: 8.75rem;
+  width: 100%;
   border-top-left-radius: 10px;
   border-top-right-radius:  10px;
  }
@@ -178,12 +198,12 @@ body {
      width: 50vw;
      height: 50px;
      text-shadow: 0.1em 0.1em #333;
-     position: relative;
-     top: -10px;
      font-size: 0.7rem;
+     margin-top: 10%;
      }
   .dis {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+    text-align: center;
   }
 
   .num {
@@ -252,39 +272,20 @@ body {
  }
  
  .working {
-   position: relative;
-   left:0px;
-   width: 320px;
+   padding-bottom: 10%;;
+   width: 100%;
+   padding-top: 10%;
  }
 
  .btns {
      display: inline;
  }
  .title3 {
-   position: relative;
-   top: -30px;
-   left: 0px;
    font-size: 4.2vw;
  }
  .title3-1 {
-   position: relative;
-   left: 0px;
-   top: -35px;
    font-size: 4.2vw;
  }
- .title3-2 {
-  position: relative;
-  left: 0px;
-}
-.title3-3 {
-  position: relative;
-  left: 0px;
-}
-.title3-4 {
-  position: relative;
-  left: 0px;
-}
-
  .restaurant {
    padding: 3px;
    border-radius: 15px;
@@ -321,33 +322,39 @@ body {
   }
   .res-list {
     background-color: #F6F6F6;
-    position: relative;
-    left: 0px;
-    top: 40px;
-    padding: 5%;
     width:100vw;
-    height: 1100px;
+    display: inline-block;
+  }
+  .paris {
+    padding-left: 3%;
   }
   .cards {
-    padding: 3%;
-    position: relative;
-    left: -5px;
-    top: 40px;
-    height: 1020px;
     display: flex;
     flex-direction: column;
-    gap: 1.7rem;
-    width: 320px;
+    width: 95%;
+    margin-top: 20%;
+    margin-bottom: 18%;
+    background-color: #f6f6f6;
+    gap: 20px;
   }
 
   .card {
-    background-color: white;
-    width: 270px;
-    height: 200px;
+    background-color: #F6F6F6;
+    width: 90%;;
+    height: 12.5rem;
     padding: 0%;
+    padding-bottom: 5%;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     box-shadow: 2px 2px 5px #E7E7E7;
+    margin: 0 auto;
+    gap: 10%;
+  }
+  .card:nth-child(1){
+    position: relative;
+   }
+  .card:nth-child(2){
+   position: relative;
   }
   a {
     color: black;
@@ -356,46 +363,46 @@ body {
   .title4{
     font-size: 1.2rem;
     position: relative;
-    top: 30px;
-    left: 5px;
+    top: 40px;
+    left: 20px;
   }
   .cards .card .h1 .fa-heart {
-    position: relative;
-    left: 120px;
-    top: -25px;
     background-color: white;
     color: white;
     display: inline-block;
     z-index:1;
     text-shadow: 0 0 2px #000;
     font-size: 1rem;
+    position: absolute;
+    left: 85%;
+    top: 30%;
   }
   .cards .card .h2 .fa-heart {
-    position: relative;
-    left: 95px;
-    top: -25px;
     background-color: white;
     color: white;
     display: inline-block;
     z-index:1;
     text-shadow: 0 0 2px #000;
     font-size: 1rem;
+    position: absolute;
+    top: 30%;
+    left: 85%;
   }
   .cards .card .h3 .fa-heart {
-    position: relative;
-    left: 175px;
-    top: -25px;
     background-color: white;
     color: white;
     display: inline-block;
     z-index:1;
     text-shadow: 0 0 2px #000;
     font-size: 1rem;
+    position: absolute;
+    top: 30%;
+    left: 85%;
   }
   .cards .card .h4 .fa-heart {
-    position: relative;
-    left: 130px;
-    top: -25px;
+    position: absolute;
+    top: 30%;
+    left: 85%;
     background-color: white;
     color: white;
     display: inline-block;
@@ -457,25 +464,32 @@ body {
     cursor: pointer;
    }
 
-  .banner {
+  .banner1 {
     background-color: #99E2D0;
     color: #30A387;
-    position: relative;
-    top: -130px;
-    left: 180px;
+    position: absolute;
+    top: 7%;
+    left: 69%;
     padding: 5px 20px;
     border-radius: 5%;
+    z-index: 2;
   }
+  .banner2 {
+    background-color: #99E2D0;
+    color: #30A387;
+    position: absolute;
+    top: 7%;
+    left: 69%;
+    padding: 5px 20px;
+    border-radius: 5%;
+    z-index: 2;
+}
 
   .footer {
    background-color: rgb(77, 77, 77);
    color: white;
-   width: 500px;
-   height: 270px;
+   width: 100%;
    text-align: left;
-   position: relative;
-   left: -20px;
-   top: -35px;
    padding: 15%;
    font-size: 1rem;
   }
@@ -500,7 +514,8 @@ body {
   .footer-container {
     width: 100%;
     position: relative;
-    top: 0px;
+    left: -5%;
+    top: -0.938rem;
   }
   .footer-container2 {
     width: 100%;
@@ -1083,8 +1098,41 @@ body {
   * {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    font-size: 12px;
   }
+  .card-text-section {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    background-color: white;
+    position: relative;
+}
+.cts-2{
+  height: 4rem;
+}
+.card-text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0%;
+  margin-left: 3%;
+}
+.ct-2 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  margin-left: 3%;
+}
+.card-text:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4%;
+  margin-left: 3%;
+}
+.card-text:nth-child(4) {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2%;
+  margin-left: 3%;
+}
   .container4 .full2 .cards2 .card2 .veg {
     position: relative;
     left: 0px;
@@ -1250,18 +1298,13 @@ body {
     width: 45vw;
     height: 50px;
     text-shadow: 0.1em 0.1em #333;
-    position: relative;
-    top: 15px;
 }
   .title4 {
     font-size: 1.7rem;
-    position: relative;
-    top: 30px;
-    left: 5px;
 }
 .num1 {
   position: relative;
-  left: -70px;
+  left: -50px;
   top: 15px;
  }
 
@@ -1278,7 +1321,7 @@ body {
  .btns .restaurant  .fa-mobile-alt {
   position: relative;
   top: 16px;
-  left: -72px;
+  left: -48px;
   font-size: 1.5rem;
  }
    .fa-list-ul { 
@@ -1295,7 +1338,7 @@ body {
 
  .text1 {
   position: relative;
-  left: -55px;
+  left: -30px;
   top: 15px;
   font-size: 1.1rem;
  }
@@ -1319,36 +1362,19 @@ body {
    position: relative;
    left: 6px;
  }
-  .banner {
-    border: 1px solid black;
-    background-color: #99E2D0;
-    color: black;
-    position: relative;
-    top: -130px;
-    left: 215px;
-    padding: 5px 20px;
-  }
   .container2{
     height: 1600px;
   }
   .cards {
-    padding: 3%;
-    position: relative;
-    left: -5px;
-    top: 40px;
-    height: 1070px;
     display: flex;
     flex-direction: column;
     gap: 1.7rem;
-    width: 100%;
+    width: 95%;
 }
 .image {
   font-family: "Shrikhand";
   font-size: 2rem;
   text-align: center;
-}
-.footer {
-  height: 220px;
 }
 .footer2 {
   height: 320px;
@@ -1446,42 +1472,19 @@ body {
   
   .cards .card {
     background-color: white;
-    width: 300px;
-    height: 210px;
+    width: 90%;
+    height: 12.625rem;
     border-radius: 5%;
-    padding: 0%;
+    padding-bottom: 5%;
+    margin-bottom: 2%;;
   }
-  .title3 {
-    position: relative;
-    top: -15px;
-    left: 10px;
-    font-size: 4.2vw;
-  }
-  .title3-1 {
-    position: relative;
-    left: 10px;
-    top: -15px;
-    font-size: 4.2vw;
-  }
-  .title3-2 {
-   position: relative;
-   left: 10px;
- }
- .title3-3 {
-   position: relative;
-   left: 10px;
- }
- .title3-4 {
-   position: relative;
-   left: 10px;
- }
  
   .cards .card .image3-1{
     background-image: url('../src/img/dish1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
-    height: 140px;
+    height: 9.625rem;
     width: 100%;
     border-top-left-radius: 10px;
     border-top-right-radius:  10px;
@@ -1491,7 +1494,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 60%;
-    height: 140px;
+    height: 9.625rem;
     width: 100%;
     border-top-left-radius: 10px;
     border-top-right-radius:  10px;
@@ -1501,7 +1504,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
-    height: 140px;
+    height: 9.625rem;
     width: 100%;
     border-top-left-radius: 10px;
     border-top-right-radius:  10px;
@@ -1511,7 +1514,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
-    height: 140px;
+    height: 9.625rem;
     width: 100%;
     border-top-left-radius: 10px;
     border-top-right-radius:  10px;
@@ -1557,37 +1560,26 @@ body {
    width: 80vw;
  }
  .cards .card .h1 .fa-heart{
-   position: relative;
-   left: 140px;
-   top: -10px;
    font-size: 1.2rem;
+   position: absolute;
+    left: 85%;
+    top: 10%;
  }
  .cards .card .h2 .fa-heart{
-  position: relative;
-  left: 113px;
-  top: -10px;
   font-size: 1.2rem;
+  position: absolute;
+  left: 85%;
+  top: 10%;
 }
 .cards .card .h3 .fa-heart{
-  position: relative;
-  left: 202px;
-  top: -10px;
   font-size: 1.2rem;
 }
 .cards .card .h4 .fa-heart{
-  position: relative;
-  left: 160px;
-  top: -10px;
   font-size: 1.2rem;
 }
 .res-list {
   background-color: #F6F6F6;
-  position: relative;
-  left: 0px;
-  top: 40px;
-  padding: 5%;
   width: 100vw;
-  height: 1130px;
 }
   .container4 .image2 img {
     width: 350px;
@@ -1636,6 +1628,11 @@ body {
     top: 20px;
     font-size: 1.6rem;
     padding-top: 25px;
+}
+.ct-1 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
 }
 .title1 {
   position: relative;
@@ -1722,42 +1719,16 @@ body {
 }
   .title4 {
     font-size: 1.7rem;
-    position: relative;
-    top: 30px;
-    left: 5px;
 }
 .title3 {
-  position: relative;
-  top: -10px;
-  left: 10px;
   font-size: 4.2vw;
 }
 .title3-1 {
-  position: relative;
-  left: 10px;
-  top: -10px;
   font-size: 4.2vw;
-}
-.title3-2 {
- position: relative;
- left: 10px;
-}
-.title3-3 {
- position: relative;
- left: 10px;
-}
-.title3-4 {
- position: relative;
- left: 10px;
 }
 .res-list {
   background-color: #F6F6F6;
-  position: relative;
-  left: 0px;
-  top: 40px;
-  padding: 5%;
   width: 100vw;
-  height: 1270px;
 }
 .num1 {
   position: relative;
@@ -1812,24 +1783,17 @@ body {
   font-size: 1.4rem;
  }
   .banner {
-    border: 1px solid black;
     background-color: #99E2D0;
     color: #018767;
-    position: relative;
-    top: -150px;
-    left: 230px;
     padding: 6px 24px;
   }
   .cards {
-    padding: 3%;
-    position: relative;
-    left: -5px;
-    top: 40px;
-    height: 1220px;
     display: flex;
     flex-direction: column;
     gap: 1.7rem;
     width: 100%;
+    padding-right: 10%;
+    margin-top: 15%;
 }
   .container4 .full .fa-heart {
     background-color: white;
@@ -1851,24 +1815,28 @@ body {
     padding: 0%;
   }
   .cards .card .h1 .fa-heart{
-    position: relative;
-    left: 150px;
     font-size: 1.4rem;
+    position: absolute;
+    left: 85%;
+    top: 60%;
   }
   .cards .card .h2 .fa-heart{
-   position: relative;
-   left: 116px;
    font-size: 1.4rem;
+   position: absolute;
+    left: 85%;
+    top: 60%;
  }
  .cards .card .h3 .fa-heart{
-   position: relative;
-   left: 218px;
    font-size: 1.4rem;
+   position: absolute;
+    left: 85%;
+    top: 45%;
   }
  .cards .card .h4 .fa-heart{
-   position: relative;
-   left: 170px;
    font-size: 1.4rem;
+   position: absolute;
+    left: 85%;
+    top: 45%;
  }
  .cards .card .image3-1{
   background-image: url('../src/img/dish1.jpg');
@@ -2104,7 +2072,36 @@ body {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-
+.title5 {
+  width: 60%;
+  font-size: 2.2rem;
+  text-align: center;
+}
+.dis {
+  font-size: 1.5rem;
+}
+.paris {
+  padding-left: 3%;
+  font-size: 1.4rem;
+}
+.fa-map-marker-alt {
+  font-size: 1.5rem;
+}
+.btn {
+  background: linear-gradient(to top, #736e7a 0%, #FF79DA 100%);
+  color: white;
+  padding: 1%;
+  border-radius: 40px;
+  width: 55vw;
+  height: 50px;
+  text-shadow: 0.1em 0.1em #333;
+  font-size: 1.3rem;
+}
+.image {
+  font-family: "Shrikhand";
+  font-size: 2.4rem;
+  text-align: center;
+}
 }
 
 @media screen and (min-width : 540px){
@@ -2119,7 +2116,11 @@ body {
   .fa-map-marker-alt{
     font-size: 1.4rem;
   }
-
+  .ct-1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0%;
+}
   .card2:hover   .fa-check-circle{
     display: inline-block;
     cursor: pointer;
@@ -2381,7 +2382,6 @@ body {
   .title4 {
     font-size: 2.2rem;
     position: relative;
-    top: 30px;
     left: 0px;
 }
 .restaurant {
@@ -2488,11 +2488,6 @@ body {
   font-size: 1.7rem;
 }
 .cards {
-  padding: 3%;
-  position: relative;
-  left: -15px;
-  top: 40px;
-  height: 1550px;
   display: flex;
   flex-direction: column;
   gap: 1.7rem;
@@ -2502,44 +2497,19 @@ body {
     border: 1px solid black;
     background-color: #99E2D0;
     color: #018767;
-    position: relative;
-    top: -210px;
-    left: 320px;
     padding: 10px 40px;
     font-size: 1.7rem;
   }
   .title3 {
-    position: relative;
-    top: -15px;
-    left: 20px;
     font-size: 4.2vw;
   }
   .title3-1 {
-    position: relative;
-    left: 20px;
-    top: -10px;
     font-size: 4.2vw;
-  }
-  .title3-2 {
-   position: relative;
-   left: 20px;
-  }
-  .title3-3 {
-   position: relative;
-   left: 19px;
-  }
-  .title3-4 {
-   position: relative;
-   left: 19px;
   }
   .res-list {
     background-color: #F6F6F6;
-    position: relative;
-    left: 0px;
-    top: 40px;
     padding: 5%;
     width: 100vw;
-    height: 1650px;
 }
   .container4 .full .fa-heart {
     background-color: white;
@@ -2572,28 +2542,28 @@ body {
     padding: 0%;
   }
   .cards .card .h1 .fa-heart{
-    position: relative;
-    left: 220px;
-    top: 1px;
     font-size: 2.4rem;
+    position: absolute;
+    left: 85%;
+    top: 10%;
   }
   .cards .card .h2 .fa-heart{
-   position: relative;
-   left: 176px;
-   top: 1px;
    font-size: 2.4rem;
+   position: absolute;
+    left: 85%;
+    top: 10%;
  }
  .cards .card .h3 .fa-heart{
-   position: relative;
-   left: 308px;
-   top: 1px;
    font-size: 2.4rem;
+   position: absolute;
+    left: 85%;
+    top: 60%;
  }
  .cards .card .h4 .fa-heart{
-   position: relative;
-   left: 249px;
-   top: 1px;
    font-size: 2.4rem;
+   position: absolute;
+   left: 85%;
+   top: 60%;
  }
  .dis {
   font-size: 1.6rem;
@@ -2788,13 +2758,14 @@ body {
   height: 2300px;
 }
 .footer-container {
-  height: 300px;
   font-size: 2.0rem;
   line-height: 1;
+  position: relative;
+    top: 10px;
+    left: -30px;
 }
 .footer {
-  height: 400px;
-  width: 540px;
+  width: 100%;
 }
 .image {
   font-family: "Shrikhand";
@@ -2859,6 +2830,12 @@ body {
     font-size: 1rem;
     text-align: center;
     height: 450px;
+}
+.ct-1 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: -15px;
 }
   .paris {
     font-size: 1.6rem;
@@ -2964,53 +2941,17 @@ body {
    }
   .title4 {
     font-size: 2.2rem;
-    position: relative;
-    top: 30px;
-    left: 0px;
 }
 .title3 {
-  position: relative;
-  top: -50px;
-  left: 20px;
   font-size: 4.2vw;
 }
 .title3-1 {
-  position: relative;
-  left: 20px;
-  top: -50px;
   font-size: 4.2vw;
-}
-.title3-2 {
- position: relative;
- left: 20px;
-}
-.title3-3 {
- position: relative;
- left: 20px;
- top: -35px;
-}
-.title3-4 {
- position: relative;
- left: 20px;
- top: -30px;
-}
-.title3-5 {
-  position: relative;
-  top: -37px;
-}
-.title3-6 {
-  position: relative;
-  top: -37px;
-  left: -213px;
 }
 .res-list {
   background-color: #F6F6F6;
-  position: relative;
-  left: 0px;
-  top: 40px;
   padding: 5%;
   width: 100vw;
-  height: 2220px;
 }
 .add {
     font-size: 1.6rem;
@@ -3111,20 +3052,10 @@ body {
   .banner {
     background-color: #99E2D0;
     color: black;
-    position: relative;
-    top: -290px;
-    left: 420px;
     padding: 5px 40px;
   }
-  .cards {
-    padding: 3%;
-    position: relative;
-    left: -13px;
-    height: 2080px;
-}
 .footer {
-  height: 530px;
-  width: 768px;
+  width: 100%;
 }
   .container4 .full .fa-heart {
     background-color: white;
@@ -3175,28 +3106,28 @@ body {
     justify-content: center;
   }
   .cards .card .h1 .fa-heart{
-    position: relative;
-    left: 270px;
-    top: -35px;
     font-size: 2.0rem;
+    position: absolute;
+    left: 85%;
+    top: -10px;
   }
   .cards .card .h2 .fa-heart{
-   position: relative;
-   left: 210px;
-   top: -35px;
    font-size: 2.0rem;
+   position: absolute;
+   left: 85%;
+    top: -10px;
  }
  .cards .card .h3 .fa-heart{
-   position: relative;
-   left: 400px;
-   top: -17px;
    font-size: 2.0rem;
+   position: absolute;
+   left: 85%;
+    top: 40%;
  }
  .cards .card .h4 .fa-heart{
-   position: relative;
-   left: 310px;
-   top: -17px;
    font-size: 2.0rem;
+   position: absolute;
+   left: 85%;
+    top: 40%;
  }
  .restaurant {
   padding: 3px;
@@ -3492,7 +3423,12 @@ body {
   .fa-map-marker-alt{
     font-size: 1.8rem;
   }
-
+  .ct-1 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 70%;
+}
   .card2:hover   .fa-check-circle{
     display: inline-block;
     cursor: pointer;
@@ -3652,9 +3588,6 @@ body {
   .banner {
     background-color: #99E2D0;
     color: #018767;
-    position: relative;
-    top: -380px;
-    left: 580px;
     padding: 8px 60px;
   }
   .container4 .full .fa-heart {
@@ -3825,28 +3758,28 @@ container3 .encha {
     padding: 0%;
   }
   .cards .card .h1 .fa-heart{
-    position: relative;
-    left: 370px;
-    top: -15px;
     font-size: 2.4rem;
+    position: absolute;
+    left: 85%;
+    top: 100%;
   }
   .cards .card .h2 .fa-heart{
-   position: relative;
-   left: 290px;
-   top: -15px;
    font-size: 2.4rem;
+   position: absolute;
+    left: 85%;
+    top: 100%;
  }
  .cards .card .h3 .fa-heart{
-   position: relative;
-   left: 543px;
-   top: 15px;
    font-size: 2.4rem;
+   position: absolute;
+    left: 85%;
+    top: 70%;
  }
  .cards .card .h4 .fa-heart{
-   position: relative;
-   left: 420px;
-   top: 15px;
    font-size: 2.4rem;
+   position: absolute;
+    left: 85%;
+    top: 70%;
  }
  .restaurant {
   padding: 3px;
@@ -3939,12 +3872,6 @@ container3 .encha {
   top: 39px;
   font-size: 1.8rem;
  }
-.title4 {
-  font-size: 2.2rem;
-  position: relative;
-  top: 30px;
-  left: -214px;
-}
  .cards .card .image3-1{
   background-image: url('../src/img/dish1.jpg');
   background-repeat: no-repeat;
@@ -3977,20 +3904,21 @@ container3 .encha {
   height: 410px;
   width: 100%;
  }
-   .cards {
-    padding: 3%;
-    position: relative;
-    left: 13px;
-    height: 2780px;
-}
+
 .footer {
-  height: 700px;
-  width: 1024px;
+  width: 100%;
 }
 .footer-container {
   position: relative;
-  top: -60px;
-  left: -30px;
+  top: -40px;
+  left: -80px;
+}
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+  width: 100%;
+  margin-top: 10%;
 }
 .image5 {
   position: relative;
@@ -4031,53 +3959,17 @@ container3 .encha {
    }
    .title4 {
     font-size: 2.2rem;
-    position: relative;
-    top: 30px;
-    left: -294px;
 }
 .title3 {
-  position: relative;
-  top: -30px;
-  left: 30px;
   font-size: 4.2vw;
 }
 .title3-1 {
-  position: relative;
-  left: 30px;
-  top: -30px;
   font-size: 4.2vw;
-}
-.title3-2 {
- position: relative;
- left: 30px;
-}
-.title3-3 {
- position: relative;
- left: 30px;
- top:  0px;
-}
-.title3-4 {
- position: relative;
- left: 30px;
- top: 0px;
-}
-.title3-5 {
-  position: relative;
-  top: 0px;
-}
-.title3-6 {
-  position: relative;
-  top: 0px;
-  left: 30px;
 }
 .res-list {
   background-color: #F6F6F6;
-  position: relative;
-  left: 0px;
-  top: 40px;
   padding: 5%;
   width: 100vw;
-  height: 2960px;
 }
 .btn {
   background: linear-gradient(to top, #736e7a 0%, #FF79DA 100%);
@@ -4198,39 +4090,10 @@ container3 .encha {
     left: -434px;
 }
 .title3 {
-  position: relative;
-  top: -20px;
-  left: 15px;
   font-size: 2vw;
 }
 .title3-1 {
-  position: relative;
-  left: 16px;
-  top:  -15px;
   font-size: 2vw;
-}
-.title3-2 {
- position: relative;
- left: 16px;
-}
-.title3-3 {
- position: relative;
- left: 16px;
- top: -15px;
-}
-.title3-4 {
- position: relative;
- left: 16px;
- top: -15px;
-}
-.title3-5 {
-  position: relative;
-  top: -15px;
-}
-.title3-6 {
-  position: relative;
-  top: -15px;
-  left: 16px;
 }
  .title {
     font-size: 3.8rem;
@@ -4410,18 +4273,12 @@ container3 .encha {
   .cards .card .banner1 {
     background-color: #99E2D0;
     color: #088C6C;
-    position: relative;
-    top: -253px;
-    left: 340px;
     padding: 8px 45px;
     font-size: 1rem;
   }
   .cards .card .banner2 {
     background-color: #99E2D0;
     color: #088C6C;
-    position: relative;
-    top: -253px;
-    left: 340px;
     padding: 8px 45px;
     font-size: 1rem;
   }
@@ -4434,10 +4291,13 @@ container3 .encha {
   }
   .cards {
     display: grid;
-    grid-template-rows: 400px 400px;
-    grid-template-columns: 500px 500px;
-    gap: 30px 30px;
-    height: 1050px;
+    grid-template-rows: 25rem 25rem;
+    grid-template-columns: 31.25rem 31.25rem;
+    gap: 0.1% 0.1%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    position: relative;
+    right: 4%;
   }
   .cards .card .image3-1{
     background-image: url('../src/img/dish1.jpg');
@@ -4445,7 +4305,7 @@ container3 .encha {
     background-size: cover;
     background-position: center;
     height: 260px;
-    width:  500px;;
+    width:  100%;
    }
    .cards .card .image3-2{
     background-image: url('../src/img/dish3.jpg');
@@ -4453,7 +4313,7 @@ container3 .encha {
     background-size: cover;
     background-position: center;
     height: 260px;
-    width:  500px;
+    width:  100%;
    }
    .cards .card .image3-3{
     background-image: url('../src/img/dish4.jpg');
@@ -4461,7 +4321,7 @@ container3 .encha {
     background-size: cover;
     background-position: center;
     height: 260px;
-    width: 500px;
+    width: 100%;
    }
    .cards .card .image3-4{
     background-image: url('../src/img/dish2.jpg');
@@ -4469,7 +4329,7 @@ container3 .encha {
     background-size: cover;
     background-position: center;
     height: 260px;
-    width: 500px;
+    width: 100%;
    }
   .container4 .image2-0{
     background-image: url('../src/img/dish1.jpg');
@@ -4558,62 +4418,61 @@ container3 .encha {
      height: 540px;
    }
    .cards .card .h1 .fa-heart {
-    position: relative;
-    left: 220px;
-    top: -5px;
     background-color: white;
     color: white;
     display: inline-block;
     z-index:1;
     text-shadow: 0 0 2px #000;
-    font-size: 1.3rem;
+    font-size: 1.7rem;
+    position: absolute;
+    left: 85%;
+    top: 80%;
   }
   .footer2 {
     height: 700px;
     position: relative;
     top: -100px;
   }
+  .ct-2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8%;
+    margin-left: 3%;
+}
   .cards .card .h2 .fa-heart {
-    position: relative;
-    left: 160px;
-    top: -10px;
     background-color: white;
     color: white;
     display: inline-block;
     z-index:1;
     text-shadow: 0 0 2px #000;
-    font-size: 1.3rem;
+    font-size: 1.7rem;
+    position: absolute;
+    left: 85%;
+    top: 80%;
   }
   .cards .card .h3 .fa-heart {
-    position: relative;
-    left: 330px;
-    top: -5px;
     background-color: white;
     color: white;
     display: inline-block;
     z-index:1;
     text-shadow: 0 0 2px #000;
-    font-size: 1.3rem;
+    font-size: 1.7rem;
+    position: absolute;
+    left: 85%;
+    top: 60%;
   }
   .cards .card .h4 .fa-heart {
-    position: relative;
-    left: 240px;
-    top: -5px;
     background-color: white;
     color: white;
     display: inline-block;
     z-index:1;
     text-shadow: 0 0 2px #000;
-    font-size: 1.3rem;
+    font-size: 1.7rem;
   }
   .res-list {
     background-color: #F6F6F6;
-    position: relative;
-    left: 0px;
-    top: 40px;
-    padding: 5%;
+    display: inline-block;
     width: 100vw;
-    height: 1260px;
 }
   .container3 {
     height: 4690px;
@@ -4623,6 +4482,9 @@ container3 .encha {
     left: 420px;
     top: 80px;
     font-size: 4rem;
+    position: absolute;
+    left: 85%;
+    top: 60%;
 }
 .entry3-1 {
   position: relative;
@@ -4680,8 +4542,7 @@ container3 .encha {
   }
 
 .footer{
-  width: 1366px;
-  height: 700px;
+  width: 100%;
 }
 .restaurant {
   padding: 3px;
@@ -4778,7 +4639,7 @@ container3 .encha {
   font-size: 2.2rem;
   position: relative;
   top: 30px;
-  left: 50px;
+  left: 10px;
 }
 .work {
   position: relative;
