@@ -9,23 +9,103 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden !important;
 }
-body {
-  font-family: 'Raleway', sans-serif;
-  box-sizing: border-box;
-  overflow-x: hidden !important;
-  overflow-y: hidden !important;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-  overflow: scroll;
-  scroll-behavior: smooth;
-}
+
 
 @media screen and (min-width: 320px) {
+  body {
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    overflow: scroll;
+    scroll-behavior: smooth;
+  
+  }
   .fa-arrow-left {
     font-size: 1rem;
     position: relative;
-    top: -5px;
+    top: 6px;
     left: 20px;
+  }
+  .fa-spinner {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+   top: 50%;
+   left: 50%;
+   float: left;
+   margin: 0 auto;
+
+   font-size: 1000px;
+   text-align: center;
+   z-index: 1500;
+  }
+  .loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 500%;
+    height: 500%;
+    background-color: red;
+    animation: rotation 5s linear infinite;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  .loading:after {
+    content: "";
+    font-size: 10em;
+    border: 10px solid #dddddd;
+    border-top-color: #009579;
+    border-bottom-color: #009579;
+    border-radius: 50%;
+  }
+  @keyframes appearance {
+    0% {
+      opacity: 0;
+    }
+    99% {
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+      visibility: inline-block;
+    }
+  }
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+      opacity: 1;
+    }
+    99% {
+      transform: rotate(359deg);
+      opacity: 1;
+    }
+    100%{
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  .loading{
+    width: 100%;
+    height: 100%;
+  }
+  .image5 {
+    padding-left: 22%;
+  }
+  .image6 {
+    position: relative;
+    left: 68px;
+  }
+  .image7 {
+    position: relative;
+    left: 68px;
   }
   .heading {
     display: flex;
@@ -35,6 +115,9 @@ body {
     font-family: "Shrikhand";
     font-size: 1.5rem;
     text-align: center;
+  }
+  .image-f{
+    font-size: 1.2rem;
   }
   .card-text {
     display: flex;
@@ -67,6 +150,9 @@ body {
     position: relative;
     left: 6px;
   }
+  .fa-utensils, .fa-hands-helping, .legal, .contact, .suggest {
+    font-size: 0.8rem;
+}
   .title5 {
     width: 60%;
     margin: 0 auto;
@@ -95,78 +181,57 @@ body {
      width: 90vw;
      z-index: 1;
  }
- .cards .card .image3-1{
-  background-image: url('../src/img/dish1.jpg');
+
+ .cards .card .image3-1, .image3-2, .image3-3, .image3-4 {
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center bottom;
   height: 8.75rem;
   width: 100%;;
   border-top-left-radius: 10px;
   border-top-right-radius:  10px;
+
+ }
+ .cards .card .image3-1{
+  background-image: url('../src/img/dish1.jpg');
+  background-position: center bottom;
   z-index: 1;
  }
  .cards .card .image3-2{
   background-image: url('../src/img/dish3.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
   background-position: 50% 60%;
-  height: 8.75rem;
-  width: 100%;
-  border-top-left-radius: 10px;
-  border-top-right-radius:  10px;
  }
  .cards .card .image3-3{
   background-image: url('../src/img/dish4.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
   background-position: center bottom;
-  height: 8.75rem;
-  width: 100%;
-  border-top-left-radius: 10px;
-  border-top-right-radius:  10px;
  }
  .cards .card .image3-4{
   background-image: url('../src/img/dish2.jpg');
+  background-position: center bottom;
+ }
+ .container4 .image2-0, .container3 .image2-1, .container2 .image2-2, .container4 .image2-3 {
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center bottom;
-  height: 8.75rem;
   width: 100%;
-  border-top-left-radius: 10px;
-  border-top-right-radius:  10px;
- }
+}
  .container4 .image2-0{
   background-image: url('../src/img/dish1.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
   background-position: center;
-  height: 200px;
-  width: 100%;
+  height: 12.5rem;
  }
  .container3 .image2-1{
   background-image: url('../src/img/dish3.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
   background-position: center;
-  height: 230px;
-  width: 320px;;
+  height: 14.375rem;
  }
  .container2 .image2-2{
   background-image: url('../src/img/dish4.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
   background-position: center bottom;
-  height: 200px;
-  width: 320px;
+  height: 12.5rem;
  }
  .container4 .image2-3{
   background-image: url('../src/img/dish2.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
   background-position: center bottom;
-  height: 200px;
-  width: 320px;
+  height: 12.5rem;
  }
  .container {
      background-color:#F6F6F6;
@@ -484,7 +549,6 @@ body {
     border-radius: 5%;
     z-index: 2;
 }
-
   .footer {
    background-color: rgb(77, 77, 77);
    color: white;
@@ -492,12 +556,14 @@ body {
    text-align: left;
    padding: 15%;
    font-size: 1rem;
+   line-height: 0.8;
+  }
+  .footer3 {
+    position: relative;
+    top: -20px;
   }
   .container2 {
     background-color:#F6F6F6;
-     position: relative;
-     top: 0px;
-     height: 1670px;
      width: 100vw;
      z-index: 2;
      max-width: 100%;
@@ -517,18 +583,11 @@ body {
     left: -5%;
     top: -0.938rem;
   }
-  .footer-container2 {
-    width: 100%;
-    position: relative;
-    top: 50px;
-  }
   .container2 .basti {
     position: relative;
     top: -25px;
-    left: 0px;
     border-top-left-radius: 20px 20px;
     border-top-right-radius: 20px 20px;
-    height: 1170px;
     z-index: 2;
     overflow: hidden;
     background-color: #F6F6F6;
@@ -536,11 +595,6 @@ body {
 
   pre {
     font-family: 'Roboto', sans-serif;
-  }
-  .footer2 {
-    position: relative;
-    top: -80px;
-    height: 500px;
   }
   .arrow {
     position: relative;
@@ -647,6 +701,12 @@ body {
   justify-content: center;
   position: relative;
   top: 30px;
+  background-color: #F6F6F6;
+}
+.footer-container5{
+  position: relative;
+  top: -15px;
+  left: -10px;
 }
 .btn-c2 {
   position: relative;
@@ -659,6 +719,9 @@ body {
    margin: 0 auto;
    background-color: #C867DB;
    color: white;
+   margin-bottom: 10%;
+   position: relative;
+   top: 20px;
    }
    .add{
      font-size: 0.8rem;
@@ -690,28 +753,12 @@ body {
     display: inline;
     text-align: center;
   }
-/*
-  .card2:hover .icon::before{
-    content: "...";
-  }
-*/
   .container .full .cards2 .card2 .add .change{ 
    display: inline;
    width: 10px;
    height: 10px;
   }
-  /*
-  card2:hover  .container .full .cards2 .card2 .change::after{
-    animation-name: change;
-    animation-timing-function: ease-in-out;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
-    animation-direction:normal;
-    transform-origin: center;
-    visibility: hidden;
-    display: inline;
-  }
-  */
+
   .container4 .full2 .cards2 .card2 .veg {
     position: relative;
     left: 0px;
@@ -788,23 +835,10 @@ body {
     white-space: nowrap;
     text-overflow: ellipsis;
   }
-   .encha {
-     position: relative;
-     left: 20px;
-     top: 10px;
-     padding-bottom: 0px;
-   }
    .encha .fa-heart {
     position: relative;
     left: 90px;
   }
-  .basti {
-    position: relative;
-    left: 20px;
-    top: 10px;
-    padding-bottom: 0px;
-  }
-  
   @keyframes slide2 {
     0% {
        transform: translateX(0%);
@@ -826,9 +860,6 @@ body {
 
    .container3 {
     background-color:#F6F6F6;
-     position: relative;
-     top: 0px;
-     height: 1800px;
      width: 100vw;
      z-index: 2;
      max-width: 100%;
@@ -846,21 +877,16 @@ body {
   .container3 .encha {
     position: relative;
     top: -65px;
-    left: 0px;
     border-top-left-radius: 20px 20px;
     border-top-right-radius: 20px 20px;
-    height: 1320px;
     z-index: 2;
     overflow: hidden;
     background-color: #F6F6F6;
+    height: 1320px;
   }
   .container4 {
-     position: relative;
-     top: 0px;
-     left: -6px;
      width: 100vw;
      z-index: 2;
-     height: 1670px;
      font-family: 'Raleway', sans-serif;
      box-sizing: border-box;
      overflow-x: hidden !important;
@@ -870,21 +896,24 @@ body {
      overflow: scroll;
      scroll-behavior: smooth;
   }
- 
  .footer-container2{
    position: relative;
-   top: 30px;
+   top: -18px;
+   left: -14px;
  }
   .container4 .full2 {
-    position: relative;
-    top: -35px;
-    left: -5px;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-    height: 1175px;
+    border-top-left-radius: 3.125rem;
+    border-top-right-radius: 3.125rem;
     z-index: 2;
-    overflow: hidden;
     background-color: #F6F6F6;
+    width: 95%;
+    position: relative;
+    top: -50px;
+    height: 1240px;
+  }
+  .footer-f{
+   margin-top: -50px;
+   z-index: 3;
   }
   .container4 .goum {
     border-top-left-radius: 40px;
@@ -892,37 +921,20 @@ body {
     position: relative;
     top: -20px;
     width: 100%;
-    left: 0px;
-    height: 1200px;
     z-index: 2;
     overflow: hidden;
     background-color: #F6F6F6;
+    height: 1200px;
   }
-  .footer-container3 {
-    position: relative;
-    top: 10px;
-  }
-  .goum {
-    position: relative;
-    top: 30px;
-    left: 20px;
-    padding-bottom: 20px;
+  .f-header {
+    display: flex;
+    flex-direction: row;
   }
   .goum .fa-heart {
     position: relative;
     left: 150px;
   }
-  .footer3 {
-    position: relative;
-    top: -50px;
-  }
-  .full {
-    position: relative;
-    left: 20px;
-    top: 30px;
-    padding-bottom: 20px;
-  }
-  .full .fa-heart {
+  .fa-heart {
    position: relative;
    left: 130px;
  }
@@ -995,8 +1007,8 @@ body {
   animation-fill-mode: forwards;
   transform-origin: center center;
   position: relative;
-  top:30px;
-  left: 10px;
+  top:25px;
+  left: 20px;
   color: white;
   z-index: 2;
 }
@@ -1079,26 +1091,9 @@ body {
    visibility: hidden;
  }
 }
-/*
-@-webkit-keyframes rotate {
- 0% {
-   -webkit-transform: rotate(0deg);
-   transform: rotate(0deg);
-   opacity: 1;
- }
- 100% {
-   -webkit-transform: rotate(360deg);
-   transform: rotate(360deg);
-   visibility: hidden;
-}
-}*/
 }
 
 @media screen and (min-width: 360px) {
-  * {
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-  }
   .card-text-section {
     width: 100%;
     height: 3rem;
@@ -1106,13 +1101,58 @@ body {
     background-color: white;
     position: relative;
 }
+@keyframes slide {
+  0% {
+     left: 30px;
+     top: -20px;
+     opacity: 1;
+     width: 0px;
+     }
+     33% {
+       left: 30px;
+       top: -20px;
+       opacity: 1;
+       width: 60px;
+       }
+       50% {
+         left: 30px;
+         top: -20px;
+         opacity: 1;
+         width: 60px;
+         }
+     83.3% {
+       left: 30px;
+       top: -20px;
+       opacity: 1;
+       width: 60px;
+       }
+  100% {
+   left: 30px;
+   top: -20px;
+   width: 0px;
+   opacity: 0;
+ }
+}
+.footer {
+  line-height: 1;
+}
+card2:hover  .check-container{ 
+  position: relative;
+  top: -80px;
+  left: -30px;
+  width:30vw;
+   height: 70px;
+}
+.footer-f{
+  margin-top: -50px;;
+ }
 .cts-2{
   height: 4rem;
 }
 .card-text {
   display: flex;
   flex-direction: column;
-  margin-top: 0%;
+  margin-top: 5%;
   margin-left: 3%;
 }
 .ct-2 {
@@ -1136,7 +1176,7 @@ body {
   .container4 .full2 .cards2 .card2 .veg {
     position: relative;
     left: 0px;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
   }
   .container4 .full2 .cards2 .card2:hover   .veg {
     color: transparent;
@@ -1163,7 +1203,7 @@ body {
     font-size: 1.1rem;
   }
   .container4 .full2 .cards2 .card2 .pure {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     position: relative;
   
   }
@@ -1221,31 +1261,31 @@ body {
   }
   @keyframes slide {
     0% {
-       left: 20px;
+       left: 28px;
        top: -20px;
        opacity: 1;
        width: 0px;
        }
        33% {
-         left: 20px;
+         left: 28px;
          top: -20px;
          opacity: 1;
          width: 60px;
          }
          50% {
-           left: 20px;
+           left: 28px;
            top: -20px;
            opacity: 1;
            width: 60px;
            }
        83.3% {
-         left: 20px;
+         left: 28px;
          top: -20px;
          opacity: 1;
          width: 60px;
          }
     100% {
-     left: 20px;
+     left: 28px;
      top: -20px;
      width: 0px;
      opacity: 0;
@@ -1254,20 +1294,16 @@ body {
   .container4 .full2 {
     position: relative;
     top: -35px;
-    left: -5px;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-    height: 1230px;
-    z-index: 2;
     overflow: hidden;
     background-color: #F6F6F6;
+    height: 1290px;
 }
   .title {
     position: relative;
     top: 30px;
     left: 23px;
     font-family: 'Shrikhand', cursive;
-    font-size: 2.0rem;
+    font-size: 1.5rem;
 }
   .title5 {
     width: 60%;
@@ -1335,7 +1371,6 @@ body {
   top: 20px;
   color: #9356DC;
  }
-
  .text1 {
   position: relative;
   left: -30px;
@@ -1355,16 +1390,12 @@ body {
   font-size: 1.1rem;
  }
  .suggest {
-   position: relative;
-   left: 10px;
+   font-size: 1rem;
  }
  .become {
    position: relative;
    left: 6px;
  }
-  .container2{
-    height: 1600px;
-  }
   .cards {
     display: flex;
     flex-direction: column;
@@ -1376,20 +1407,28 @@ body {
   font-size: 2rem;
   text-align: center;
 }
-.footer2 {
-  height: 320px;
+.image10 {
+ font-size: 1.2rem;
+}
+.image-f{
+  font-size: 1.2rem;
+}
+.fa-utensils, .fa-hands-helping, .legal, .contact {
+  font-size: 1rem;
 }
 .footer3 {
-  height: 320px;
+  position: relative;
+  top: -33px;
 }
 .footer-container {
   width: 100%;
   position: relative;
-  top: -20px;
+  top: -9px;
+  left: -25px;
 }
 .footer-container5 {
   position: relative;
-  top: 30px;
+  top: 10px;
 }
 .entry {
   border-bottom: 3px solid #B0E7D9;
@@ -1401,40 +1440,26 @@ body {
   padding-top: 25px;
 }
 .title1 {
-  position: relative;
-  top: 10px;
-  left: 15px;
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 .add {
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   position: relative;
   left: 15px;
   top: 13px;
   overflow: hidden;
 }
   .container4 .full .fa-heart {
-    background-color: white;
-    color: white;
-    display: inline-block;
-    z-index:1;
-    text-shadow: 0 0 2px #000;
     position: relative;
-    left: 100px;
+    left: 83px;
     top: 30px;
-    font-size: 1.6rem;
    }
    .container4 .goum {
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
     position: relative;
-    top: -20px;
-    width: 100%;
-    left: 0px;
-    height: 1170px;
-    z-index: 2;
-    overflow: hidden;
-    background-color: #F6F6F6;
+    top: -35px;
+    left: -5px;
+    width: 98%;
+    height: 1195px;
 }
    .container4 .goum .fa-heart {
     background-color: white;
@@ -1454,7 +1479,7 @@ body {
     z-index:1;
     text-shadow: 0 0 2px #000;
     position: relative;
-    left: 45px;
+    left: 30px;
     top: 30px;
     font-size: 1.6rem;
    }
@@ -1478,81 +1503,45 @@ body {
     padding-bottom: 5%;
     margin-bottom: 2%;;
   }
- 
-  .cards .card .image3-1{
+ .cards .card .image3-1{
     background-image: url('../src/img/dish1.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center bottom;
-    height: 9.625rem;
-    width: 100%;
-    border-top-left-radius: 10px;
-    border-top-right-radius:  10px;
+    height: 8.625rem;
    }
    .cards .card .image3-2{
     background-image: url('../src/img/dish3.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position: 50% 60%;
-    height: 9.625rem;
-    width: 100%;
-    border-top-left-radius: 10px;
-    border-top-right-radius:  10px;
+    height: 8.625rem;
    }
    .cards .card .image3-3{
     background-image: url('../src/img/dish4.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center bottom;
     height: 9.625rem;
-    width: 100%;
-    border-top-left-radius: 10px;
-    border-top-right-radius:  10px;
    }
    .cards .card .image3-4{
     background-image: url('../src/img/dish2.jpg');
+    height: 9.625rem;
+   }
+   .container4 .image2-0 .container3 .image2-1 .container2 .image2-2 .container4 .image2-3{
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center bottom;
-    height: 9.625rem;
     width: 100%;
-    border-top-left-radius: 10px;
-    border-top-right-radius:  10px;
+    height: 13rem;
    }
-
   .container4 .image2-0{
     background-image: url('../src/img/dish1.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position: center bottom;
-    height: 200px;
-    width: 360px;;
    }
-   .container3 .image2-1{
+    .container3 .image2-1{
     background-image: url('../src/img/dish3.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
-    height: 200px;
-    width: 360px;;
    }
-   .container2 .image2-2{
+    .container2 .image2-2{
     background-image: url('../src/img/dish4.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
-    height: 170px;
-    width: 360px;
    }
-   .container4 .image2-3{
+    .container4 .image2-3{
     background-image: url('../src/img/dish2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
-    height: 160px;
-    width: 360px;
    }
-  
  img {
    width: 80vw;
  }
@@ -1561,15 +1550,9 @@ body {
  }
  .cards .card .h1 .fa-heart{
    font-size: 1.2rem;
-   position: absolute;
-    left: 85%;
-    top: 10%;
  }
  .cards .card .h2 .fa-heart{
   font-size: 1.2rem;
-  position: absolute;
-  left: 85%;
-  top: 10%;
 }
 .cards .card .h3 .fa-heart{
   font-size: 1.2rem;
@@ -1584,9 +1567,6 @@ body {
   .container4 .image2 img {
     width: 350px;
   }
-.container4  {
-  height: 1680px;
-}
 .entry2 {
   border-bottom: 3px solid #B0E7D9;
   width: 45px;
@@ -1595,9 +1575,6 @@ body {
   top: 20px;
   font-size: 1.3rem;
   padding-top: 20px;
-}
-.container5 {
-  height: 1600px;
 }
 .image4 {
   font-size: 2rem;
@@ -1608,10 +1585,10 @@ body {
 .container3 .encha {
   position: relative;
   top: -30px;
-  height: 1300px;
 }
-.container3 {
-  height: 1750px;
+.image5 {
+  position: relative;
+  left: -7px;
 }
 }
 @media screen and (min-width: 411px) {
@@ -1620,6 +1597,24 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
   }
+  .footer-container {
+    width: 100%;
+    position: relative;
+    top: -28px;
+    left: -25px;
+  }
+  .footer{
+    line-height: 1.2;
+  }
+  .fa-utensils, .fa-hands-helping, .legal, .contact {
+    font-size: 1.7rem;
+}
+.suggest {
+ font-size: 1.7rem;
+}
+.become {
+  font-size: 1.7rem;
+}
   .entry {
     border-bottom: 3px solid #B0E7D9;
     width: 50px;
@@ -1796,11 +1791,6 @@ body {
     margin-top: 15%;
 }
   .container4 .full .fa-heart {
-    background-color: white;
-    color: white;
-    display: inline-block;
-    z-index:1;
-    text-shadow: 0 0 2px #000;
     position: relative;
     left: 100px;
     top: 30px;
@@ -1840,84 +1830,48 @@ body {
  }
  .cards .card .image3-1{
   background-image: url('../src/img/dish1.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center bottom;
-  height: 160px;
-  width: 100%;
-  border-top-left-radius: 10px;
-  border-top-right-radius:  10px;
+  height: 14rem;
  }
  .cards .card .image3-2{
   background-image: url('../src/img/dish3.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 60%;
-  height: 160px;
-  width: 100%;
-  border-top-left-radius: 10px;
-  border-top-right-radius:  10px;
+  height: 14rem;
  }
  .cards .card .image3-3{
   background-image: url('../src/img/dish4.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center bottom;
-  height: 160px;
-  width: 100%;
-  border-top-left-radius: 10px;
-  border-top-right-radius:  10px;
+  height: 14rem;
  }
  .cards .card .image3-4{
   background-image: url('../src/img/dish2.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center bottom;
-  height: 160px;
-  width: 100%;
-  border-top-left-radius: 10px;
-  border-top-right-radius:  10px;
+  height: 14rem;
  }
-  .container4 .image2-0{
-    background-image: url('../src/img/dish1.jpg');
+   .container4 .image2-0, .container3 .image2-1, .container2 .image2-2, .container4 .image2-3 {
     background-repeat: no-repeat;
     background-size: cover;
+    height: 19.375rem;
+    width: 100%;
+   }
+   .container4 .image2-0{
+    background-image: url('../src/img/dish1.jpg');
     background-position: center;
-    height: 230px;
-    width: 411px;
    }
    .container3 .image2-1{
     background-image: url('../src/img/dish3.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
-    height: 230px;
-    width: 411px;
    }
    .container2 .image2-2{
     background-image: url('../src/img/dish4.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
-    height: 180px;
-    width: 411px;
    }
    .container4 .image2-3{
     background-image: url('../src/img/dish2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
-    height: 190px;
-    width: 411px;
-   }
-   .container2{
-     height: 1660px;
-   }
-   .container5{
-     height: 1800px;
    }
  img {
    width: 80vw;
+ }
+ .image6{
+   position: relative;
+   left: 104px;
  }
  .card {
    width: 80vw;
@@ -2001,29 +1955,15 @@ body {
   font-size: 1.6rem;
 }
 .container4 .goum {
-  border-top-left-radius: 40px;
-  border-top-right-radius: 40px;
   position: relative;
-  top: -20px;
-  width: 100%;
-  left: 0px;
-  height: 1220px;
-  z-index: 2;
-  overflow: hidden;
-  background-color: #F6F6F6;
-}
-.container3 {
-  height: 1780px;
+  top: -32px;
+  left: -4px;
+  width: 98%;
+  height: 1240px;
 }
   .container4 .image2 img {
     width: 350px;
   }
-  .container4 .full2 {
-   height: 1240px;
-}
-.container4  {
-  height: 1720px;
-}
 @keyframes slide {
   0% {
      left: 25px;
@@ -2102,6 +2042,32 @@ body {
   font-size: 2.4rem;
   text-align: center;
 }
+.image7{
+  position: relative;
+  left: 108px;
+}
+.image-f {
+ font-size: 2rem;
+}
+.image5 {
+  position: relative;
+  left: 20px;
+}
+.btn2 {
+  position: relative;
+  top: 35px;
+  height: 4.125rem;
+}
+.footer-f {
+  margin-top: -30px;
+  z-index: 3;
+}
+.container4 .full2{
+  height: 1260px;
+  width: 100%;
+  position: relative;
+  left: -5px;
+}
 }
 
 @media screen and (min-width : 540px){
@@ -2109,6 +2075,11 @@ body {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
+  }
+  .footer-container3 {
+    position: relative;
+    top: -55px;
+    left: -49px;
   }
   .paris {
     font-size: 1.4rem;
@@ -2119,7 +2090,7 @@ body {
   .ct-1 {
     display: flex;
     flex-direction: column;
-    margin-top: 0%;
+    margin-top: 3%;
 }
   .card2:hover   .fa-check-circle{
     display: inline-block;
@@ -2146,13 +2117,10 @@ body {
     top: 30px;
 }
 .btn2 {
-  width: 40%;
   height: 60px;
-  border-radius: 25px;
-  margin: 0 auto;
-  background-color: #C867DB;
-  color: white;
   font-size: 1.6rem;
+  position: relative;
+  top: 20px;
 }
   .container4 .full2 {
     height: 1650px;
@@ -2512,11 +2480,6 @@ body {
     width: 100vw;
 }
   .container4 .full .fa-heart {
-    background-color: white;
-    color: white;
-    display: inline-block;
-    z-index:1;
-    text-shadow: 0 0 2px #000;
     position: relative;
     left: 130px;
     top: 30px;
@@ -2529,11 +2492,13 @@ body {
    }
    .image3 {
    position: relative;
-   left: 150px;
+   left: -10px;
    }
-   .container4 {
-     height: 1780px;
-   }
+   .image7 {
+    position: relative;
+    left: 143px;
+    }
+
   .cards .card {
     background-color: white;
     width: 470px;
@@ -2543,46 +2508,37 @@ body {
   }
   .cards .card .h1 .fa-heart{
     font-size: 2.4rem;
-    position: absolute;
-    left: 85%;
-    top: 10%;
   }
   .cards .card .h2 .fa-heart{
    font-size: 2.4rem;
-   position: absolute;
-    left: 85%;
-    top: 10%;
  }
  .cards .card .h3 .fa-heart{
    font-size: 2.4rem;
-   position: absolute;
-    left: 85%;
-    top: 60%;
  }
  .cards .card .h4 .fa-heart{
    font-size: 2.4rem;
-   position: absolute;
-   left: 85%;
-   top: 60%;
+ }
+ .ct-2 {
+   margin-top: 3%;
  }
  .dis {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 .btn {
   background: linear-gradient(to top, #736e7a 0%, #FF79DA 100%);
   color: white;
   padding: 1%;
   border-radius: 40px;
-  width: 50vw;
+  width: 45vw;
   height: 50px;
   text-shadow: 0.1em 0.1em #333;
-  position: relative;
-  top: 15px;
+  margin-top: 1.563rem;
   font-size: 1.3rem;
 }
 .title5 {
-  width: 60%;
-  font-size: 2.1rem;
+  font-size: 2.6rem;
+  position: relative;
+  left: -5px;
   text-align: center;
 }
 .location {
@@ -2593,69 +2549,40 @@ body {
   text-align: center;
   font-size: 1.6rem;
 }
+.cards .card .image3-1, .cards .card .image3-2, .cards .card .image3-3, .cards .card .image3-4 {
+    height: 20rem;
+}
   .cards .card .image3-1{
     background-image: url('../src/img/dish1.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom center;
-    height: 230px;
-    width: 100%;;
    }
    .cards .card .image3-2{
     background-image: url('../src/img/dish3.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 230px;
-    width: 100%;;
    }
    .cards .card .image3-3{
     background-image: url('../src/img/dish4.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom center;
-    height: 230px;
-    width: 100%;
    }
    .cards .card .image3-4{
     background-image: url('../src/img/dish2.jpg');
+   }
+   .container4 .image2-0, .container3 .image2-1, .container2 .image2-2, .container4 .image2-3 {
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom center;
-    height: 230px;
-    width: 100%;
+    background-position: center;
+    height: 24.5rem;
+    width: 100%;;
    }
+
   .container4 .image2-0 {
     background-image: url('../src/img/dish1.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 280px;
-    width: 540px;;
    }
-   .container3 .image2-1{
+    .container3 .image2-1{
     background-image: url('../src/img/dish3.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 280px;
-    width: 540px;
    }
    .container2 .image2-2{
     background-image: url('../src/img/dish4.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 240px;
-    width: 540px;
    }
    .container4 .image2-3{
     background-image: url('../src/img/dish2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 240px;
-    width: 540px;
    }
    .title{
      font-size: 3.3rem;;
@@ -2700,12 +2627,7 @@ body {
   position: relative;
   top: -65px;
   left: 0px;
-  border-top-left-radius: 20px 20px;
-  border-top-right-radius: 20px 20px;
   height: 1715px;
-  z-index: 2;
-  overflow: hidden;
-  background-color: #F6F6F6;
 }
 .container2 .basti {
   position: relative;
@@ -2719,79 +2641,60 @@ body {
   background-color: #F6F6F6;
 }
 .container4 .goum {
-  border-top-left-radius: 20px 20px;
-  border-top-right-radius: 20px 20px;
   position: relative;
-  top: -10px;
-  left: 0px;
+  top: -36px;
+  left: -2px;
   height: 1620px;
-  z-index: 2;
-  overflow: hidden;
-  background-color: #F6F6F6;
 }
 .image4 {
   font-size: 3rem;
   text-align: center;
 }
-.footer3 {
-  height: 320px;
-}
 .footer-container5 {
   position: relative;
   top: -20px;
+  left: -25px;
 }
 .footer2 {
   position: relative;
   top: -80px;
-  height: 500px;
 }
-.container3 {
-  height: 2370px;
+.footer-container2 {
+  position: relative;
+  top: 13px;
+  left: -34px;
 }
-.container2 {
-  height: 2300px;
-}
-.container4{
-  height: 2370px;
-}
-.container5{
-  height: 2300px;
+.image6 {
+  position: relative;
+  left: 147px;
 }
 .footer-container {
   font-size: 2.0rem;
   line-height: 1;
   position: relative;
-    top: 10px;
+    top: -44px;
     left: -30px;
-}
-.footer {
-  width: 100%;
 }
 .image {
   font-family: "Shrikhand";
   font-size: 3rem;
 }
-.fa-utensils {
-  font-size: 2.0rem;
+.image-f{
+  font-size: 2rem;
+ }
+.fa-utensils, .fa-hands-helping, .legal, .contact {
+  font-size: 1.7rem;
 }
-.fa-hands-helping {
-  font-size: 2.0rem;
-}
-.legal {
-  font-size: 2.0rem;
-}
-.contact {
-  font-size: 2.0rem;
-}
+
 .suggest {
-  font-size: 2.0rem;
+  font-size: 1.7rem;
   position: relative;
   left: 15px;
 }
 .become {
   position: relative;
   left: 5px;
-  font-size: 2.0rem;
+  font-size: 1.7rem;
 }
  .arti {
   font-size: 1.8rem;
@@ -2831,11 +2734,15 @@ body {
     text-align: center;
     height: 450px;
 }
+.footer3 {
+  position: relative;
+  top: -40px;
+}
 .ct-1 {
   display: flex;
   flex-direction: column;
   position: relative;
-  top: -15px;
+  top: 7px;
 }
   .paris {
     font-size: 1.6rem;
@@ -2880,10 +2787,10 @@ body {
   .btn {
     background: linear-gradient(to top, #736e7a 0%, #FF79DA 100%);
     color: white;
-    padding: 1%;
+    margin-top: 1.9rem;
     border-radius: 70px;
     width: 50vw;
-    height: 7vh;
+    height: 9vh;
     text-shadow: 0.1em 0.1em #333;
 }
   .num1 {
@@ -2990,18 +2897,12 @@ body {
 .footer2 {
   position: relative;
   top: -60px;
-  height: 440px;
 }
 .btn2 {
-  width: 40%;
   height: 80px;
   border-radius: 45px;
-  margin: 0 auto;
-  background-color: #C867DB;
-  color: white;
-}
-.container4  {
-  height: 3420px;
+  position: relative;
+    top: 15px;
 }
 .container4 .goum .fa-heart {
   background-color: white;
@@ -3030,39 +2931,22 @@ body {
   padding-top: 80px;
 }
 .container4 .goum {
-  border-radius: 20px 20px 10px 10px;
   position: relative;
   top: -30px;
   left: 0px;
-  height: 2430px;
-  z-index: 2;
-  overflow: hidden;
-  background-color: #F6F6F6;
-}
-.container5 {
-  height: 3340px;
+  height: 2395px;
 }
 .footer-container3 {
   position: relative;
-  top: -40px;
-}
-.footer3 {
-  height: 480px;
+  top: -61px;
+  left: -64px;
 }
   .banner {
     background-color: #99E2D0;
     color: black;
     padding: 5px 40px;
   }
-.footer {
-  width: 100%;
-}
   .container4 .full .fa-heart {
-    background-color: white;
-    color: white;
-    display: inline-block;
-    z-index:1;
-    text-shadow: 0 0 2px #000;
     position: relative;
     left: 180px;
     top: 53px;
@@ -3109,13 +2993,13 @@ body {
     font-size: 2.0rem;
     position: absolute;
     left: 85%;
-    top: -10px;
+    top:  31px;
   }
   .cards .card .h2 .fa-heart{
    font-size: 2.0rem;
    position: absolute;
    left: 85%;
-    top: -10px;
+    top: 31px;
  }
  .cards .card .h3 .fa-heart{
    font-size: 2.0rem;
@@ -3164,68 +3048,39 @@ body {
 }
  .cards .card .image3-1{
   background-image: url('../src/img/dish1.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom center;
-  height: 310px;
-  width: 100%;;
  }
  .cards .card .image3-2{
   background-image: url('../src/img/dish3.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 310px;
-  width: 100%;;
  }
  .cards .card .image3-3{
   background-image: url('../src/img/dish4.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom center;
-  height: 310px;
-  width: 100%;
  }
  .cards .card .image3-4{
   background-image: url('../src/img/dish2.jpg');
+ }
+ .cards .card .image3-1, .cards .card .image3-2, .cards .card .image3-3, .cards .card .image3-4 {
+   height: 16rem;
+ }
+ .container4 .image2-0,  .container3 .image2-1,  .container2 .image2-2, .container4 .image2-3 {
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom center;
-  height: 310px;
+  background-position: center;
+  height: 18.5rem;
   width: 100%;
  }
   .container4 .image2-0 {
     background-image: url('../src/img/dish1.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 360px;
-    width: 768px;
    }
-   .container3 .image2-1{
+    .container3 .image2-1{
     background-image: url('../src/img/dish3.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 360px;
-    width: 768px;
    }
    .container2 .image2-2{
     background-image: url('../src/img/dish4.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 360px;
-    width: 768px;
    }
    .container4 .image2-3{
     background-image: url('../src/img/dish2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 360px;
-    width: 768px;
    }
+
    .container2 .basti {
     border-radius: 40px 40px 10px 10px;
     position: relative;
@@ -3242,11 +3097,7 @@ body {
   top: -65px;
   left: 0px;
   border-radius: 20px 20px 10px 10px;
-  height: 2570px;
-  z-index: 2;
-  overflow: hidden;
-  background-color: white;
-  background-color: #F6F6F6;
+  height: 2530px;
 }
 .image6{
   position: relative;
@@ -3269,15 +3120,9 @@ body {
   position: relative;
   padding-top: 90px;
 }
-.container3{
-  height: 3540px;
-}
 .footer-container5 {
   position: relative;
   top: -60px;
-}
-.container2{
-  height: 3310px;
 }
    .title {
      font-size: 2.8rem;
@@ -3289,13 +3134,9 @@ body {
     position: relative;
     left: -20px;
   }
-  .image5 {
-    position: relative;
-    left: 160px;
-  }
   .arrow2{
     position: relative;
-    top: -10px;
+    top: 23px;
 
   }
    .cards2 {
@@ -3336,10 +3177,9 @@ body {
 }
     .footer-container {
      position: relative;
-     top: -20px;
-   }
-   .footer-f{
-     height: 800px;
+     top: -37px;
+     left: -66px;
+     line-height: 0.7;
    }
    .cards2 .card2 .check-container {
     width: 0px;
@@ -3414,12 +3254,33 @@ body {
   left: -170px;
   font-size: 1.7rem;
 }
+.image10{
+  font-size: 2rem;
+  position: relative;
+  top: -20px;
+}
 }
 
 @media screen and (min-width: 1024px) {
+  .footer3 {
+    position: relative;
+    top: -98px;
+  }
+  .image10 {
+    font-size: 2.4rem;
+  }
   .paris {
     font-size: 1.8rem;
   }
+  .fa-utensils, .fa-hands-helping, .legal, .contact {
+    font-size: 2.2rem;
+}
+.suggest, .become {
+  font-size: 2.2rem;
+}
+.image-f {
+  font-size: 2.2rem;
+}
   .fa-map-marker-alt{
     font-size: 1.8rem;
   }
@@ -3427,7 +3288,11 @@ body {
     display: flex;
     flex-direction: column;
     position: relative;
-    top: 70%;
+    top: 60%;
+}
+.ct-2 {
+  position: relative;
+  top: 50%;
 }
   .card2:hover   .fa-check-circle{
     display: inline-block;
@@ -3591,21 +3456,18 @@ body {
     padding: 8px 60px;
   }
   .container4 .full .fa-heart {
-    background-color: white;
-    color: white;
-    display: inline-block;
-    z-index:1;
-    text-shadow: 0 0 2px #000;
     position: relative;
-    left: 310px;
+    left: 320px;
     top: 60px;
     font-size: 2.6rem;
    }
    .container4 .full2 {
     height: 2680px;
-}
-.container4 {
-  height: 4100px;
+    position: relative;
+    top: -95px;
+    width: 98%;
+    border-top-left-radius: 4.125rem;
+    border-top-right-radius: 4.125rem;
 }
 .btn-container {
   display: flex;
@@ -3614,9 +3476,6 @@ body {
   justify-content: center;
   position: relative;
   top: 30px;
-}
-.container2{
-  height:3940px;
 }
 .container2 .basti {
   border-radius: 40px 40px 10px 10px;
@@ -3631,8 +3490,8 @@ body {
 }
 .footer-container2 {
   position: relative;
-  top: -70px;
-  left: -40px;
+  top: -100px;
+  left: -90px;
 }
 .image7 {
   position: relative;
@@ -3659,22 +3518,17 @@ body {
   padding-top: 110px;
 }
 .container4 .goum {
-  border: 2px solid black;
-  border-top-left-radius: 100px;
-  border-top-right-radius: 100px;
+  border-top-left-radius: 93px;
+  border-top-right-radius: 93px;
   position: relative;
-  top: -50px;
+  top: -101px;
   left: 0px;
-  border: 2px solid black;
-  height: 2640px;
-  z-index: 2;
-  overflow: hidden;
-  background-color: white;
+  height: 2670px;
 }
 .footer-container3 {
   position: relative;
-  top: -80px;
-  left: -30px;
+  top: -98px;
+  left: -90px;
 }
 .container4 .goum .fa-heart {
   background-color: white;
@@ -3691,13 +3545,6 @@ body {
   position: relative;
   left: 40px;
 }
-.container5{
-  height: 3800px;
-}
-
- .footer-f {
-  height: 400px;
-}
 .container3 .encha .fa-heart {
   background-color: white;
   color: white;
@@ -3705,20 +3552,8 @@ body {
   z-index: 1;
   text-shadow: 0 0 2px #000;
   position: relative;
-  left: 140px;
+  left: 410px;
   top: 60px;
-  font-size: 2.6rem;
-}
-container3 .encha {
-  position: relative;
-  top: -65px;
-  left: 0px;
-  border-radius: 20px 20px 10px 10px;
-  border: 2px solid black;
-  height: 1800px;
-  z-index: 2;
-  overflow: hidden;
-  background-color: white;
   font-size: 2.6rem;
 }
 .container3 .encha {
@@ -3733,17 +3568,13 @@ container3 .encha {
   background-color: #F6F6F6;
 }
 .btn2 {
-  position: relative;
-  top: -40px;
   height: 120px;
   border-radius: 65px;
 }
 .footer-container5 {
   position: relative;
   top: -80px;
-}
-.container3{
-  height: 4000px;
+  left: -60px;
 }
 .image6 {
   position: relative;
@@ -3757,29 +3588,17 @@ container3 .encha {
     border-radius: 5%;
     padding: 0%;
   }
-  .cards .card .h1 .fa-heart{
+  .cards .card .h1 .fa-heart, .cards .card .h2 .fa-heart{
     font-size: 2.4rem;
     position: absolute;
     left: 85%;
-    top: 100%;
+    top: 120%;
   }
-  .cards .card .h2 .fa-heart{
+ .cards .card .h4 .fa-heart, .cards .card .h3 .fa-heart{
    font-size: 2.4rem;
    position: absolute;
     left: 85%;
-    top: 100%;
- }
- .cards .card .h3 .fa-heart{
-   font-size: 2.4rem;
-   position: absolute;
-    left: 85%;
-    top: 70%;
- }
- .cards .card .h4 .fa-heart{
-   font-size: 2.4rem;
-   position: absolute;
-    left: 85%;
-    top: 70%;
+    top: 90%;
  }
  .restaurant {
   padding: 3px;
@@ -3872,46 +3691,24 @@ container3 .encha {
   top: 39px;
   font-size: 1.8rem;
  }
+ .cards .card .image3-1, .cards .card .image3-2, .cards .card .image3-3, .cards .card .image3-4 {
+   height: 20rem;
+ }
  .cards .card .image3-1{
   background-image: url('../src/img/dish1.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom center;
-  height: 410px;
-  width: 100%;;
  }
  .cards .card .image3-2{
   background-image: url('../src/img/dish3.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 410px;
-  width: 100%;;
  }
  .cards .card .image3-3{
   background-image: url('../src/img/dish4.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom center;
-  height: 410px;
-  width: 100%;
  }
  .cards .card .image3-4{
   background-image: url('../src/img/dish2.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom center;
-  height: 410px;
-  width: 100%;
  }
-
-.footer {
-  width: 100%;
-}
-.footer-container {
+.footer-f {
   position: relative;
-  top: -40px;
-  left: -80px;
+  top: -80px;
 }
 .cards {
   display: flex;
@@ -3922,40 +3719,37 @@ container3 .encha {
 }
 .image5 {
   position: relative;
-  left: 290px;
+  left: 60px;
   font-size: 3.5rem;
 }
+
+.container4 .image2-0,  .container3 .image2-1, .container2 .image2-2, .container4 .image2-3{
+  background-repeat: no-repeat;
+    background-size: cover;
+    height: 31.25rem;
+    width: 100%;
+}
+.container4 .full .fa-heart {
+  position: relative;
+  left: 550px;
+  top: 60px;
+  font-size: 2.6rem;
+ }
   .container4 .image2-0{
     background-image: url('../src/img/dish1.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position: center bottom;
-    height: 500px;
-    width: 1024px;
    }
    .container3 .image2-1{
     background-image: url('../src/img/dish3.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
-    height: 500px;
-    width: 1024px;
    }
    .container2 .image2-2{
     background-image: url('../src/img/dish4.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
-    height: 500px;
-    width: 1024px;
    }
    .container4 .image2-3{
     background-image: url('../src/img/dish2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
-    height: 500px;
-    width: 1024px;
    }
    .title4 {
     font-size: 2.2rem;
@@ -3981,6 +3775,12 @@ container3 .encha {
   text-shadow: 0.1em 0.1em #333;
   font-size: 1.5rem;
 }
+.footer-container {
+  position: relative;
+  top: -50px;
+  left: -80px;
+  line-height: 0.8;
+}
 }
 
 @media screen and (min-width : 1366px){
@@ -3988,12 +3788,16 @@ container3 .encha {
     border-top-left-radius: 120px;
     border-top-right-radius: 120px;
     position: relative;
-    top: -75px;
+    top: -127px;
     left: 0px;
     height: 2900px;
     z-index: 2;
     overflow: hidden;
     background-color: #F6F6F6;
+}
+.image10 {
+  position: relative;
+  top: 100px;;
 }
 .card2:hover  .check-container{ 
   will-change: transform;
@@ -4015,6 +3819,11 @@ container3 .encha {
   transform-origin: center center;
   background-color: #99E2D0;
   z-index: 2;
+}
+.footer-container3 {
+  position: relative;
+  top: -95px;
+  left: -128px;
 }
 @keyframes slide {
   0% {
@@ -4064,19 +3873,16 @@ container3 .encha {
   color: white;
   z-index: 2;
 }
-.container2 {
-  height: 4500px;
-}
 .footer-container2 {
   position: relative;
-  top: -70px;
-  left: -100px;
+  top: -131px;
+  left: -131px;
 }
 .container4 .goum {
   border-top-left-radius: 120px;
   border-top-right-radius: 120px;
   position: relative;
-  top: -50px;
+  top: -56px;
   left: 0px;
   height: 2950px;
   z-index: 2;
@@ -4121,6 +3927,7 @@ container3 .encha {
   border-radius: 80px;
   width: 40vw;
   height: 100px;
+  margin-top: 2.7rem;
   text-shadow: 0.1em 0.1em #333;
 }
 .fa-map-marker-alt{
@@ -4128,9 +3935,6 @@ container3 .encha {
 }
 .paris {
   font-size: 2rem;
-}
-.footer-f {
-  height: 500px;
 }
 .container4 .full2 .fa-heart {
   background-color: white;
@@ -4153,12 +3957,6 @@ container3 .encha {
     width:110px;
     font-size: 2.2rem;
   }
-  .image3 {
-    position: relative;
-    left: -20px;
-    top: 100px;
-    font-size: 4.0rem;
-}
 .box {
   background-color: #F6F6F6;
   padding-top: 2rem;
@@ -4182,7 +3980,7 @@ container3 .encha {
 }
 .container3 .encha {
   position: relative;
-  top: -65px;
+  top: -112px;
   left: 0px;
   border-top-left-radius:120px;
   border-top-right-radius:120px;
@@ -4191,15 +3989,6 @@ container3 .encha {
   overflow: hidden;
   background-color: white;
   background-color: #F6F6F6;
-}
-.footer .image {
-  font-family: "Shrikhand";
-  font-size: 3rem;
-  height: 30px;
-  position: relative;
-  left: 0px;
-  top: 0px;
-  font-size: 3rem;
 }
   .entry2 {
     position: relative;
@@ -4299,77 +4088,50 @@ container3 .encha {
     position: relative;
     right: 4%;
   }
+  .cards .card .image3-1, .cards .card .image3-2, .cards .card .image3-3, .cards .card .image3-4{
+   height: 13rem;
+  }
   .cards .card .image3-1{
     background-image: url('../src/img/dish1.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
-    height: 260px;
-    width:  100%;
    }
    .cards .card .image3-2{
     background-image: url('../src/img/dish3.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
-    height: 260px;
-    width:  100%;
    }
    .cards .card .image3-3{
     background-image: url('../src/img/dish4.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
-    height: 260px;
-    width: 100%;
    }
    .cards .card .image3-4{
     background-image: url('../src/img/dish2.jpg');
+    background-position: center;
+   }
+
+   .container4 .image2-0, .container3 .image2-1, .container2 .image2-2 .container4 .image2-3{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 260px;
+    height: 56.25rem;
     width: 100%;
    }
   .container4 .image2-0{
     background-image: url('../src/img/dish1.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 900px;
-    width: 1366px;
-    position: relative;
-    top: 100px;
    }
    .container3 .image2-1{
     background-image: url('../src/img/dish3.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 900px;
-    width: 1366px;
-    position: relative;
-    top: 100px;
    }
    .container2 .image2-2{
     background-image: url('../src/img/dish4.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 900px;
-    width: 100%;
     position: relative;
-    top: 100px;
+    top: 63px;
+    height: 44rem;
    }
    .container4 .image2-3{
     background-image: url('../src/img/dish2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 900px;
-    width: 100%;
+    height: 39rem;
     position: relative;
-    top: 100px;
+    top: 63px;
    }
    .image {
     font-family: "Shrikhand";
@@ -4377,18 +4139,25 @@ container3 .encha {
     height: 30px;
     position: relative;
     left: 0px;
-    top:  30px;
-    font-size: 4rem;
-    padding-bottom: 80px;;
+    top:  -30px;
+    font-size: 3rem;
+}
+.image3 {
+  position: relative;
+  left: -20px;
+  top: -25px;
+  font-size: 4.0rem;
+  height: 3.375rem;
 }
 .image9{
   position: relative;
   top: 0px;
+  font-size: 2.9rem;;
 }
 .image5 {
   position: relative;
-  left: 440px;
-  top: 80px;
+  left: 125px;
+  top: 7px;
   font-size: 4rem;
 }
 .entry2-1 {
@@ -4402,21 +4171,29 @@ container3 .encha {
   width: 60%;
   font-size: 3.3rem;
   text-align: center;
-  padding-bottom: 350px;
 }
 .dis {
   font-size: 3rem;
-  padding-top: 350px;
+  margin-top: 30px;
 }
 .fa-arrow-left {
   font-size: 1.5rem;
   position: relative;
-  top: 70px;
+  top: 36px;
   left: 40px;
 }
-   .footer3{
-     height: 540px;
-   }
+.arrow2{
+  position: relative;
+  top: -19px;
+}
+.arrow3{
+  position: relative;
+  top: 12px;
+}
+.arrow4{
+  position: relative;
+  top: 44px;
+}
    .cards .card .h1 .fa-heart {
     background-color: white;
     color: white;
@@ -4429,15 +4206,25 @@ container3 .encha {
     top: 80%;
   }
   .footer2 {
-    height: 700px;
     position: relative;
     top: -100px;
+  }
+  .footer{
+    position: relative;
+    top: -100px;
+  }
+  .btn2{
+    height: 7rem;
+    font-size: 2rem;
   }
   .ct-2 {
     display: flex;
     flex-direction: column;
-    margin-top: 8%;
+    margin-top: 2%;
     margin-left: 3%;
+  }
+.ct-1 {
+  margin-top: 2%;
 }
   .cards .card .h2 .fa-heart {
     background-color: white;
@@ -4466,25 +4253,22 @@ container3 .encha {
     color: white;
     display: inline-block;
     z-index:1;
-    text-shadow: 0 0 2px #000;
+    text-shadow: 0 0 2px rgb(39, 39, 39);
     font-size: 1.7rem;
+    position: absolute;
+    left: 85%;
+    top: 60%;
   }
   .res-list {
     background-color: #F6F6F6;
     display: inline-block;
     width: 100vw;
 }
-  .container3 {
-    height: 4690px;
-  }
   .image6 {
     position: relative;
     left: 420px;
-    top: 80px;
+    top: 33px;
     font-size: 4rem;
-    position: absolute;
-    left: 85%;
-    top: 60%;
 }
 .entry3-1 {
   position: relative;
@@ -4493,7 +4277,7 @@ container3 .encha {
 .image7 {
   position: relative;
   left: 420px;
-  top: 80px;
+  top: 10px;
   font-size: 4rem;
 }
 .entry6-1 {
@@ -4504,10 +4288,7 @@ container3 .encha {
     border-top-left-radius: 120px;
     border-top-right-radius: 120px;
     position: relative;
-    top: -100px;
-}
-.container4 {
-  height: 4630px;
+    top: -229px;
 }
   .image4 {
     font-size: 4rem;
@@ -4517,8 +4298,8 @@ container3 .encha {
 }
   .footer-container5 {
     position: relative;
-    top: -80px;
-    left: -90px;
+    top: -98px;
+    left: -119px;
 }
   .btn-container {
     display: flex;
@@ -4526,24 +4307,21 @@ container3 .encha {
     align-items: center;
     justify-content: center;
     position: relative;
-    top: 230px;
+    top: 254px;
 }
  .footer-container{
     position: relative;
-    top: -100px;
-    left: -100px;
+    top: -79px;
+    left: -110px;
+    line-height: 1;
   }
   .footer-f{
     position: relative;
-    top: -100px;
+    top: -202px;
   }
   .card2:hover   .fa-check-circle{
     display: inline-block;
   }
-
-.footer{
-  width: 100%;
-}
 .restaurant {
   padding: 3px;
   border-radius: 30px;
@@ -4663,5 +4441,8 @@ container3 .encha {
     transform: translateX(0%);
    opacity: 1;
  }
+}
+.fa-utensils, .fa-hands-helping, .legal, .contact, .suggest, .become {
+  font-size: 3rem;
 }
 }
