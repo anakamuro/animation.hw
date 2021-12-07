@@ -1,19 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 
 * {
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 html {
   scroll-behavior: smooth;
   overflow-x: hidden !important;
 }
 
-
 @media screen and (min-width: 320px) {
   body {
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     box-sizing: border-box;
     overflow-x: hidden !important;
     overflow-y: hidden !important;
@@ -21,103 +20,55 @@ html {
     -ms-overflow-style: none;
     overflow: scroll;
     scroll-behavior: smooth;
-  
   }
   .fa-arrow-left {
     font-size: 1rem;
     position: relative;
-    top: 6px;
+    top: -6px;
     left: 20px;
   }
-  .fa-spinner {
-    display: none;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-   top: 50%;
-   left: 50%;
-   float: left;
-   margin: 0 auto;
-
-   font-size: 1000px;
-   text-align: center;
-   z-index: 1500;
+  .arrow4 {
+    position: relative;
+    top: 6px;
   }
-  .loading {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    z-index: 99;
-    top: 0;
-    left: 0;
-    width: 500%;
-    height: 500%;
-    background-color: red;
-    animation: rotation 5s linear infinite;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-  }
-  .loading:after {
+  .spinner-1:before {
     content: "";
-    font-size: 10em;
-    border: 10px solid #dddddd;
-    border-top-color: #009579;
-    border-bottom-color: #009579;
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 60px;
+    width: 60px;
+    margin-top: -30px;
+    margin-left: -30px;
     border-radius: 50%;
+    border: 3px solid lightgray;
+    border-top-color: coral;
+    animation: spinner 0.7s linear infinite;
+    z-index: -10;
   }
-  @keyframes appearance {
-    0% {
-      opacity: 0;
-    }
-    99% {
-      opacity: 0;
-    }
-    100%{
-      opacity: 1;
-      visibility: inline-block;
+  @keyframes spinner {
+    to {
+      transform: rotate(360deg);
     }
   }
-  @keyframes rotation {
-    0% {
-      transform: rotate(0deg);
-      opacity: 1;
-    }
-    99% {
-      transform: rotate(359deg);
-      opacity: 1;
-    }
-    100%{
-      opacity: 0;
-      visibility: hidden;
-    }
-  }
-  .loading{
-    width: 100%;
-    height: 100%;
-  }
-  .image5 {
-    padding-left: 22%;
-  }
-  .image6 {
+  .arrow2 {
     position: relative;
-    left: 68px;
+    top: -5px;
   }
-  .image7 {
-    position: relative;
-    left: 68px;
+  img {
+    width: 100px;
+    height: 100px;
+    animation: rotation 5s linear infinite;
   }
   .heading {
     display: flex;
     flex-direction: column;
   }
-  .image  {
+  .image {
     font-family: "Shrikhand";
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-align: center;
-  }
-  .image-f{
-    font-size: 1.2rem;
   }
   .card-text {
     display: flex;
@@ -132,7 +83,7 @@ html {
     background-color: white;
     position: relative;
   }
-  .image4{
+  .image4 {
     font-size: 1.5rem;
     position: relative;
     left: 70px;
@@ -142,6 +93,23 @@ html {
     text-align: center;
     font-size: 1.7rem;
   }
+  .image5 {
+    padding-left: 22%;
+    font-size: 1.5rem;
+  }
+  .image6 {
+    position: relative;
+    left: 68px;
+    font-size: 1.5rem;
+  }
+  .image7 {
+    position: relative;
+    left: 68px;
+    font-size: 1.5rem;
+  }
+  .image3 {
+    font-size: 1.5rem;
+  }
   .suggest {
     position: relative;
     left: 10px;
@@ -150,9 +118,14 @@ html {
     position: relative;
     left: 6px;
   }
-  .fa-utensils, .fa-hands-helping, .legal, .contact, .suggest {
+  .fa-utensils,
+  .fa-hands-helping,
+  .legal,
+  .contact,
+  .suggest,
+  .become {
     font-size: 0.8rem;
-}
+  }
   .title5 {
     width: 60%;
     margin: 0 auto;
@@ -163,231 +136,203 @@ html {
     right: 5%;
   }
   .box {
-    background-color: #F6F6F6;
+    background-color: #f6f6f6;
     padding-top: 2rem;
     padding-bottom: 3rem;
     font-size: 1rem;
     text-align: center;
   }
-.work {
-  position:relative;
-  left: 10px;
-  font-size: 1rem;
-}
-.image img{
-     align-items: center;
-     justify-content: center;
-     text-align: center;
-     width: 90vw;
-     z-index: 1;
- }
+  .work {
+    position: relative;
+    left: 10px;
+    font-size: 1rem;
+  }
+  .image img {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 90vw;
+    z-index: 1;
+  }
 
- .cards .card .image3-1, .image3-2, .image3-3, .image3-4 {
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 8.75rem;
-  width: 100%;;
-  border-top-left-radius: 10px;
-  border-top-right-radius:  10px;
+  .cards .card .image3-1,
+  .image3-2,
+  .image3-3,
+  .image3-4 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 8.75rem;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .cards .card .image3-1 {
+    background-image: url("../src/img/dish1.jpg");
+    background-position: center bottom;
+    z-index: 1;
+  }
+  .cards .card .image3-2 {
+    background-image: url("../src/img/dish3.jpg");
+    background-position: 50% 60%;
+  }
+  .cards .card .image3-3 {
+    background-image: url("../src/img/dish4.jpg");
+    background-position: center bottom;
+  }
+  .cards .card .image3-4 {
+    background-image: url("../src/img/dish2.jpg");
+    background-position: center bottom;
+  }
+  .container4 .image2-0,
+  .container3 .image2-1,
+  .container2 .image2-2,
+  .container4 .image2-3 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+  .container4 .image2-0 {
+    background-image: url("../src/img/dish1.jpg");
+    background-position: center;
+    height: 12.5rem;
+  }
+  .container3 .image2-1 {
+    background-image: url("../src/img/dish3.jpg");
+    background-position: center;
+    height: 14.375rem;
+  }
+  .container2 .image2-2 {
+    background-image: url("../src/img/dish4.jpg");
+    background-position: center bottom;
+    height: 12.5rem;
+  }
+  .container4 .image2-3 {
+    background-image: url("../src/img/dish2.jpg");
+    background-position: center bottom;
+    height: 12.5rem;
+  }
+  .container {
+    background-color: #f6f6f6;
+    z-index: 2;
+    font-family: "Raleway", sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+    max-width: 100% !important;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    overflow: scroll;
+    scroll-behavior: smooth;
+  }
 
- }
- .cards .card .image3-1{
-  background-image: url('../src/img/dish1.jpg');
-  background-position: center bottom;
-  z-index: 1;
- }
- .cards .card .image3-2{
-  background-image: url('../src/img/dish3.jpg');
-  background-position: 50% 60%;
- }
- .cards .card .image3-3{
-  background-image: url('../src/img/dish4.jpg');
-  background-position: center bottom;
- }
- .cards .card .image3-4{
-  background-image: url('../src/img/dish2.jpg');
-  background-position: center bottom;
- }
- .container4 .image2-0, .container3 .image2-1, .container2 .image2-2, .container4 .image2-3 {
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-}
- .container4 .image2-0{
-  background-image: url('../src/img/dish1.jpg');
-  background-position: center;
-  height: 12.5rem;
- }
- .container3 .image2-1{
-  background-image: url('../src/img/dish3.jpg');
-  background-position: center;
-  height: 14.375rem;
- }
- .container2 .image2-2{
-  background-image: url('../src/img/dish4.jpg');
-  background-position: center bottom;
-  height: 12.5rem;
- }
- .container4 .image2-3{
-  background-image: url('../src/img/dish2.jpg');
-  background-position: center bottom;
-  height: 12.5rem;
- }
- .container {
-     background-color:#F6F6F6;
-     z-index: 2;
-     font-family: 'Raleway', sans-serif;
-     box-sizing: border-box;
-     overflow-x: hidden !important;
-     overflow-y: hidden !important;
-     max-width: 100% !important;
-     scrollbar-width: none;
-     -ms-overflow-style: none;
-     overflow: scroll;
-     scroll-behavior: smooth;
- }
+  .location {
+    background-color: rgb(202, 196, 196);
+    background-color: #eaeaea;
+    width: 100%;
+    padding: 2% 0%;
+    text-align: center;
+  }
 
- .location{
-     background-color: rgb(202, 196, 196); 
-     background-color: #EAEAEA;
-     width: 100%;
-     padding: 2% 0%;
-     text-align: center;
-    }
-
- .btn {
-     background: linear-gradient(to top, #736e7a 0%, #FF79DA 100%);
-     color: white;
-     padding: 1%;
-     border-radius: 40px;
-     width: 50vw;
-     height: 50px;
-     text-shadow: 0.1em 0.1em #333;
-     font-size: 0.7rem;
-     margin-top: 10%;
-     }
+  .btn {
+    background: linear-gradient(to top, #736e7a 0%, #ff79da 100%);
+    color: white;
+    padding: 1%;
+    border-radius: 40px;
+    width: 50vw;
+    height: 43px;
+    text-shadow: 0.1em 0.1em #333;
+    font-size: 0.7rem;
+    margin-top: 10%;
+  }
   .dis {
     font-size: 0.9rem;
     text-align: center;
   }
 
   .num {
-     border-radius: 50%;
-     text-align: center;
-     width: 15px;
-     height: 15px;
-     padding: 1%;
-     margin-right: 5%;
-     background-color: #9356DC;
-     color: white;
-     position: relative;
-     left: 0px;
- }
- .num1 {
-  position: relative;
-  left: -51px;
-  top: 12px;
- }
+    font-size: 0.5rem;
+    border-radius: 50%;
+    text-align: center;
+    width: 15px;
+    height: 15px;
+    padding: 1%;
+    margin-right: 5%;
+    background-color: #9356dc;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .num1 {
+    position: absolute;
+    left: -9px;
+    top: 21px;
+  }
 
- .num2 {
-  position: relative;
-  left: -10px;  
-  top: 20px;
- }
- .num3 {
-  position: relative;
-  left: -10px;
-  top: 20px;
- }
- .btns .restaurant  .fa-mobile-alt {
-  position: relative;
-  top: 15px;
-  left: -40px;
-  font-size: 1.3rem;
- }
-   .fa-list-ul { 
-  position: relative;
-  left: -3px;
-  top: 20px;
-}
- .fa-store {
-  position: relative;
-  left: -5px;
-  top: 20px;
-  color: #9356DC;
- }
+  .num2 {
+    position: relative;
+    left: -10px;
+    top: 20px;
+  }
+  .num3 {
+    position: relative;
+    left: -10px;
+    top: 20px;
+  }
+  .fa-mobile-alt,
+  .fa-list-ul,
+  .fa-store {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 1rem;
+  }
+  .fa-store {
+    color: #9356dc;
+  }
 
- .text1 {
-  position: relative;
-  left: -20px;
-  top: 15px;
-  font-size: 0.9rem;
- }
- .text2 { 
-  position: relative;
-  left: 16px;
-  top: 20px;
-  font-size: 0.9rem;
-}
- .text3 {
-  position: relative;
-  left: 13px;
-  top: 20px;
-  font-size: 0.9rem;
- }
- 
- .working {
-   padding-bottom: 10%;;
-   width: 100%;
-   padding-top: 10%;
- }
+  .text1,
+  .text2,
+  .text3 {
+    position: absolute;
+    left: 57px;
+    top: 20px;
+    font-size: 0.9rem;
+  }
+  .working {
+    padding-bottom: 10%;
+    width: 100%;
+    padding-top: 10%;
+  }
 
- .btns {
-     display: inline;
- }
- .title3 {
-   font-size: 4.2vw;
- }
- .title3-1 {
-   font-size: 4.2vw;
- }
- .restaurant {
-   padding: 3px;
-   border-radius: 15px;
-   display: inline-block;
-   width: 83vw;
-   height: 60px;
-   background-color: #F6F6F6;
-   position:relative;
-   left: 20px;
-   box-shadow: 2px 2px 5px #E7E7E7;
-   text-align: center;
- }
- .menu {
+  .btns {
+    display: inline;
+  }
+  .title3 {
+    font-size: 4.2vw;
+  }
+  .title3-1 {
+    font-size: 4.2vw;
+  }
+  .restaurant,
+  .enjoy,
+  .menu {
     padding: 3px;
     border-radius: 15px;
     display: inline-block;
     width: 83vw;
     height: 60px;
-    background-color: #F6F6F6;
-    position:relative;
-    left: 20px;
-    box-shadow: 2px 2px 5px #E7E7E7;
+    background-color: #f6f6f6;
+    margin-left: 20px;
+    box-shadow: 2px 2px 5px #e7e7e7;
+    text-align: center;
+    position: relative;
+    text-align: center;
   }
-  .enjoy {
-    padding: 3px;
-    border-radius: 15px;
-    display: inline-block;
-    width: 83vw;
-    height: 60px;
-    background-color: #F6F6F6;
-    position:relative;
-    left: 20px;
-    box-shadow: 2px 2px 5px #E7E7E7;
-  }
+
   .res-list {
-    background-color: #F6F6F6;
-    width:100vw;
+    background-color: #f6f6f6;
+    width: 100vw;
     display: inline-block;
   }
   .paris {
@@ -404,28 +349,28 @@ html {
   }
 
   .card {
-    background-color: #F6F6F6;
-    width: 90%;;
+    background-color: #f6f6f6;
+    width: 90%;
     height: 12.5rem;
     padding: 0%;
     padding-bottom: 5%;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    box-shadow: 2px 2px 5px #E7E7E7;
+    box-shadow: 2px 2px 5px #e7e7e7;
     margin: 0 auto;
     gap: 10%;
   }
-  .card:nth-child(1){
+  .card:nth-child(1) {
     position: relative;
-   }
-  .card:nth-child(2){
-   position: relative;
+  }
+  .card:nth-child(2) {
+    position: relative;
   }
   a {
     color: black;
     text-decoration: none;
   }
-  .title4{
+  .title4 {
     font-size: 1.2rem;
     position: relative;
     top: 40px;
@@ -435,7 +380,7 @@ html {
     background-color: white;
     color: white;
     display: inline-block;
-    z-index:1;
+    z-index: 1;
     text-shadow: 0 0 2px #000;
     font-size: 1rem;
     position: absolute;
@@ -446,7 +391,7 @@ html {
     background-color: white;
     color: white;
     display: inline-block;
-    z-index:1;
+    z-index: 1;
     text-shadow: 0 0 2px #000;
     font-size: 1rem;
     position: absolute;
@@ -457,7 +402,7 @@ html {
     background-color: white;
     color: white;
     display: inline-block;
-    z-index:1;
+    z-index: 1;
     text-shadow: 0 0 2px #000;
     font-size: 1rem;
     position: absolute;
@@ -471,7 +416,7 @@ html {
     background-color: white;
     color: white;
     display: inline-block;
-    z-index:1;
+    z-index: 1;
     text-shadow: 0 0 2px #000;
     font-size: 1rem;
   }
@@ -479,59 +424,63 @@ html {
     background-color: white;
     color: white;
     display: inline-block;
-    z-index:1;
+    z-index: 1;
     text-shadow: 0 0 2px #000;
     position: relative;
     left: 0px;
     top: 30px;
     font-size: 1.6rem;
-}
-   .container4 .full .fa-heart {
+  }
+  .container4 .full .fa-heart {
     background-color: white;
     color: white;
     display: inline-block;
-    z-index:1;
+    z-index: 1;
     text-shadow: 0 0 2px #707070;
     position: relative;
     left: 50px;
     top: 30px;
     font-size: 1.6rem;
-   }
-   .container2 .basti .fa-heart {
+  }
+  .container2 .basti .fa-heart {
     background-color: white;
     color: white;
     display: inline-block;
-    z-index:1;
+    z-index: 1;
     text-shadow: 0 0 2px #000;
     position: relative;
-    left: 150px;;
+    left: 150px;
     top: 20px;
     font-size: 1.6rem;
-   }
+  }
 
-   .container4 .goum .fa-heart {
+  .container4 .goum .fa-heart {
     background-color: white;
     color: white;
     display: inline-block;
-    z-index:1;
+    z-index: 1;
     text-shadow: 0 0 2px #000;
     position: relative;
     left: 80px;
     top: 20px;
     font-size: 1.6rem;
-   }
-    .fa-heart:hover {
-    color: #9356DC !important;
+  }
+  .footer2 {
+    position: relative;
+    margin-top: -66px;
+  }
+  .fa-heart:hover {
+    color: #9356dc !important;
     background: transparent;
     background-size: auto auto;
     display: inline-block;
     overflow: hidden;
     cursor: pointer;
-   }
+  }
 
   .banner1 {
-    background-color: #99E2D0;
-    color: #30A387;
+    background-color: #99e2d0;
+    color: #30a387;
     position: absolute;
     top: 7%;
     left: 69%;
@@ -540,42 +489,50 @@ html {
     z-index: 2;
   }
   .banner2 {
-    background-color: #99E2D0;
-    color: #30A387;
+    background-color: #99e2d0;
+    color: #30a387;
     position: absolute;
     top: 7%;
     left: 69%;
     padding: 5px 20px;
     border-radius: 5%;
     z-index: 2;
-}
+  }
   .footer {
-   background-color: rgb(77, 77, 77);
-   color: white;
-   width: 100%;
-   text-align: left;
-   padding: 15%;
-   font-size: 1rem;
-   line-height: 0.8;
+    background-color: rgb(77, 77, 77);
+    color: white;
+    width: 100%;
+    text-align: left;
+    padding: 15%;
+    font-size: 1rem;
+    line-height: 0.8;
+  }
+  .footer4 {
+    margin-top: 20px;
+  }
+  .footer-container3 {
+    position: relative;
+    top: -19px;
+    left: -19px;
   }
   .footer3 {
     position: relative;
-    top: -20px;
+    top: -43px;
   }
   .container2 {
-    background-color:#F6F6F6;
-     width: 100vw;
-     z-index: 2;
-     max-width: 100%;
-     font-family: 'Raleway', sans-serif;
-     box-sizing: border-box;
-     overflow-x: hidden !important;
-     overflow-y: hidden !important;
-     max-width: 100% !important;
-     scrollbar-width: none;
-     -ms-overflow-style: none;
-     overflow: scroll;
-     scroll-behavior: smooth;
+    background-color: #f6f6f6;
+    width: 100vw;
+    z-index: 2;
+    max-width: 100%;
+    font-family: "Raleway", sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+    max-width: 100% !important;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    overflow: scroll;
+    scroll-behavior: smooth;
   }
   .footer-container {
     width: 100%;
@@ -590,11 +547,11 @@ html {
     border-top-right-radius: 20px 20px;
     z-index: 2;
     overflow: hidden;
-    background-color: #F6F6F6;
+    background-color: #f6f6f6;
   }
 
   pre {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
   }
   .arrow {
     position: relative;
@@ -604,7 +561,7 @@ html {
     position: relative;
     top: 30px;
     left: 23px;
-    font-family: 'Shrikhand', cursive;
+    font-family: "Shrikhand", cursive;
     font-size: 1.5rem;
   }
   .title1 {
@@ -619,16 +576,16 @@ html {
     left: 20px;
   }
   .entry {
-  border-bottom: 3px solid #B0E7D9;
-  width: 45px;
-  position: relative;
-  left: 15px;
-  top: 20px;
-  font-size: 1.1rem;
-  padding-top: 25px;
+    border-bottom: 3px solid #b0e7d9;
+    width: 45px;
+    position: relative;
+    left: 15px;
+    top: 20px;
+    font-size: 1.1rem;
+    padding-top: 25px;
   }
   .entry2 {
-    border-bottom: 3px solid #B0E7D9;
+    border-bottom: 3px solid #b0e7d9;
     width: 45px;
     position: relative;
     left: 20px;
@@ -637,7 +594,7 @@ html {
     padding-top: 20px;
   }
   .entry3 {
-    border-bottom: 3px solid #B0E7D9;
+    border-bottom: 3px solid #b0e7d9;
     width: 45px;
     position: relative;
     left: 20px;
@@ -646,7 +603,7 @@ html {
     font-size: 1.3rem;
   }
   .entry4 {
-    border-bottom: 3px solid #B0E7D9;
+    border-bottom: 3px solid #b0e7d9;
     width: 45px;
     position: relative;
     left: 20px;
@@ -673,7 +630,7 @@ html {
     grid-gap: 30px;
     position: relative;
     top: 20px;
-    }
+  }
   .cards3 {
     padding-top: 10px;
   }
@@ -683,55 +640,60 @@ html {
   }
 
   .card2 {
-  border: 1px solid black;
-   border-radius: 25px;
-   display: inline;
-   width: 93%;
-   height: 70px;
-   background-color: white;
-   position: relative;
-   margin: 0 auto;
-   z-index: 1;
-}
+    border: 1px solid black;
+    border-radius: 25px;
+    width: 93%;
+    height: 70px;
+    background-color: white;
+    position: relative;
+    margin: 0 auto;
+    z-index: 1;
+    display: inline-block;
+    cursor: pointer;
+    animation-name: fadein;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-direction: normal;
+  }
 
-.btn-container {
-  display: flex;
-  height: 100px;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  top: 30px;
-  background-color: #F6F6F6;
-}
-.footer-container5{
-  position: relative;
-  top: -15px;
-  left: -10px;
-}
-.btn-c2 {
-  position: relative;
-  top: 10px;
-}
- .btn2 {
-   width: 40%;
-   height: 40px;
-   border-radius: 25px;
-   margin: 0 auto;
-   background-color: #C867DB;
-   color: white;
-   margin-bottom: 10%;
-   position: relative;
-   top: 20px;
-   }
-   .add{
-     font-size: 0.8rem;
-     position: relative;
-     left: 15px;
-     top: 13px;
-     overflow: hidden;
-   }
-   .icon {
-     font-size: 1rem;;
+  .btn-container {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 30px;
+    background-color: #f6f6f6;
+  }
+  .footer-container5 {
+    position: relative;
+    top: -15px;
+    left: -10px;
+  }
+  .btn-c2 {
+    position: relative;
+    top: 10px;
+  }
+  .btn2 {
+    width: 40%;
+    height: 40px;
+    border-radius: 25px;
+    margin: 0 auto;
+    background-color: #c867db;
+    color: white;
+    margin-bottom: 10%;
+    position: relative;
+    top: 20px;
+  }
+  .add {
+    font-size: 0.8rem;
+    position: relative;
+    left: 15px;
+    top: 13px;
+    overflow: hidden;
+  }
+  .icon {
+    font-size: 1rem;
     float: right;
     position: relative;
     left: -20px;
@@ -740,30 +702,30 @@ html {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-   }
-   .card2:hover  .icon{
+  }
+  .card2:hover .icon {
     float: right;
     position: relative;
     animation-name: slide2;
     animation-timing-function: ease-in-out;
     animation-duration: 3s;
     animation-fill-mode: forwards;
-    animation-direction:normal;
+    animation-direction: normal;
     transform-origin: center;
     display: inline;
     text-align: center;
   }
-  .container .full .cards2 .card2 .add .change{ 
-   display: inline;
-   width: 10px;
-   height: 10px;
+  .container .full .cards2 .card2 .add .change {
+    display: inline;
+    width: 10px;
+    height: 10px;
   }
 
   .container4 .full2 .cards2 .card2 .veg {
     position: relative;
     left: 0px;
   }
-  .container4 .full2 .cards2 .card2:hover   .veg {
+  .container4 .full2 .cards2 .card2:hover .veg {
     color: transparent;
     position: relative;
     top: 0px;
@@ -772,11 +734,11 @@ html {
     white-space: nowrap;
     text-overflow: ellipsis;
     will-change: transform;
-  backface-visibility: hidden;
-  outline: none;
-  display: inline;
+    backface-visibility: hidden;
+    outline: none;
+    display: inline;
   }
- .container4 .full2 .cards2 .card2:hover  .add .veg:after{
+  .container4 .full2 .cards2 .card2:hover .add .veg:after {
     content: "...";
     color: initial;
     position: absolute;
@@ -789,12 +751,12 @@ html {
   .container4 .basti .cards2 .card2 .cards .arti {
     font-size: 0.8rem;
   }
-  .card2:hover   .arti {
+  .card2:hover .arti {
     color: transparent;
     font-size: 0.8rem;
     position: relative;
   }
- .card2:hover   .arti:after{
+  .card2:hover .arti:after {
     content: "Jerusalem ...";
     color: initial;
     position: absolute;
@@ -810,19 +772,18 @@ html {
   .container4 .full2 .cards2 .card2 .pure {
     font-size: 0.8rem;
     position: relative;
-  
   }
-  .card2:hover   .pure {
+  .card2:hover .pure {
     color: transparent;
     font-size: 0px;
     position: relative;
     top: 11px;
   }
-  .card2-4 .icon{
+  .card2-4 .icon {
     position: relative;
   }
- 
- .card2:hover   .pure:after{
+
+  .card2:hover .pure:after {
     content: "pured ...";
     color: initial;
     position: absolute;
@@ -835,44 +796,44 @@ html {
     white-space: nowrap;
     text-overflow: ellipsis;
   }
-   .encha .fa-heart {
+  .encha .fa-heart {
     position: relative;
     left: 90px;
   }
   @keyframes slide2 {
     0% {
-       transform: translateX(0%);
-       opacity: 1;
-       }
-       33% {
-        transform: translateX(-200%);
-         opacity: 1;
-         }
-       83.3% {
-        transform: translateX(-200%);
-         opacity: 1;
-         }
+      transform: translateX(0%);
+      opacity: 1;
+    }
+    33% {
+      transform: translateX(-200%);
+      opacity: 1;
+    }
+    83.3% {
+      transform: translateX(-200%);
+      opacity: 1;
+    }
     100% {
       transform: translateX(0%);
-     opacity: 1;
-   }
+      opacity: 1;
+    }
   }
 
-   .container3 {
-    background-color:#F6F6F6;
-     width: 100vw;
-     z-index: 2;
-     max-width: 100%;
-     font-family: 'Raleway', sans-serif;
-     box-sizing: border-box;
-     overflow-x: hidden !important;
-     overflow-y: hidden !important;
-     max-width: 100% !important;
-     scrollbar-width: none;
-     -ms-overflow-style: none;
-     overflow: scroll;
-     scroll-behavior: smooth;
-     background-color: white;
+  .container3 {
+    background-color: #f6f6f6;
+    width: 100vw;
+    z-index: 2;
+    max-width: 100%;
+    font-family: "Raleway", sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+    max-width: 100% !important;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    background-color: white;
   }
   .container3 .encha {
     position: relative;
@@ -881,49 +842,49 @@ html {
     border-top-right-radius: 20px 20px;
     z-index: 2;
     overflow: hidden;
-    background-color: #F6F6F6;
+    background-color: #f6f6f6;
     height: 1320px;
   }
   .container4 {
-     width: 100vw;
-     z-index: 2;
-     font-family: 'Raleway', sans-serif;
-     box-sizing: border-box;
-     overflow-x: hidden !important;
-     overflow-y: hidden !important;
-     scrollbar-width: none;
-     -ms-overflow-style: none;
-     overflow: scroll;
-     scroll-behavior: smooth;
+    width: 100vw;
+    z-index: 2;
+    font-family: "Raleway", sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    overflow: scroll;
+    scroll-behavior: smooth;
   }
- .footer-container2{
-   position: relative;
-   top: -18px;
-   left: -14px;
- }
+  .footer-container2 {
+    position: relative;
+    top: -18px;
+    left: -14px;
+  }
   .container4 .full2 {
     border-top-left-radius: 3.125rem;
     border-top-right-radius: 3.125rem;
     z-index: 2;
-    background-color: #F6F6F6;
+    background-color: #f6f6f6;
     width: 95%;
     position: relative;
     top: -50px;
     height: 1240px;
   }
-  .footer-f{
-   margin-top: -50px;
-   z-index: 3;
+  .footer-f {
+    margin-top: -50px;
+    z-index: 3;
   }
   .container4 .goum {
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     position: relative;
-    top: -20px;
-    width: 100%;
+    top: -43px;
+    width: 95%;
     z-index: 2;
     overflow: hidden;
-    background-color: #F6F6F6;
+    background-color: #f6f6f6;
     height: 1200px;
   }
   .f-header {
@@ -935,162 +896,154 @@ html {
     left: 150px;
   }
   .fa-heart {
-   position: relative;
-   left: 130px;
- }
- .resize {
-   width: 50px;
-   height: 70px;
-   position: relative;
-   top: 10px;
- }
- 
+    position: relative;
+    left: 130px;
+  }
+  .resize {
+    width: 50px;
+    height: 70px;
+    position: relative;
+    top: 10px;
+  }
+
   .cards2 .card2 .check-container {
-   width: 0px;
-   height: 0px;
-   background-color: #99E2D0;
-   position: relative;
-   top: 0px;
-   right: 200px;
-   float: right;
-   box-sizing: border-box;
-   border-radius: 0 25px 25px 0;
-   z-index: 2;
-   transform: translateY(0);
-   box-shadow: 0 0 0 #000;
- }
+    width: 0px;
+    height: 0px;
+    background-color: #99e2d0;
+    position: relative;
+    top: 0px;
+    right: 200px;
+    float: right;
+    box-sizing: border-box;
+    border-radius: 0 25px 25px 0;
+    z-index: 2;
+    transform: translateY(0);
+    box-shadow: 0 0 0 #000;
+  }
 
-.card2:hover  .check-container{ 
-  will-change: transform;
-  backface-visibility: hidden;
-  outline: none;
-  box-shadow: 0 0 0 #000;
-  float: right;
-  position: relative;
-  top: -50px;
-  left: -30px;
-  width:30vw;
-   height: 70px;
-  cursor: pointer;
-  animation-name: slide;
-  animation-timing-function: ease-in-out;
-  animation-duration: 3s;
-  animation-fill-mode: forwards;
-  animation-direction:normal;
-  transform-origin: center center;
-  background-color: #99E2D0;
-  z-index: 2;
-}
+  .card2:hover .check-container {
+    will-change: transform;
+    backface-visibility: hidden;
+    outline: none;
+    box-shadow: 0 0 0 #000;
+    float: right;
+    position: relative;
+    top: -50px;
+    left: -30px;
+    width: 30vw;
+    height: 70px;
+    cursor: pointer;
+    animation-name: slide;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+    transform-origin: center center;
+    background-color: #99e2d0;
+    z-index: 2;
+  }
 
-   .cards2 .card2 .fa-check-circle{
-  display: inline-block;
-  position: absolute;
-  color: white;
-  left: 120px;
-  top: 120px;
-  z-index: 2;
-  display: none;
-}
-.card2:hover .fa-spin {
-  -webkit-animation: spin 3s infinite linear;
-  animation: spin 3s infinite linear;
-}
+  .cards2 .card2 .fa-check-circle {
+    display: inline-block;
+    position: absolute;
+    color: white;
+    left: 120px;
+    top: 120px;
+    z-index: 2;
+    display: none;
+  }
+  .card2:hover .fa-spin {
+    -webkit-animation: spin 3s infinite linear;
+    animation: spin 3s infinite linear;
+  }
 
- .card2:hover   .fa-check-circle{
-  display: inline-block;
-  cursor: pointer;
-  font-size: 1rem;
-  animation-name: spin;
-  animation-timing-function:linear;
-  animation-duration: 3s;
-  animation-direction:normal;
-  animation-fill-mode: forwards;
-  transform-origin: center center;
-  position: relative;
-  top:25px;
-  left: 20px;
-  color: white;
-  z-index: 2;
-}
-.card2 {
-  display: inline-block;
-  cursor : pointer;
-  animation-name: fadein;
-  animation-timing-function: ease-in-out;
-  animation-duration: 3s;
-  animation-direction:normal;
-}
-@keyframes fadein {
-  0% {
-     opacity: 1;
-     }
-     33% {
-       opacity: 0;
-       }
-     66% {
-       transform: translateY(10px);
-       opacity: 0;
-  
-       }
-  100% {
-   transform: translateY(0);
-   opacity: 1;
- }
-}
+  .card2:hover .fa-check-circle {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 1rem;
+    animation-name: spin;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    transform-origin: center center;
+    position: relative;
+    top: 25px;
+    left: 20px;
+    color: white;
+    z-index: 2;
+  }
 
- @keyframes slide {
-   0% {
+  @keyframes fadein {
+    0% {
+      opacity: 1;
+    }
+    33% {
+      opacity: 0;
+    }
+    66% {
+      transform: translateY(10px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slide {
+    0% {
       left: 30px;
       top: -20px;
       opacity: 1;
       width: 0px;
-      }
-      33% {
-        left: 30px;
-        top: -20px;
-        opacity: 1;
-        width: 60px;
-        }
-        50% {
-          left: 30px;
-          top: -20px;
-          opacity: 1;
-          width: 60px;
-          }
-      83.3% {
-        left: 30px;
-        top: -20px;
-        opacity: 1;
-        width: 60px;
-        }
-   100% {
-    left: 30px;
-    top: -20px;
-    width: 0px;
-    opacity: 0;
+    }
+    33% {
+      left: 30px;
+      top: -20px;
+      opacity: 1;
+      width: 60px;
+    }
+    50% {
+      left: 30px;
+      top: -20px;
+      opacity: 1;
+      width: 60px;
+    }
+    83.3% {
+      left: 30px;
+      top: -20px;
+      opacity: 1;
+      width: 60px;
+    }
+    100% {
+      left: 30px;
+      top: -20px;
+      width: 0px;
+      opacity: 0;
+    }
   }
- }
- 
- @keyframes spin {
-  0% {
-    transform: rotate(0deg);
-    opacity: 0;
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+      opacity: 0;
+    }
+    33% {
+      opacity: 1;
+      transform: rotate(360deg);
+    }
+    50% {
+      transform: rotate(360deg);
+      opacity: 1;
+    }
+    83.3% {
+      opacity: 1;
+    }
+    100% {
+      visibility: hidden;
+    }
   }
-  33% {
-    opacity: 1;
-    transform: rotate(360deg);
- }
-  50% {
-    transform: rotate(360deg);
-    opacity: 1;
- }
- 83.3% {
-  opacity: 1;
-}
-  100% {
-   visibility: hidden;
- }
-}
 }
 
 @media screen and (min-width: 360px) {
@@ -1100,87 +1053,109 @@ html {
     display: flex;
     background-color: white;
     position: relative;
-}
-@keyframes slide {
-  0% {
-     left: 30px;
-     top: -20px;
-     opacity: 1;
-     width: 0px;
-     }
-     33% {
-       left: 30px;
-       top: -20px;
-       opacity: 1;
-       width: 60px;
-       }
-       50% {
-         left: 30px;
-         top: -20px;
-         opacity: 1;
-         width: 60px;
-         }
-     83.3% {
-       left: 30px;
-       top: -20px;
-       opacity: 1;
-       width: 60px;
-       }
-  100% {
-   left: 30px;
-   top: -20px;
-   width: 0px;
-   opacity: 0;
- }
-}
-.footer {
-  line-height: 1;
-}
-card2:hover  .check-container{ 
-  position: relative;
-  top: -80px;
-  left: -30px;
-  width:30vw;
-   height: 70px;
-}
-.footer-f{
-  margin-top: -50px;;
- }
-.cts-2{
-  height: 4rem;
-}
-.card-text {
-  display: flex;
-  flex-direction: column;
-  margin-top: 5%;
-  margin-left: 3%;
-}
-.ct-2 {
-  display: flex;
-  flex-direction: column;
-  margin-top: 5%;
-  margin-left: 3%;
-}
-.card-text:nth-child(3) {
-  display: flex;
-  flex-direction: column;
-  margin-top: 4%;
-  margin-left: 3%;
-}
-.card-text:nth-child(4) {
-  display: flex;
-  flex-direction: column;
-  margin-top: 2%;
-  margin-left: 3%;
-}
+  }
+  @keyframes slide {
+    0% {
+      left: 30px;
+      top: -20px;
+      opacity: 1;
+      width: 0px;
+    }
+    33% {
+      left: 30px;
+      top: -20px;
+      opacity: 1;
+      width: 60px;
+    }
+    50% {
+      left: 30px;
+      top: -20px;
+      opacity: 1;
+      width: 60px;
+    }
+    83.3% {
+      left: 30px;
+      top: -20px;
+      opacity: 1;
+      width: 60px;
+    }
+    100% {
+      left: 30px;
+      top: -20px;
+      width: 0px;
+      opacity: 0;
+    }
+  }
+  .arrow4 {
+    position: relative;
+    top: 10px;
+  }
+  .footer-container3 {
+    position: relative;
+    top: -25px;
+    left: -26px;
+  }
+  .container2 .basti {
+    height: 1194px;
+  }
+  .arrow2 {
+    position: relative;
+    top: -8px;
+  }
+  .footer {
+    line-height: 1;
+  }
+  .footer4 {
+    margin-top: -18px;
+  }
+  .footer2 {
+    margin-top: -31px;
+  }
+  card2:hover .check-container {
+    position: relative;
+    top: -80px;
+    left: -30px;
+    width: 30vw;
+    height: 70px;
+  }
+  .footer-f {
+    margin-top: -33px;
+  }
+  .cts-2 {
+    height: 4rem;
+  }
+  .card-text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-left: 3%;
+  }
+  .ct-2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-left: 3%;
+  }
+  .card-text:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4%;
+    margin-left: 3%;
+  }
+  .card-text:nth-child(4) {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+    margin-left: 3%;
+  }
   .container4 .full2 .cards2 .card2 .veg {
     position: relative;
     left: 0px;
     font-size: 0.9rem;
   }
-  .container4 .full2 .cards2 .card2:hover   .veg {
+  .container4 .full2 .cards2 .card2:hover .veg {
     color: transparent;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     position: relative;
     top: 0px;
     left: 0px;
@@ -1188,11 +1163,11 @@ card2:hover  .check-container{
     white-space: nowrap;
     text-overflow: ellipsis;
     will-change: transform;
-  backface-visibility: hidden;
-  outline: none;
-  display: inline;
+    backface-visibility: hidden;
+    outline: none;
+    display: inline;
   }
- .container4 .full2 .cards2 .card2:hover  .add .veg:after{
+  .container4 .full2 .cards2 .card2:hover .add .veg:after {
     content: "...";
     color: initial;
     position: absolute;
@@ -1205,19 +1180,18 @@ card2:hover  .check-container{
   .container4 .full2 .cards2 .card2 .pure {
     font-size: 0.9rem;
     position: relative;
-  
   }
-  .card2:hover   .pure {
+  .card2:hover .pure {
     color: transparent;
     font-size: 1.1rem;
     position: relative;
     top: 11px;
   }
-  .card2-4 .icon{
+  .card2-4 .icon {
     position: relative;
   }
- 
- .card2:hover   .pure:after{
+
+  .card2:hover .pure:after {
     content: "pured ...";
     color: initial;
     position: absolute;
@@ -1230,7 +1204,7 @@ card2:hover  .check-container{
     white-space: nowrap;
     text-overflow: ellipsis;
   }
-  .card2:hover   .arti:after{
+  .card2:hover .arti:after {
     content: "Jerusalem ...";
     color: initial;
     position: absolute;
@@ -1243,459 +1217,393 @@ card2:hover  .check-container{
     white-space: nowrap;
     text-overflow: ellipsis;
   }
-  .card2:hover   .fa-check-circle{
+  .card2:hover .fa-check-circle {
     display: inline-block;
     cursor: pointer;
     font-size: 1rem;
     animation-name: spin;
-    animation-timing-function:linear;
+    animation-timing-function: linear;
     animation-duration: 3s;
-    animation-direction:normal;
+    animation-direction: normal;
     animation-fill-mode: forwards;
     transform-origin: center center;
     position: relative;
-    top:30px;
+    top: 30px;
     left: 25px;
     color: white;
     z-index: 2;
   }
   @keyframes slide {
     0% {
-       left: 28px;
-       top: -20px;
-       opacity: 1;
-       width: 0px;
-       }
-       33% {
-         left: 28px;
-         top: -20px;
-         opacity: 1;
-         width: 60px;
-         }
-         50% {
-           left: 28px;
-           top: -20px;
-           opacity: 1;
-           width: 60px;
-           }
-       83.3% {
-         left: 28px;
-         top: -20px;
-         opacity: 1;
-         width: 60px;
-         }
+      left: 28px;
+      top: -20px;
+      opacity: 1;
+      width: 0px;
+    }
+    33% {
+      left: 28px;
+      top: -20px;
+      opacity: 1;
+      width: 60px;
+    }
+    50% {
+      left: 28px;
+      top: -20px;
+      opacity: 1;
+      width: 60px;
+    }
+    83.3% {
+      left: 28px;
+      top: -20px;
+      opacity: 1;
+      width: 60px;
+    }
     100% {
-     left: 28px;
-     top: -20px;
-     width: 0px;
-     opacity: 0;
-   }
+      left: 28px;
+      top: -20px;
+      width: 0px;
+      opacity: 0;
+    }
   }
   .container4 .full2 {
     position: relative;
     top: -35px;
     overflow: hidden;
-    background-color: #F6F6F6;
-    height: 1290px;
-}
-  .title {
-    position: relative;
-    top: 30px;
-    left: 23px;
-    font-family: 'Shrikhand', cursive;
-    font-size: 1.5rem;
-}
+    height: 1255px;
+  }
   .title5 {
     width: 60%;
     font-size: 1.4rem;
     text-align: center;
-}
-.dis {
-  font-size: 1rem;
-}
-.location {
-  background-color: rgb(202, 196, 196);
-  background-color: #EAEAEA;
-  width: 100%;
-  padding: 2% 0%;
-  text-align: center;
-  font-size: 1.2rem;
-}
+  }
+  .dis {
+    font-size: 1rem;
+  }
+  .location {
+    background-color: rgb(202, 196, 196);
+    background-color: #eaeaea;
+    width: 100%;
+    padding: 2% 0%;
+    text-align: center;
+    font-size: 1.2rem;
+  }
   .work {
     position: relative;
     left: 20px;
     font-size: 1.3rem;
-}
+  }
   .btn {
-    background: linear-gradient(to top, #736e7a 0%, #FF79DA 100%);
+    background: linear-gradient(to top, #736e7a 0%, #ff79da 100%);
     color: white;
     padding: 1%;
     border-radius: 40px;
     width: 45vw;
     height: 50px;
     text-shadow: 0.1em 0.1em #333;
-}
+  }
   .title4 {
     font-size: 1.7rem;
-}
-.num1 {
-  position: relative;
-  left: -50px;
-  top: 15px;
- }
-
- .num2 {
-  position: relative;
-  left: -7px;  
-  top: 20px;
- }
- .num3 {
-  position: relative;
-  left: -8px;
-  top: 20px;
- }
- .btns .restaurant  .fa-mobile-alt {
-  position: relative;
-  top: 16px;
-  left: -48px;
-  font-size: 1.5rem;
- }
-   .fa-list-ul { 
-  position: relative;
-  left: -8px;
-  top: 20px;
-}
- .fa-store {
-  position: relative;
-  left: -10px;
-  top: 20px;
-  color: #9356DC;
- }
- .text1 {
-  position: relative;
-  left: -30px;
-  top: 15px;
-  font-size: 1.1rem;
- }
- .text2 { 
-  position: relative;
-  left: 8px;
-  top: 20px;
-  font-size: 1.1rem;
-}
- .text3 {
-  position: relative;
-  left: 6px;
-  top: 20px;
-  font-size: 1.1rem;
- }
- .suggest {
-   font-size: 1rem;
- }
- .become {
-   position: relative;
-   left: 6px;
- }
+  }
+  .num1,
+  .num2,
+  .num3 {
+    position: absolute;
+    left: -10px;
+    top: 22px;
+    font-size: 1rem;
+    padding: 3%;
+  }
+  .fa-mobile-alt,
+  .fa-list-ul,
+  .fa-store {
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    font-size: 1rem;
+  }
+  .fa-store {
+    color: #9356dc;
+  }
+  .text1,
+  .text2,
+  .text3 {
+    font-size: 1.1rem;
+  }
+  .suggest {
+    font-size: 1rem;
+  }
+  .become {
+    position: relative;
+    left: 6px;
+  }
   .cards {
-    display: flex;
-    flex-direction: column;
     gap: 1.7rem;
-    width: 95%;
-}
-.image {
-  font-family: "Shrikhand";
-  font-size: 2rem;
-  text-align: center;
-}
-.image10 {
- font-size: 1.2rem;
-}
-.image-f{
-  font-size: 1.2rem;
-}
-.fa-utensils, .fa-hands-helping, .legal, .contact {
-  font-size: 1rem;
-}
-.footer3 {
-  position: relative;
-  top: -33px;
-}
-.footer-container {
-  width: 100%;
-  position: relative;
-  top: -9px;
-  left: -25px;
-}
-.footer-container5 {
-  position: relative;
-  top: 10px;
-}
-.entry {
-  border-bottom: 3px solid #B0E7D9;
-  width: 35px;
-  position: relative;
-  left: 20px;
-  top: 20px;
-  font-size: 1.3rem;
-  padding-top: 25px;
-}
-.title1 {
-  font-size: 1rem;
-}
-.add {
-  font-size: 0.9rem;
-  position: relative;
-  left: 15px;
-  top: 13px;
-  overflow: hidden;
-}
+  }
+  .image {
+    font-family: "Shrikhand";
+    font-size: 2rem;
+    text-align: center;
+  }
+  .image11 {
+    font-size: 1.2rem;
+  }
+  .image10 {
+    font-size: 1.2rem;
+  }
+  .image-f {
+    font-size: 1.2rem;
+  }
+  .fa-utensils,
+  .fa-hands-helping,
+  .legal,
+  .contact {
+    font-size: 1rem;
+  }
+  .footer3 {
+    position: relative;
+    top: -33px;
+  }
+  .footer-container {
+    top: -23px;
+    left: -25px;
+  }
+  .footer-container5 {
+    position: relative;
+    top: -20px;
+    left: -29px;
+  }
+  .entry {
+    width: 35px;
+    position: relative;
+    left: 20px;
+    top: 20px;
+    font-size: 1.3rem;
+  }
+  .title1 {
+    font-size: 1rem;
+  }
+  .add {
+    font-size: 0.9rem;
+  }
   .container4 .full .fa-heart {
     position: relative;
     left: 83px;
     top: 30px;
-   }
-   .container4 .goum {
+  }
+  .container4 .goum {
     position: relative;
     top: -35px;
     left: -5px;
     width: 98%;
     height: 1195px;
-}
-   .container4 .goum .fa-heart {
+  }
+  .container4 .goum .fa-heart {
     background-color: white;
     color: white;
     display: inline-block;
-    z-index:1;
+    z-index: 1;
     text-shadow: 0 0 2px #000;
     position: relative;
-    left: 130px;
-    top: 30px;
+    left: 119px;
+    top: 21px;
     font-size: 1.6rem;
-   }
-   .container3 .encha .fa-heart {
+  }
+  .container3 .encha .fa-heart {
     background-color: white;
     color: white;
     display: inline-block;
-    z-index:1;
+    z-index: 1;
     text-shadow: 0 0 2px #000;
     position: relative;
     left: 30px;
     top: 30px;
     font-size: 1.6rem;
-   }
-   .container2 .basti .fa-heart {
+  }
+  .container2 .basti .fa-heart {
     background-color: white;
     color: white;
     display: inline-block;
-    z-index:1;
+    z-index: 1;
     text-shadow: 0 0 2px #000;
     position: relative;
     left: 190px;
-    top: 30px;
+    top: 19px;
     font-size: 1.6rem;
-   }
-  
+  }
+
   .cards .card {
     background-color: white;
     width: 90%;
     height: 12.625rem;
     border-radius: 5%;
     padding-bottom: 5%;
-    margin-bottom: 2%;;
+    margin-bottom: 2%;
   }
- .cards .card .image3-1{
-    background-image: url('../src/img/dish1.jpg');
+  .cards .card .image3-1 {
+    background-image: url("../src/img/dish1.jpg");
     height: 8.625rem;
-   }
-   .cards .card .image3-2{
-    background-image: url('../src/img/dish3.jpg');
+  }
+  .cards .card .image3-2 {
+    background-image: url("../src/img/dish3.jpg");
     background-position: 50% 60%;
     height: 8.625rem;
-   }
-   .cards .card .image3-3{
-    background-image: url('../src/img/dish4.jpg');
+  }
+  .cards .card .image3-3 {
+    background-image: url("../src/img/dish4.jpg");
     height: 9.625rem;
-   }
-   .cards .card .image3-4{
-    background-image: url('../src/img/dish2.jpg');
+  }
+  .cards .card .image3-4 {
+    background-image: url("../src/img/dish2.jpg");
     height: 9.625rem;
-   }
-   .container4 .image2-0 .container3 .image2-1 .container2 .image2-2 .container4 .image2-3{
+  }
+  .container4
+    .image2-0
+    .container3
+    .image2-1
+    .container2
+    .image2-2
+    .container4
+    .image2-3 {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: 13rem;
-   }
-  .container4 .image2-0{
-    background-image: url('../src/img/dish1.jpg');
+  }
+  .container4 .image2-0 {
+    background-image: url("../src/img/dish1.jpg");
     background-position: center bottom;
-   }
-    .container3 .image2-1{
-    background-image: url('../src/img/dish3.jpg');
+  }
+  .container3 .image2-1 {
+    background-image: url("../src/img/dish3.jpg");
     background-position: center;
-   }
-    .container2 .image2-2{
-    background-image: url('../src/img/dish4.jpg');
+  }
+  .container2 .image2-2 {
+    background-image: url("../src/img/dish4.jpg");
     background-position: center;
-   }
-    .container4 .image2-3{
-    background-image: url('../src/img/dish2.jpg');
+  }
+  .container4 .image2-3 {
+    background-image: url("../src/img/dish2.jpg");
     background-position: center;
-   }
- img {
-   width: 80vw;
- }
- .card {
-   width: 80vw;
- }
- .cards .card .h1 .fa-heart{
-   font-size: 1.2rem;
- }
- .cards .card .h2 .fa-heart{
-  font-size: 1.2rem;
-}
-.cards .card .h3 .fa-heart{
-  font-size: 1.2rem;
-}
-.cards .card .h4 .fa-heart{
-  font-size: 1.2rem;
-}
-.res-list {
-  background-color: #F6F6F6;
-  width: 100vw;
-}
+  }
+  img {
+    width: 80vw;
+  }
+
+  .cards .card .h1 .fa-heart,
+  .cards .card .h2 .fa-heart,
+  .cards .card .h3 .fa-heart,
+  .cards .card .h4 .fa-heart {
+    font-size: 1.2rem;
+  }
   .container4 .image2 img {
     width: 350px;
   }
-.entry2 {
-  border-bottom: 3px solid #B0E7D9;
-  width: 45px;
-  position: relative;
-  left: 20px;
-  top: 20px;
-  font-size: 1.3rem;
-  padding-top: 20px;
-}
-.image4 {
-  font-size: 2rem;
-  position: relative;
-  left: 90px;
-  font-family: "Shrikhand";
-}
-.container3 .encha {
-  position: relative;
-  top: -30px;
-}
-.image5 {
-  position: relative;
-  left: -7px;
-}
-}
-@media screen and (min-width: 411px) {
-  * {
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    font-size: 12px;
-  }
-  .footer-container {
-    width: 100%;
-    position: relative;
-    top: -28px;
-    left: -25px;
-  }
-  .footer{
-    line-height: 1.2;
-  }
-  .fa-utensils, .fa-hands-helping, .legal, .contact {
-    font-size: 1.7rem;
-}
-.suggest {
- font-size: 1.7rem;
-}
-.become {
-  font-size: 1.7rem;
-}
-  .entry {
-    border-bottom: 3px solid #B0E7D9;
-    width: 50px;
+  .entry2 {
+    border-bottom: 3px solid #b0e7d9;
+    width: 45px;
     position: relative;
     left: 20px;
     top: 20px;
+    font-size: 1.3rem;
+    padding-top: 20px;
+  }
+  .image4 {
+    font-size: 2rem;
+    position: relative;
+    left: 90px;
+    font-family: "Shrikhand";
+  }
+  .container3 .encha {
+    position: relative;
+    top: -30px;
+    height: 1335px;
+  }
+  .image5 {
+    position: relative;
+    left: -7px;
+  }
+}
+@media screen and (min-width: 411px) {
+  * {
+    font-size: 12px;
+  }
+  .footer-container {
+    top: -28px;
+  }
+  .arrow2 {
+    position: relative;
+    top: -10px;
+  }
+  .footer {
+    line-height: 1.2;
+  }
+  .fa-utensils,
+  .fa-hands-helping,
+  .legal,
+  .contact,
+  .suggest,
+  .become {
+    font-size: 1.5rem;
+  }
+  .entry {
+    width: 50px;
     font-size: 1.6rem;
-    padding-top: 25px;
-}
-.ct-1 {
-  display: flex;
-  flex-direction: column;
-  margin-top: 5%;
-}
-.title1 {
-  position: relative;
-  top: 10px;
-  left: 15px;
-  font-size: 1.6rem;
-}
+  }
+  .ct-1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+  }
+  .title1 {
+    font-size: 1.6rem;
+  }
   .title {
     position: relative;
-    top: 30px;
     left: 25px;
-    font-family: 'Shrikhand', cursive;
     font-size: 2.4rem;
-}
-.image4 {
-  font-size: 2.4rem;
-  text-align: center;
-}
-.add {
-  font-size: 1.3rem;
-  position: relative;
-  left: 15px;
-  top: 13px;
-  overflow: hidden;
-}
-.icon {
-  font-size: 1.3rem;
-  float: right;
-  position: relative;
-  left: -20px;
-  top: 13px;
-  display: inline;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-.container4 .full2 .cards2 .card2 .veg {
-  position: relative;
-  left: 0px;
-  font-size: 1.3rem;
-}
-.container4 .full2 .cards2 .card2:hover  .add .veg:after{
-  content: "...";
-  color: initial;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  visibility: visible;
-  display: inline;
-  font-size: 1.3rem;
-}
-.card2:hover   .pure:after{
-  content: "pured ...";
-  color: initial;
-  position: absolute;
-  top: -11px;
-  left: 0px;
-  visibility: visible;
-  display: inline;
-  font-size: 1.3rem;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-.container4 .full2 .cards2 .card2 .pure {
-  font-size: 1.3rem;
-  position: relative;
-}
+  }
+  .image4 {
+    font-size: 2.4rem;
+    text-align: center;
+  }
+  .add {
+    font-size: 1.3rem;
+  }
+  .icon {
+    font-size: 1.3rem;
+  }
+  .container4 .full2 .cards2 .card2 .veg {
+    position: relative;
+    left: 0px;
+    font-size: 1.3rem;
+  }
+  .container4 .full2 .cards2 .card2:hover .add .veg:after {
+    content: "...";
+    color: initial;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    visibility: visible;
+    display: inline;
+    font-size: 1.3rem;
+  }
+  .card2:hover .pure:after {
+    content: "pured ...";
+    color: initial;
+    position: absolute;
+    top: -11px;
+    left: 0px;
+    visibility: visible;
+    display: inline;
+    font-size: 1.3rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .container4 .full2 .cards2 .card2 .pure {
+    font-size: 1.3rem;
+    position: relative;
+  }
   .btns {
     display: flex;
     flex-direction: column;
@@ -1706,404 +1614,352 @@ card2:hover  .check-container{
     position: relative;
     left: 10px;
     font-size: 1.7rem;
-}
-.working {
-  position: relative;
-  left: 15px;
-  width: 320px;
-}
+  }
+  .working {
+    position: relative;
+    left: 15px;
+    width: 320px;
+  }
   .title4 {
     font-size: 1.7rem;
-}
-.title3 {
-  font-size: 4.2vw;
-}
-.title3-1 {
-  font-size: 4.2vw;
-}
-.res-list {
-  background-color: #F6F6F6;
-  width: 100vw;
-}
-.num1 {
-  position: relative;
-  left: -78px;
-  top: 15px;
- }
-
- .num2 {
-  position: relative;
-  left: -10px;  
-  top: 20px;
- }
- .num3 {
-  position: relative;
-  left: -9px;
-  top: 20px;
- }
- .btns .restaurant  .fa-mobile-alt {
-  position: relative;
-  top: 18px;
-  left: -77px;
-  font-size: 1.5rem;
- }
-   .fa-list-ul { 
-  position: relative;
-  left: -8px;
-  top: 20px;
-}
- .fa-store {
-  position: relative;
-  left: -8px;
-  top: 20px;
-  color: #9356DC;
- }
-
- .text1 {
-  position: relative;
-  left: -60px;
-  top: 20px;
-  font-size: 1.4rem;
- }
- .text2 { 
-  position: relative;
-  left: 8px;
-  top: 20px;
-  font-size: 1.4rem;
-}
- .text3 {
-  position: relative;
-  left: 9px;
-  top: 20px;
-  font-size: 1.4rem;
- }
+  }
+  .title3,
+  .title3-1 {
+    font-size: 4.2vw;
+  }
+  .fa-mobile-alt,
+  .fa-list-ul,
+  .fa-store {
+    position: absolute;
+    top: 23px;
+    left: 25px;
+    font-size: 1.4rem;
+  }
+  .text1,
+  .text2,
+  .text3 {
+    position: absolute;
+    left: 65px;
+    font-size: 1.4rem;
+  }
   .banner {
-    background-color: #99E2D0;
+    background-color: #99e2d0;
     color: #018767;
     padding: 6px 24px;
   }
   .cards {
-    display: flex;
-    flex-direction: column;
-    gap: 1.7rem;
     width: 100%;
     padding-right: 10%;
     margin-top: 15%;
-}
+  }
   .container4 .full .fa-heart {
     position: relative;
     left: 100px;
     top: 30px;
     font-size: 2rem;
-   }
-   
+  }
+
   .cards .card {
-    background-color: white;
     width: 330px;
     height: 240px;
-    border-radius: 5%;
     padding: 0%;
   }
-  .cards .card .h1 .fa-heart{
+  .cards .card .h1 .fa-heart,
+  .cards .card .h2 .fa-heart {
     font-size: 1.4rem;
     position: absolute;
     left: 85%;
     top: 60%;
   }
-  .cards .card .h2 .fa-heart{
-   font-size: 1.4rem;
-   position: absolute;
-    left: 85%;
-    top: 60%;
- }
- .cards .card .h3 .fa-heart{
-   font-size: 1.4rem;
-   position: absolute;
+  .cards .card .h3 .fa-heart,
+  .cards .card .h4 .fa-heart {
+    font-size: 1.4rem;
+    position: absolute;
     left: 85%;
     top: 45%;
   }
- .cards .card .h4 .fa-heart{
-   font-size: 1.4rem;
-   position: absolute;
-    left: 85%;
-    top: 45%;
- }
- .cards .card .image3-1{
-  background-image: url('../src/img/dish1.jpg');
-  height: 14rem;
- }
- .cards .card .image3-2{
-  background-image: url('../src/img/dish3.jpg');
-  height: 14rem;
- }
- .cards .card .image3-3{
-  background-image: url('../src/img/dish4.jpg');
-  height: 14rem;
- }
- .cards .card .image3-4{
-  background-image: url('../src/img/dish2.jpg');
-  height: 14rem;
- }
-   .container4 .image2-0, .container3 .image2-1, .container2 .image2-2, .container4 .image2-3 {
+  .cards .card .image3-1 {
+    background-image: url("../src/img/dish1.jpg");
+    height: 14rem;
+  }
+  .cards .card .image3-2 {
+    background-image: url("../src/img/dish3.jpg");
+    height: 14rem;
+  }
+  .cards .card .image3-3 {
+    background-image: url("../src/img/dish4.jpg");
+    height: 14rem;
+  }
+  .cards .card .image3-4 {
+    background-image: url("../src/img/dish2.jpg");
+    height: 14rem;
+  }
+  .container4 .image2-0,
+  .container3 .image2-1,
+  .container2 .image2-2,
+  .container4 .image2-3 {
     background-repeat: no-repeat;
     background-size: cover;
     height: 19.375rem;
     width: 100%;
-   }
-   .container4 .image2-0{
-    background-image: url('../src/img/dish1.jpg');
+  }
+  .container4 .image2-0 {
+    background-image: url("../src/img/dish1.jpg");
     background-position: center;
-   }
-   .container3 .image2-1{
-    background-image: url('../src/img/dish3.jpg');
+  }
+  .container3 .image2-1 {
+    background-image: url("../src/img/dish3.jpg");
     background-position: center;
-   }
-   .container2 .image2-2{
-    background-image: url('../src/img/dish4.jpg');
+  }
+  .container2 .image2-2 {
+    background-image: url("../src/img/dish4.jpg");
     background-position: center;
-   }
-   .container4 .image2-3{
-    background-image: url('../src/img/dish2.jpg');
+  }
+  .container4 .image2-3 {
+    background-image: url("../src/img/dish2.jpg");
     background-position: center;
-   }
- img {
-   width: 80vw;
- }
- .image6{
-   position: relative;
-   left: 104px;
- }
- .card {
-   width: 80vw;
- }
- .cards .card .fa-heart{
-   position: relative;
-   left:300px;
- }
- .container3 .encha .fa-heart {
-  background-color: white;
-  color: white;
-  display: inline-block;
-  z-index: 1;
-  text-shadow: 0 0 2px #000;
-  position: relative;
-  left: 30px;
-  top: 30px;
-  font-size: 2rem;
-}
-.entry2 {
-  border-bottom: 3px solid #B0E7D9;
-  width: 45px;
-  position: relative;
-  left: 20px;
-  top: 20px;
-  font-size: 1.6rem;
-  padding-top: 20px;
-}
-.container2 .basti .fa-heart {
-  background-color: white;
-  color: white;
-  display: inline-block;
-  z-index:1;
-  text-shadow: 0 0 2px #000;
-  position: relative;
-  left: 215px;
-  top: 30px;
-  font-size: 2rem;
- }
- .entry3 {
-  border-bottom: 3px solid #B0E7D9;
-  width: 45px;
-  position: relative;
-  left: 20px;
-  top: -10px;
-  font-size: 1.6rem;
-  padding-top: 30px;
-}
-.entry3-1 {
-  padding-top: 70px;
-}
-.container2 .basti {
-  position: relative;
-  top: -25px;
-  left: 0px;
-  border-top-left-radius: 20px 20px;
-  border-top-right-radius: 20px 20px;
-  height: 1230px;
-  z-index: 2;
-  overflow: hidden;
-  background-color: #F6F6F6;
-}
- .container4 .goum .fa-heart {
-  background-color: white;
-  color: white;
-  display: inline-block;
-  z-index: 1;
-  text-shadow: 0 0 2px #000;
-  position: relative;
-  left: 130px;
-  top: 30px;
-  font-size: 2rem;
-}
-.entry4 {
-  border-bottom: 3px solid #B0E7D9;
-  width: 45px;
-  position: relative;
-  left: 20px;
-  top: 10px;
-  padding-top: 30px;
-  font-size: 1.6rem;
-}
-.container4 .goum {
-  position: relative;
-  top: -32px;
-  left: -4px;
-  width: 98%;
-  height: 1240px;
-}
+  }
+  img {
+    width: 80vw;
+  }
+  .image6 {
+    position: relative;
+    left: 104px;
+  }
+  .cards .card .fa-heart {
+    position: relative;
+    left: 300px;
+  }
+  .container3 .encha .fa-heart {
+    background-color: white;
+    color: white;
+    display: inline-block;
+    z-index: 1;
+    text-shadow: 0 0 2px #000;
+    position: relative;
+    left: 30px;
+    top: 30px;
+    font-size: 2rem;
+  }
+  .entry2 {
+    border-bottom: 3px solid #b0e7d9;
+    width: 45px;
+    position: relative;
+    left: 20px;
+    top: 20px;
+    font-size: 1.6rem;
+    padding-top: 20px;
+  }
+  .container2 .basti .fa-heart {
+    background-color: white;
+    color: white;
+    display: inline-block;
+    z-index: 1;
+    text-shadow: 0 0 2px #000;
+    position: relative;
+    left: 215px;
+    top: 19px;
+    font-size: 2rem;
+  }
+  .entry3 {
+    border-bottom: 3px solid #b0e7d9;
+    width: 45px;
+    position: relative;
+    left: 20px;
+    top: -10px;
+    font-size: 1.6rem;
+    padding-top: 30px;
+  }
+  .entry3-1 {
+    padding-top: 70px;
+  }
+  .container2 .basti {
+    position: relative;
+    top: -25px;
+    left: 0px;
+    border-top-left-radius: 20px 20px;
+    border-top-right-radius: 20px 20px;
+    height: 1250px;
+    z-index: 2;
+    overflow: hidden;
+    background-color: #f6f6f6;
+  }
+  .container4 .goum .fa-heart {
+    background-color: white;
+    color: white;
+    display: inline-block;
+    z-index: 1;
+    text-shadow: 0 0 2px #000;
+    position: relative;
+    left: 130px;
+    top: 22px;
+    font-size: 2rem;
+  }
+  .entry4 {
+    border-bottom: 3px solid #b0e7d9;
+    width: 45px;
+    position: relative;
+    left: 20px;
+    top: 10px;
+    padding-top: 30px;
+    font-size: 1.6rem;
+  }
+  .container4 .goum {
+    position: relative;
+    top: -32px;
+    left: -4px;
+    width: 98%;
+    height: 1240px;
+  }
   .container4 .image2 img {
     width: 350px;
   }
-@keyframes slide {
-  0% {
-     left: 25px;
-     top: -22px;
-     opacity: 1;
-     width: 0px;
-     }
-     33% {
-       left: 25px;
-       top: -22px;
-       opacity: 1;
-       width: 60px;
-       }
-       50% {
-         left: 25px;
-         top: -22px;
-         opacity: 1;
-         width: 60px;
-         }
-     83.3% {
-       left: 25px;
-       top: -22px;
-       opacity: 1;
-       width: 60px;
-       }
-  100% {
-   left: 25px;
-   top: -22px;
-   width: 0px;
-   opacity: 0;
- }
-}
-.arti {
-  font-size: 1.3rem;
-}
-.card2:hover   .arti:after{
-  content: "Jerusalem ...";
-  color: initial;
-  position: absolute;
-  top: -5px;
-  left: 0;
-  visibility: visible;
-  display: inline;
-  font-size: 1.3rem;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-.title5 {
-  width: 60%;
-  font-size: 2.2rem;
-  text-align: center;
-}
-.dis {
-  font-size: 1.5rem;
-}
-.paris {
-  padding-left: 3%;
-  font-size: 1.4rem;
-}
-.fa-map-marker-alt {
-  font-size: 1.5rem;
-}
-.btn {
-  background: linear-gradient(to top, #736e7a 0%, #FF79DA 100%);
-  color: white;
-  padding: 1%;
-  border-radius: 40px;
-  width: 55vw;
-  height: 50px;
-  text-shadow: 0.1em 0.1em #333;
-  font-size: 1.3rem;
-}
-.image {
-  font-family: "Shrikhand";
-  font-size: 2.4rem;
-  text-align: center;
-}
-.image7{
-  position: relative;
-  left: 108px;
-}
-.image-f {
- font-size: 2rem;
-}
-.image5 {
-  position: relative;
-  left: 20px;
-}
-.btn2 {
-  position: relative;
-  top: 35px;
-  height: 4.125rem;
-}
-.footer-f {
-  margin-top: -30px;
-  z-index: 3;
-}
-.container4 .full2{
-  height: 1260px;
-  width: 100%;
-  position: relative;
-  left: -5px;
-}
+  @keyframes slide {
+    0% {
+      left: 25px;
+      top: -22px;
+      opacity: 1;
+      width: 0px;
+    }
+    33% {
+      left: 25px;
+      top: -22px;
+      opacity: 1;
+      width: 60px;
+    }
+    50% {
+      left: 25px;
+      top: -22px;
+      opacity: 1;
+      width: 60px;
+    }
+    83.3% {
+      left: 25px;
+      top: -22px;
+      opacity: 1;
+      width: 60px;
+    }
+    100% {
+      left: 25px;
+      top: -22px;
+      width: 0px;
+      opacity: 0;
+    }
+  }
+  .arti {
+    font-size: 1.3rem;
+  }
+  .card2:hover .arti:after {
+    content: "Jerusalem ...";
+    color: initial;
+    position: absolute;
+    top: -5px;
+    left: 0;
+    visibility: visible;
+    display: inline;
+    font-size: 1.3rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .title5 {
+    width: 60%;
+    font-size: 2.2rem;
+    text-align: center;
+  }
+  .dis {
+    font-size: 1.5rem;
+  }
+  .paris {
+    padding-left: 3%;
+    font-size: 1.4rem;
+  }
+  .fa-map-marker-alt {
+    font-size: 1.5rem;
+  }
+  .btn {
+    background: linear-gradient(to top, #736e7a 0%, #ff79da 100%);
+    color: white;
+    padding: 1%;
+    border-radius: 40px;
+    width: 55vw;
+    height: 50px;
+    text-shadow: 0.1em 0.1em #333;
+    font-size: 1.3rem;
+  }
+  .image {
+    font-family: "Shrikhand";
+    font-size: 2.4rem;
+    text-align: center;
+  }
+  .image10 {
+    font-size: 1.6rem;
+  }
+  .image11 {
+    font-size: 1.6rem;
+  }
+  .image7 {
+    position: relative;
+    left: 108px;
+  }
+  .arrow4 {
+    position: relative;
+    top: 12px;
+    left: 20px;
+  }
+  .image-f {
+    font-size: 2rem;
+  }
+  .image5 {
+    position: relative;
+    left: 20px;
+  }
+  .btn2 {
+    position: relative;
+    top: 35px;
+    height: 4.125rem;
+  }
+  .footer-f {
+    margin-top: -30px;
+    z-index: 3;
+  }
+  .container4 .full2 {
+    height: 1244px;
+    width: 100%;
+    position: relative;
+    left: -5px;
+  }
 }
 
-@media screen and (min-width : 540px){
-  * {
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    font-size: 12px;
-  }
+@media screen and (min-width: 540px) {
   .footer-container3 {
     position: relative;
-    top: -55px;
+    top: -51px;
     left: -49px;
   }
   .paris {
     font-size: 1.4rem;
   }
-  .fa-map-marker-alt{
+  .fa-map-marker-alt {
     font-size: 1.4rem;
   }
   .ct-1 {
     display: flex;
     flex-direction: column;
     margin-top: 3%;
-}
-  .card2:hover   .fa-check-circle{
+  }
+  .card2:hover .fa-check-circle {
     display: inline-block;
     cursor: pointer;
     font-size: 2rem;
     animation-name: spin;
-    animation-timing-function:linear;
+    animation-timing-function: linear;
     animation-duration: 3s;
-    animation-direction:normal;
+    animation-direction: normal;
     animation-fill-mode: forwards;
     transform-origin: center center;
     position: relative;
-    top:30px;
+    top: 30px;
     left: 40px;
     color: white;
     z-index: 2;
@@ -2115,20 +1971,29 @@ card2:hover  .check-container{
     justify-content: center;
     position: relative;
     top: 30px;
-}
-.btn2 {
-  height: 60px;
-  font-size: 1.6rem;
-  position: relative;
-  top: 20px;
-}
+  }
+  .btn2 {
+    height: 60px;
+    font-size: 1.6rem;
+    position: relative;
+    top: 9px;
+  }
+  .btn4 {
+    position: relative;
+    top: 26px;
+  }
+  .btn3,
+  .btn5 {
+    position: relative;
+    top: 22px;
+  }
   .container4 .full2 {
     height: 1650px;
-}
+  }
   .cards2 .card2 .check-container {
     width: 0px;
     height: 0px;
-    background-color: #99E2D0;
+    background-color: #99e2d0;
     position: relative;
     top: 0px;
     right: 200px;
@@ -2139,7 +2004,7 @@ card2:hover  .check-container{
     transform: translateY(0);
     box-shadow: 0 0 0 #000;
   }
-  .card2:hover  .check-container{ 
+  .card2:hover .check-container {
     will-change: transform;
     backface-visibility: hidden;
     outline: none;
@@ -2148,446 +2013,358 @@ card2:hover  .check-container{
     position: relative;
     top: -40px;
     left: -30px;
-    width:30vw;
-     height: 100px;
+    width: 30vw;
+    height: 100px;
     cursor: pointer;
     animation-name: slide;
     animation-timing-function: ease-in-out;
     animation-duration: 3s;
     animation-fill-mode: forwards;
-    animation-direction:normal;
+    animation-direction: normal;
     transform-origin: center center;
-    background-color: #99E2D0;
+    background-color: #99e2d0;
     z-index: 2;
   }
-  
+
   @keyframes slide {
     0% {
-       left: 38px;
-       top: -30px;
-       opacity: 1;
-       width: 0px;
-       }
-       33% {
-         left: 38px;
-         top: -30px;
-         opacity: 1;
-         width: 100px;
-         }
-         50% {
-           left: 38px;
-           top: -30px;
-           opacity: 1;
-           width: 100px;
-           }
-       83.3% {
-         left: 38px;
-         top: -30px;
-         opacity: 1;
-         width: 100px;
-         }
+      left: 38px;
+      top: -30px;
+      opacity: 1;
+      width: 0px;
+    }
+    33% {
+      left: 38px;
+      top: -30px;
+      opacity: 1;
+      width: 100px;
+    }
+    50% {
+      left: 38px;
+      top: -30px;
+      opacity: 1;
+      width: 100px;
+    }
+    83.3% {
+      left: 38px;
+      top: -30px;
+      opacity: 1;
+      width: 100px;
+    }
     100% {
-     left: 38px;
-     top: -30px;
-     width: 0px;
-     opacity: 0;
-   }
+      left: 38px;
+      top: -30px;
+      width: 0px;
+      opacity: 0;
+    }
   }
-  
   .title1 {
-    position: relative;
-    top: 10px;
-    left: 15px;
     font-size: 1.9rem;
-}
-.add {
-  font-size: 1.9rem;
-  position: relative;
-  left: 15px;
-  top: 13px;
-  overflow: hidden;
-}
-.icon {
-  font-size: 1.8rem;;
-  float: right;
-  position: relative;
-  left: -30px;
-  top: 15px;
-  display: inline;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-.fa-euro-sign {
-  font-size: 1.8rem;
-}
-.container4 .full2 .cards2 .card2 .veg {
-  position: relative;
-  left: 0px;
-  font-size: 1.8rem;
-}
-.container4 .full2 .cards2 .card2:hover   .veg {
-  color: transparent;
-  position: relative;
-  top: 0px;
-  left: 0px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  will-change: transform;
-  backface-visibility: hidden;
-  outline: none;
-  display: inline;
-  font-size: 1.8rem;
-}
-.container4 .full2 .cards2 .card2:hover  .add .veg:after{
-  content: "...";
-  color: initial;
-  position: absolute;
-  top: -5px;
-  left: 0px;
-  visibility: visible;
-  display: inline;
-  font-size: 1.8rem;
-}
-.container4 .full2 .cards2 .card2 .pure {
-  font-size: 11px;
-  position: relative;
-  font-size: 1.8rem;
-}
-.card2:hover   .pure {
-  color: transparent;
-  font-size: 1.8rem;
-  position: relative;
-  top: 11px;
-}
-.card2-4 .icon{
-  position: relative;
-}
+  }
+  .add {
+    font-size: 1.9rem;
+  }
+  .icon {
+    font-size: 1.8rem;
+    position: relative;
+    left: -30px;
+    top: 15px;
+  }
+  .fa-euro-sign {
+    font-size: 1.8rem;
+  }
+  .container4 .full2 .cards2 .card2 .veg {
+    position: relative;
+    left: 0px;
+    font-size: 1.8rem;
+  }
+  .container4 .full2 .cards2 .card2:hover .veg {
+    color: transparent;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    will-change: transform;
+    backface-visibility: hidden;
+    outline: none;
+    display: inline;
+    font-size: 1.8rem;
+  }
+  .container4 .full2 .cards2 .card2:hover .add .veg:after {
+    content: "...";
+    color: initial;
+    position: absolute;
+    top: -5px;
+    left: 0px;
+    visibility: visible;
+    display: inline;
+    font-size: 1.8rem;
+  }
+  .container4 .full2 .cards2 .card2 .pure {
+    font-size: 11px;
+    position: relative;
+    font-size: 1.8rem;
+  }
+  .card2:hover .pure {
+    color: transparent;
+    font-size: 1.8rem;
+    position: relative;
+    top: 11px;
+  }
+  .card2-4 .icon {
+    position: relative;
+  }
 
-.card2:hover   .pure:after{
-  content: "pured ...";
-  color: initial;
-  position: absolute;
-  top: -11px;
-  left: 0px;
-  visibility: visible;
-  display: inline;
-  font-size: 1.8rem;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-.cards2 {
-  display: grid;
-  grid-template-rows: repeat(3, 100px);
-  grid-gap: 30px;
-  position: relative;
-  top: 20px;
-}
-.card2 {
-  border: 1px solid black;
-  border-radius: 25px;
-  display: inline;
-  width: 95%;
-  height: 100px;
-  background-color: white;
-  position: relative;
-  margin: 0 auto;
-  z-index: 1;
-}
+  .card2:hover .pure:after {
+    content: "pured ...";
+    color: initial;
+    position: absolute;
+    top: -11px;
+    left: 0px;
+    visibility: visible;
+    display: inline;
+    font-size: 1.8rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .cards2 {
+    grid-template-rows: repeat(3, 100px);
+  }
+  .card2 {
+    display: inline;
+    width: 95%;
+    height: 100px;
+  }
   .entry {
-    border-bottom: 3px solid #B0E7D9;
+    border-bottom: 3px solid #b0e7d9;
     width: 45px;
     position: relative;
     left: 15px;
     top: 20px;
     font-size: 1.9rem;
     padding-top: 60px;
-    }
-    .entry2 {
-      border-bottom: 3px solid #B0E7D9;
-      width: 45px;
-      position: relative;
-      left: 20px;
-      top: 20px;
-      font-size: 1.9rem;
-      padding-top: 20px;
-    }
-    .entry3 {
-      border-bottom: 3px solid #B0E7D9;
-      width: 45px;
-      position: relative;
-      left: 20px;
-      top: 10px;
-      padding-top: 40px;
-      font-size: 1.9rem;
-    }
-    .entry4 {
-      border-bottom: 3px solid #B0E7D9;
-      width: 45px;
-      position: relative;
-      left: 20px;
-      top: -10px;
-      padding-top: 40px;
-      font-size: 1.9rem;
-    }
-    .entry2-2 {
-      padding-top: 40px;
-    }
-    .entry3-1 {
-      padding-top: 50px;
-    }
-    .entry5 {
-      padding-top: 40px;
-    }
-    .entry6 {
-      position: relative;
-      top: 10px;
-    }
-    .entry1 {
-      padding-top: 30px;
-    }
+  }
+  .entry2 {
+    border-bottom: 3px solid #b0e7d9;
+    width: 45px;
+    position: relative;
+    left: 20px;
+    top: 20px;
+    font-size: 1.9rem;
+    padding-top: 20px;
+  }
+  .entry3 {
+    border-bottom: 3px solid #b0e7d9;
+    width: 45px;
+    position: relative;
+    left: 20px;
+    top: 10px;
+    padding-top: 40px;
+    font-size: 1.9rem;
+    margin-bottom: 30px;
+  }
+  .entry4 {
+    border-bottom: 3px solid #b0e7d9;
+    width: 45px;
+    position: relative;
+    left: 20px;
+    top: -10px;
+    padding-top: 40px;
+    font-size: 1.9rem;
+  }
+  .entry2-2 {
+    padding-top: 40px;
+  }
+  .entry3-1 {
+    padding-top: 50px;
+  }
+  .entry5 {
+    padding-top: 40px;
+  }
+  .entry6 {
+    position: relative;
+    top: 10px;
+  }
+  .entry1 {
+    padding-top: 30px;
+  }
   .title4 {
     font-size: 2.2rem;
     position: relative;
     left: 0px;
-}
-.restaurant {
-  padding: 3px;
-  border-radius: 15px;
-  display: inline-block;
-  width: 445.39px;
-  height: 80px;
-  background-color: #F6F6F6;
-  position: relative;
-  left: 0px;
-  box-shadow: 2px 2px 5px #e7e7e7;
-}
-.menu {
-  padding: 3px;
-  border-radius: 15px;
-  display: inline-block;
-  width: 445.39px;
-  height: 80px;
-  background-color: #F6F6F6;
-  position: relative;
-  left: 0px;
-  box-shadow: 2px 2px 5px #e7e7e7;
-}
-.enjoy {
-  padding: 3px;
-  border-radius: 15px;
-  display: inline-block;
-  width: 445.39px;
-  height: 80px;
-  background-color: #F6F6F6;
-  position: relative;
-  left: 0px;
-  box-shadow: 2px 2px 5px #e7e7e7;
-}
-.working {
-  position: relative;
-  left: 95px;
-  width: 320px;
-}
-.btns {
-  display: flex;
-  flex-direction: column;
-  gap: 5%;
-  align-items: center;
-}
-.num1 {
-  position: relative;
-  left: -115px;
-  top: 17px;
- }
-.num2 {
-  position: relative;
-  left: -10px;  
-  top: 20px;
- }
- .num3 {
-  position: relative;
-  left: -10px;
-  top: 20px;
- }
- .btns .restaurant  .fa-mobile-alt {
-  position: relative;
-  top: 20px;
-  left: -120px;
-  font-size: 1.7rem;
- }
-   .fa-list-ul { 
-  position: relative;
-  left: -18px;
-  top: 23px;
-  font-size: 1.7rem;
-}
- .fa-store {
-  position: relative;
-  left: -18px;
-  top: 23px;
-  color: #9356DC;
-  font-size: 1.5rem;
- }
-
- .text1 {
-  position: relative;
-  left: -90px;
-  top: 20px;
-  font-size: 1.6rem;
- }
- .text2 { 
-  position: relative;
-  left: 5px;
-  top: 23px;
-  font-size: 1.6rem;
-}
- .text3 {
-  position: relative;
-  left: 5px;
-  top: 20px;
-  font-size: 1.6rem;
- }
-
-.work {
-  position: relative;
-  left: -70px;
-  font-size: 1.7rem;
-}
-.cards {
-  display: flex;
-  flex-direction: column;
-  gap: 1.7rem;
-  width: 100%;
-}
+  }
+  .restaurant,
+  .menu,
+  .enjoy {
+    padding: 3px;
+    border-radius: 15px;
+    display: inline-block;
+    width: 445.39px;
+    height: 80px;
+    background-color: #f6f6f6;
+    position: relative;
+    box-shadow: 2px 2px 5px #e7e7e7;
+  }
+  .working {
+    left: 95px;
+  }
+  .btns {
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    align-items: center;
+  }
+  .num1,
+  .num2,
+  .num3 {
+    position: absolute;
+    left: -12px;
+    top: 30px;
+    font-size: 1rem;
+    padding: 3%;
+  }
+  .fa-mobile-alt,
+  .fa-list-ul,
+  .fa-store {
+    position: absolute;
+    top: 30px;
+    left: 31px;
+    font-size: 1.6rem;
+  }
+  .text1,
+  .text2,
+  .text3 {
+    top: 31px;
+    left: 78px;
+  }
+  .work {
+    position: relative;
+    left: -70px;
+    font-size: 1.7rem;
+  }
   .banner {
     border: 1px solid black;
-    background-color: #99E2D0;
+    background-color: #99e2d0;
     color: #018767;
     padding: 10px 40px;
     font-size: 1.7rem;
   }
-  .title3 {
-    font-size: 4.2vw;
-  }
+  .title3,
   .title3-1 {
     font-size: 4.2vw;
   }
   .res-list {
-    background-color: #F6F6F6;
     padding: 5%;
-    width: 100vw;
-}
+  }
   .container4 .full .fa-heart {
     position: relative;
     left: 130px;
     top: 30px;
     font-size: 2.5rem;
-   }
-   .arrow {
-     font-size: 1.3rem;
-     position: relative;
-     top: 30px;
-   }
-   .image3 {
-   position: relative;
-   left: -10px;
-   }
-   .image7 {
+  }
+  .arrow {
+    font-size: 1.3rem;
+    position: relative;
+    top: 30px;
+  }
+  .image3 {
+    position: relative;
+    left: -10px;
+  }
+  .image7 {
     position: relative;
     left: 143px;
-    }
+  }
 
   .cards .card {
-    background-color: white;
     width: 470px;
     height: 325px;
-    border-radius: 5%;
-    padding: 0%;
   }
-  .cards .card .h1 .fa-heart{
+  .cards .card .h1 .fa-heart,
+  .cards .card .h2 .fa-heart,
+  .cards .card .h3 .fa-heart,
+  .cards .card .h4 .fa-heart {
     font-size: 2.4rem;
   }
-  .cards .card .h2 .fa-heart{
-   font-size: 2.4rem;
- }
- .cards .card .h3 .fa-heart{
-   font-size: 2.4rem;
- }
- .cards .card .h4 .fa-heart{
-   font-size: 2.4rem;
- }
- .ct-2 {
-   margin-top: 3%;
- }
- .dis {
-  font-size: 1.8rem;
-}
-.btn {
-  background: linear-gradient(to top, #736e7a 0%, #FF79DA 100%);
-  color: white;
-  padding: 1%;
-  border-radius: 40px;
-  width: 45vw;
-  height: 50px;
-  text-shadow: 0.1em 0.1em #333;
-  margin-top: 1.563rem;
-  font-size: 1.3rem;
-}
-.title5 {
-  font-size: 2.6rem;
-  position: relative;
-  left: -5px;
-  text-align: center;
-}
-.location {
-  background-color: rgb(202, 196, 196);
-  background-color: #EAEAEA;
-  width: 100%;
-  padding: 2% 0%;
-  text-align: center;
-  font-size: 1.6rem;
-}
-.cards .card .image3-1, .cards .card .image3-2, .cards .card .image3-3, .cards .card .image3-4 {
+  .ct-2 {
+    margin-top: 3%;
+  }
+  .dis {
+    font-size: 1.8rem;
+  }
+  .btn {
+    background: linear-gradient(to top, #736e7a 0%, #ff79da 100%);
+    color: white;
+    padding: 1%;
+    border-radius: 40px;
+    width: 45vw;
+    height: 50px;
+    text-shadow: 0.1em 0.1em #333;
+    margin-top: 1.563rem;
+    font-size: 1.3rem;
+  }
+  .title5 {
+    font-size: 2.6rem;
+    position: relative;
+    left: -5px;
+    text-align: center;
+  }
+  .location {
+    background-color: rgb(202, 196, 196);
+    background-color: #eaeaea;
+    width: 100%;
+    padding: 2% 0%;
+    text-align: center;
+    font-size: 1.6rem;
+  }
+  .cards .card .image3-1,
+  .cards .card .image3-2,
+  .cards .card .image3-3,
+  .cards .card .image3-4 {
     height: 20rem;
-}
-  .cards .card .image3-1{
-    background-image: url('../src/img/dish1.jpg');
-   }
-   .cards .card .image3-2{
-    background-image: url('../src/img/dish3.jpg');
-   }
-   .cards .card .image3-3{
-    background-image: url('../src/img/dish4.jpg');
-   }
-   .cards .card .image3-4{
-    background-image: url('../src/img/dish2.jpg');
-   }
-   .container4 .image2-0, .container3 .image2-1, .container2 .image2-2, .container4 .image2-3 {
+  }
+  .cards .card .image3-1 {
+    background-image: url("../src/img/dish1.jpg");
+  }
+  .cards .card .image3-2 {
+    background-image: url("../src/img/dish3.jpg");
+  }
+  .cards .card .image3-3 {
+    background-image: url("../src/img/dish4.jpg");
+  }
+  .cards .card .image3-4 {
+    background-image: url("../src/img/dish2.jpg");
+  }
+  .container4 .image2-0,
+  .container3 .image2-1,
+  .container2 .image2-2,
+  .container4 .image2-3 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 24.5rem;
-    width: 100%;;
-   }
+    width: 100%;
+  }
 
   .container4 .image2-0 {
-    background-image: url('../src/img/dish1.jpg');
-   }
-    .container3 .image2-1{
-    background-image: url('../src/img/dish3.jpg');
-   }
-   .container2 .image2-2{
-    background-image: url('../src/img/dish4.jpg');
-   }
-   .container4 .image2-3{
-    background-image: url('../src/img/dish2.jpg');
-   }
-   .title{
-     font-size: 3.3rem;;
-   }
-   .container3 .encha .fa-heart {
+    background-image: url("../src/img/dish1.jpg");
+  }
+  .container3 .image2-1 {
+    background-image: url("../src/img/dish3.jpg");
+  }
+  .container2 .image2-2 {
+    background-image: url("../src/img/dish4.jpg");
+  }
+  .container4 .image2-3 {
+    background-image: url("../src/img/dish2.jpg");
+  }
+  .title {
+    font-size: 3.3rem;
+  }
+  .container3 .encha .fa-heart {
     background-color: white;
     color: white;
     display: inline-block;
@@ -2595,179 +2372,188 @@ card2:hover  .check-container{
     text-shadow: 0 0 2px #000;
     position: relative;
     left: 30px;
-    top: 20px;
+    top: 29px;
     font-size: 2.5rem;
-}
-.container2 .basti .fa-heart {
-  background-color: white;
-  color: white;
-  display: inline-block;
-  z-index: 1;
-  text-shadow: 0 0 2px #000;
-  position: relative;
-  left: 290px;
-  top: 30px;
-  font-size: 2.5rem;
-}
-.container4 .goum .fa-heart {
-  background-color: white;
-  color: white;
-  display: inline-block;
-  z-index: 1;
-  text-shadow: 0 0 2px #000;
-  position: relative;
-  left: 170px;
-  top: 30px;
-  font-size: 2.5rem;
-}
- .fa-arrow-left{
-   font-size: 1.3rem;
- }
-.container3 .encha {
-  position: relative;
-  top: -65px;
-  left: 0px;
-  height: 1715px;
-}
-.container2 .basti {
-  position: relative;
-  top: -25px;
-  left: 0px;
-  border-top-left-radius: 20px 20px;
-  border-top-right-radius: 20px 20px;
-  height: 1615px;
-  z-index: 2;
-  overflow: hidden;
-  background-color: #F6F6F6;
-}
-.container4 .goum {
-  position: relative;
-  top: -36px;
-  left: -2px;
-  height: 1620px;
-}
-.image4 {
-  font-size: 3rem;
-  text-align: center;
-}
-.footer-container5 {
-  position: relative;
-  top: -20px;
-  left: -25px;
-}
-.footer2 {
-  position: relative;
-  top: -80px;
-}
-.footer-container2 {
-  position: relative;
-  top: 13px;
-  left: -34px;
-}
-.image6 {
-  position: relative;
-  left: 147px;
-}
-.footer-container {
-  font-size: 2.0rem;
-  line-height: 1;
-  position: relative;
+  }
+  .container2 .basti .fa-heart {
+    background-color: white;
+    color: white;
+    display: inline-block;
+    z-index: 1;
+    text-shadow: 0 0 2px #000;
+    position: relative;
+    left: 290px;
+    top: 18px;
+    font-size: 2.5rem;
+  }
+  .container4 .goum .fa-heart {
+    background-color: white;
+    color: white;
+    display: inline-block;
+    z-index: 1;
+    text-shadow: 0 0 2px #000;
+    position: relative;
+    left: 170px;
+    top: 22px;
+    font-size: 2.5rem;
+  }
+  .fa-arrow-left {
+    font-size: 1.3rem;
+  }
+  .arrow2 {
+    position: relative;
+    top: -12px;
+  }
+  .container3 .encha {
+    position: relative;
+    top: -65px;
+    left: 0px;
+    height: 1715px;
+  }
+  .container2 .basti {
+    position: relative;
+    top: -25px;
+    left: 0px;
+    border-top-left-radius: 20px 20px;
+    border-top-right-radius: 20px 20px;
+    height: 1677px;
+    z-index: 2;
+    overflow: hidden;
+    background-color: #f6f6f6;
+  }
+  .container4 .goum {
+    position: relative;
+    top: -36px;
+    left: -2px;
+    height: 1620px;
+  }
+  .image4 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .footer-container5 {
+    position: relative;
+    top: -2px;
+    left: -46px;
+  }
+  .footer2 {
+    position: relative;
+    top: -80px;
+  }
+  .footer-container2 {
+    position: relative;
+    top: -43px;
+    left: -45px;
+  }
+  .image6 {
+    position: relative;
+    left: 147px;
+  }
+  .footer-container {
+    font-size: 2rem;
+    line-height: 1;
+    position: relative;
     top: -44px;
     left: -30px;
-}
-.image {
-  font-family: "Shrikhand";
-  font-size: 3rem;
-}
-.image-f{
-  font-size: 2rem;
- }
-.fa-utensils, .fa-hands-helping, .legal, .contact {
-  font-size: 1.7rem;
+  }
+  .image {
+    font-family: "Shrikhand";
+    font-size: 3rem;
+  }
+  .image11,
+  .image10,
+  .image-f {
+    font-size: 2rem;
+  }
+  .fa-utensils,
+  .fa-hands-helping,
+  .legal,
+  .contact {
+    font-size: 1.7rem;
+  }
+
+  .suggest {
+    position: relative;
+    left: 15px;
+    font-size: 1.7rem;
+  }
+  .become {
+    position: relative;
+    left: 5px;
+    font-size: 1.7rem;
+  }
+  .arti {
+    font-size: 1.8rem;
+  }
+  .card2:hover .arti {
+    color: transparent;
+    font-size: 1.8rem;
+    position: relative;
+  }
+  .card2:hover .arti:after {
+    content: "Jerusalem ...";
+    color: initial;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    visibility: visible;
+    display: inline;
+    font-size: 11px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 1.8rem;
+  }
 }
 
-.suggest {
-  font-size: 1.7rem;
-  position: relative;
-  left: 15px;
-}
-.become {
-  position: relative;
-  left: 5px;
-  font-size: 1.7rem;
-}
- .arti {
-  font-size: 1.8rem;
-}
-.card2:hover   .arti {
-  color: transparent;
-  font-size: 1.8rem;
-  position: relative;
-}
-.card2:hover   .arti:after{
-  content: "Jerusalem ...";
-  color: initial;
-  position: absolute;
-  top: 0px;
-  left: 0;
-  visibility: visible;
-  display: inline;
-  font-size: 11px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  font-size: 1.8rem;
-}
-}
-
-@media screen and (min-width : 768px) {
+@media screen and (min-width: 768px) {
   * {
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
     font-size: 20px;
   }
   .box {
-    background-color: #F6F6F6;
+    background-color: #f6f6f6;
     padding-top: 2rem;
     padding-bottom: 3rem;
     font-size: 1rem;
     text-align: center;
     height: 450px;
-}
-.footer3 {
-  position: relative;
-  top: -40px;
-}
-.ct-1 {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  top: 7px;
-}
+  }
+  .spinner-1:before {
+    width: 100px;
+    height: 100px;
+  }
+  .footer3 {
+    position: relative;
+    top: -40px;
+  }
+  .ct-1 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 7px;
+  }
   .paris {
     font-size: 1.6rem;
   }
-  .fa-map-marker-alt{
+  .fa-map-marker-alt {
     font-size: 1.6rem;
   }
 
   .working {
-    position: relative;
     left: 210px;
-    width: 320px;
   }
-  .card2:hover   .fa-check-circle{
+  .card2:hover .fa-check-circle {
     display: inline-block;
     cursor: pointer;
     font-size: 2rem;
     animation-name: spin;
-    animation-timing-function:linear;
+    animation-timing-function: linear;
     animation-duration: 3s;
-    animation-direction:normal;
+    animation-direction: normal;
     animation-fill-mode: forwards;
     transform-origin: center center;
     position: relative;
-    top:45px;
+    top: 45px;
     left: 55px;
     color: white;
     z-index: 2;
@@ -2777,7 +2563,16 @@ card2:hover  .check-container{
     position: relative;
     top: 60px;
     left: 40px;
-}
+  }
+  .arrow3 {
+    position: relative;
+    top: -15px;
+    left: 40px;
+  }
+  .arrow4 {
+    position: relative;
+    top: 20px;
+  }
   .image img {
     width: 70vw;
     position: relative;
@@ -2785,164 +2580,121 @@ card2:hover  .check-container{
     height: 60px;
   }
   .btn {
-    background: linear-gradient(to top, #736e7a 0%, #FF79DA 100%);
+    background: linear-gradient(to top, #736e7a 0%, #ff79da 100%);
     color: white;
     margin-top: 1.9rem;
     border-radius: 70px;
     width: 50vw;
     height: 9vh;
     text-shadow: 0.1em 0.1em #333;
-}
-  .num1 {
-    position: relative;
-    left: -140px;
-    top: 30px;
-   }
-  .num2 {
-    position: relative;
-    left: -13px;  
-    top: 30px;
-   }
-   .num3 {
-    position: relative;
-    left: -10px;
-    top: 30px;
-   }
-   .btns .restaurant  .fa-mobile-alt {
-    position: relative;
-    top: 34px;
-    left: -140px;
-    font-size: 1.7rem;
-   }
-     .fa-list-ul { 
-    position: relative;
-    left: -20px;
-    top: 33px;
-    font-size: 1.7rem;
   }
-   .fa-store {
-    position: relative;
-    left: -15px;
-    top: 33px;
-    color: #9356DC;
-    font-size: 1.5rem;
-   }
-  
-   .text1 {
-    position: relative;
-    left: -90px;
-    top: 32px;
-    font-size: 1.6rem;
-   }
-   .text2 { 
-    position: relative;
-    left: 26px;
-    top: 32px;
+  .num1,
+  .num2,
+  .num3 {
+    position: absolute;
+    left: -12px;
+    top: 42px;
+    font-size: 1.2rem;
+    padding: 3%;
+  }
+  .fa-mobile-alt,
+  .fa-list-ul,
+  .fa-store {
+    position: absolute;
+    top: 44px;
+    left: 54px;
     font-size: 1.6rem;
   }
-   .text3 {
-    position: relative;
-    left: 26px;
-    top: 32px;
-    font-size: 1.6rem;
-   }
+  .text1,
+  .text2,
+  .text3 {
+    top: 43px;
+    left: 128px;
+  }
   .title4 {
     font-size: 2.2rem;
-}
-.title3 {
-  font-size: 4.2vw;
-}
-.title3-1 {
-  font-size: 4.2vw;
-}
-.res-list {
-  background-color: #F6F6F6;
-  padding: 5%;
-  width: 100vw;
-}
-.add {
+  }
+  .title3 {
+    font-size: 4.2vw;
+  }
+  .title3-1 {
+    font-size: 4.2vw;
+  }
+  .add {
     font-size: 1.6rem;
     position: relative;
-    left: 15px;
     top: 17px;
-    overflow: hidden;
-}
-.title1 {
-  position: relative;
-  top: 16px;
-  left: 15px;
-  font-size: 1.9rem;
-}
-.icon {
-  font-size: 1.6rem;
-  float: right;
-  position: relative;
-  left: -25px;
-  top: 20px;
-  display: inline;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-.container4 .full2 {
-  height: 2370px;
-}
-.btn-container {
-  display: flex;
-  height: 300px;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  top: 30px;
-}
-.footer2 {
-  position: relative;
-  top: -60px;
-}
-.btn2 {
-  height: 80px;
-  border-radius: 45px;
-  position: relative;
-    top: 15px;
-}
-.container4 .goum .fa-heart {
-  background-color: white;
-  color: white;
-  display: inline-block;
-  z-index: 1;
-  text-shadow: 0 0 2px #000;
-  position: relative;
-  left: 230px;
-  top: 60px;
-}
-.image7{
-  position: relative;
-  left: 180px;
-}
-.entry4 {
-  border-bottom: 3px solid #B0E7D9;
-  width: 90px;
-  position: relative;
-  left: 20px;
-  top: 0px;
-  padding-top: 70px;
-  font-size: 1.9rem;
-}
-.entry6-1 {
-  padding-top: 80px;
-}
-.container4 .goum {
-  position: relative;
-  top: -30px;
-  left: 0px;
-  height: 2395px;
-}
-.footer-container3 {
-  position: relative;
-  top: -61px;
-  left: -64px;
-}
+  }
+  .title1 {
+    position: relative;
+    top: 16px;
+  }
+  .icon {
+    font-size: 1.6rem;
+    position: relative;
+    left: -25px;
+    top: 20px;
+  }
+  .container4 .full2 {
+    height: 2370px;
+  }
+  .btn-container {
+    display: flex;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 49px;
+  }
+  .footer2 {
+    position: relative;
+    top: -60px;
+  }
+  .btn2 {
+    height: 80px;
+    border-radius: 45px;
+    position: relative;
+    top: -4px;
+  }
+  .container4 .goum .fa-heart {
+    background-color: white;
+    color: white;
+    display: inline-block;
+    z-index: 1;
+    text-shadow: 0 0 2px #000;
+    position: relative;
+    left: 230px;
+    top: 60px;
+  }
+  .image7 {
+    position: relative;
+    left: 180px;
+  }
+  .entry4 {
+    border-bottom: 3px solid #b0e7d9;
+    width: 90px;
+    position: relative;
+    left: 20px;
+    top: 0px;
+    padding-top: 70px;
+    font-size: 1.9rem;
+  }
+  .entry6-1 {
+    padding-top: 80px;
+  }
+  .container4 .goum {
+    position: relative;
+    top: -30px;
+    left: 0px;
+    height: 2395px;
+  }
+  .footer-container3 {
+    position: relative;
+    top: -61px;
+    left: -64px;
+  }
   .banner {
-    background-color: #99E2D0;
+    background-color: #99e2d0;
     color: black;
     padding: 5px 40px;
   }
@@ -2951,15 +2703,15 @@ card2:hover  .check-container{
     left: 180px;
     top: 53px;
     font-size: 2.2rem;
-   }
-   .entry1 {
+  }
+  .entry1 {
     padding-top: 70px;
-}
-.image4{
-  position: relative;
-  left: 70px;
-}
-   .container3 .encha .fa-heart {
+  }
+  .image4 {
+    position: relative;
+    left: 70px;
+  }
+  .container3 .encha .fa-heart {
     background-color: white;
     color: white;
     display: inline-block;
@@ -2969,222 +2721,195 @@ card2:hover  .check-container{
     left: 30px;
     top: 60px;
     font-size: 2.2rem;
-}
-.container2 .basti .fa-heart {
-  background-color: white;
-  color: white;
-  display: inline-block;
-  z-index: 1;
-  text-shadow: 0 0 2px #000;
-  position: relative;
-  left: 410px;
-  top: 60px;
-  font-size: 2.2rem;
-}
-  .cards .card {
+  }
+  .container2 .basti .fa-heart {
     background-color: white;
+    color: white;
+    display: inline-block;
+    z-index: 1;
+    text-shadow: 0 0 2px #000;
+    position: relative;
+    left: 410px;
+    top: 60px;
+    font-size: 2.2rem;
+  }
+  .cards .card {
     width: 610px;
     height: 440px;
-    border-radius: 5%;
-    padding: 0%;
     justify-content: center;
   }
-  .cards .card .h1 .fa-heart{
-    font-size: 2.0rem;
+  .cards .card .h1 .fa-heart {
+    font-size: 2rem;
     position: absolute;
     left: 85%;
-    top:  31px;
-  }
-  .cards .card .h2 .fa-heart{
-   font-size: 2.0rem;
-   position: absolute;
-   left: 85%;
     top: 31px;
- }
- .cards .card .h3 .fa-heart{
-   font-size: 2.0rem;
-   position: absolute;
-   left: 85%;
+  }
+  .cards .card .h2 .fa-heart {
+    font-size: 2rem;
+    position: absolute;
+    left: 85%;
+    top: 31px;
+  }
+  .cards .card .h3 .fa-heart {
+    font-size: 2rem;
+    position: absolute;
+    left: 85%;
     top: 40%;
- }
- .cards .card .h4 .fa-heart{
-   font-size: 2.0rem;
-   position: absolute;
-   left: 85%;
+  }
+  .cards .card .h4 .fa-heart {
+    font-size: 2rem;
+    position: absolute;
+    left: 85%;
     top: 40%;
- }
- .restaurant {
-  padding: 3px;
-  border-radius: 15px;
-  display: inline-block;
-  width: 639.19px;
-  height: 130px;
-  background-color: #F6F6F6;
-  position: relative;
-  left: 0px;
-  box-shadow: 2px 2px 5px #e7e7e7;
-}
-.menu {
-  padding: 3px;
-  border-radius: 15px;
-  display: inline-block;
-  width: 639.19px;
-  height: 130px;
-  background-color: #F6F6F6;
-  position: relative;
-  left: 0px;
-  box-shadow: 2px 2px 5px #e7e7e7;
-}
-.enjoy {
-  padding: 3px;
-  border-radius: 15px;
-  display: inline-block;
-  width: 639.19px;
-  height: 130px;
-  background-color: #F6F6F6;
-  position: relative;
-  left: 0px;
-  box-shadow: 2px 2px 5px #e7e7e7;
-}
- .cards .card .image3-1{
-  background-image: url('../src/img/dish1.jpg');
- }
- .cards .card .image3-2{
-  background-image: url('../src/img/dish3.jpg');
- }
- .cards .card .image3-3{
-  background-image: url('../src/img/dish4.jpg');
- }
- .cards .card .image3-4{
-  background-image: url('../src/img/dish2.jpg');
- }
- .cards .card .image3-1, .cards .card .image3-2, .cards .card .image3-3, .cards .card .image3-4 {
-   height: 16rem;
- }
- .container4 .image2-0,  .container3 .image2-1,  .container2 .image2-2, .container4 .image2-3 {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 18.5rem;
-  width: 100%;
- }
+  }
+  .restaurant,
+  .menu,
+  .enjoy {
+    padding: 3px;
+    border-radius: 15px;
+    display: inline-block;
+    width: 639.19px;
+    height: 130px;
+    background-color: #f6f6f6;
+    position: relative;
+    box-shadow: 2px 2px 5px #e7e7e7;
+  }
+  .cards .card .image3-1 {
+    background-image: url("../src/img/dish1.jpg");
+  }
+  .cards .card .image3-2 {
+    background-image: url("../src/img/dish3.jpg");
+  }
+  .cards .card .image3-3 {
+    background-image: url("../src/img/dish4.jpg");
+  }
+  .cards .card .image3-4 {
+    background-image: url("../src/img/dish2.jpg");
+  }
+  .cards .card .image3-1,
+  .cards .card .image3-2,
+  .cards .card .image3-3,
+  .cards .card .image3-4 {
+    height: 16rem;
+  }
+  .container4 .image2-0,
+  .container3 .image2-1,
+  .container2 .image2-2,
+  .container4 .image2-3 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 18.5rem;
+    width: 100%;
+  }
   .container4 .image2-0 {
-    background-image: url('../src/img/dish1.jpg');
-   }
-    .container3 .image2-1{
-    background-image: url('../src/img/dish3.jpg');
-   }
-   .container2 .image2-2{
-    background-image: url('../src/img/dish4.jpg');
-   }
-   .container4 .image2-3{
-    background-image: url('../src/img/dish2.jpg');
-   }
+    background-image: url("../src/img/dish1.jpg");
+  }
+  .container3 .image2-1 {
+    background-image: url("../src/img/dish3.jpg");
+  }
+  .container2 .image2-2 {
+    background-image: url("../src/img/dish4.jpg");
+  }
+  .container4 .image2-3 {
+    background-image: url("../src/img/dish2.jpg");
+  }
 
-   .container2 .basti {
+  .container2 .basti {
     border-radius: 40px 40px 10px 10px;
     position: relative;
     top: -75px;
     left: 0px;
     border-radius: 20px 20px 10px 10px;
-    height: 2340px;
+    height: 2379px;
     z-index: 2;
     overflow: hidden;
-    background-color: #F6F6F6;;
-}
-.container3 .encha {
-  position: relative;
-  top: -65px;
-  left: 0px;
-  border-radius: 20px 20px 10px 10px;
-  height: 2530px;
-}
-.image6{
-  position: relative;
-  left: 170px;
-}
-.footer-container2 {
-  position: relative;
-  top: -50px;
-}
-.entry3 {
-  border-bottom: 3px solid #B0E7D9;
-  width: 85px;
-  position: relative;
-  left: 20px;
-  top: 10px;
-  padding-top: 40px;
-  font-size: 1.9rem;
-}
-.entry3-1 {
-  position: relative;
-  padding-top: 90px;
-}
-.footer-container5 {
-  position: relative;
-  top: -60px;
-}
-   .title {
-     font-size: 2.8rem;
-     position: relative;
-     left: 30px;
-     top: 60px;
-   }
-   .image3 {
+    background-color: #f6f6f6;
+  }
+  .container3 .encha {
+    position: relative;
+    top: -65px;
+    left: 0px;
+    border-radius: 20px 20px 10px 10px;
+    height: 2530px;
+  }
+  .image6 {
+    position: relative;
+    left: 170px;
+  }
+  .footer-container2 {
+    position: relative;
+    top: -65px;
+    left: -61px;
+  }
+  .entry3 {
+    border-bottom: 3px solid #b0e7d9;
+    width: 85px;
+    position: relative;
+    left: 20px;
+    top: 10px;
+    padding-top: 40px;
+    font-size: 1.9rem;
+  }
+  .entry3-1 {
+    position: relative;
+    padding-top: 90px;
+  }
+  .footer-container5 {
+    position: relative;
+    top: -39px;
+    left: -65px;
+  }
+  .title {
+    font-size: 2.8rem;
+    position: relative;
+    left: 30px;
+    top: 60px;
+  }
+  .image3 {
     position: relative;
     left: -20px;
   }
-  .arrow2{
+  .arrow2 {
     position: relative;
-    top: 23px;
-
+    top: -15px;
   }
-   .cards2 {
-    display: grid;
+  .cards2 {
     grid-template-rows: repeat(3, 140px);
     grid-gap: 50px;
-    position: relative;
-    top: 20px;
-}
-   .card2 {
-    border: 1px solid black;
-    border-radius: 25px;
-    display: inline;
+  }
+  .card2 {
     width: 95%;
     height: 140px;
-    background-color: white;
+  }
+  .entry {
     position: relative;
-    margin: 0 auto;
-    z-index: 1;
-}
-   .entry {
-     position: relative;
-     left: 40px;
-     font-size: 1.6rem;
-     width: 80px;
-   }
-   .entry2 {
-    border-bottom: 3px solid #B0E7D9;
+    left: 40px;
+    font-size: 1.6rem;
+    width: 80px;
+  }
+  .entry2 {
+    border-bottom: 3px solid #b0e7d9;
     width: 85px;
     position: relative;
     left: 20px;
     top: 20px;
     font-size: 1.9rem;
     padding-top: 40px;
-}
-.entry2-1 {
-  padding-top: 65px;
-}
-    .footer-container {
-     position: relative;
-     top: -37px;
-     left: -66px;
-     line-height: 0.7;
-   }
-   .cards2 .card2 .check-container {
+  }
+  .entry2-1 {
+    padding-top: 65px;
+  }
+  .footer-container {
+    position: relative;
+    top: -37px;
+    left: -66px;
+    line-height: 0.7;
+  }
+  .cards2 .card2 .check-container {
     width: 0px;
     height: 0px;
-    background-color: #99E2D0;
+    background-color: #99e2d0;
     position: relative;
     top: 0px;
     right: 200px;
@@ -3195,7 +2920,7 @@ card2:hover  .check-container{
     transform: translateY(0);
     box-shadow: 0 0 0 #000;
   }
-  .card2:hover  .check-container{ 
+  .card2:hover .check-container {
     will-change: transform;
     backface-visibility: hidden;
     outline: none;
@@ -3204,61 +2929,61 @@ card2:hover  .check-container{
     position: relative;
     top: -40px;
     left: -30px;
-    width:30vw;
-     height: 142px;
+    width: 30vw;
+    height: 142px;
     cursor: pointer;
     animation-name: slide;
     animation-timing-function: ease-in-out;
     animation-duration: 3s;
     animation-fill-mode: forwards;
-    animation-direction:normal;
+    animation-direction: normal;
     transform-origin: center center;
-    background-color: #99E2D0;
+    background-color: #99e2d0;
     z-index: 2;
   }
-  
+
   @keyframes slide {
     0% {
-       left: 58px;
-       top: -50px;
-       opacity: 1;
-       width: 0px;
-       }
-       33% {
-         left: 58px;
-         top: -50px;
-         opacity: 1;
-         width: 150px;
-         }
-         50% {
-           left: 58px;
-           top: -50px;
-           opacity: 1;
-           width: 150px;
-           }
-       83.3% {
-         left: 58px;
-         top: -50px;
-         opacity: 1;
-         width: 150px;
-         }
+      left: 58px;
+      top: -50px;
+      opacity: 1;
+      width: 0px;
+    }
+    33% {
+      left: 58px;
+      top: -50px;
+      opacity: 1;
+      width: 150px;
+    }
+    50% {
+      left: 58px;
+      top: -50px;
+      opacity: 1;
+      width: 150px;
+    }
+    83.3% {
+      left: 58px;
+      top: -50px;
+      opacity: 1;
+      width: 150px;
+    }
     100% {
-     left: 58px;
-     top: -50px;
-     width: 0px;
-     opacity: 0;
-   }
+      left: 58px;
+      top: -50px;
+      width: 0px;
+      opacity: 0;
+    }
   }
-.work {
-  position: relative;
-  left: -170px;
-  font-size: 1.7rem;
-}
-.image10{
-  font-size: 2rem;
-  position: relative;
-  top: -20px;
-}
+  .work {
+    position: relative;
+    left: -170px;
+    font-size: 1.7rem;
+  }
+  .image10 {
+    font-size: 2rem;
+    position: relative;
+    top: -20px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -3272,16 +2997,20 @@ card2:hover  .check-container{
   .paris {
     font-size: 1.8rem;
   }
-  .fa-utensils, .fa-hands-helping, .legal, .contact {
+  .fa-utensils,
+  .fa-hands-helping,
+  .legal,
+  .contact {
     font-size: 2.2rem;
-}
-.suggest, .become {
-  font-size: 2.2rem;
-}
-.image-f {
-  font-size: 2.2rem;
-}
-  .fa-map-marker-alt{
+  }
+  .suggest,
+  .become {
+    font-size: 2.2rem;
+  }
+  .image-f {
+    font-size: 2.2rem;
+  }
+  .fa-map-marker-alt {
     font-size: 1.8rem;
   }
   .ct-1 {
@@ -3289,23 +3018,26 @@ card2:hover  .check-container{
     flex-direction: column;
     position: relative;
     top: 60%;
-}
-.ct-2 {
-  position: relative;
-  top: 50%;
-}
-  .card2:hover   .fa-check-circle{
+  }
+  .image11 {
+    font-size: 2.4rem;
+  }
+  .ct-2 {
+    position: relative;
+    top: 50%;
+  }
+  .card2:hover .fa-check-circle {
     display: inline-block;
     cursor: pointer;
     font-size: 2rem;
     animation-name: spin;
-    animation-timing-function:linear;
+    animation-timing-function: linear;
     animation-duration: 3s;
-    animation-direction:normal;
+    animation-direction: normal;
     animation-fill-mode: forwards;
     transform-origin: center center;
     position: relative;
-    top:55px;
+    top: 55px;
     left: 65px;
     color: white;
     z-index: 2;
@@ -3313,7 +3045,7 @@ card2:hover  .check-container{
   .cards2 .card2 .check-container {
     width: 0px;
     height: 0px;
-    background-color: #99E2D0;
+    background-color: #99e2d0;
     position: relative;
     top: 0px;
     right: 200px;
@@ -3324,7 +3056,7 @@ card2:hover  .check-container{
     transform: translateY(0);
     box-shadow: 0 0 0 #000;
   }
-  .card2:hover  .check-container{ 
+  .card2:hover .check-container {
     will-change: transform;
     backface-visibility: hidden;
     outline: none;
@@ -3333,56 +3065,56 @@ card2:hover  .check-container{
     position: relative;
     top: -40px;
     left: -30px;
-    width:30vw;
-     height: 160px;
+    width: 30vw;
+    height: 160px;
     cursor: pointer;
     animation-name: slide;
     animation-timing-function: ease-in-out;
     animation-duration: 3s;
     animation-fill-mode: forwards;
-    animation-direction:normal;
+    animation-direction: normal;
     transform-origin: center center;
-    background-color: #99E2D0;
+    background-color: #99e2d0;
     z-index: 2;
   }
-  
+
   @keyframes slide {
     0% {
-       left: 60px;
-       top: -55px;
-       opacity: 1;
-       width: 0px;
-       }
-       33% {
-         left: 60px;
-         top: -55px;
-         opacity: 1;
-         width: 170px;
-         }
-         50% {
-           left: 60px;
-           top: -55px;
-           opacity: 1;
-           width: 170px;
-           }
-       83.3% {
-         left: 60px;
-         top: -55px;
-         opacity: 1;
-         width: 170px;
-         }
+      left: 60px;
+      top: -55px;
+      opacity: 1;
+      width: 0px;
+    }
+    33% {
+      left: 60px;
+      top: -55px;
+      opacity: 1;
+      width: 170px;
+    }
+    50% {
+      left: 60px;
+      top: -55px;
+      opacity: 1;
+      width: 170px;
+    }
+    83.3% {
+      left: 60px;
+      top: -55px;
+      opacity: 1;
+      width: 170px;
+    }
     100% {
-     left: 60px;
-     top: -55px;
-     width: 0px;
-     opacity: 0;
-   }
+      left: 60px;
+      top: -55px;
+      width: 0px;
+      opacity: 0;
+    }
   }
-.work {
-  position: relative;
-  left: -220px;
-  font-size: 1.7rem;
-}
+  .work {
+    position: relative;
+    left: -220px;
+    font-size: 1.7rem;
+  }
 
   .work {
     position: relative;
@@ -3392,66 +3124,43 @@ card2:hover  .check-container{
   .title {
     font-size: 3.3rem;
     position: relative;
-    left: 30px;
-}
-.entry {
-  position: relative;
-  left: 40px;
-  font-size: 1.8rem;
-  border-bottom-width: 150px;
-  border-bottom: 2px solid #B0E7D9;
-}
-.entry1 {
-  padding-top: 70px;
-}
-.title1 {
-  position: relative;
-  top: 16px;
-  left: 15px;
-  font-size: 2.1rem;
-}
-.add {
-  font-size: 1.8rem;
-  position: relative;
-  left: 15px;
-  top: 17px;
-  overflow: hidden;
-}
-.image3 {
-  position: relative;
-  left: -20px;
-  font-size: 3.5rem;
-}
-.cards2 {
-  display: grid;
-  grid-template-rows: repeat(3, 160px);
-  grid-gap: 50px;
-  position: relative;
-  top: 20px;
-}
-.card2 {
-  border: 1px solid black;
-  border-radius: 25px;
-  display: inline;
-  width: 95%;
-  height: 160px;
-  background-color: white;
-  position: relative;
-  margin: 0 auto;
-  z-index: 1;
-}
-.icon {
-  font-size: 1.6rem;
-  float: right;
-  position: relative;
-  left: -55px;
-  top: 20px;
-  display: inline;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
+    left: 49px;
+  }
+  .entry {
+    position: relative;
+    left: 40px;
+    font-size: 1.8rem;
+    border-bottom-width: 150px;
+    border-bottom: 2px solid #b0e7d9;
+  }
+  .entry1 {
+    padding-top: 70px;
+  }
+  .title1 {
+    font-size: 2.1rem;
+  }
+  .add {
+    font-size: 1.8rem;
+  }
+  .image3 {
+    position: relative;
+    left: -20px;
+    font-size: 3.5rem;
+  }
+  .cards2 {
+    grid-template-rows: repeat(3, 160px);
+  }
+  .card2 {
+    width: 95%;
+    height: 160px;
+  }
+  .icon {
+    position: relative;
+    left: -55px;
+    top: 20px;
+  }
   .banner {
-    background-color: #99E2D0;
+    background-color: #99e2d0;
     color: #018767;
     padding: 8px 60px;
   }
@@ -3460,536 +3169,468 @@ card2:hover  .check-container{
     left: 320px;
     top: 60px;
     font-size: 2.6rem;
-   }
-   .container4 .full2 {
+  }
+  .container4 .full2 {
     height: 2680px;
     position: relative;
     top: -95px;
     width: 98%;
     border-top-left-radius: 4.125rem;
     border-top-right-radius: 4.125rem;
-}
-.btn-container {
-  display: flex;
-  height: 400px;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  top: 30px;
-}
-.container2 .basti {
-  border-radius: 40px 40px 10px 10px;
-  position: relative;
-  top: -75px;
-  left: 0px;
-  border-radius: 20px 20px 10px 10px;
-  height: 2600px;
-  z-index: 2;
-  overflow: hidden;
-  background-color: #F6F6F6;
-}
-.footer-container2 {
-  position: relative;
-  top: -100px;
-  left: -90px;
-}
-.image7 {
-  position: relative;
-  left: 290px;
-  font-size: 3.5rem;
-}
-.container2 .basti .fa-heart {
-  background-color: white;
-  color: white;
-  display: inline-block;
-  z-index: 1;
-  text-shadow: 0 0 2px #000;
-  position: relative;
-  left: 600px;
-  top: 60px;
-  font-size: 2.6rem;
-}
-.entry3 {
-  position: relative;
-  left: 50px;
-}
-.entry3-1 {
-  position: relative;
-  padding-top: 110px;
-}
-.container4 .goum {
-  border-top-left-radius: 93px;
-  border-top-right-radius: 93px;
-  position: relative;
-  top: -101px;
-  left: 0px;
-  height: 2670px;
-}
-.footer-container3 {
-  position: relative;
-  top: -98px;
-  left: -90px;
-}
-.container4 .goum .fa-heart {
-  background-color: white;
-  color: white;
-  display: inline-block;
-  z-index: 1;
-  text-shadow: 0 0 2px #000;
-  position: relative;
-  left: 380px;
-  top: 60px;
-  font-size: 2.6rem;
-}
-.entry4 {
-  position: relative;
-  left: 40px;
-}
-.container3 .encha .fa-heart {
-  background-color: white;
-  color: white;
-  display: inline-block;
-  z-index: 1;
-  text-shadow: 0 0 2px #000;
-  position: relative;
-  left: 410px;
-  top: 60px;
-  font-size: 2.6rem;
-}
-.container3 .encha {
-  position: relative;
-  top: -65px;
-  left: 0px;
-  border-radius: 20px 20px 10px 10px;
-  height: 2800px;
-  z-index: 2;
-  overflow: hidden;
-  background-color: white;
-  background-color: #F6F6F6;
-}
-.btn2 {
-  height: 120px;
-  border-radius: 65px;
-}
-.footer-container5 {
-  position: relative;
-  top: -80px;
-  left: -60px;
-}
-.image6 {
-  position: relative;
-  left: 290px;
-  font-size: 3.5rem;
-}
-  .cards .card {
+  }
+  .btn-container {
+    display: flex;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 30px;
+  }
+  .container2 .basti {
+    border-radius: 40px 40px 10px 10px;
+    position: relative;
+    top: -75px;
+    left: 0px;
+    height: 2673px;
+    z-index: 2;
+    overflow: hidden;
+    background-color: #f6f6f6;
+  }
+  .footer-container2 {
+    position: relative;
+    top: -81px;
+    left: -85px;
+  }
+  .image7 {
+    position: relative;
+    left: 290px;
+    font-size: 3.5rem;
+  }
+  .container2 .basti .fa-heart {
     background-color: white;
+    color: white;
+    display: inline-block;
+    z-index: 1;
+    text-shadow: 0 0 2px #000;
+    position: relative;
+    left: 600px;
+    top: 60px;
+    font-size: 2.6rem;
+  }
+  .entry3 {
+    position: relative;
+    left: 50px;
+  }
+  .entry3-1 {
+    position: relative;
+    padding-top: 110px;
+  }
+  .container4 .goum {
+    border-top-left-radius: 93px;
+    border-top-right-radius: 93px;
+    position: relative;
+    top: -101px;
+    left: 0px;
+    height: 2670px;
+  }
+  .footer-container3 {
+    position: relative;
+    top: -98px;
+    left: -90px;
+  }
+  .container4 .goum .fa-heart {
+    background-color: white;
+    color: white;
+    display: inline-block;
+    z-index: 1;
+    text-shadow: 0 0 2px #000;
+    position: relative;
+    left: 380px;
+    top: 60px;
+    font-size: 2.6rem;
+  }
+  .entry4 {
+    position: relative;
+    left: 40px;
+  }
+  .container3 .encha .fa-heart {
+    background-color: white;
+    color: white;
+    display: inline-block;
+    z-index: 1;
+    text-shadow: 0 0 2px #000;
+    position: relative;
+    left: 146px;
+    top: 60px;
+    font-size: 2.6rem;
+  }
+  .container3 .encha {
+    position: relative;
+    top: -65px;
+    left: 0px;
+    border-radius: 20px 20px 10px 10px;
+    height: 2831px;
+    z-index: 2;
+    overflow: hidden;
+    background-color: white;
+    background-color: #f6f6f6;
+  }
+  .btn2 {
+    height: 120px;
+    border-radius: 65px;
+    position: relative;
+    top: 13px;
+  }
+  .footer-container5 {
+    position: relative;
+    top: -60px;
+    left: -86px;
+  }
+  .image6 {
+    position: relative;
+    left: 290px;
+    font-size: 3.5rem;
+  }
+  .cards .card {
     width: 820px;
     height: 600px;
-    border-radius: 5%;
-    padding: 0%;
   }
-  .cards .card .h1 .fa-heart, .cards .card .h2 .fa-heart{
+  .cards .card .h1 .fa-heart,
+  .cards .card .h2 .fa-heart {
     font-size: 2.4rem;
     position: absolute;
     left: 85%;
     top: 120%;
   }
- .cards .card .h4 .fa-heart, .cards .card .h3 .fa-heart{
-   font-size: 2.4rem;
-   position: absolute;
+  .cards .card .h4 .fa-heart,
+  .cards .card .h3 .fa-heart {
+    font-size: 2.4rem;
+    position: absolute;
     left: 85%;
     top: 90%;
- }
- .restaurant {
-  padding: 3px;
-  border-radius: 30px;
-  display: inline-block;
-  width: 856.8px;
-  height: 160px;
-  background-color: #F6F6F6;
-  position: relative;
-  left: 0px;
-  box-shadow: 2px 2px 5px #e7e7e7;
-}
-.menu {
-  padding: 3px;
-  border-radius: 30px;
-  display: inline-block;
-  width: 856.8px;
-  height: 160px;
-  background-color: #F6F6F6;
-  position: relative;
-  left: 0px;
-  box-shadow: 2px 2px 5px #e7e7e7;
-}
-.enjoy {
-  padding: 3px;
-  border-radius: 30px;
-  display: inline-block;
-  width: 856.8px;
-  height: 160px;
-  background-color: #F6F6F6;
-  position: relative;
-  left: 0px;
-  box-shadow: 2px 2px 5px #e7e7e7;
-}
-.working {
-  position: relative;
-  left: 340px;
-  width: 320px;
-}
-.num1 {
-  position: relative;
-  left: -225px;
-  top: 35px;
- }
-.num2 {
-  position: relative;
-  left: -15px;  
-  top: 35px;
- }
- .num3 {
-  position: relative;
-  left: -15px;
-  top: 35px;
- }
- .btns .restaurant  .fa-mobile-alt {
-  position: relative;
-  top: 39px;
-  left: -230px;
-  font-size: 1.7rem;
- }
-   .fa-list-ul { 
-  position: relative;
-  left: -23px;
-  top: 38px;
-  font-size: 1.7rem;
-}
- .fa-store {
-  position: relative;
-  left: -21px;
-  top: 38px;
-  color: #9356DC;
-  font-size: 1.5rem;
- }
-
- .text1 {
-  position: relative;
-  left: -180px;
-  top: 39px;
-  font-size: 1.8rem;
- }
- .text2 { 
-  position: relative;
-  left: 21px;
-  top: 39px;
-  font-size: 1.8rem;
-}
- .text3 {
-  position: relative;
-  left: 20px;
-  top: 39px;
-  font-size: 1.8rem;
- }
- .cards .card .image3-1, .cards .card .image3-2, .cards .card .image3-3, .cards .card .image3-4 {
-   height: 20rem;
- }
- .cards .card .image3-1{
-  background-image: url('../src/img/dish1.jpg');
- }
- .cards .card .image3-2{
-  background-image: url('../src/img/dish3.jpg');
- }
- .cards .card .image3-3{
-  background-image: url('../src/img/dish4.jpg');
- }
- .cards .card .image3-4{
-  background-image: url('../src/img/dish2.jpg');
- }
-.footer-f {
-  position: relative;
-  top: -80px;
-}
-.cards {
-  display: flex;
-  flex-direction: column;
-  gap: 1.7rem;
-  width: 100%;
-  margin-top: 10%;
-}
-.image5 {
-  position: relative;
-  left: 60px;
-  font-size: 3.5rem;
-}
-
-.container4 .image2-0,  .container3 .image2-1, .container2 .image2-2, .container4 .image2-3{
-  background-repeat: no-repeat;
+  }
+  .restaurant,
+  .menu,
+  .enjoy {
+    padding: 3px;
+    border-radius: 30px;
+    display: inline-block;
+    width: 85vw;
+    margin-left: 46px;
+    height: 160px;
+    background-color: #f6f6f6;
+    position: relative;
+    box-shadow: 2px 2px 5px #e7e7e7;
+  }
+  .working {
+    left: 340px;
+  }
+  .num1,
+  .num2,
+  .num3 {
+    position: absolute;
+    left: -24px;
+    top: 50px;
+    font-size: 1.2rem;
+    padding: 3%;
+  }
+  .text1,
+  .text2,
+  .text3 {
+    top: 58px;
+    left: 169px;
+    font-size: 1.8rem;
+  }
+  .cards .card .image3-1,
+  .cards .card .image3-2,
+  .cards .card .image3-3,
+  .cards .card .image3-4 {
+    height: 20rem;
+  }
+  .cards .card .image3-1 {
+    background-image: url("../src/img/dish1.jpg");
+  }
+  .cards .card .image3-2 {
+    background-image: url("../src/img/dish3.jpg");
+  }
+  .cards .card .image3-3 {
+    background-image: url("../src/img/dish4.jpg");
+  }
+  .cards .card .image3-4 {
+    background-image: url("../src/img/dish2.jpg");
+  }
+  .footer-f {
+    position: relative;
+    top: -80px;
+  }
+  .cards {
+    margin-top: 10%;
+  }
+  .image5 {
+    position: relative;
+    left: 60px;
+    font-size: 3.5rem;
+  }
+  .arrow2 {
+    position: relative;
+    top: -18px;
+  }
+  .container4 .image2-0,
+  .container3 .image2-1,
+  .container2 .image2-2,
+  .container4 .image2-3 {
+    background-repeat: no-repeat;
     background-size: cover;
     height: 31.25rem;
     width: 100%;
-}
-.container4 .full .fa-heart {
-  position: relative;
-  left: 550px;
-  top: 60px;
-  font-size: 2.6rem;
- }
-  .container4 .image2-0{
-    background-image: url('../src/img/dish1.jpg');
+  }
+  .container4 .image2-0 {
+    background-image: url("../src/img/dish1.jpg");
     background-position: center bottom;
-   }
-   .container3 .image2-1{
-    background-image: url('../src/img/dish3.jpg');
+  }
+  .container3 .image2-1 {
+    background-image: url("../src/img/dish3.jpg");
     background-position: center;
-   }
-   .container2 .image2-2{
-    background-image: url('../src/img/dish4.jpg');
+  }
+  .container2 .image2-2 {
+    background-image: url("../src/img/dish4.jpg");
     background-position: center;
-   }
-   .container4 .image2-3{
-    background-image: url('../src/img/dish2.jpg');
+  }
+  .container4 .image2-3 {
+    background-image: url("../src/img/dish2.jpg");
     background-position: center;
-   }
-   .title4 {
+  }
+  .title4 {
     font-size: 2.2rem;
-}
-.title3 {
-  font-size: 4.2vw;
-}
-.title3-1 {
-  font-size: 4.2vw;
-}
-.res-list {
-  background-color: #F6F6F6;
-  padding: 5%;
-  width: 100vw;
-}
-.btn {
-  background: linear-gradient(to top, #736e7a 0%, #FF79DA 100%);
-  color: white;
-  padding: 1%;
-  border-radius: 100px;
-  width: 40vw;
-  height: 100px;
-  text-shadow: 0.1em 0.1em #333;
-  font-size: 1.5rem;
-}
-.footer-container {
-  position: relative;
-  top: -50px;
-  left: -80px;
-  line-height: 0.8;
-}
+  }
+  .title3,
+  .title3-1 {
+    font-size: 4.2vw;
+  }
+  .btn {
+    background: linear-gradient(to top, #736e7a 0%, #ff79da 100%);
+    color: white;
+    padding: 1%;
+    border-radius: 100px;
+    width: 40vw;
+    height: 100px;
+    text-shadow: 0.1em 0.1em #333;
+    font-size: 1.5rem;
+  }
+  .footer-container {
+    position: relative;
+    top: -63px;
+    left: -88px;
+    line-height: 0.8;
+  }
+  .fa-mobile-alt,
+  .fa-list-ul,
+  .fa-store {
+    position: absolute;
+    top: 57px;
+    left: 66px;
+    font-size: 2.2rem;
+  }
 }
 
-@media screen and (min-width : 1366px){
+@media screen and (min-width: 1366px) {
   .container2 .basti {
     border-top-left-radius: 120px;
     border-top-right-radius: 120px;
     position: relative;
     top: -127px;
     left: 0px;
-    height: 2900px;
+    height: 2965px;
     z-index: 2;
     overflow: hidden;
-    background-color: #F6F6F6;
-}
-.image10 {
-  position: relative;
-  top: 100px;;
-}
-.card2:hover  .check-container{ 
-  will-change: transform;
-  backface-visibility: hidden;
-  outline: none;
-  box-shadow: 0 0 0 #000;
-  float: right;
-  position: relative;
-  top: -60px;
-  left: 60px;
-  width:30vw;
-   height: 160px;
-  cursor: pointer;
-  animation-name: slide;
-  animation-timing-function: ease-in-out;
-  animation-duration: 3s;
-  animation-fill-mode: forwards;
-  animation-direction:normal;
-  transform-origin: center center;
-  background-color: #99E2D0;
-  z-index: 2;
-}
-.footer-container3 {
-  position: relative;
-  top: -95px;
-  left: -128px;
-}
-@keyframes slide {
-  0% {
-     left: 60px;
-     top: -60px;
-     opacity: 1;
-     width: 0px;
-     }
-     33% {
-       left: 60px;
-       top: -60px;
-       opacity: 1;
-       width: 200px;
-       }
-       50% {
-         left: 60px;
-         top: -60px;
-         opacity: 1;
-         width: 200px;
-         }
-     83.3% {
-       left: 60px;
-       top: -60px;
-       opacity: 1;
-       width: 200px;
-       }
-  100% {
-   left: 60px;
-   top: -60px;
-   width: 0px;
-   opacity: 0;
- }
-}
-.card2:hover   .fa-check-circle{
-  display: inline-block;
-  cursor: pointer;
-  font-size: 2rem;
-  animation-name: spin;
-  animation-timing-function:linear;
-  animation-duration: 3s;
-  animation-direction:normal;
-  animation-fill-mode: forwards;
-  transform-origin: center center;
-  position: relative;
-  top:60px;
-  left: 80px;
-  color: white;
-  z-index: 2;
-}
-.footer-container2 {
-  position: relative;
-  top: -131px;
-  left: -131px;
-}
-.container4 .goum {
-  border-top-left-radius: 120px;
-  border-top-right-radius: 120px;
-  position: relative;
-  top: -56px;
-  left: 0px;
-  height: 2950px;
-  z-index: 2;
-  overflow: hidden;
-  background-color: #F6F6F6;
-}
+    background-color: #f6f6f6;
+  }
+  .image10 {
+    position: relative;
+    top: 100px;
+  }
+  .card2:hover .check-container {
+    will-change: transform;
+    backface-visibility: hidden;
+    outline: none;
+    box-shadow: 0 0 0 #000;
+    float: right;
+    position: relative;
+    top: -60px;
+    left: 60px;
+    width: 30vw;
+    height: 160px;
+    cursor: pointer;
+    animation-name: slide;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+    transform-origin: center center;
+    background-color: #99e2d0;
+    z-index: 2;
+  }
+  .footer-container3 {
+    position: relative;
+    top: -60px;
+    left: -128px;
+  }
+  @keyframes slide {
+    0% {
+      left: 60px;
+      top: -60px;
+      opacity: 1;
+      width: 0px;
+    }
+    33% {
+      left: 60px;
+      top: -60px;
+      opacity: 1;
+      width: 200px;
+    }
+    50% {
+      left: 60px;
+      top: -60px;
+      opacity: 1;
+      width: 200px;
+    }
+    83.3% {
+      left: 60px;
+      top: -60px;
+      opacity: 1;
+      width: 200px;
+    }
+    100% {
+      left: 60px;
+      top: -60px;
+      width: 0px;
+      opacity: 0;
+    }
+  }
+  .card2:hover .fa-check-circle {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 2rem;
+    animation-name: spin;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    transform-origin: center center;
+    position: relative;
+    top: 60px;
+    left: 80px;
+    color: white;
+    z-index: 2;
+  }
+  .footer-container2 {
+    position: relative;
+    top: -87px;
+    left: -126px;
+  }
+  .container4 .goum {
+    border-top-left-radius: 120px;
+    border-top-right-radius: 120px;
+    position: relative;
+    top: -56px;
+    left: 0px;
+    height: 2926px;
+    z-index: 2;
+    overflow: hidden;
+    background-color: #f6f6f6;
+  }
   .title4 {
     font-size: 2.2rem;
     position: relative;
     top: 30px;
     left: -434px;
-}
-.title3 {
-  font-size: 2vw;
-}
-.title3-1 {
-  font-size: 2vw;
-}
- .title {
+  }
+  .title3 {
+    font-size: 2vw;
+  }
+  .title3-1 {
+    font-size: 2vw;
+  }
+  .title {
     font-size: 3.8rem;
     position: relative;
     left: 70px;
     top: 120px;
-}
-.cards2 {
-  display: grid;
-  grid-template-rows: repeat(3, 160px);
-  grid-gap: 50px;
-  position: relative;
-  top: 190px;
-}
-.entry1 {
-  padding-top: 0px;
-}
-.entry3-2{
-  padding-top: 100px;
-}
-.btn {
-  background: linear-gradient(to top, #9356DC 0%, #FF79DA 100%);
-  color: white;
-  padding: 1%;
-  border-radius: 80px;
-  width: 40vw;
-  height: 100px;
-  margin-top: 2.7rem;
-  text-shadow: 0.1em 0.1em #333;
-}
-.fa-map-marker-alt{
-  font-size: 2rem;
-}
-.paris {
-  font-size: 2rem;
-}
-.container4 .full2 .fa-heart {
-  background-color: white;
-  color: white;
-  display: inline-block;
-  z-index: 1;
-  text-shadow: 0 0 2px #000;
-  position: relative;
-  left: 620px;
-  top: 20px;
-}
+  }
+  .cards2 {
+    grid-template-rows: repeat(3, 160px);
+    position: relative;
+    top: 190px;
+  }
+  .entry1 {
+    padding-top: 0px;
+  }
+  .entry3-2 {
+    padding-top: 100px;
+  }
+  .btn {
+    background: linear-gradient(to top, #9356dc 0%, #ff79da 100%);
+    color: white;
+    padding: 1%;
+    border-radius: 80px;
+    width: 40vw;
+    height: 100px;
+    margin-top: 2.7rem;
+    text-shadow: 0.1em 0.1em #333;
+  }
+  .fa-map-marker-alt {
+    font-size: 2rem;
+  }
+  .paris {
+    font-size: 2rem;
+  }
+  .container4 .full2 .fa-heart {
+    background-color: white;
+    color: white;
+    display: inline-block;
+    z-index: 1;
+    text-shadow: 0 0 2px #000;
+    position: relative;
+    left: 620px;
+    top: 20px;
+  }
   .image img {
     position: relative;
-    left: 180px
+    left: 180px;
   }
   .entry {
     position: relative;
     left: 40px;
     top: 180px;
-    width:110px;
+    width: 110px;
     font-size: 2.2rem;
   }
-.box {
-  background-color: #F6F6F6;
-  padding-top: 2rem;
-  padding-bottom: 3rem;
-  font-size: 1rem;
-  text-align: center;
-  height: 600px;
-}
+  .box {
+    background-color: #f6f6f6;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    font-size: 1rem;
+    text-align: center;
+    height: 600px;
+  }
   .title1 {
-    position: relative;
-    top: 16px;
-    left: 15px;
     font-size: 2.3rem;
-}
-.add {
-  font-size: 2.0rem;
-  position: relative;
-  left: 15px;
-  top: 17px;
-  overflow: hidden;
-}
-.container3 .encha {
-  position: relative;
-  top: -112px;
-  left: 0px;
-  border-top-left-radius:120px;
-  border-top-right-radius:120px;
-  height: 3100px;
-  z-index: 2;
-  overflow: hidden;
-  background-color: white;
-  background-color: #F6F6F6;
-}
+  }
+  .add {
+    font-size: 2rem;
+  }
+  .container3 .encha {
+    position: relative;
+    top: -112px;
+    left: 0px;
+    border-top-left-radius: 120px;
+    border-top-right-radius: 120px;
+    height: 3130px;
+    z-index: 2;
+    overflow: hidden;
+    background-color: white;
+    background-color: #f6f6f6;
+  }
   .entry2 {
     position: relative;
     left: 40px;
@@ -4009,74 +3650,71 @@ card2:hover  .check-container{
     background-color: white;
     color: white;
     display: inline-block;
-    z-index:1;
+    z-index: 1;
     text-shadow: 0 0 2px #000;
     position: relative;
     left: 510px;
     top: 110px;
     font-size: 3.6rem;
-   }
-   .container3 .encha .fa-heart {
+  }
+  .container3 .encha .fa-heart {
     background-color: white;
     color: white;
     display: inline-block;
-    z-index:1;
+    z-index: 1;
     text-shadow: 0 0 2px #000;
     position: relative;
     left: 1050px;
     top: 20px;
-   }
-   .container2 .basti .fa-heart {
+  }
+  .container2 .basti .fa-heart {
     background-color: white;
     color: white;
     display: inline-block;
-    z-index:1;
+    z-index: 1;
     text-shadow: 0 0 2px #000;
     position: relative;
     left: 820px;
-    top: 100px;
+    top: 113px;
     font-size: 3.6rem;
-   }
-   .container3 .encha .fa-heart {
+  }
+  .container3 .encha .fa-heart {
     background-color: white;
     color: white;
     display: inline-block;
-    z-index:1;
+    z-index: 1;
     text-shadow: 0 0 2px #000;
     position: relative;
     left: 300px;
     top: 110px;
     font-size: 3.6rem;
-   }
-   .container4 .goum .fa-heart {
+  }
+  .container4 .goum .fa-heart {
     background-color: white;
     color: white;
     display: inline-block;
-    z-index:1;
+    z-index: 1;
     text-shadow: 0 0 2px #000;
     position: relative;
     left: 600px;
     top: 110px;
     font-size: 3.6rem;
-   }
+  }
   .cards .card .banner1 {
-    background-color: #99E2D0;
-    color: #088C6C;
+    background-color: #99e2d0;
+    color: #088c6c;
     padding: 8px 45px;
     font-size: 1rem;
   }
   .cards .card .banner2 {
-    background-color: #99E2D0;
-    color: #088C6C;
+    background-color: #99e2d0;
+    color: #088c6c;
     padding: 8px 45px;
     font-size: 1rem;
   }
   .cards .card {
-    background-color: white;
     width: 500px;
     height: 400px;
-    border-radius: 5%;
-    padding: 0%;
   }
   .cards {
     display: grid;
@@ -4088,117 +3726,123 @@ card2:hover  .check-container{
     position: relative;
     right: 4%;
   }
-  .cards .card .image3-1, .cards .card .image3-2, .cards .card .image3-3, .cards .card .image3-4{
-   height: 13rem;
+  .cards .card .image3-1,
+  .cards .card .image3-2,
+  .cards .card .image3-3,
+  .cards .card .image3-4 {
+    height: 13rem;
   }
-  .cards .card .image3-1{
-    background-image: url('../src/img/dish1.jpg');
+  .cards .card .image3-1 {
+    background-image: url("../src/img/dish1.jpg");
     background-position: center;
-   }
-   .cards .card .image3-2{
-    background-image: url('../src/img/dish3.jpg');
+  }
+  .cards .card .image3-2 {
+    background-image: url("../src/img/dish3.jpg");
     background-position: center;
-   }
-   .cards .card .image3-3{
-    background-image: url('../src/img/dish4.jpg');
+  }
+  .cards .card .image3-3 {
+    background-image: url("../src/img/dish4.jpg");
     background-position: center;
-   }
-   .cards .card .image3-4{
-    background-image: url('../src/img/dish2.jpg');
+  }
+  .cards .card .image3-4 {
+    background-image: url("../src/img/dish2.jpg");
     background-position: center;
-   }
+  }
 
-   .container4 .image2-0, .container3 .image2-1, .container2 .image2-2 .container4 .image2-3{
+  .container4 .image2-0,
+  .container3 .image2-1,
+  .container2 .image2-2 .container4 .image2-3 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 56.25rem;
     width: 100%;
-   }
-  .container4 .image2-0{
-    background-image: url('../src/img/dish1.jpg');
-   }
-   .container3 .image2-1{
-    background-image: url('../src/img/dish3.jpg');
-   }
-   .container2 .image2-2{
-    background-image: url('../src/img/dish4.jpg');
+  }
+  .container4 .image2-0 {
+    background-image: url("../src/img/dish1.jpg");
+  }
+  .container3 .image2-1 {
+    background-image: url("../src/img/dish3.jpg");
+  }
+  .container2 .image2-2 {
+    background-image: url("../src/img/dish4.jpg");
     position: relative;
     top: 63px;
     height: 44rem;
-   }
-   .container4 .image2-3{
-    background-image: url('../src/img/dish2.jpg');
+  }
+  .container4 .image2-3 {
+    background-image: url("../src/img/dish2.jpg");
     height: 39rem;
     position: relative;
     top: 63px;
-   }
-   .image {
+  }
+  .image {
     font-family: "Shrikhand";
     font-size: 3rem;
     height: 30px;
     position: relative;
     left: 0px;
-    top:  -30px;
+    top: -30px;
     font-size: 3rem;
-}
-.image3 {
-  position: relative;
-  left: -20px;
-  top: -25px;
-  font-size: 4.0rem;
-  height: 3.375rem;
-}
-.image9{
-  position: relative;
-  top: 0px;
-  font-size: 2.9rem;;
-}
-.image5 {
-  position: relative;
-  left: 125px;
-  top: 7px;
-  font-size: 4rem;
-}
-.entry2-1 {
-  padding-top: 0px;
-}
-.arrow {
-  font-size: 4rem;
-  top: 70px;
-}
-.title5 {
-  width: 60%;
-  font-size: 3.3rem;
-  text-align: center;
-}
-.dis {
-  font-size: 3rem;
-  margin-top: 30px;
-}
-.fa-arrow-left {
-  font-size: 1.5rem;
-  position: relative;
-  top: 36px;
-  left: 40px;
-}
-.arrow2{
-  position: relative;
-  top: -19px;
-}
-.arrow3{
-  position: relative;
-  top: 12px;
-}
-.arrow4{
-  position: relative;
-  top: 44px;
-}
-   .cards .card .h1 .fa-heart {
+  }
+  .image3 {
+    position: relative;
+    left: -20px;
+    top: -25px;
+    font-size: 4rem;
+    height: 3.375rem;
+  }
+  .image9 {
+    position: relative;
+    top: 0px;
+    font-size: 2.9rem;
+    height: 5rem;
+  }
+  .image5 {
+    position: relative;
+    left: 125px;
+    top: 7px;
+    font-size: 4rem;
+  }
+  .entry2-1 {
+    padding-top: 0px;
+  }
+  .arrow {
+    font-size: 4rem;
+    top: 70px;
+  }
+  .title5 {
+    width: 60%;
+    font-size: 3.3rem;
+    text-align: center;
+  }
+  .dis {
+    font-size: 3rem;
+    margin-top: 30px;
+  }
+  .fa-arrow-left {
+    font-size: 1.5rem;
+    position: relative;
+    top: 36px;
+    left: 40px;
+  }
+  .arrow2 {
+    position: relative;
+    top: -19px;
+  }
+  .arrow3 {
+    position: relative;
+    top: 12px;
+  }
+  .arrow4 {
+    position: relative;
+    top: 23px;
+  }
+  .cards .card .h1 .fa-heart {
     background-color: white;
     color: white;
     display: inline-block;
-    z-index:1;
+    z-index: 1;
     text-shadow: 0 0 2px #000;
     font-size: 1.7rem;
     position: absolute;
@@ -4209,11 +3853,11 @@ card2:hover  .check-container{
     position: relative;
     top: -100px;
   }
-  .footer{
+  .footer {
     position: relative;
     top: -100px;
   }
-  .btn2{
+  .btn2 {
     height: 7rem;
     font-size: 2rem;
   }
@@ -4223,14 +3867,14 @@ card2:hover  .check-container{
     margin-top: 2%;
     margin-left: 3%;
   }
-.ct-1 {
-  margin-top: 2%;
-}
+  .ct-1 {
+    margin-top: 2%;
+  }
   .cards .card .h2 .fa-heart {
     background-color: white;
     color: white;
     display: inline-block;
-    z-index:1;
+    z-index: 1;
     text-shadow: 0 0 2px #000;
     font-size: 1.7rem;
     position: absolute;
@@ -4241,7 +3885,7 @@ card2:hover  .check-container{
     background-color: white;
     color: white;
     display: inline-block;
-    z-index:1;
+    z-index: 1;
     text-shadow: 0 0 2px #000;
     font-size: 1.7rem;
     position: absolute;
@@ -4252,7 +3896,7 @@ card2:hover  .check-container{
     background-color: white;
     color: white;
     display: inline-block;
-    z-index:1;
+    z-index: 1;
     text-shadow: 0 0 2px rgb(39, 39, 39);
     font-size: 1.7rem;
     position: absolute;
@@ -4260,47 +3904,45 @@ card2:hover  .check-container{
     top: 60%;
   }
   .res-list {
-    background-color: #F6F6F6;
     display: inline-block;
-    width: 100vw;
-}
+  }
   .image6 {
     position: relative;
     left: 420px;
     top: 33px;
     font-size: 4rem;
-}
-.entry3-1 {
-  position: relative;
-  padding-top: 20px;
-}
-.image7 {
-  position: relative;
-  left: 420px;
-  top: 10px;
-  font-size: 4rem;
-}
-.entry6-1 {
-  padding-top: 20px;
-}
+  }
+  .entry3-1 {
+    position: relative;
+    padding-top: 20px;
+  }
+  .image7 {
+    position: relative;
+    left: 420px;
+    top: -10px;
+    font-size: 4rem;
+  }
+  .entry6-1 {
+    padding-top: 20px;
+  }
   .container4 .full2 {
     height: 2990px;
     border-top-left-radius: 120px;
     border-top-right-radius: 120px;
     position: relative;
     top: -229px;
-}
+  }
   .image4 {
     font-size: 4rem;
     position: relative;
     top: 80px;
     font-family: "Shrikhand";
-}
+  }
   .footer-container5 {
     position: relative;
-    top: -98px;
-    left: -119px;
-}
+    top: -75px;
+    left: -122px;
+  }
   .btn-container {
     display: flex;
     height: 400px;
@@ -4308,141 +3950,91 @@ card2:hover  .check-container{
     justify-content: center;
     position: relative;
     top: 254px;
-}
- .footer-container{
+  }
+  .footer-container {
     position: relative;
     top: -79px;
     left: -110px;
     line-height: 1;
   }
-  .footer-f{
+  .footer-f {
     position: relative;
     top: -202px;
   }
-  .card2:hover   .fa-check-circle{
+  .card2:hover .fa-check-circle {
     display: inline-block;
   }
-.restaurant {
-  padding: 3px;
-  border-radius: 30px;
-  display: inline-block;
-  width: 1133px;
-  height: 160px;
-  background-color: #F6F6F6;
-  position: relative;
-  left: 0px;
-  box-shadow: 2px 2px 5px #e7e7e7;
-}
-.menu {
-  padding: 3px;
-  border-radius: 30px;
-  display: inline-block;
-  width: 1133px;
-  height: 160px;
-  background-color: #F6F6F6;
-  position: relative;
-  left: 0px;
-  box-shadow: 2px 2px 5px #e7e7e7;
-}
-.enjoy {
-  padding: 3px;
-  border-radius: 30px;
-  display: inline-block;
-  width: 1133px;
-  height: 160px;
-  background-color: #F6F6F6;
-  position: relative;
-  left: 0px;
-  box-shadow: 2px 2px 5px #e7e7e7;
-}
-.working {
-  position: relative;
-  left: 500px;
-  width: 320px;
-}
-.num1 {
-  position: relative;
-  left: -355px;
-  top: 35px;
- }
-.num2 {
-  position: relative;
-  left: -20px;  
-  top: 35px;
- }
- .num3 {
-  position: relative;
-  left: -10px;
-  top: 35px;
- }
- .btns .restaurant  .fa-mobile-alt {
-  position: relative;
-  top: 39px;
-  left: -380px;
-  font-size: 1.7rem;
- }
-   .fa-list-ul { 
-  position: relative;
-  left: -45px;
-  top: 38px;
-  font-size: 1.7rem;
-}
- .fa-store {
-  position: relative;
-  left: -40px;
-  top: 38px;
-  color: #9356DC;
-  font-size: 1.5rem;
- }
+  .restaurant,
+  .menu,
+  .enjoy {
+    padding: 3px;
+    border-radius: 30px;
+    display: inline-block;
+    width: 1133px;
+    height: 160px;
+    background-color: #f6f6f6;
+    position: relative;
+    left: 0px;
+    box-shadow: 2px 2px 5px #e7e7e7;
+  }
+  .working {
+    left: 500px;
+  }
+  .num1,
+  .num2,
+  .num3 {
+    position: absolute;
+    left: -24px;
+    top: 55px;
+    font-size: 1.2rem;
+    padding: 2%;
+  }
+  .text1,
+  .text2,
+  .text3 {
+    top: 57px;
+    left: 152px;
+    font-size: 1.6rem;
+  }
 
- .text1 {
-  position: relative;
-  left: -340px;
-  top: 39px;
-  font-size: 1.8rem;
- }
- .text2 { 
-  position: relative;
-  left: -15px;
-  top: 39px;
-  font-size: 1.8rem;
-}
- .text3 {
-  position: relative;
-  left: -10px;
-  top: 39px;
-  font-size: 1.8rem;
- }
-.title4 {
-  font-size: 2.2rem;
-  position: relative;
-  top: 30px;
-  left: 10px;
-}
-.work {
-  position: relative;
-  left: -400px;
-  font-size: 2.5rem;
-}
-@keyframes slide2 {
-  0% {
-     transform: translateX(0%);
-     opacity: 1;
-     }
-     33% {
+  .title4 {
+    font-size: 2.2rem;
+    position: relative;
+    top: 30px;
+    left: 10px;
+  }
+  .work {
+    position: relative;
+    left: -400px;
+    font-size: 2.5rem;
+  }
+  @keyframes slide2 {
+    0% {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+    33% {
       transform: translateX(-300%);
-       opacity: 1;
-       }
-     83.3% {
+      opacity: 1;
+    }
+    83.3% {
       transform: translateX(-300%);
-       opacity: 1;
-       }
-  100% {
-    transform: translateX(0%);
-   opacity: 1;
- }
-}
-.fa-utensils, .fa-hands-helping, .legal, .contact, .suggest, .become {
-  font-size: 3rem;
-}
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  }
+  .fa-utensils,
+  .fa-hands-helping,
+  .legal,
+  .contact,
+  .suggest,
+  .become {
+    font-size: 3rem;
+  }
+  .suggest {
+    left: 31px;
+  }
 }
