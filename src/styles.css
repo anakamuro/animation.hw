@@ -2521,6 +2521,8 @@ html {
   .spinner-1:before {
     width: 100px;
     height: 100px;
+    margin-top: -60px;
+    margin-left: -60px;
   }
   .footer3 {
     position: relative;
