@@ -562,6 +562,7 @@ html {
   .arrow {
     position: relative;
     top: 25px;
+    z-index: 9;
   }
   .title {
     position: relative;
