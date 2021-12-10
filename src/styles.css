@@ -332,6 +332,9 @@ html {
     position: relative;
     text-align: center;
   }
+  .restaurant:hover, .enjoy:hover, .menu:hover{
+    filter: brightness(102%);
+   }
 
   .res-list {
     background-color: #f6f6f6;
