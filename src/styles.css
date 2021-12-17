@@ -128,12 +128,6 @@ html {
     background-color: white;
     position: relative;
   }
-  .image4 {
-    font-size: 1.5rem;
-    position: relative;
-    left: 70px;
-    font-family: "Shrikhand";
-  }
   .image9 {
     text-align: center;
     font-size: 1.7rem;
@@ -143,20 +137,7 @@ html {
     font-size: 1.5rem;
     height: 5rem;
     font-family: "Shrikhand";
-  }
-  .image6 {
-    position: relative;
-    left: 68px;
-    font-size: 1.5rem;
-  }
-  .image7 {
-    position: relative;
-    left: 68px;
-    font-size: 1.5rem;
-  }
-  .image3 {
-    font-size: 1.5rem;
-  }
+  } 
   .suggest {
     position: relative;
     left: 10px;
@@ -475,49 +456,14 @@ html {
     text-shadow: 0 0 2px #000;
     font-size: 1rem;
   }
-  .container3 .encha .fa-heart {
-    background-color: white;
-    color: white;
-    display: inline-block;
-    z-index: 1;
-    text-shadow: 0 0 2px #000;
-    position: relative;
-    left: 0px;
-    top: 30px;
-    font-size: 1.6rem;
-  }
-  .full .fa-heart {
-    background-color: white;
-    color: white;
-    display: inline-block;
-    z-index: 1;
-    text-shadow: 0 0 2px #707070;
-    position: relative;
-    left: 50px;
-    top: 30px;
-    font-size: 1.6rem;
-  }
      .mainDiv .fa-heart {
     background-color: white;
     color: white;
     display: inline-block;
-    z-index: 1;
     text-shadow: 0 0 2px #000;
-    position: relative;
-    left: 150px;
-    top: 20px;
-    font-size: 1.6rem;
-  }
-
-  .goum .fa-heart {
-    background-color: white;
-    color: white;
-    display: inline-block;
-    z-index: 1;
-    text-shadow: 0 0 2px #000;
-    position: relative;
-    left: 80px;
-    top: 20px;
+    position: absolute;
+    left: 243px;
+    top: 25px;
     font-size: 1.6rem;
   }
   .fa-heart:hover {
@@ -560,13 +506,13 @@ html {
   }
   .mfooter {
     position: relative;
-    top: -70px;;
+    top: -57px;;
   }
   .footer-container {
     width: 100%;
     position: relative;
-    left: -5%;
-    top: -0.938rem;
+    left: -10%;
+    top: -15px;;
   }
   pre {
     font-family: "Roboto", sans-serif;
@@ -576,7 +522,11 @@ html {
     top: 30px;
     left: 23px;
     font-family: "Shrikhand", cursive;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+  }
+  .titlef{
+    position: relative;
+    top: 28px;
   }
   .title1 {
     position: relative;
@@ -692,17 +642,20 @@ html {
     color: white;
     margin-bottom: 10%;
     position: relative;
-    top: 20px;
+    top: 19px;
   }
   .add {
     font-size: 0.8rem;
-    position: relative;
+    position: absolute;
     left: 15px;
-    top: 13px;
-    white-space: nowrap;
-    width: 70%;
-    overflow: hidden;
+    top: 38px;
     text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 200px;
+  }
+  .card2:hover .add{
+    max-width: 150px;
   }
   .icon {
     font-size: 1rem;
@@ -727,17 +680,8 @@ html {
     display: inline;
     text-align: center;
   }
-  .container .full .cards2 .card2 .add .change {
-    display: inline;
-    width: 10px;
-    height: 10px;
-  }
   .card2-4 .icon {
     position: relative;
-  }
-  .encha .fa-heart {
-    position: relative;
-    left: 90px;
   }
   @keyframes slide2 {
     0% {
@@ -774,29 +718,7 @@ html {
     scroll-behavior: smooth;
     background-color: white;
   }
-  .container3 .encha {
-    position: relative;
-    top: -65px;
-    border-top-left-radius: 20px 20px;
-    border-top-right-radius: 20px 20px;
-    z-index: 2;
-    overflow: hidden;
-    background-color: #f6f6f6;
-    height: 1320px;
-  }
-  .container4 {
-    width: 100vw;
-    z-index: 2;
-    font-family: "Raleway", sans-serif;
-    box-sizing: border-box;
-    overflow-x: hidden !important;
-    overflow-y: hidden !important;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    overflow: scroll;
-    scroll-behavior: smooth;
-  }
-  .mainDiv {
+  .fDiv, .mainDiv {
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     position: relative;
@@ -805,19 +727,16 @@ html {
     z-index: 2;
     overflow: hidden;
     background-color: #f6f6f6;
-    height: 1232px;
+    height: 1325px;
   }
-  .f-header {
-    display: flex;
-    flex-direction: row;
+  .fDiv {
+    height: 1230px;
   }
-  .goum .fa-heart {
-    position: relative;
-    left: 150px;
+  .bDiv{
+    height: 1201px;
   }
- .mainDiv .fa-heart {
-    position: relative;
-    left: 130px;
+  .gDiv {
+    height: 1201px;
   }
   .resize {
     width: 50px;
@@ -825,7 +744,6 @@ html {
     position: relative;
     top: 10px;
   }
-
   .cards2 .card2 .check-container {
     width: 0px;
     height: 0px;
@@ -973,6 +891,18 @@ html {
     background-color: white;
     position: relative;
   }
+  .add {
+    max-width: 250px;
+  }
+  .card2:hover .add{
+    max-width: 200px;
+  }
+  .bDiv{
+    height: 1190px;
+  }
+  .gDiv{
+    height: 1237px;
+  }
   @keyframes slide {
     0% {
       left: 30px;
@@ -1015,9 +945,6 @@ html {
     left: -30px;
     width: 30vw;
     height: 70px;
-  }
-  .footer-f {
-    margin-top: -33px;
   }
   .cts-2 {
     height: 4rem;
@@ -1155,9 +1082,6 @@ html {
   .text3 {
     font-size: 1.1rem;
   }
-  .suggest {
-    font-size: 1rem;
-  }
   .become {
     position: relative;
     left: 6px;
@@ -1167,17 +1091,8 @@ html {
   }
   .image {
     font-family: "Shrikhand";
-    font-size: 2rem;
+    font-size: 1rem;
     text-align: center;
-  }
-  .image11 {
-    font-size: 1.2rem;
-  }
-  .image10 {
-    font-size: 1.2rem;
-  }
-  .image-f {
-    font-size: 1.2rem;
   }
   .fa-utensils,
   .fa-hands-helping,
@@ -1202,52 +1117,25 @@ html {
   .add {
     font-size: 0.9rem;
   }
-  .container4 .full .fa-heart {
-    position: relative;
-    left: 83px;
-    top: 30px;
-  }
-  .container4 .goum {
-    position: relative;
-    top: -35px;
-    left: -5px;
-    width: 98%;
-    height: 1195px;
-  }
-  .container4 .goum .fa-heart {
-    background-color: white;
-    color: white;
-    display: inline-block;
-    z-index: 1;
-    text-shadow: 0 0 2px #000;
-    position: relative;
-    left: 119px;
-    top: 21px;
-    font-size: 1.6rem;
-  }
-  .container3 .encha .fa-heart {
-    background-color: white;
-    color: white;
-    display: inline-block;
-    z-index: 1;
-    text-shadow: 0 0 2px #000;
-    position: relative;
-    left: 30px;
-    top: 30px;
-    font-size: 1.6rem;
-  }
    .mainDiv .fa-heart {
     background-color: white;
     color: white;
     display: inline-block;
     z-index: 1;
     text-shadow: 0 0 2px #000;
-    position: relative;
-    left: 190px;
-    top: 19px;
+    position: absolute;
+    left: 280px;
+    top: 21px;
     font-size: 1.6rem;
   }
-
+  .titlef{
+    position: relative;
+    top: 22px;
+  }
+  .titlee{
+    position: relative;
+    top: 22px;
+  }
   .cards .card {
     background-color: white;
     width: 90%;
@@ -1309,9 +1197,6 @@ html {
   .cards .card .h4 .fa-heart {
     font-size: 1.2rem;
   }
-  .container4 .image2 img {
-    width: 350px;
-  }
   .entry2 {
     border-bottom: 3px solid #b0e7d9;
     width: 45px;
@@ -1321,25 +1206,20 @@ html {
     font-size: 1.3rem;
     padding-top: 20px;
   }
-  .image4 {
-    font-size: 2rem;
-    position: relative;
-    left: 90px;
-    font-family: "Shrikhand";
-  }
-  .container3 .encha {
-    position: relative;
-    top: -30px;
-    height: 1335px;
-  }
   .image5 {
     position: relative;
-    left: -7px;
+    left: 19px;
   }
 }
 @media screen and (min-width: 411px) {
   * {
     font-size: 12px;
+  }
+  .add {
+    max-width: 300px;
+  }
+  .card2:hover .add{
+    max-width: 250px;
   }
   .footer-container {
     top: -28px;
@@ -1353,7 +1233,7 @@ html {
   .contact,
   .suggest,
   .become {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   .entry {
     width: 50px;
@@ -1371,10 +1251,6 @@ html {
     position: relative;
     left: 25px;
     font-size: 2.4rem;
-  }
-  .image4 {
-    font-size: 2.4rem;
-    text-align: center;
   }
   .add {
     font-size: 1.3rem;
@@ -1430,13 +1306,6 @@ html {
     padding-right: 10%;
     margin-top: 15%;
   }
-  .container4 .full .fa-heart {
-    position: relative;
-    left: 100px;
-    top: 30px;
-    font-size: 2rem;
-  }
-
   .cards .card {
     width: 330px;
     height: 240px;
@@ -1500,24 +1369,9 @@ html {
   img {
     width: 80vw;
   }
-  .image6 {
-    position: relative;
-    left: 104px;
-  }
   .cards .card .fa-heart {
     position: relative;
     left: 300px;
-  }
-  .container3 .encha .fa-heart {
-    background-color: white;
-    color: white;
-    display: inline-block;
-    z-index: 1;
-    text-shadow: 0 0 2px #000;
-    position: relative;
-    left: 30px;
-    top: 30px;
-    font-size: 2rem;
   }
   .entry2 {
     border-bottom: 3px solid #b0e7d9;
@@ -1527,17 +1381,6 @@ html {
     top: 20px;
     font-size: 1.6rem;
     padding-top: 20px;
-  }
-  .mainDiv .fa-heart {
-    background-color: white;
-    color: white;
-    display: inline-block;
-    z-index: 1;
-    text-shadow: 0 0 2px #000;
-    position: relative;
-    left: 215px;
-    top: 19px;
-    font-size: 2rem;
   }
   .entry3 {
     border-bottom: 3px solid #b0e7d9;
@@ -1557,9 +1400,9 @@ html {
     display: inline-block;
     z-index: 1;
     text-shadow: 0 0 2px #000;
-    position: relative;
-    left: 130px;
-    top: 22px;
+    position: absolute;
+    left: 333px;
+    top: 30px;
     font-size: 2rem;
   }
   .entry4 {
@@ -1571,16 +1414,12 @@ html {
     padding-top: 30px;
     font-size: 1.6rem;
   }
-  .container4 .goum {
-    position: relative;
-    top: -32px;
-    left: -4px;
-    width: 98%;
-    height: 1240px;
+    .eDiv {
+    height: 1346px;
   }
-  .container4 .image2 img {
-    width: 350px;
-  }
+  .bDiv {
+    height: 1244px;
+}
   @keyframes slide {
     0% {
       left: 25px;
@@ -1629,7 +1468,7 @@ html {
     font-size: 1.5rem;
   }
   .btn {
-    background-color: linear-gradient(to top, #736e7a 0%, #ff79da 100%);
+    background: linear-gradient(to top, #9356dc 0%, #ff79da 100%);
     color: white;
     padding: 1%;
     border-radius: 40px;
@@ -1640,34 +1479,18 @@ html {
   }
   .image {
     font-family: "Shrikhand";
-    font-size: 2.4rem;
+    font-size: 1.5rem;
     text-align: center;
-  }
-  .image10 {
-    font-size: 1.6rem;
-  }
-  .image11 {
-    font-size: 1.6rem;
-  }
-  .image7 {
-    position: relative;
-    left: 108px;
-  }
-  .image-f {
-    font-size: 2rem;
   }
   .image5 {
     position: relative;
-    left: 20px;
+    left: 29px;
+    font-size: 2rem;
   }
   .btn2 {
     position: relative;
     top: 35px;
     height: 4.125rem;
-  }
-  .footer-f {
-    margin-top: -30px;
-    z-index: 3;
   }
 }
 
@@ -1675,11 +1498,22 @@ html {
   .btn{
     box-shadow: 1.5px 1.5px 4.5px 3px #dbdbdb;
   }
+  .add {
+    max-width: 400px;
+  }
+  .card2:hover .add {
+    max-width: 320px;
+  }
   .paris {
     font-size: 1.4rem;
   }
   .fa-map-marker-alt {
     font-size: 1.4rem;
+  }
+  .image5 {
+    position: relative;
+    left: 53px;
+    font-size: 2.3rem;
   }
   .ct-1 {
     display: flex;
@@ -1940,21 +1774,6 @@ html {
   .res-list {
     padding: 5%;
   }
-  .container4 .full .fa-heart {
-    position: relative;
-    left: 130px;
-    top: 30px;
-    font-size: 2.5rem;
-  }
-  .image3 {
-    position: relative;
-    left: -10px;
-  }
-  .image7 {
-    position: relative;
-    left: 143px;
-  }
-
   .cards .card {
     width: 470px;
     height: 325px;
@@ -2040,61 +1859,28 @@ html {
   .title {
     font-size: 3.3rem;
   }
-  .container3 .encha .fa-heart {
-    background-color: white;
-    color: white;
-    display: inline-block;
-    z-index: 1;
-    text-shadow: 0 0 2px #000;
-    position: relative;
-    left: 30px;
-    top: 29px;
-    font-size: 2.5rem;
-  }
   .mainDiv .fa-heart {
     background-color: white;
     color: white;
     display: inline-block;
     z-index: 1;
     text-shadow: 0 0 2px #000;
-    position: relative;
-    left: 290px;
-    top: 18px;
-    font-size: 2.5rem;
-  }
-  .container4 .goum .fa-heart {
-    background-color: white;
-    color: white;
-    display: inline-block;
-    z-index: 1;
-    text-shadow: 0 0 2px #000;
-    position: relative;
-    left: 170px;
-    top: 22px;
+    position: absolute;
+    left: 454px;
+    top: 34px;
     font-size: 2.5rem;
   }
   .fa-arrow-left {
     font-size: 1.3rem;
   }
-  .container3 .encha {
-    position: relative;
-    top: -65px;
-    left: 0px;
-    height: 1715px;
-  }
-   .goum {
-    position: relative;
-    top: -36px;
-    left: -2px;
+   .mainDiv {
     height: 1620px;
   }
-  .image4 {
-    font-size: 3rem;
-    text-align: center;
+  .eDiv {
+    height: 1680px;
   }
-  .image6 {
-    position: relative;
-    left: 147px;
+  .bDiv{
+    height: 1680px;
   }
   .footer-container {
     font-size: 2rem;
@@ -2105,12 +1891,10 @@ html {
   }
   .image {
     font-family: "Shrikhand";
-    font-size: 3rem;
-  }
-  .image11,
-  .image10,
-  .image-f {
     font-size: 2rem;
+  }
+  .gDiv {
+    height: 1586px;
   }
   .fa-utensils,
   .fa-hands-helping,
@@ -2187,7 +1971,7 @@ html {
   .fa-arrow-left {
     font-size: 1.5rem;
     position: relative;
-    top: 60px;
+    top: -8px;
     left: 40px;
   }
   .image img {
@@ -2239,8 +2023,12 @@ html {
   }
   .add {
     font-size: 1.6rem;
-    position: relative;
-    top: 17px;
+    position: absolute;
+    top: 64px;
+    max-width: 600px;
+  }
+  .card2:hover .add {
+    max-width: 480px;
   }
   .title1 {
     position: relative;
@@ -2266,20 +2054,6 @@ html {
     position: relative;
     top: -4px;
   }
-  .mainDiv .fa-heart {
-    background-color: white;
-    color: white;
-    display: inline-block;
-    z-index: 1;
-    text-shadow: 0 0 2px #000;
-    position: relative;
-    left: 230px;
-    top: 60px;
-  }
-  .image7 {
-    position: relative;
-    left: 180px;
-  }
   .entry4 {
     border-bottom: 3px solid #b0e7d9;
     width: 90px;
@@ -2294,38 +2068,23 @@ html {
   }
   .mainDiv {
     position: relative;
-    top: -30px;
+    top: -53px;
     left: 0px;
     height: 2395px;
+  }
+  .eDiv{
+    height: 2527px;
+  }
+  .bDiv{
+    height: 2435px;
   }
   .banner {
     background-color: #99e2d0;
     color: black;
     padding: 5px 40px;
   }
-  .mainDiv .fa-heart {
-    position: relative;
-    left: 180px;
-    top: 53px;
-    font-size: 2.2rem;
-  }
   .entry1 {
     padding-top: 70px;
-  }
-  .image4 {
-    position: relative;
-    left: 70px;
-  }
-  .container3 .encha .fa-heart {
-    background-color: white;
-    color: white;
-    display: inline-block;
-    z-index: 1;
-    text-shadow: 0 0 2px #000;
-    position: relative;
-    left: 30px;
-    top: 60px;
-    font-size: 2.2rem;
   }
    .mainDiv .fa-heart {
     background-color: white;
@@ -2333,9 +2092,9 @@ html {
     display: inline-block;
     z-index: 1;
     text-shadow: 0 0 2px #000;
-    position: relative;
-    left: 410px;
-    top: 60px;
+    position: absolute;
+    left: 651px;
+    top: 74px;
     font-size: 2.2rem;
   }
   .cards .card {
@@ -2547,19 +2306,11 @@ html {
     left: -170px;
     font-size: 1.7rem;
   }
-  .image10 {
-    font-size: 2rem;
-    position: relative;
-    top: -20px;
-  }
 }
 
 @media screen and (min-width: 1024px) {
   .btn {
     box-shadow: 3px 3px 9px 6px #dbdbdb;
-  }
-  .image10 {
-    font-size: 2.4rem;
   }
   .paris {
     font-size: 1.8rem;
@@ -2585,9 +2336,6 @@ html {
     flex-direction: column;
     position: relative;
     top: 60%;
-  }
-  .image11 {
-    font-size: 2.4rem;
   }
   .ct-2 {
     position: relative;
@@ -2702,11 +2450,12 @@ html {
   }
   .add {
     font-size: 1.8rem;
+    position: absolute;
+    top: 80px;
+    max-width: 900px;
   }
-  .image3 {
-    position: relative;
-    left: -20px;
-    font-size: 3.5rem;
+  .card2:hover .add {
+    max-width: 800px;
   }
   .cards2 {
     grid-template-rows: repeat(3, 160px);
@@ -2725,13 +2474,6 @@ html {
     color: #018767;
     padding: 8px 60px;
   }
-  .container4 .full .fa-heart {
-    position: relative;
-    left: 320px;
-    top: 60px;
-    font-size: 2.6rem;
-  }
- 
   .btn-container {
     display: flex;
     height: 400px;
@@ -2739,22 +2481,6 @@ html {
     justify-content: center;
     position: relative;
     top: 30px;
-  }
-  .image7 {
-    position: relative;
-    left: 290px;
-    font-size: 3.5rem;
-  }
-  .mainDiv .fa-heart {
-    background-color: white;
-    color: white;
-    display: inline-block;
-    z-index: 1;
-    text-shadow: 0 0 2px #000;
-    position: relative;
-    left: 600px;
-    top: 60px;
-    font-size: 2.6rem;
   }
   .entry3 {
     position: relative;
@@ -2764,7 +2490,7 @@ html {
     position: relative;
     padding-top: 110px;
   }
-  .container4 .goum {
+  .mainDiv {
     border-top-left-radius: 93px;
     border-top-right-radius: 93px;
     position: relative;
@@ -2772,53 +2498,36 @@ html {
     left: 0px;
     height: 2670px;
   }
+  .eDiv{
+    height: 2822px;
+  }
+  .bDiv{
+    height: 2714px;
+  }
+  .mfooter{
+    position: relative;
+    top: -128px;
+  }
   .mainDiv .fa-heart {
     background-color: white;
     color: white;
     display: inline-block;
     z-index: 1;
     text-shadow: 0 0 2px #000;
-    position: relative;
-    left: 380px;
-    top: 60px;
+    position: absolute;
+    left: 873px;
+    top: 78px;
     font-size: 2.6rem;
   }
   .entry4 {
     position: relative;
     left: 40px;
   }
-  .container3 .encha .fa-heart {
-    background-color: white;
-    color: white;
-    display: inline-block;
-    z-index: 1;
-    text-shadow: 0 0 2px #000;
-    position: relative;
-    left: 146px;
-    top: 60px;
-    font-size: 2.6rem;
-  }
-  .container3 .encha {
-    position: relative;
-    top: -65px;
-    left: 0px;
-    border-radius: 20px 20px 10px 10px;
-    height: 2831px;
-    z-index: 2;
-    overflow: hidden;
-    background-color: white;
-    background-color: #f6f6f6;
-  }
   .btn2 {
     height: 120px;
     border-radius: 65px;
     position: relative;
     top: 13px;
-  }
-  .image6 {
-    position: relative;
-    left: 290px;
-    font-size: 3.5rem;
   }
   .cards .card {
     width: 820px;
@@ -2887,10 +2596,6 @@ html {
   }
   .cards .card .image3-4 {
     background-image: url("../src/img/dish2.jpg");
-  }
-  .footer-f {
-    position: relative;
-    top: -80px;
   }
   .cards {
     margin-top: 10%;
@@ -2962,10 +2667,10 @@ html {
   .btn {
     box-shadow: 4px 4px 12px 8px #dbdbdb;
   }
-  .image10 {
+  .mfooter {
     position: relative;
-    top: 100px;
-  }
+    top: -222px;
+}
   .card2:hover .check-container {
     will-change: transform;
     backface-visibility: hidden;
@@ -3039,12 +2744,18 @@ html {
     border-top-left-radius: 120px;
     border-top-right-radius: 120px;
     position: relative;
-    top: -56px;
+    top: -223px;
     left: 0px;
-    height: 2926px;
+    height: 3000px;
     z-index: 2;
     overflow: hidden;
     background-color: #f6f6f6;
+  }
+  .eDiv{
+    height: 3148px;
+  }
+  .gDiv{
+    height: 2939px;
   }
   .title4 {
     font-size: 2.2rem;
@@ -3091,16 +2802,6 @@ html {
   .paris {
     font-size: 2rem;
   }
-  .mainDiv .fa-heart {
-    background-color: white;
-    color: white;
-    display: inline-block;
-    z-index: 1;
-    text-shadow: 0 0 2px #000;
-    position: relative;
-    left: 620px;
-    top: 20px;
-  }
   .image img {
     position: relative;
     left: 180px;
@@ -3125,18 +2826,7 @@ html {
   }
   .add {
     font-size: 2rem;
-  }
-  .container3 .encha {
-    position: relative;
-    top: -112px;
-    left: 0px;
-    border-top-left-radius: 120px;
-    border-top-right-radius: 120px;
-    height: 3130px;
-    z-index: 2;
-    overflow: hidden;
-    background-color: white;
-    background-color: #f6f6f6;
+    max-width: 1100px;
   }
   .entry2 {
     position: relative;
@@ -3153,58 +2843,15 @@ html {
     left: 40px;
     top: 170px;
   }
-  .container4 .full .fa-heart {
-    background-color: white;
-    color: white;
-    display: inline-block;
-    z-index: 1;
-    text-shadow: 0 0 2px #000;
-    position: relative;
-    left: 510px;
-    top: 110px;
-    font-size: 3.6rem;
-  }
-  .container3 .encha .fa-heart {
-    background-color: white;
-    color: white;
-    display: inline-block;
-    z-index: 1;
-    text-shadow: 0 0 2px #000;
-    position: relative;
-    left: 1050px;
-    top: 20px;
-  }
    .mainDiv .fa-heart {
     background-color: white;
     color: white;
     display: inline-block;
     z-index: 1;
     text-shadow: 0 0 2px #000;
-    position: relative;
-    left: 820px;
-    top: 113px;
-    font-size: 3.6rem;
-  }
-  .container3 .encha .fa-heart {
-    background-color: white;
-    color: white;
-    display: inline-block;
-    z-index: 1;
-    text-shadow: 0 0 2px #000;
-    position: relative;
-    left: 300px;
-    top: 110px;
-    font-size: 3.6rem;
-  }
-  .container4 .goum .fa-heart {
-    background-color: white;
-    color: white;
-    display: inline-block;
-    z-index: 1;
-    text-shadow: 0 0 2px #000;
-    position: relative;
-    left: 600px;
-    top: 110px;
+    position: absolute;
+    left: 1146px;
+    top: 131px;
     font-size: 3.6rem;
   }
   .cards .card .banner1 {
@@ -3273,15 +2920,9 @@ html {
   }
   .image2-2 {
     background-image: url("../src/img/dish4.jpg");
-    position: relative;
-    top: 63px;
-    height: 44rem;
   }
    .image2-3 {
     background-image: url("../src/img/dish2.jpg");
-    height: 39rem;
-    position: relative;
-    top: 63px;
   }
   .image {
     font-family: "Shrikhand";
@@ -3291,13 +2932,6 @@ html {
     left: 0px;
     top: -30px;
     font-size: 3rem;
-  }
-  .image3 {
-    position: relative;
-    left: -20px;
-    top: -25px;
-    font-size: 4rem;
-    height: 3.375rem;
   }
   .image9 {
     position: relative;
@@ -3326,7 +2960,7 @@ html {
   .fa-arrow-left {
     font-size: 1.5rem;
     position: relative;
-    top: 36px;
+    top: -18px;
     left: 40px;
   }
   .cards .card .h1 .fa-heart {
@@ -3393,30 +3027,12 @@ html {
   .res-list {
     display: inline-block;
   }
-  .image6 {
-    position: relative;
-    left: 420px;
-    top: 33px;
-    font-size: 4rem;
-  }
   .entry3-1 {
     position: relative;
     padding-top: 20px;
   }
-  .image7 {
-    position: relative;
-    left: 420px;
-    top: -10px;
-    font-size: 4rem;
-  }
   .entry6-1 {
     padding-top: 20px;
-  }
-  .image4 {
-    font-size: 4rem;
-    position: relative;
-    top: 80px;
-    font-family: "Shrikhand";
   }
   .btn-container {
     display: flex;
@@ -3431,10 +3047,6 @@ html {
     top: -79px;
     left: -110px;
     line-height: 1;
-  }
-  .footer-f {
-    position: relative;
-    top: -202px;
   }
   .card2:hover .fa-check-circle {
     display: inline-block;
